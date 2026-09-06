@@ -1,0 +1,13 @@
+geometry: "margin=1in"
+fontsize: 11pt
+linestretch: 1.15
+mainfont: "Georgia"
+sansfont: "Arial"
+monofont: "Consolas"
+mathfont: "Cambria Math"
+classoption: twoside
+colorlinks: true
+linkcolor: MidnightBlue
+urlcolor: MidnightBlue
+toccolor: MidnightBlue
+lang: en-GB

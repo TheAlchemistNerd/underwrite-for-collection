@@ -1,0 +1,25 @@
+# Local working and rendering caches
+scratchpad/
+tmp/
+
+# Python environments and bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# LaTeX and Pandoc intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Operating-system and Office temporary files
+.DS_Store
+Thumbs.db
+~$*
+
+# Keep one canonical reading PDF and leave superseded draft builds local
+series/dist/*.pdf
+!series/dist/Underwrite_for_Collection_MSME_Lifecycle_Draft_Parts_1_to_5_Notation_Corrected_2026-09-06.pdf
