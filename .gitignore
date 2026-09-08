@@ -23,3 +23,4 @@ Thumbs.db
 # Keep one canonical reading PDF and leave superseded draft builds local
 series/dist/*.pdf
 !series/dist/Underwrite_for_Collection_MSME_Lifecycle_Draft_Parts_1_to_5_Notation_Corrected_2026-09-06.pdf
+!series/dist/Underwrite_for_Collection_MSME_Lifecycle_Parts_1_to_5_CC_BY_NC_SA_4_0_2026-09-08.pdf
