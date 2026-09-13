@@ -1,7 +1,7 @@
 ---
 title: "Underwrite for Collection"
 subtitle: "Part 2b: Hierarchical Bayesian Underwriting, Causal Identification and Lifecycle Dependence"
-author: "Neville Maloba"
+author: "Nevil Maloba"
 email: "nevillemaloba@gmail.com"
 date: "6 September 2026"
 lang: "en-GB"

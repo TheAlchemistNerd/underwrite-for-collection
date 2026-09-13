@@ -1,7 +1,7 @@
 ---
 title: "Underwrite for Collection"
 subtitle: "Part 1: The MSME Credit Lifecycle and Collection Cascades"
-author: "Neville Maloba"
+author: "Nevil Maloba"
 email: "nevillemaloba@gmail.com"
 date: "6 September 2026"
 lang: "en-GB"

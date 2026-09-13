@@ -1,7 +1,7 @@
 ---
 title: "Underwrite for Collection"
 subtitle: "Part 4: Bank-Controlled Research Sandboxes and Enterprise Credit Architecture"
-author: "Neville Maloba"
+author: "Nevil Maloba"
 email: "nevillemaloba@gmail.com"
 date: "6 September 2026"
 lang: "en-GB"

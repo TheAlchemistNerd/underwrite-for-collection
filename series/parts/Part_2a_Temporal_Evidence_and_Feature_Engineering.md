@@ -1,7 +1,7 @@
 ---
 title: "Underwrite for Collection"
 subtitle: "Part 2a: Temporal Evidence, Behavioural Signals and Point-in-Time Feature Engineering"
-author: "Neville Maloba"
+author: "Nevil Maloba"
 email: "nevillemaloba@gmail.com"
 date: "6 September 2026"
 lang: "en-GB"
