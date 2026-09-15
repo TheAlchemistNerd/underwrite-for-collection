@@ -198,19 +198,67 @@ The ledger also prevents behavioural scoring from becoming character scoring. A 
 
 The output of this section is therefore not a maximal customer profile. It is a minimum sufficient evidence graph for a defined credit purpose. Fields without a defensible economic role, lawful basis, quality process or decision owner remain outside the feature contract. That boundary supports both model discipline and practical data minimisation.
 
+### 2.1 Resolve the economic entity before calculating cash-flow features
+
+The minimum sufficient evidence graph must resolve two related questions. The first is referential: which records, accounts and identifiers describe the same person, enterprise, facility or connected economic unit? The second is transactional: which observed ledger entries describe one economic movement, and what supported purpose does that movement have? Entity resolution is the established problem of matching and reconciling entity mentions across structured and unstructured data. Its methods include rules, pairwise matching, clustering and relational probabilistic inference [6]. The credit implementation is additionally temporal because owners, signatories, account relationships and business structures can change.
+
+For enterprise \(i\) at decision cutoff \(d\), define the authorised temporal graph:
+
+\[
+G_{i,d}=\left(V_{i,d},E_{i,d}\right),
+\]
+
+where \(V_{i,d}\) contains the entity, person, account, wallet, till, facility, counterparty, invoice, settlement and transaction nodes permitted for the decision purpose. Each edge \(e\in E_{i,d}\) records a relationship type, effective interval, knowledge interval, source, verification status and confidence. An edge can describe legal ownership, authorised control, facility liability, payment direction, merchant settlement, invoice support, guarantee, or an inferred candidate match. Verified and inferred relationships remain distinguishable.
+
+The graph prevents two opposite errors. A **false split** can treat two accounts of one enterprise as independent sources of new cash and count an internal transfer twice. A **false merge** can combine businesses that happen to share an address, director, device or counterparty and attribute one entity's resources or liabilities to another. Validation must therefore report both error types and their monetary effect. Aggregate match accuracy can look strong while a small number of high-value errors materially changes underwriting.
+
+For a transaction \(j\), the economic-provenance record can be represented as:
+
+\[
+z_j=\left(s_j,r_j,a_j,t_j,m_j,\pi_j,k_j,p_j,q_j\right),
+\]
+
+where \(s_j\) and \(r_j\) are resolved sender and receiver nodes, \(a_j\) the amount and currency, \(t_j\) the relevant temporal envelope, \(m_j\) the payment or ledger mechanism, \(\pi_j\) the reconstructed path or economic-event identifier, \(k_j\) the proposed cash class, \(p_j\) its confidence, and \(q_j\) the source, reconciliation and coverage status. This record does not replace the original transaction. It appends an auditable interpretation for a defined use.
+
+The governed cash-class set is:
+
+\[
+\mathcal{K}=\{\mathrm{operating},\mathrm{financing},\mathrm{capital},
+\mathrm{internal},\mathrm{refund/reversal},\mathrm{exceptional},
+\mathrm{unresolved}\}.
+\]
+
+Related-party status is recorded as a separate relationship attribute rather than a cash class. A sale to an affiliated distributor can be genuine operating revenue. A director's transfer may be financing or owner capital. A same-owner account movement may be internal. The graph supplies context, while the economic class supplies the analytical treatment. Neither should be used to infer motive.
+
+**Table 1A: Economic cash classes and decision treatment**
+
+| Economic class | Illustrative evidence | Cash-flow treatment | Principal control |
+|---|---|---|---|
+| External operating | Customer receipt, verified invoice payment, decomposed merchant settlement | Eligible for recurring operating-cash measures when settled, available and non-duplicated | Counterparty, settlement and reversal reconciliation |
+| Financing | Loan drawdown, overdraft funding, debt repayment | Included in liquidity and leverage views; excluded from operating revenue | Link inflow to facility and resulting obligation |
+| Capital or owner | Equity injection, proprietor contribution, distribution | Included in support and capital-dependence views; separately assessed for recurrence | Resolve owner relationship and direction of flow |
+| Internal transfer | Movement among resolved accounts of one economic unit | Preserved for liquidity location; counted once in consolidated flow | Pair transfers net of fees and timing tolerances |
+| Refund or reversal | Chargeback, returned payment, correction | Net against the original economic event under the approved rule | Explicit correction or economic-event identifier |
+| Exceptional | Asset sale, grant, insurance proceeds, unusual recovery | Included in available liquidity where valid; separated from recurring capacity | Evidence, recurrence assumption and decision sensitivity |
+| Unresolved | Conflicting or insufficient evidence | Preserved outside verified operating cash; included in bounds and review | Coverage, materiality, review and expiry rule |
+
+Path reconstruction follows the money rather than relying only on a transaction label. Deterministic pairing uses known account ownership, exact references, settlement identifiers and contractual allocation. Probabilistic candidates may use amount tolerance, timing, counterparty similarity, direction and graph context. A transfer from one controlled account to another remains real liquidity movement but creates no new consolidated operating cash. An aggregator credit may appear concentrated in the bank ledger while its underlying settlement file establishes diversified customer receipts. A circular path can identify repeated movement of one amount without treating the cycle itself as misconduct.
+
+The point-in-time condition applies to the interpretation as well as the transaction. A receipt can be genuinely settled before \(T_d\) while its counterparty or purpose remains unresolved at \(T_d\). A later invoice or ownership record may improve the current classification but must not be inserted into the historical decision snapshot. The feature history therefore retains classification version, knowledge time and confidence beside the source event. Figure 2A places this layer between canonical events and decision-specific cash features.
+
 ## 3. From operational systems to a bank-controlled evidence plane
 
 The ledger design becomes useful when it can absorb events without making the analytical platform the master of every business fact. The bank retains its core, product, payment, customer, servicing, finance and risk systems as authoritative for their assigned records. Approved partners remain responsible for the records they originate. The evidence plane carries governed copies, source metadata and transformations into two coordinated views: a low-latency state used at a decision moment, and a versioned historical view used for reconstruction, research and validation.
 
-No single ingestion mechanism fits every source. Committed changes from supported relational product or servicing databases may be captured from database logs. Debezium's SQL Server connector, for example, takes an initial snapshot and then emits committed row-level insert, update and delete events. Its fault-tolerance documentation also notes that an outage can lead to duplicate events after restart because offsets are committed periodically [6]. That makes unique source identifiers, log positions, idempotent writes and reconciliation essential. A payment switch or mobile-money integration may already publish native messages. An invoice platform may expose an API. A guarantee administrator may provide a controlled file. Public statistics arrive through websites, APIs or scheduled publications. Treating all of these as CDC would obscure their different failure and correction modes.
+No single ingestion mechanism fits every source. Committed changes from supported relational product or servicing databases may be captured from database logs. Debezium's SQL Server connector, for example, takes an initial snapshot and then emits committed row-level insert, update and delete events. Its fault-tolerance documentation also notes that an outage can lead to duplicate events after restart because offsets are committed periodically [7]. That makes unique source identifiers, log positions, idempotent writes and reconciliation essential. A payment switch or mobile-money integration may already publish native messages. An invoice platform may expose an API. A guarantee administrator may provide a controlled file. Public statistics arrive through websites, APIs or scheduled publications. Treating all of these as CDC would obscure their different failure and correction modes.
 
-After validation at the boundary, events can be published to domain topics such as `facility-events`, `payment-events`, `servicing-events`, `enterprise-activity-events` and `external-context-events`. Apache Kafka provides a practical event-streaming backbone. Records with the same key can be assigned to the same topic partition, and ordering is guaranteed within a topic partition rather than across the entire topic [7]. The architecture should therefore choose stable keys at the level whose order matters. A facility key is appropriate for contractual state; an account key is appropriate for booked cash; an enterprise key may be needed for consolidated authorised activity. Cross-key relationships are reconciled by explicit event and allocation identifiers rather than an assumed global sequence.
+After validation at the boundary, events can be published to domain topics such as `facility-events`, `payment-events`, `servicing-events`, `enterprise-activity-events` and `external-context-events`. Apache Kafka provides a practical event-streaming backbone. Records with the same key can be assigned to the same topic partition, and ordering is guaranteed within a topic partition rather than across the entire topic [8]. The architecture should therefore choose stable keys at the level whose order matters. A facility key is appropriate for contractual state; an account key is appropriate for booked cash; an enterprise key may be needed for consolidated authorised activity. Cross-key relationships are reconciled by explicit event and allocation identifiers rather than an assumed global sequence.
 
-A stateful processor such as Apache Flink then validates schemas, deduplicates events, applies event-time windows, maintains eligible state and routes exceptions. Event time describes when an event occurred, while processing time describes when the processing operation ran. Flink uses watermarks to represent progress through event time in the presence of out-of-order records [8]. A watermark is therefore a policy about tolerated lateness, not proof that no earlier event will arrive. The bank should set it by source and use case. A five-minute payment watermark and a one-day invoice watermark may both be reasonable, while a monthly macro series needs a publication schedule rather than a second-by-second stream.
+A stateful processor such as Apache Flink then validates schemas, deduplicates events, applies event-time windows, maintains eligible state and routes exceptions. Event time describes when an event occurred, while processing time describes when the processing operation ran. Flink uses watermarks to represent progress through event time in the presence of out-of-order records [9]. A watermark is therefore a policy about tolerated lateness, not proof that no earlier event will arrive. The bank should set it by source and use case. A five-minute payment watermark and a one-day invoice watermark may both be reasonable, while a monthly macro series needs a publication schedule rather than a second-by-second stream.
 
-Temporal reference joins require equal discipline. Flink supports event-time temporal joins against versioned tables, but their semantics depend on time attributes, keys, connectors and late-record behaviour [9]. A sector classification, repayment schedule or product rule joined to an event should be the version effective and available at that event or decision cutoff. Late records outside an approved watermark are not silently discarded from the evidence history. They move to a correction or reconciliation path, after which current state may change and the original decision snapshot remains preserved.
+Temporal reference joins require equal discipline. Flink supports event-time temporal joins against versioned tables, but their semantics depend on time attributes, keys, connectors and late-record behaviour [10]. A sector classification, repayment schedule or product rule joined to an event should be the version effective and available at that event or decision cutoff. Late records outside an approved watermark are not silently discarded from the evidence history. They move to a correction or reconciliation path, after which current state may change and the original decision snapshot remains preserved.
 
-The historical plane stores received source events, cleaned canonical events and approved analytical outputs at different levels. Delta Lake provides ACID table transactions, schema enforcement, batch and streaming support, and access to historical table versions [10]. Its change data feed can expose inserts, updates, delete images, commit versions and commit timestamps after the feed has been enabled, subject to retention constraints [11]. These capabilities support reproducible processing, but they do not recover evidence that was never retained. The bank must align transaction-log retention, change-feed retention, model-validation horizons, dispute requirements and legal retention policy before relying on time travel for a long historical study.
+The historical plane stores received source events, cleaned canonical events and approved analytical outputs at different levels. Delta Lake provides ACID table transactions, schema enforcement, batch and streaming support, and access to historical table versions [11]. Its change data feed can expose inserts, updates, delete images, commit versions and commit timestamps after the feed has been enabled, subject to retention constraints [12]. These capabilities support reproducible processing, but they do not recover evidence that was never retained. The bank must align transaction-log retention, change-feed retention, model-validation horizons, dispute requirements and legal retention policy before relying on time travel for a long historical study.
 
 The proposed layers have precise roles:
 
@@ -318,9 +366,72 @@ flowchart TB
 
 **Figure 2: Proposed bank-controlled temporal evidence plane.** Authoritative systems keep their assigned responsibilities. The streaming plane supports current state, while the historical plane preserves reconstructible evidence. The control plane links both through lineage, reconciliation and approved versions.
 
-Lineage must connect more than tables. OpenLineage models jobs, their runs, and input and output datasets, with extensible facets for such matters as schema, versions and data quality [12]. A lender can extend that vocabulary to record the source positions, transformation code, configuration, feature definition, model artefact, decision purpose and approval package associated with a scoring event. This permits an independent reviewer to trace a served variable back to the canonical events and source versions from which it was calculated.
+```{.mermaid layout=fullpage}
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "fontFamily": "Arial",
+    "fontSize": "19px",
+    "primaryColor": "#EAF2F8",
+    "primaryBorderColor": "#2E5E7E",
+    "lineColor": "#4F6B7A",
+    "secondaryColor": "#E8F5F2",
+    "tertiaryColor": "#FFF4D6"
+  },
+  "flowchart": {"curve": "stepAfter", "nodeSpacing": 22, "rankSpacing": 30}
+}}%%
+flowchart TB
+    A[RECEIVED MULTI-RAIL EVIDENCE<br/>bank ledgers, wallets, tills,<br/>aggregator files and enterprise records]
+    B[SOURCE VERIFICATION<br/>schema, signature or channel control,<br/>event identity and reconciliation]
+    C[CANONICAL TRANSACTIONS<br/>currency, amount, direction, clocks,<br/>counterparty and correction links]
+    D[TEMPORAL ENTITY GRAPH<br/>enterprise, people, accounts, facilities,<br/>counterparties, ownership and control]
+    E[PATH RECONSTRUCTION<br/>transfer pairing, settlement decomposition,<br/>duplicate, reversal and cycle handling]
+    F[ECONOMIC ATTRIBUTION<br/>cash class, related-party status,<br/>confidence, evidence and version]
 
-The online plane stores only what the decision service needs at low latency: the latest eligible feature values, their as-of times, masks, definition version and lineage token. A feature-store implementation such as Feast separates historical retrieval from online serving. Its point-in-time join scans backward from each entity timestamp within a feature view's time-to-live, while its online store is designed to serve recent feature values rather than preserve the full history [13]. The design lesson is broader than one product: historical reconstruction cannot be delegated to a latest-value cache, and low-latency serving should not depend on scanning the full analytical history.
+    subgraph VIEWS[DECISION-SPECIFIC CASH VIEWS]
+        direction LR
+        O[OPERATING<br/>recurring external cash]
+        L[LIQUIDITY<br/>settled and available cash]
+        N[FINANCING AND CAPITAL<br/>funding, support and claims]
+        U[UNRESOLVED<br/>bounds and sensitivity]
+        O ~~~ L ~~~ N ~~~ U
+    end
+
+    G[FEATURE CONTRACT<br/>eligible cash, coverage, uncertainty,<br/>concentration and provenance version]
+    H[PART 2B EVIDENCE OBJECT<br/>HLR, survival and lifecycle challengers]
+    I[PART 3 POLICY GATE<br/>decision, review, explanation and action]
+
+    A --> B --> C --> D --> E --> F
+    F --> O
+    F --> L
+    F --> N
+    F --> U
+    O --> G
+    L --> G
+    N --> G
+    U --> G
+    G --> H --> I
+
+    R[CONTROLLED REVIEW<br/>confirm, reject or defer with reason code] -. material uncertainty .-> F
+    F -. proposed classification .-> R
+    Q[QUALITY MONITORING<br/>false merge or split, monetary error,<br/>coverage, drift and downstream sensitivity] -. validates .-> D
+    Q -. challenges .-> F
+
+    classDef input fill:#FFF4D6,stroke:#C58A00,color:#5A4100,stroke-width:1.5px;
+    classDef process fill:#EAF2F8,stroke:#2E5E7E,color:#17324D,stroke-width:1.5px;
+    classDef view fill:#E8F5F2,stroke:#16857B,color:#17324D,stroke-width:1.5px;
+    classDef control fill:#F2ECF9,stroke:#715090,color:#352447,stroke-width:1.5px;
+    class A input;
+    class B,C,D,E,F,G,H,I process;
+    class O,L,N,U view;
+    class R,Q control;
+```
+
+**Figure 2A: Economic cash provenance and temporal entity resolution.** The graph and path layer converts authenticated account movement into decision-specific economic cash views. It preserves unresolved value and classification confidence so the model and policy gate can respond to evidential limits without treating uncertainty as customer intent.
+
+Lineage must connect more than tables. OpenLineage models jobs, their runs, and input and output datasets, with extensible facets for such matters as schema, versions and data quality [13]. A lender can extend that vocabulary to record the source positions, transformation code, configuration, feature definition, model artefact, decision purpose and approval package associated with a scoring event. This permits an independent reviewer to trace a served variable back to the canonical events and source versions from which it was calculated.
+
+The online plane stores only what the decision service needs at low latency: the latest eligible feature values, their as-of times, masks, definition version and lineage token. A feature-store implementation such as Feast separates historical retrieval from online serving. Its point-in-time join scans backward from each entity timestamp within a feature view's time-to-live, while its online store is designed to serve recent feature values rather than preserve the full history [14]. The design lesson is broader than one product: historical reconstruction cannot be delegated to a latest-value cache, and low-latency serving should not depend on scanning the full analytical history.
 
 Online and offline calculations must implement the same approved economic definitions. Equivalence is demonstrated by replaying sampled decision events through both paths and comparing feature values, timestamps, missingness masks and versions within stated tolerances. A shared feature name is insufficient. Differences in window closure, late-event handling, rounding, time zone, reference-table version or zero-denominator rules can create training-serving skew even when both systems appear correct in isolation.
 
@@ -401,7 +512,18 @@ The resulting training row is a documented information set, not merely a vector.
 
 Behavioural scoring becomes credible when each variable describes an observable part of enterprise cash generation, contractual obligation or payment response. The model should not begin with thousands of convenient aggregations and search for a story afterwards. It should begin with an economic question, define the event population and clock, and then test whether the resulting measure is stable and incrementally useful.
 
-Let \(C_{i,d}^{+}\) be eligible cleared inflows for enterprise \(i\) on day \(d\), \(C_{i,d}^{-}\) eligible outflows, and \(N_{i,d}=C_{i,d}^{+}-C_{i,d}^{-}\) net observed cash flow. Eligibility excludes internal transfers and recognised reversals and applies documented treatment to financing inflows, taxes, payroll, owner drawings and protected funds. Coverage across payment rails is recorded, since an observed account may represent only part of the business.
+Let \(C_{i,d}^{+}\) be eligible cleared operating inflows for enterprise \(i\) on day \(d\), \(C_{i,d}^{-}\) eligible operating outflows, and \(N_{i,d}=C_{i,d}^{+}-C_{i,d}^{-}\) net observed operating cash flow. Eligibility requires settlement and availability by the cutoff, an approved economic classification, and control for internal transfers, duplicates and recognised reversals. Financing inflows, owner or investor capital, taxes, payroll, protected funds and exceptional receipts remain in their own cash views under documented rules. Coverage across accounts and payment rails is recorded because one observed account may represent only part of the business.
+
+Where classification remains probabilistic, let \(p_{j,d}^{\mathrm{op}}\) be the approved confidence that cleared transaction \(j\) qualifies as external operating cash at cutoff \(d\), and let \(a_{j,d}\) indicate settlement and availability. A confidence-weighted estimator is:
+
+\[
+\widehat C_{i,d}^{+}
+=
+\sum_{j\in\mathcal J_{i,d}^{+}}
+a_{j,d}\,p_{j,d}^{\mathrm{op}}\,c_j.
+\]
+
+This quantity is an analytical estimate rather than a general-ledger balance. The feature packet also carries a verified lower bound, an inclusive upper bound, unresolved value, resolved-account coverage, internal-transfer value, financing-inflow dependence and the sensitivity of the proposed decision to plausible reclassification. If a policy outcome changes across the bounds, the uncertainty is decision-material and invokes the approved evidence or review route.
 
 Over a trailing window (w), cash-flow velocities are:
 
@@ -474,7 +596,7 @@ Part 2b will determine how continuous variables enter the HLR. The main specific
 
 ## 6. What artificial intelligence adds after behavioural scoring is established
 
-Artificial intelligence enters this architecture for a specific purpose: to test whether the order, duration and interaction of authorised events contain useful information beyond the explicit lifecycle variables. A GRU is a candidate recurrent encoder for shorter ordered histories [14]. A Transformer is a candidate attention-based encoder for longer or more heterogeneous sequences [15]. Their original research settings are not evidence that either will improve MSME credit decisions. Sequence length, sample size, latency, stability and out-of-time performance determine whether a simpler aggregation, GRU, Transformer or no neural branch is appropriate.
+Artificial intelligence enters this architecture for a specific purpose: to test whether the order, duration and interaction of authorised events contain useful information beyond the explicit lifecycle variables. A GRU is a candidate recurrent encoder for shorter ordered histories [15]. A Transformer is a candidate attention-based encoder for longer or more heterogeneous sequences [16]. Their original research settings are not evidence that either will improve MSME credit decisions. Sequence length, sample size, latency, stability and out-of-time performance determine whether a simpler aggregation, GRU, Transformer or no neural branch is appropriate.
 
 The AI input is a sequence of minimally transformed events, with event type, signed amount or scaled magnitude, time gap, channel, source-quality flag and masks. It does not receive separate engineered copies of CFA, DLR, repayment velocity or other explicit features. Each encoder produces a fixed-dimensional representation \(H_i\), which is frozen before the HLR is fitted.
 
@@ -485,7 +607,7 @@ H_i^{\mathrm{oof}}=f^{(-k(i))}(X_i),
 \qquad i\in k.
 \]
 
-Folds respect enterprise or connected-group identity and time. Randomly splitting rows from the same enterprise would allow repeated history to cross the boundary. Cross-fitting is adapted here as a sample-separation discipline [16]. The manuscript does not invoke the causal guarantees of double machine learning, which additionally require an appropriate orthogonal score and identification assumptions.
+Folds respect enterprise or connected-group identity and time. Randomly splitting rows from the same enterprise would allow repeated history to cross the boundary. Cross-fitting is adapted here as a sample-separation discipline [17]. The manuscript does not invoke the causal guarantees of double machine learning, which additionally require an appropriate orthogonal score and identification assumptions.
 
 The out-of-fold representation is then projected on the explicit design matrix \(Q\) using training-fold weights and regularisation. The residual block is:
 
@@ -534,7 +656,7 @@ Approval depends on incremental value. The comparison begins with contractual, b
 
 An enterprise can maintain the same internal behaviour while its operating environment changes. Interest rates affect financing cost and demand. Inflation changes input prices and household purchasing power. Exchange-rate movements affect imported stock. Sector conditions, regulated fuel prices, rainfall and public-payment cycles may alter cash conversion for particular businesses. These variables enter only when the economic mechanism, geography, sector mapping and validation plan are stated.
 
-Kenyan context should begin with Kenyan authorities. CBK's *Monthly Economic Indicators* provide a release-driven set of monetary, banking and economic tables [17]. KESONIA offers a particularly clear clock example: CBK publishes the benchmark each business day for the preceding business day [18]. The observation date and publication date are therefore different. World Bank indicator APIs can provide complementary international and long-horizon series with metadata [19], while IMF datasets are accessible through SDMX interfaces [20]. Their availability does not make dissimilar frequencies, definitions or revisions directly comparable.
+Kenyan context should begin with Kenyan authorities. CBK's *Monthly Economic Indicators* provide a release-driven set of monetary, banking and economic tables [18]. KESONIA offers a particularly clear clock example: CBK publishes the benchmark each business day for the preceding business day [19]. The observation date and publication date are therefore different. World Bank indicator APIs can provide complementary international and long-horizon series with metadata [20], while IMF datasets are accessible through SDMX interfaces [21]. Their availability does not make dissimilar frequencies, definitions or revisions directly comparable.
 
 Each retained macro observation has the form:
 
@@ -559,6 +681,10 @@ Quality controls operate at several layers:
 - duplicate, sequence, watermark and late-event tests in the stream;
 - opening-to-closing balance and payment-allocation reconciliation;
 - coverage, freshness, missingness-reason and correction-rate monitoring;
+- entity-resolution false-merge and false-split testing by record count and monetary value;
+- transfer-pair, settlement-decomposition, reversal-link and cycle-classification precision;
+- resolved-account coverage, unresolved cash value and related-party concentration monitoring;
+- decision sensitivity when material cash is reclassified among operating, financing, capital and unresolved views;
 - online-to-offline parity using sampled decision events;
 - distribution, population and outcome drift by product, sector, institution and time;
 - feature-owner approval for definition changes;
@@ -574,10 +700,10 @@ At decision time (d), Part 2a delivers one versioned evidence object:
 
 \[
 \mathcal{F}_{i,d}=
-\left(Q_{i,d},\widetilde H_{i,d},M_{i,d},\mathcal{T}_{i,d},V_{i,d},L_{i,d}\right),
+\left(Q_{i,d},\widetilde H_{i,d},M_{i,d},\mathcal{T}_{i,d},G_{i,d}^{\mathrm{prov}},V_{i,d},L_{i,d}\right),
 \]
 
-where \(Q\) is the explicit design row, \(\widetilde H\) the residual AI representation when approved, \(M\) the availability and quality masks, \(\mathcal{T}\) the relevant clocks, \(V\) the feature and representation versions, and \(L\) the lineage token. The object also records the entity, product, decision purpose and operating mode.
+where \(Q\) is the explicit design row, \(\widetilde H\) the residual AI representation when approved, \(M\) the availability and quality masks, \(\mathcal{T}\) the relevant clocks, \(G^{\mathrm{prov}}\) the approved entity-graph and cash-provenance summary, \(V\) the feature and representation versions, and \(L\) the lineage token. The provenance summary contains its graph and classification versions, resolved-account coverage, verified and unresolved cash shares, internal-transfer and financing dependence, material related-party concentration and decision-sensitivity bounds. The object also records the entity, product, decision purpose and operating mode.
 
 Training mode reconstructs mature historical rows. Shadow mode scores current rows without changing customer treatment. Production mode serves only approved artefacts and permitted actions. Backfill mode repairs history under a separate run identity and never masquerades as the original production state.
 
@@ -603,32 +729,34 @@ The wholesaler's Monday receipt becomes useful credit evidence only when the len
 
 [5] Republic of Kenya, *Data Protection (General) Regulations*, Legal Notice No. 263 of 2021, rev. Dec. 31, 2022. [Online]. Available: https://new.kenyalaw.org/akn/ke/act/ln/2021/263/eng%402022-12-31. [Accessed: Sep. 6, 2026].
 
-[6] Debezium, “Debezium connector for SQL Server,” *Debezium Documentation*. [Online]. Available: https://debezium.io/documentation/reference/connectors/sqlserver.html. [Accessed: Sep. 6, 2026].
+[6] L. Getoor and A. Machanavajjhala, “Entity resolution: Theory, practice and open challenges,” *Proceedings of the VLDB Endowment*, vol. 5, no. 12, pp. 2018-2019, Aug. 2012, doi: 10.14778/2367502.2367564.
 
-[7] Apache Software Foundation, “Introduction,” *Apache Kafka Documentation*. [Online]. Available: https://kafka.apache.org/documentation/. [Accessed: Sep. 6, 2026].
+[7] Debezium, “Debezium connector for SQL Server,” *Debezium Documentation*. [Online]. Available: https://debezium.io/documentation/reference/connectors/sqlserver.html. [Accessed: Sep. 6, 2026].
 
-[8] Apache Software Foundation, “Streaming analytics,” *Apache Flink Documentation*. [Online]. Available: https://nightlies.apache.org/flink/flink-docs-stable/docs/learn-flink/streaming_analytics/. [Accessed: Sep. 6, 2026].
+[8] Apache Software Foundation, “Introduction,” *Apache Kafka Documentation*. [Online]. Available: https://kafka.apache.org/documentation/. [Accessed: Sep. 6, 2026].
 
-[9] Apache Software Foundation, “Joins,” *Apache Flink Table API and SQL Documentation*. [Online]. Available: https://nightlies.apache.org/flink/flink-docs-master/docs/sql/reference/queries/joins/. [Accessed: Sep. 6, 2026].
+[9] Apache Software Foundation, “Streaming analytics,” *Apache Flink Documentation*. [Online]. Available: https://nightlies.apache.org/flink/flink-docs-stable/docs/learn-flink/streaming_analytics/. [Accessed: Sep. 6, 2026].
 
-[10] Delta Lake Project, “Welcome to the Delta Lake documentation,” *Delta Lake Documentation*. [Online]. Available: https://docs.delta.io/. [Accessed: Sep. 6, 2026].
+[10] Apache Software Foundation, “Joins,” *Apache Flink Table API and SQL Documentation*. [Online]. Available: https://nightlies.apache.org/flink/flink-docs-master/docs/sql/reference/queries/joins/. [Accessed: Sep. 6, 2026].
 
-[11] Delta Lake Project, “Change data feed,” *Delta Lake Documentation*. [Online]. Available: https://docs.delta.io/delta-change-data-feed/. [Accessed: Sep. 6, 2026].
+[11] Delta Lake Project, “Welcome to the Delta Lake documentation,” *Delta Lake Documentation*. [Online]. Available: https://docs.delta.io/. [Accessed: Sep. 6, 2026].
 
-[12] OpenLineage, “Object model,” *OpenLineage Documentation*. [Online]. Available: https://openlineage.io/docs/spec/object-model/. [Accessed: Sep. 6, 2026].
+[12] Delta Lake Project, “Change data feed,” *Delta Lake Documentation*. [Online]. Available: https://docs.delta.io/delta-change-data-feed/. [Accessed: Sep. 6, 2026].
 
-[13] Feast, “Point-in-time joins,” *Feast Documentation*. [Online]. Available: https://docs.feast.dev/getting-started/concepts/point-in-time-joins. [Accessed: Sep. 6, 2026].
+[13] OpenLineage, “Object model,” *OpenLineage Documentation*. [Online]. Available: https://openlineage.io/docs/spec/object-model/. [Accessed: Sep. 6, 2026].
 
-[14] K. Cho, B. van Merrienboer, C. Gulcehre, D. Bahdanau, F. Bougares, H. Schwenk and Y. Bengio, “Learning phrase representations using RNN encoder-decoder for statistical machine translation,” in *Proc. 2014 Conf. Empirical Methods in Natural Language Processing*, Doha, Qatar, 2014, pp. 1724-1734, doi: 10.3115/v1/D14-1179.
+[14] Feast, “Point-in-time joins,” *Feast Documentation*. [Online]. Available: https://docs.feast.dev/getting-started/concepts/point-in-time-joins. [Accessed: Sep. 6, 2026].
 
-[15] A. Vaswani *et al*., “Attention is all you need,” in *Advances in Neural Information Processing Systems 30*, Long Beach, CA, USA, 2017, pp. 5998-6008. [Online]. Available: https://papers.nips.cc/paper/7181-attention-is-all-you-need. [Accessed: Sep. 6, 2026].
+[15] K. Cho, B. van Merrienboer, C. Gulcehre, D. Bahdanau, F. Bougares, H. Schwenk and Y. Bengio, “Learning phrase representations using RNN encoder-decoder for statistical machine translation,” in *Proc. 2014 Conf. Empirical Methods in Natural Language Processing*, Doha, Qatar, 2014, pp. 1724-1734, doi: 10.3115/v1/D14-1179.
 
-[16] V. Chernozhukov, D. Chetverikov, M. Demirer, E. Duflo, C. Hansen, W. Newey and J. Robins, “Double/debiased machine learning for treatment and structural parameters,” *The Econometrics Journal*, vol. 21, no. 1, pp. C1-C68, Feb. 2018, doi: 10.1111/ectj.12097.
+[16] A. Vaswani *et al*., “Attention is all you need,” in *Advances in Neural Information Processing Systems 30*, Long Beach, CA, USA, 2017, pp. 5998-6008. [Online]. Available: https://papers.nips.cc/paper/7181-attention-is-all-you-need. [Accessed: Sep. 6, 2026].
 
-[17] Central Bank of Kenya, “Monthly Economic Indicators.” [Online]. Available: https://www.centralbank.go.ke/monthly-economic-indicators/. [Accessed: Sep. 6, 2026].
+[17] V. Chernozhukov, D. Chetverikov, M. Demirer, E. Duflo, C. Hansen, W. Newey and J. Robins, “Double/debiased machine learning for treatment and structural parameters,” *The Econometrics Journal*, vol. 21, no. 1, pp. C1-C68, Feb. 2018, doi: 10.1111/ectj.12097.
 
-[18] Central Bank of Kenya, “KESONIA Interest Rate Benchmark.” [Online]. Available: https://www.centralbank.go.ke/kesonia/. [Accessed: Sep. 6, 2026].
+[18] Central Bank of Kenya, “Monthly Economic Indicators.” [Online]. Available: https://www.centralbank.go.ke/monthly-economic-indicators/. [Accessed: Sep. 6, 2026].
 
-[19] World Bank, “About the Indicators API documentation,” *World Bank Data Help Desk*. [Online]. Available: https://datahelpdesk.worldbank.org/knowledgebase/articles/889392. [Accessed: Sep. 6, 2026].
+[19] Central Bank of Kenya, “KESONIA Interest Rate Benchmark.” [Online]. Available: https://www.centralbank.go.ke/kesonia/. [Accessed: Sep. 6, 2026].
 
-[20] International Monetary Fund, “IMF Data APIs.” [Online]. Available: https://data.imf.org/en/Resource-Pages/IMF-API. [Accessed: Sep. 6, 2026].
+[20] World Bank, “About the Indicators API documentation,” *World Bank Data Help Desk*. [Online]. Available: https://datahelpdesk.worldbank.org/knowledgebase/articles/889392. [Accessed: Sep. 6, 2026].
+
+[21] International Monetary Fund, “IMF Data APIs.” [Online]. Available: https://data.imf.org/en/Resource-Pages/IMF-API. [Accessed: Sep. 6, 2026].

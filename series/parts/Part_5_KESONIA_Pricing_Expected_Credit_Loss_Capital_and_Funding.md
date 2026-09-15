@@ -334,7 +334,9 @@ I_e^{\mathrm{available}}
 
 where the cost and restriction terms represent amounts that are separately identified and supported by the ledger. In implementation, multiplication by the indicators applies to the gross receipt, while each deduction follows its own recognition rule. The expression emphasises the governing principle: an observed transaction signal can support forecasting before it qualifies as realised, usable cash.
 
-The lifecycle ledger should therefore expose at least the customer transaction time, payment-instruction time, channel acknowledgement, settlement date, value date, collection-account receipt, availability date, allocation date, reversal status and reconciliation status. Treasury can aggregate the final events into intraday and daily cash positions. Credit Risk can use earlier permitted signals for monitoring, while preserving their status as evidence rather than cash. Finance can reconcile the final allocation to the product subledger and general ledger. This shared event chain prevents a fast behavioural signal from being credited twice, first as expected collection and again as settled liquidity.
+Realised usable cash and recurring operating cash remain different views. A loan drawdown, owner contribution or transfer from another controlled account may satisfy settlement and availability tests while carrying a financing, capital or internal classification. It can support today's liquidity position, but it should not be interpreted automatically as new customer-generated turnover or durable collection capacity. Conversely, a payment-aggregator credit may look concentrated at account level while a reconciled settlement file establishes many underlying operating receipts. Part 2a's entity and transaction-path layer therefore supplies economic class, relationship context, confidence and unresolved value beside the settlement state.
+
+The lifecycle ledger should therefore expose at least the customer transaction time, payment-instruction time, channel acknowledgement, settlement date, value date, collection-account receipt, availability date, allocation date, reversal status, reconciliation status, resolved economic entity, economic cash class, provenance confidence and classification version. Treasury can aggregate the final events into intraday and daily cash positions. Credit Risk can use earlier permitted signals for monitoring, while preserving their status as evidence rather than cash. Finance can reconcile the final allocation to the product subledger and general ledger. This shared event chain prevents a fast behavioural signal from being credited twice, first as expected collection and again as settled liquidity.
 
 Mobile-money and platform-linked repayment require particular attention to cut-off times, weekends, bank holidays, prefunding, trust or settlement-account structure, service outages, failed instructions and concentration in a payment provider. The contractual due date can differ from the date on which the borrower initiates payment and from the date on which the institution can redeploy the value. The cash-flow engine retains all three. Treasury forecasts the actual availability date, Operations manages failed and unmatched items, and customer treatment follows the contractual and conduct framework.
 
@@ -350,6 +352,8 @@ The recognition test addresses:
 - weekend, holiday and cut-off effects;
 - payment-rail and servicing outages;
 - concentration by platform, aggregator, bank account and customer;
+- resolved-account coverage, internal-transfer pairing and economic cash classification;
+- unresolved value and sensitivity to plausible reclassification;
 - persistence across vintages and economic conditions;
 - prepayment, modification, cure and re-default behaviour;
 - direct processing and servicing cost;
@@ -363,12 +367,13 @@ Let \(\widehat{CF}_{g,b}^{\mathrm{settled}}\) be the forecast settled cash for g
 \widehat{CF}_{g,b}^{\mathrm{available}}
 =\widehat{CF}_{g,b}^{\mathrm{settled}}
 -H_{g,b}^{\mathrm{operations}}
+-H_{g,b}^{\mathrm{provenance}}
 -H_{g,b}^{\mathrm{behaviour}}
 -H_{g,b}^{\mathrm{concentration}}
 -H_{g,b}^{\mathrm{model}},
 \]
 
-where each \(H\) is a scenario-dependent deduction supported by evidence and governance. The terms are internal planning adjustments rather than regulatory haircuts. They can be represented through direct cash-flow stresses, conservative percentiles or another approved method. The method should preserve dependence between lower collections, longer settlement, greater drawdown and weaker recovery during the same adverse state.
+where each \(H\) is a scenario-dependent deduction supported by evidence and governance. The provenance term reflects material unresolved ownership, duplicated paths, uncertain economic classification or incomplete multi-account coverage. It does not deduct a related-party receipt merely because a relationship exists; the approved cash class and sensitivity determine treatment. The terms are internal planning adjustments rather than regulatory haircuts. They can be represented through direct cash-flow stresses, conservative percentiles or another approved method. The method should preserve dependence between lower collections, longer settlement, greater drawdown and weaker recovery during the same adverse state.
 
 The approved behavioural maturity follows the distribution of available principal cash rather than the number of payment messages. Thirty daily instructions do not create thirty independent sources of liquidity when they depend on one platform, one settlement account or the same underlying sales cycle. Similarly, a frequent deduction programme can produce an apparently short asset life by removing cash required for inventory and causing later re-default. The recognition test therefore examines durable cure, subsequent utilisation, working-capital sufficiency and total net recovery beside early cash velocity.
 
@@ -1014,11 +1019,11 @@ The matrix prevents a model improvement from silently changing every downstream 
 
 ### 11.2 The monthly financial cycle reconciles before it explains
 
-The reporting cycle starts by freezing the governed event population for the period, including late events, corrections and reversals according to the close policy. Operations and Finance reconcile due, paid, allocated, modified, defaulted, written-off and recovered amounts to controlled accounts, the product subledger and the general ledger. Differences remain visible with owners and resolution status.
+The reporting cycle starts by freezing the governed event population for the period, including late events, corrections and reversals according to the close policy. Operations and Finance reconcile due, paid, allocated, modified, defaulted, written-off and recovered amounts to controlled accounts, the product subledger and the general ledger. The cash-provenance bridge separately explains movement among operating, financing, capital, internal, exceptional and unresolved classes, including changes caused by newly resolved accounts or transaction paths. Differences remain visible with owners and resolution status.
 
 Credit Risk then produces the approved risk and cash-flow distributions, including scenarios, concentration and model uncertainty. Finance calculates ECL and other accounting consequences under its policy. Capital Management updates internal and regulatory views. Treasury produces liquidity, funding, FTP, NII, EVE and hedge reporting. Protection Management reconciles covered exposure, claims and settled proceeds. Where a ring-fenced vehicle exists, its calculation agent applies the asset eligibility, borrowing base, accounts, waterfall and covenant rules.
 
-The joined management bridge then explains movement from the prior period. It separates new originations, contractual amortisation, benchmark movement, premium and fee changes, model changes, stage migration, drawdown, modification, prepayment, cure, default, recovery, settlement delay, funding-curve movement, protection and capital allocation. Management can therefore see whether a change in risk-adjusted contribution came from customer performance, market rates, funding, accounting recognition, operational cost, model revision or structural protection.
+The joined management bridge then explains movement from the prior period. It separates new originations, contractual amortisation, benchmark movement, premium and fee changes, model changes, stage migration, drawdown, modification, prepayment, cure, default, recovery, settlement delay, economic cash reclassification, funding-curve movement, protection and capital allocation. Management can therefore see whether a change in risk-adjusted contribution came from customer performance, improved provenance evidence, market rates, funding, accounting recognition, operational cost, model revision or structural protection.
 
 ### 11.3 Model and assumption changes have intended-use approval
 

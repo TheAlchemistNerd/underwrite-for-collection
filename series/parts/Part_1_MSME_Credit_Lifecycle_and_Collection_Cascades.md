@@ -37,6 +37,10 @@ L_t = B_{t^-} + C_t^{\mathrm{collected}} - O_t^{\mathrm{essential}} - W_t^{\math
 
 where \(B_{t^-}\) is available cash before the payment window, \(C_t^{\mathrm{collected}}\) is cash actually settled and available, \(O_t^{\mathrm{essential}}\) is essential operating expenditure, \(W_t^{\mathrm{committed}}\) is other committed working-capital use, and \(D_t^{\mathrm{senior}}\) is any obligation contractually or operationally paid before the facility being assessed. This is a descriptive liquidity identity, not a universal affordability formula. Its purpose is to show why booked revenue, invoiced sales and average monthly inflows do not necessarily equal cash available for a particular instalment.
 
+Even collected cash needs an economic identity. A settled credit may be a customer receipt, merchant settlement, loan drawdown, owner contribution, refund, reversal or transfer from another account controlled by the same enterprise. Every item can improve the balance visible in one account while carrying a different implication for recurring operating capacity, leverage and collection sustainability. Where several accounts, wallets or related entities participate in the operating cycle, the lender should consolidate authorised evidence at the economic-unit level and avoid counting one amount each time it crosses an observed boundary.
+
+The paper therefore distinguishes **cash occurrence**, **settlement and availability**, **economic provenance**, and **decision treatment**. The first records that money moved; the second establishes whether it can fund an obligation; the third resolves the supported source, connected entity and transaction path; the fourth determines whether the amount belongs in an operating, liquidity, financing, capital or unresolved analytical view. Point-in-time correctness remains essential, but an event can be correctly observed before a decision and still be misclassified economically. Part 2a develops the temporal entity graph, path reconstruction and classification controls required before cash-flow features are calculated.
+
 The first architectural task is therefore to align observable business clocks with the credit clock.
 
 ```{.mermaid layout=fullpage}
@@ -280,6 +284,8 @@ The MSME experiences one financing relationship even when the supporting capabil
 
 Fragmentation becomes costly when definitions, incentives and clocks fail to meet. The payment system can show a receipt that the loan ledger allocates a day later. A relationship manager can know that a major invoice is delayed while the collections engine sees only a broken instalment. A bureau can record an exposure without the lender's current hardship context. Finance can calculate an allowance from one state history while operations report cure from another. The borrower can receive several messages from teams that do not share the same case record.
 
+Institutional coordination is only one half of the problem. The accounts and counterparties observed by those institutions must also be resolved into the economic unit being financed. One proprietor may use several bank accounts and mobile-money wallets; one payment aggregator may settle many underlying sales; one business group may move working liquidity among related entities. A connected relationship is evidence, not a verdict. It can identify common control, a genuine related-party sale, owner funding or an internal transfer. The classification must retain the supported economic purpose, its confidence and the date on which the relationship was known.
+
 The World Bank's analysis of Kenya's entrepreneurship ecosystem connects MSME finance to product diversity, financial information, payment delays, managerial capacity, guarantees and wider institutional infrastructure [7]. Underwrite for collection adds a lifecycle question to that ecosystem view: how can each capability contribute to a coherent and fair path from financing need to final cash outcome?
 
 ```{.mermaid layout=fullpage}
@@ -361,6 +367,49 @@ flowchart TB
 ```
 
 **Figure 4: Proposed MSME lifecycle-credit ecosystem.** The participating lender remains accountable for its product, credit decision, servicing and controls. Partners contribute authorised evidence, execution, risk sharing, research or oversight through defined interfaces.
+
+```{.mermaid layout=fullpage}
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "fontFamily": "Arial",
+    "fontSize": "20px",
+    "primaryColor": "#EAF2F8",
+    "primaryBorderColor": "#2E5E7E",
+    "lineColor": "#4F6B7A",
+    "secondaryColor": "#E8F5F2",
+    "tertiaryColor": "#FFF4D6"
+  },
+  "flowchart": {"curve": "stepAfter", "nodeSpacing": 24, "rankSpacing": 34}
+}}%%
+flowchart TB
+    A[AUTHORISED OBSERVATIONS<br/>bank accounts, mobile-money wallets,<br/>tills, platform settlements and ledgers]
+    B[SOURCE AND EVENT CONTROL<br/>authentication, canonical identifiers,<br/>timestamps, reversals and reconciliation]
+    C[TEMPORAL ECONOMIC-ENTITY GRAPH<br/>enterprise, owners, accounts, facilities,<br/>counterparties and effective relationships]
+    D[TRANSACTION-PATH RECONSTRUCTION<br/>transfer pairing, settlement decomposition,<br/>duplicate control and cycle detection]
+    E[ECONOMIC CASH ATTRIBUTION<br/>operating, financing, capital, internal,<br/>exceptional or unresolved, with confidence]
+    F[DECISION-SPECIFIC CASH VIEWS<br/>recurring operating capacity, available liquidity,<br/>debt service, concentration and evidence coverage]
+    G[LIFECYCLE CREDIT DECISION<br/>product fit, limit, monitoring, intervention,<br/>collection, ECL, capital and funding]
+
+    A --> B --> C --> D --> E --> F --> G
+
+    R[REVIEW AND CUSTOMER EVIDENCE<br/>proportionate clarification, reason code,<br/>correction and appeal] -. material uncertainty .-> E
+    E -. classification record .-> R
+    Q[QUALITY AND GOVERNANCE<br/>purpose limitation, false merge or split,<br/>monetary error, drift and audit trail] -. controls .-> B
+    Q -. validates .-> C
+    Q -. challenges .-> E
+
+    classDef input fill:#FFF4D6,stroke:#C58A00,color:#5A4100,stroke-width:1.6px;
+    classDef process fill:#EAF2F8,stroke:#2E5E7E,color:#17324D,stroke-width:1.6px;
+    classDef decision fill:#E8F5F2,stroke:#16857B,color:#17324D,stroke-width:1.8px;
+    classDef control fill:#F2ECF9,stroke:#715090,color:#352447,stroke-width:1.5px;
+    class A input;
+    class B,C,D,E,F process;
+    class G decision;
+    class R,Q control;
+```
+
+**Figure 4A: From observed account movement to entity-resolved economic cash.** Settlement and point-in-time reconstruction remain prerequisites. Entity and path resolution then determine whether an observed credit represents new operating cash, financing, capital, an internal movement, an exceptional item or an unresolved amount before it enters a ratio or model.
 
 The MSME remains an active participant rather than a data source at the edge of the diagram. Product purpose, repayment expectations, data use, price, available support, consequences of default and routes for correction or complaint should be intelligible. Enterprise representatives can also help define outcomes that matter beyond immediate repayment, including continuity of trade, employment, supplier relationships and the burden created by an intervention.
 

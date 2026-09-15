@@ -91,12 +91,17 @@ where \(e_k\) is a unique event identifier, \(s_k\) the source system, the three
 
 Canonical identifiers connect customer, enterprise, facility, account, collateral or guarantee, payment, servicing case, intervention and outcome. Direct identifiers remain in the system that needs them. The evidence plane uses stable pseudonymous keys. This gives the research programme longitudinal continuity without making names, telephone numbers, national identifiers or free-text case notes ubiquitous analytical fields. The mapping service is separately permissioned, and its use is itself logged.
 
+The mapping service also maintains the temporal economic-entity graph defined in Part 2a. Deterministic links begin with verified legal ownership, authorised account control, facility liability, settlement identifiers and explicit contractual relationships. Probabilistic matching can propose links from approved attributes and relational context, but its candidates retain confidence and review status. Every relationship carries valid and knowledge intervals so a later change in ownership, signatory or account use does not rewrite an earlier decision.
+
+Cash provenance is implemented as a separate governed service downstream of canonicalisation. It pairs internal transfers, decomposes aggregator settlements where authorised evidence exists, links refunds and reversals to their economic event, identifies candidate cycles and assigns an economic cash class with a versioned reason. The service publishes operating, liquidity, financing, capital, internal and unresolved views. It does not alter the account ledger or infer customer motive. Material uncertainty travels into the feature, model and policy packets.
+
 System ownership follows the event's meaning. The core lending or product subledger owns contractual principal, interest, charges and status. The payments system owns settlement events. The customer and relationship systems own verified communication and authorised profile changes. Collections owns case actions and promises, while the contract system owns executed modifications. Finance owns journals and reporting classifications. The research evidence plane does not become a competing book of record. It preserves source identifiers, derives registered analytical states and reconciles those states to their owners.
 
 | Record family | Authoritative owner | Analytical representation | Required control |
 |---|---|---|---|
 | Facility and contractual schedule | Product subledger or core lending system | Versioned cash-flow schedule and product state | Executed terms, effective date and amendment lineage |
 | Payment and settlement | Payments and account ledger | Eligible cash event with availability time | Duplicate, reversal, value-date and settlement reconciliation |
+| Entity and economic cash provenance | Identity owners, account-control records, payments, settlement and approved enterprise evidence | Temporal graph, economic-event path, cash class, confidence and unresolved value | False-merge and false-split tests, transfer pairing, monetary reconciliation, purpose and access control |
 | Delinquency and collection | Servicing and collections systems | State transition, case and contact event | Approved DPD definition, channel, outcome and complaint link |
 | Modification and restructure | Contract and credit workflow | New schedule and modification classification | Authority, affordability, customer acceptance and accounting flag |
 | Model and policy decision | Scoring service and decision engine | Immutable decision packet | Evidence cutoff, artefact, policy, reasons, override and execution |
@@ -117,17 +122,20 @@ B_{i,t}^{\mathrm{close}}
 
 where \(D\) is disbursement or draw, \(I\) accrued interest, \(F\) charges, \(P\) eligible payment, \(C\) credits or reversals in the customer's favour, \(W\) write-off and \(A\) other approved adjustments. Each term has a source, sign convention and availability time. Aggregate balances reconcile to portfolio and general-ledger control totals within approved tolerances. An unreconciled population can remain available for data-quality diagnosis, but it cannot quietly become the champion's training population.
 
+The economic-cash views add a second reconciliation. The sum of external operating, financing, capital, internal, refund or reversal, exceptional and unresolved classes must reproduce accepted source credits after currency, fee, duplication and consolidation adjustments. Paired internal transfers reconcile across sender and receiver accounts and contribute once to consolidated economic flow. Aggregator decompositions reconcile to the net bank settlement and retained fees, reserves, refunds or chargebacks. Exceptions remain visible by event count and monetary value until corrected, approved or expired under policy.
+
 At decision time, the scoring service writes a compact decision packet containing the evidence snapshot, feature and model versions, posterior summaries, support and quality states, policy version, available actions, selected route, human authority, customer communication and downstream keys. The packet's identity can be expressed as:
 
 \[
 d_{i,t}=H\!\left(
 x_{i,t}^{\mathrm{PIT}},
+v_{\mathrm{graph}},v_{\mathrm{provenance}},
 v_{\mathrm{feature}},v_{\mathrm{model}},v_{\mathrm{cal}},
 v_{\mathrm{policy}},a_{i,t},o_{i,t}
 \right),
 \]
 
-where \(H\) is a governed digest, \(a_{i,t}\) the executed action and \(o_{i,t}\) the authorised override record where one exists. The digest is an integrity control and lookup key. The underlying evidence, approvals and records remain the substantive proof of what happened.
+where \(H\) is a governed digest, \(v_{\mathrm{graph}}\) and \(v_{\mathrm{provenance}}\) identify the relationship and economic-cash interpretations used, \(a_{i,t}\) the executed action and \(o_{i,t}\) the authorised override record where one exists. The digest is an integrity control and lookup key. The underlying evidence, approvals and records remain the substantive proof of what happened.
 
 ## 4. Model-to-data access and the trusted research environment
 
@@ -165,7 +173,7 @@ The architecture separates five zones. The production zone retains direct identi
 flowchart TB
     subgraph CUSTODY[DATA CUSTODY AND PURPOSE]
         direction LR
-        P[PRODUCTION AND IDENTITY<br/>contracts, transactions,<br/>customer action] --> K[CONTROLLED LINKAGE<br/>pseudonymous keys,<br/>separate identity map]
+        P[PRODUCTION AND IDENTITY<br/>contracts, transactions,<br/>customer action] --> K[CONTROLLED LINKAGE AND PROVENANCE<br/>pseudonymous keys, temporal entity graph,<br/>cash paths, classes and confidence]
         K --> R[TRUSTED RESEARCH<br/>purpose-limited views,<br/>versioned jobs and no raw export]
     end
     subgraph ASSURANCE[ASSURANCE AND RELEASE]

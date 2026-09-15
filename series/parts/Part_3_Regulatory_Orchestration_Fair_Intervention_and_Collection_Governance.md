@@ -21,7 +21,7 @@ That separation brings the paper's governing idea into practice. A loan is under
 
 Part 3 operationalises these obligations through four linked objects:
 
-1. **Model inference** estimates a defined future outcome from the information available at the decision cutoff. It includes the posterior mean, interval, tail probability, support-range status and data-quality state.
+1. **Model inference** estimates a defined future outcome from the information available at the decision cutoff. It includes the posterior mean, interval, tail probability, support-range status, entity-resolution coverage, cash-provenance status and data-quality state.
 2. **Causal evidence** estimates how a specified permissible treatment changes an outcome for an eligible population relative to a defined alternative.
 3. **Policy eligibility** determines which actions are available under law, contract, conduct standards, affordability rules, operational capacity and portfolio constraints.
 4. **Customer treatment** is the actual communication, offer, modification, restriction, support or recovery action executed by its authorised owner.
@@ -159,7 +159,7 @@ The ladder is neither a universal sequence nor an automated escalation timer. An
 
 ## 4. The Credit Policy and Compliance Gate
 
-The Credit Policy and Compliance Gate is the runtime boundary between evidence and permission. It receives the Part 2b posterior artefact, explicit lifecycle state, product terms, affordability evidence, data-quality status, customer treatment history and portfolio context. It returns an authorised action, a review route or a reasoned deferral. The gate is versioned independently from the statistical model, allowing a lender to change a product limit, contact rule or approval authority without retraining the HLR.
+The Credit Policy and Compliance Gate is the runtime boundary between evidence and permission. It receives the Part 2b posterior artefact, explicit lifecycle state, product terms, affordability evidence, entity-resolution and cash-provenance status, data-quality status, customer treatment history and portfolio context. It returns an authorised action, a review route or a reasoned deferral. The gate is versioned independently from the statistical model, allowing a lender to change a product limit, contact rule or approval authority without retraining the HLR.
 
 For customer-account state \(s_{i,t}\), let \(\mathcal A\) be the intervention library. The feasible action set is:
 
@@ -202,10 +202,12 @@ P\!\left(g_h(H_{a})>h_{\max}\mid s_{i,t},\mathcal D\right)>\alpha
 q_{i,t}^{\mathrm{support}}=0
 \;\lor\;
 q_{i,t}^{\mathrm{data}}<q_{\min}
+\;\lor\;
+q_{i,t}^{\mathrm{prov}}<q_{\min}^{\mathrm{prov}}
 \right\}.
 \]
 
-Here, \(g_h\) maps the registered harm vector to the governed escalation measure. This rule gives uncertainty a destination. A reviewer receives the information that produced the route, the available actions, the contractual and policy constraints, and a time-limited authority. The reviewer records the decision and reason rather than replacing the audit trail with free text.
+Here, \(g_h\) maps the registered harm vector to the governed escalation measure and \(q^{\mathrm{prov}}\) records whether entity and economic-cash evidence meets the decision's approved provenance threshold. This rule gives uncertainty a destination. A reviewer receives the proposed entity links, transaction paths, cash classes, confidence, decision sensitivity, available actions, contractual and policy constraints, and a time-limited authority. The reviewer may confirm, reject or defer a classification using controlled reason codes and proportionate supporting evidence. An unresolved or related-party flow is not treated as evidence of intent; it is an evidential state whose materiality determines the route.
 
 ```{.mermaid layout=fullpage}
 %%{init: {
@@ -222,7 +224,7 @@ Here, \(g_h\) maps the registered harm vector to the governed escalation measure
   "flowchart": {"curve": "stepAfter", "nodeSpacing": 32, "rankSpacing": 44}
 }}%%
 flowchart TB
-    IN[Versioned input packet<br/>risk distribution, account state,<br/>quality, affordability and history] --> L[Legal and entity scope]
+    IN[Versioned input packet<br/>risk distribution, account state,<br/>cash provenance, quality,<br/>affordability and history] --> L[Legal and entity scope]
     L --> C[Contract and product authority]
     C --> F[Fair-treatment, contact<br/>and vulnerability controls]
     F --> O[Operational capacity and<br/>portfolio constraints]
