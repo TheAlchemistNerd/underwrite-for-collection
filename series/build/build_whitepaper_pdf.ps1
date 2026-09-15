@@ -1,5 +1,5 @@
 param(
-    [string]$OutputName = 'Underwrite_for_Collection_MSME_Lifecycle_Draft_Parts_1_to_5_2026-09-06.pdf'
+    [string]$OutputName = 'Underwrite_for_Collection_MSME_Lifecycle_White_Paper_2026-09-15.pdf'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -15,7 +15,7 @@ $projectRoot = Split-Path -Parent (Split-Path -Parent $seriesRoot)
 $sourceDirectory = Join-Path $seriesRoot 'parts'
 $tempDirectory = Join-Path $projectRoot 'scratchpad\build\underwrite-for-collection-series'
 $outputDirectory = Join-Path $seriesRoot 'dist'
-$assemblyPath = Join-Path $tempDirectory 'Underwrite_for_Collection_Draft_Assembly.md'
+$assemblyPath = Join-Path $tempDirectory 'Underwrite_for_Collection_White_Paper_Assembly.md'
 $outputPath = Join-Path $outputDirectory $OutputName
 $corporateMetadata = Join-Path $buildDirectory 'corporate.yaml'
 $headerPath = Join-Path $buildDirectory 'whitepaper-header.tex'
@@ -109,7 +109,7 @@ $builder = [System.Text.StringBuilder]::new()
 [void]$builder.AppendLine('\tableofcontents')
 [void]$builder.AppendLine('\endgroup')
 [void]$builder.AppendLine('\clearpage')
-[void]$builder.AppendLine('\UnderwriteDraftNotice')
+[void]$builder.AppendLine('\UnderwriteEditionStatement')
 [void]$builder.AppendLine('\clearpage')
 [void]$builder.AppendLine('\pagenumbering{arabic}')
 [void]$builder.AppendLine()

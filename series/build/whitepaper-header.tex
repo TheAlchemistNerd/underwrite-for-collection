@@ -1,4 +1,4 @@
-% Underwrite for Collection draft compilation layer.
+% Underwrite for Collection integrated research white-paper layer.
 \usepackage{fontspec}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{microtype}
@@ -67,13 +67,13 @@
 \DeclareCaptionFont{deepblue}{\color{DeepBlue}}
 \captionsetup{font=small,labelfont={bf,deepblue},textfont=it,skip=6pt}
 
-\newtcolorbox{DraftNotice}{
+\newtcolorbox{EditionStatement}{
   enhanced,
   breakable,
   colback=MistBlue,
   colframe=LinkBlue,
   coltitle=DeepBlue,
-  title=DRAFT COMPILATION,
+  title=INTEGRATED RESEARCH WHITE PAPER,
   fonttitle=\sffamily\bfseries,
   boxrule=0.8pt,
   arc=1.5mm,
@@ -85,13 +85,13 @@
   after skip=0.8em
 }
 
-\newcommand{\CurrentPart}{Draft White Paper}
+\newcommand{\CurrentPart}{Research White Paper}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LE,RO]{\footnotesize\color{DeepBlue}\sffamily\bfseries Underwrite for Collection}
 \fancyhead[LO,RE]{\footnotesize\color{SlateGray}\sffamily\CurrentPart}
 \fancyfoot[LE,RO]{\footnotesize\color{SlateGray}\sffamily\thepage}
-\fancyfoot[LO,RE]{\footnotesize\color{SlateGray}\sffamily Draft Compilation \textbar{} September 2026}
+\fancyfoot[LO,RE]{\footnotesize\color{SlateGray}\sffamily Research White Paper \textbar{} September 2026}
 \renewcommand{\headrulewidth}{0.45pt}
 \renewcommand{\footrulewidth}{0.30pt}
 
@@ -118,7 +118,7 @@
   temporal evidence and responsible intervention\par}
   \vfill
   {\sffamily\fontsize{12}{17}\selectfont
-  Draft compilation: Parts 1, 2a, 2b, 3, 4 and 5\par
+  Integrated research white paper: Parts 1, 2a, 2b, 3, 4 and 5\par
   \vspace{0.70em}
   Nevil Maloba\par
   \vspace{0.35em}
@@ -186,10 +186,10 @@
   \clearpage
 }
 
-\newcommand{\UnderwriteDraftNotice}{%
-  \begin{DraftNotice}
-  This reading edition compiles the accepted first drafts of Parts 1, 2a, 2b, 3, 4 and 5. Part 6 will add the pilot, quasi-experimental and ecosystem execution programme. Citations and conclusions remain subject to the final series-level reconciliation.
-  \end{DraftNotice}
+\newcommand{\UnderwriteEditionStatement}{%
+  \begin{EditionStatement}
+  This integrated research white paper presents Parts 1, 2a, 2b, 3, 4 and 5 as one lifecycle-credit architecture. It connects MSME cash-flow design, point-in-time evidence, entity-resolved economic cash, hierarchical and causal inference, fair intervention, bank-controlled implementation, KESONIA-linked pricing, expected credit loss, capital, liquidity, risk transfer and ring-fenced receivables finance.
+  \end{EditionStatement}
 }
 
 \AtBeginEnvironment{longtable}{\footnotesize\setlength{\tabcolsep}{3.5pt}}

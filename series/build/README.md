@@ -1,19 +1,19 @@
-# Draft PDF compilation cycle
+# White paper compilation cycle
 
-This folder contains the repeatable PDF build for the *Underwrite for Collection* MSME series. The current reading edition compiles Parts 1 through 5 without changing the substantive text of accepted earlier manuscripts.
+This folder contains the repeatable canonical PDF build for the *Underwrite for Collection* MSME research white paper. The integrated edition compiles Parts 1 through 5 without changing their substantive manuscript text.
 
 ## Build
 
 From the project folder, run:
 
 ```powershell
-& .\series\build\build_draft_pdf.ps1
+& .\series\build\build_whitepaper_pdf.ps1
 ```
 
 The default output is written to:
 
 ```text
-series\dist\Underwrite_for_Collection_MSME_Lifecycle_Draft_Parts_1_to_5_2026-09-06.pdf
+series\dist\Underwrite_for_Collection_MSME_Lifecycle_White_Paper_2026-09-15.pdf
 ```
 
 An alternative file name can be supplied with `-OutputName`; directory components are rejected so every build remains inside `series\dist`.
@@ -44,9 +44,9 @@ python .\series\scripts\generate_part1_population_charts.py
 - Each part begins on a dedicated title leaf.
 - The contents use Roman page numbers; the manuscripts use Arabic page numbers.
 - References begin on a new page for each part.
-- Ordinary pages retain the part label, series title, page number and draft date.
+- Ordinary pages retain the part label, series title, page number and research-edition date.
 - Mermaid flowcharts use `curve: "stepAfter"` so connectors follow straight, orthogonal grid paths rather than curved splines.
 - Dense Mermaid diagrams receive full-page scaling while retaining aspect ratio.
 - The build cache is stored in the repository-level ignored `scratchpad` area.
 
-This is a draft reading cycle. Later parts can be added to the `$parts` array in `build_draft_pdf.ps1` once their manuscript files are ready.
+This is the canonical integrated build of the current five-part research programme. Any future manuscript extensions can be added to the `$parts` array in `build_whitepaper_pdf.ps1` through a separately reviewed edition.
