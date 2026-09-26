@@ -11,7 +11,7 @@ if ([System.IO.Path]::GetFileName($OutputName) -ne $OutputName) {
 
 $buildDirectory = $PSScriptRoot
 $seriesRoot = Split-Path -Parent $buildDirectory
-$projectRoot = Split-Path -Parent (Split-Path -Parent $seriesRoot)
+$projectRoot = Split-Path -Parent $seriesRoot
 $sourceDirectory = Join-Path $seriesRoot 'parts'
 $tempDirectory = Join-Path $projectRoot 'scratchpad\build\underwrite-for-collection-series'
 $outputDirectory = Join-Path $seriesRoot 'dist'

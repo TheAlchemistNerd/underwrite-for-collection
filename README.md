@@ -49,3 +49,7 @@ The brief for each manuscript is in `series/briefs`. Draft manuscripts will be c
 ## Preservation rule
 
 Files under `source_library` are frozen research copies. They must not be edited. Corrections, reconciliations, new claims and manuscript prose belong in `series`. The original rough notebook remains a research reservoir rather than a publication draft.
+
+## Repository reconciliation
+
+The standalone repository is now the authoritative working location. See [the migration record](MIGRATION_2026-09-26.md) for the restored series layout and transferred reviews.
