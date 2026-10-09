@@ -1,0 +1,16 @@
+stateDiagram-v2
+    [*] --> Observe
+    Observe --> ValidateState
+    ValidateState --> Fallback: stale, incomplete or out-of-domain data
+    ValidateState --> Forecast: state passes data controls
+    Forecast --> Simulate: approved scenario set
+    Simulate --> FeasibilityGate: candidate policy and baseline comparison
+    FeasibilityGate --> Fallback: limit, mandate or operational breach
+    FeasibilityGate --> HumanReview: feasible recommendation with uncertainty
+    HumanReview --> Fallback: reject, insufficient evidence or trigger activated
+    HumanReview --> Execute: authorized approval
+    Execute --> Monitor: trade, funding or pricing action settles
+    Monitor --> Review: realized outcomes and new observations
+    Review --> Observe: regular review cycle
+    Review --> Fallback: material model drift or incident
+    Fallback --> Observe: approved contingency action and fresh state

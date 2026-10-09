@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-10",
+  "edition": "UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.pdf",
+  "pages": 116,
+  "render": "final_qa_release_2026-10-10/document_7",
+  "review_segments": [
+    {"pages": "1-40", "status": "passed", "reviewer": "recover_numerical_audit", "findings": "Every full-page PNG inspected. No clipping, overlap, missing glyphs or visible Markdown defects."},
+    {"pages": "41-80", "status": "passed", "reviewer": "recover_math_checks", "findings": "Every full-page PNG inspected. No clipping, missing glyphs, overlaps or broken figures/references found."},
+    {"pages": "81-116", "status": "passed", "reviewer": "root", "findings": "All individual page images inspected. Equations, hierarchy, tables, diagrams and references remain within margins. No overlap, clipping or missing glyphs found."}
+  ]
+}

@@ -1,0 +1,15 @@
+flowchart TD
+    A[Define target population, complete contract and primary outcome] --> B{Eligibility and affordability gates passed?}
+    B -->|No| C[Use ordinary policy and explain the decision route]
+    B -->|Yes| D[Randomize among approved offers]
+    D --> E[Log policy version, assignment probability and offer delivery]
+    E --> F{Offer accepted and facility drawn?}
+    F -->|No| G[Record take-up outcome and follow-up status]
+    F -->|Yes| H[Track dated cash, payment, arrears, cure, recovery and customer outcomes]
+    G --> I[Check data quality, censoring and outcome maturity]
+    H --> I
+    I --> J[Estimate prespecified intention-to-treat effect and uncertainty]
+    J --> K{Supported, safe and sufficiently mature?}
+    K -->|No| L[Continue fixed allocation, pause or revert to approved policy]
+    K -->|Yes| M[Independent review of conservative adaptive probabilities]
+    M --> D

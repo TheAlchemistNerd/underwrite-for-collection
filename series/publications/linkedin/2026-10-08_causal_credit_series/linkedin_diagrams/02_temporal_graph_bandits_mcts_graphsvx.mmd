@@ -1,0 +1,14 @@
+flowchart TD
+    S[Timestamped source records and event ledger] --> G[Versioned temporal heterogeneous evidence graph]
+    G --> X["Decision-time context xₜ = φ(Gₜ)"]
+    X --> SAFE[Eligibility, affordability, conduct and capacity gate]
+    SAFE --> BANDIT[One-step policy: LinUCB or logistic Thompson sampling]
+    SAFE --> MODEL[Validated transition and reward model]
+    MODEL --> SEARCH[MCTS rollouts over permitted multi-step paths]
+    BANDIT --> HUMAN[Constraint check, case review and authorized decision]
+    SEARCH --> HUMAN
+    G --> GNN[Optional graph prediction model]
+    GNN --> EXPL[GraphSVX: local node, edge and feature attribution]
+    EXPL -. explains a prediction, not a policy path .-> HUMAN
+    HUMAN --> LOG[Decision, rationale, override and outcome record]
+    LOG --> S

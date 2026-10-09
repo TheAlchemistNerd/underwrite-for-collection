@@ -1,0 +1,14 @@
+flowchart TD
+    A[Borrower, facility and cash-flow evidence] --> B[Verify source, timestamp, entity and uncertainty]
+    B --> C[Apply legal, affordability, product and capacity gates]
+    C --> D{Eligible actions at this decision time}
+    D --> E[Current standard policy]
+    D --> F[Small randomized pilot]
+    F --> G[Contextual bandit: one-step effect]
+    G --> H[Repeated state and action history]
+    H --> I{Does action change future state or information?}
+    I -->|No| J[Keep a well-validated one-step policy]
+    I -->|Yes, and data support it| K[Sequential model, MPC or constrained MDP]
+    K --> L[POMDP only with explicit latent state and observation model]
+    J --> M[Human review, audit and outcome monitoring]
+    L --> M

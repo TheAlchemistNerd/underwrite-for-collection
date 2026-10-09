@@ -1,0 +1,17 @@
+flowchart TD
+    A[Market quotations, KESONIA, curves, positions, deposit and loan data] --> B[Quality checks, timestamps, calendars and methodology versions]
+    B --> C[Build discount and projection curves; reprice input instruments]
+    C --> D[Reconcile contractual and behavioural cash flows]
+    D --> E[Calculate FTP, NII, EVE, LCR, NSFR, capital and collateral measures]
+    E --> F[Generate governed rate, spread, deposit and liquidity scenarios]
+    F --> G[Compare current policy, deterministic plans and candidate control policies]
+    G --> H{All hard constraints and mandate checks pass?}
+    H -->|No| I[Reject action; show binding constraint and feasible alternatives]
+    H -->|Yes| J[Risk review: assumptions, uncertainty, stress and model limits]
+    J --> K[ALCO or delegated human approval]
+    K -->|Declined or changed| L[Record decision, reason and override]
+    K -->|Approved| M[Authorized Treasury execution]
+    M --> N[Settlement, accounting, collateral and limit monitoring]
+    N --> O[Reconcile realized NII, EVE, funding cost and liquidity]
+    O --> P[Update model monitoring and scenario assumptions]
+    P --> B

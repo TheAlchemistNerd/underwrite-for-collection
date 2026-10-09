@@ -1,0 +1,14 @@
+flowchart TD
+    A[All applications and point-in-time information] --> B{Historical policy decision}
+    B -->|Funded under contract a| C[Observed repayment path under actual terms and servicing]
+    B -->|Rejected or no draw| D[No observed repayment under contract a]
+    C --> E[Reconstruct selection rules, policy versions and outcome maturity]
+    D --> E
+    E --> F[Map overlap and supported target population]
+    F --> G[Fit and validate models on observed outcomes]
+    G --> H[Sensitivity analysis for unobserved selection]
+    H --> I{Safe, eligible and lawful prospective study available?}
+    I -->|No| J[Report bounds and assumptions; do not label counterfactuals as observed]
+    I -->|Yes| K[Approved randomized offer or encouragement design]
+    K --> L[Observe outcomes for the defined action and population]
+    L --> M[Update evidence ledger with source and label provenance]

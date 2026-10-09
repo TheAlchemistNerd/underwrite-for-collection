@@ -1,0 +1,32 @@
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"Arial","primaryColor":"#eaf2f8","primaryTextColor":"#17324d","primaryBorderColor":"#2e5e7e","lineColor":"#4f6b7a"},"flowchart":{"curve":"linear","nodeSpacing":24,"rankSpacing":34}}}%%
+flowchart TB
+  subgraph INPUTS[Governed inputs]
+    direction LR
+    B[Branch and bank records<br/>private authenticated access] --> E[Purpose-bound evidence views<br/>dated events and separate identity map]
+    X[Public market and regulatory sources] --> W[Allowlisted gateway<br/>provenance and content checks]
+  end
+  subgraph ANALYSIS[Bank-controlled analysis]
+    direction LR
+    H[Agent harness<br/>restricted tools and optional LLM] --> T[Four registered tool families<br/>1 Offers and experiments<br/>2 Sequential collections<br/>3 Selection diagnostics<br/>4 Treasury scenarios]
+    T --> P[Proposal and policy checks<br/>alternatives, uncertainty and limits]
+  end
+  subgraph ACTION[Accountable action]
+    direction LR
+    R[Authorised human review<br/>amend, decline or approve] --> A[Expiring execution instruction<br/>separate service and unique action ID]
+    A --> S[Execution and reconciliation<br/>receipt, contract and settlement]
+  end
+  subgraph LEARNING[Rights, outcomes and controlled learning]
+    direction LR
+    C[Corrections and complaints<br/>customer response and reconsideration] --> O[Matured cash and customer outcomes<br/>actual actions and overrides]
+    O --> V[Offline validation and release gate<br/>shadow, pilot, signed version and rollback]
+  end
+  E --> H
+  W --> H
+  P --> R
+  S --> O
+  C --> E
+  V -. Approved release .-> T
+  classDef human fill:#fff4d6,stroke:#c58a00,color:#513900;
+  classDef learn fill:#e8f5f2,stroke:#16857b,color:#17324d;
+  class R,A human;
+  class C,O,V learn;

@@ -1,0 +1,356 @@
+{
+  "status": "passed",
+  "check_count": 37,
+  "passed_count": 37,
+  "scope": "Deterministic mathematical identities and synthetic numerical examples in appendices 2 and 5; not empirical fitting, causal identification, legal approval or a production model audit.",
+  "sources": [
+    {
+      "path": "build\\appendices\\ARTICLE_2_MATHEMATICAL_APPENDIX.md",
+      "bytes": 28671,
+      "sha256": "32c5d9bdceb35569f56f37871a37654733de8d649eaf5950fb9b767dff36859f"
+    },
+    {
+      "path": "build\\appendices\\ARTICLE_5_MATHEMATICAL_APPENDIX.md",
+      "bytes": 19437,
+      "sha256": "48c5f497bad71405e8f1aab6c5a4d7a1bbd303d6ad05cbe55036d0a3f20a7351"
+    }
+  ],
+  "checks": [
+    {
+      "name": "normal_Gamma_Student_t_marginal_q_0.0",
+      "actual": 0.21620740996933027,
+      "expected": 0.21620740996933027,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "normal_Gamma_Student_t_marginal_q_0.8",
+      "actual": 0.187503512262822,
+      "expected": 0.18750351226282208,
+      "absolute_error": 8.326672684688674e-17,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "normal_Gamma_Student_t_marginal_q_4.0",
+      "actual": 0.02670364034972802,
+      "expected": 0.02670364034972803,
+      "absolute_error": 6.938893903907228e-18,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "inverse_Gamma_auxiliary_half_t_sigma_0.2",
+      "actual": 0.4284522766168341,
+      "expected": 0.4284522766168343,
+      "absolute_error": 2.220446049250313e-16,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "inverse_Gamma_auxiliary_half_t_sigma_1.0",
+      "actual": 0.34760484144810994,
+      "expected": 0.34760484144811016,
+      "absolute_error": 2.220446049250313e-16,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "inverse_Gamma_auxiliary_half_t_sigma_4.0",
+      "actual": 0.053407280699456036,
+      "expected": 0.05340728069945606,
+      "absolute_error": 2.0816681711721685e-17,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "centred_variance_IG_full_conditional",
+      "actual": -0.9533388352748693,
+      "expected": -0.9533388352748702,
+      "absolute_error": 8.881784197001252e-16,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "auxiliary_IG_full_conditional",
+      "actual": -7.863727785189049,
+      "expected": -7.863727785189049,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "PG_likelihood_identity_(1, 0, -2.0)",
+      "actual": 0.8807970779778824,
+      "expected": 0.8807970779778823,
+      "absolute_error": 1.1102230246251565e-16,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "PG_likelihood_identity_(1, 1, 1.3)",
+      "actual": 0.7858349830425587,
+      "expected": 0.7858349830425586,
+      "absolute_error": 1.1102230246251565e-16,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "PG_likelihood_identity_(5, 2, 0.4)",
+      "actual": 0.023165845494234675,
+      "expected": 0.023165845494234682,
+      "absolute_error": 6.938893903907228e-18,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "PG_Gaussian_block_with_offset",
+      "actual": -0.0003999999999999698,
+      "expected": -0.0003999999999999282,
+      "absolute_error": 4.163336342344337e-17,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "noncentred_scale_kernel",
+      "actual": -0.7024,
+      "expected": -0.7023999999999998,
+      "absolute_error": 2.220446049250313e-16,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "fixed_payoff_risk_threshold",
+      "actual": 0.06,
+      "expected": 0.06,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "fixed_payoff_expected_value",
+      "actual": 400.0,
+      "expected": 400.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "indifference_at_threshold",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cash_limit_headroom_existing",
+      "actual": 200000.0,
+      "expected": 200000.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "cash_limit_headroom_revised",
+      "actual": 300000.0,
+      "expected": 300000.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Beta_posterior_mean",
+      "actual": 0.04,
+      "expected": 0.04,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Beta_posterior_variance",
+      "actual": 0.0003801980198019802,
+      "expected": 0.0003801980198019802,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Beta_95CI_lower",
+      "actual": 0.011116748798575993,
+      "expected": 0.0111167488,
+      "absolute_error": 1.4240067458537453e-12,
+      "absolute_tolerance": 1e-10,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Beta_95CI_upper",
+      "actual": 0.08601126433737943,
+      "expected": 0.0860112643,
+      "absolute_error": 3.737943288228962e-11,
+      "absolute_tolerance": 1e-10,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Beta_cap_exceedance",
+      "actual": 0.14837317330710195,
+      "expected": 0.1483731733,
+      "absolute_error": 7.101957910649048e-12,
+      "absolute_tolerance": 1e-10,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "causal_average_contrast_90CI_lower",
+      "actual": 1420.5854921941136,
+      "expected": 1420.585492,
+      "absolute_error": 1.9411368157307152e-07,
+      "absolute_tolerance": 1e-05,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "causal_average_contrast_90CI_upper",
+      "actual": 14579.414507805886,
+      "expected": 14579.414508,
+      "absolute_error": 1.9411345419939607e-07,
+      "absolute_tolerance": 1e-05,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "causal_average_contrast_probability_positive",
+      "actual": 0.9772498680518209,
+      "expected": 0.9772498681,
+      "absolute_error": 4.817912735433083e-11,
+      "absolute_tolerance": 1e-10,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "predictive_cash_mean",
+      "actual": 92000.0,
+      "expected": 92000.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "predictive_cash_second_moment",
+      "actual": 11600000000.0,
+      "expected": 11600000000.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "predictive_cash_variance",
+      "actual": 3136000000.0,
+      "expected": 3136000000.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "predictive_cash_standard_deviation",
+      "actual": 56000.0,
+      "expected": 56000.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "predictive_obligation_shortfall_probability",
+      "actual": 0.3,
+      "expected": 0.3,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "predictive_obligation_shortfall_amount",
+      "actual": 15000.0,
+      "expected": 15000.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "competing_risk_probability_conservation",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "posterior_survival_Jensen_inequality",
+      "actual": 0.5619240976996396,
+      "plug_in_survival": 0.4584060113052235,
+      "passed": true
+    },
+    {
+      "name": "pilot_day60_difference",
+      "actual": 0.16000000000000003,
+      "expected": 0.16,
+      "absolute_error": 2.7755575615628914e-17,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "pilot_day90_difference",
+      "actual": 0.1399999999999999,
+      "expected": 0.14,
+      "absolute_error": 1.1102230246251565e-16,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "illustrative_RAROC",
+      "actual": 0.17,
+      "expected": 0.17,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    }
+  ],
+  "manual_review": {
+    "hierarchy": "Logistic and hazard models use distinct coefficient sets, shared sector/region/vintage hierarchy pattern, half-t SD priors and a declared hazard baseline.",
+    "scale_updates": "Centred inverse-Gamma and non-centred scale kernels are separately stated; no Gaussian full conditional is claimed for the half-t SD from the normal-Gamma identity alone.",
+    "causal_uncertainty": "Average-effect and policy-value posterior contrasts are distinguished from unidentifiable individual cross-potential-outcome covariance.",
+    "limits": "Fixed payoff threshold and posterior exceedance gate are separated; actual limit changes use incremental action values with joint uncertainty."
+  }
+}

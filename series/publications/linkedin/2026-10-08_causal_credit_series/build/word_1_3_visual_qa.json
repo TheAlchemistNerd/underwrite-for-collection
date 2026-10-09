@@ -1,0 +1,86 @@
+{
+  "checked_date": "2026-10-10",
+  "reviewer": "recover_numerical_audit",
+  "scope": "Fresh final Word Articles 1, 2 and 3",
+  "render_directory": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\final_qa_release_2026-10-10",
+  "passed": true,
+  "total_pages_inspected": 44,
+  "method": "Contact sheets followed by direct full-page PNG visual inspection of every assigned page",
+  "documents": [
+    {
+      "pages_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "directory": "document_1",
+      "passed": true
+    },
+    {
+      "pages_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "directory": "document_2",
+      "passed": true
+    },
+    {
+      "pages_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "directory": "document_3",
+      "passed": true
+    }
+  ],
+  "checks": [
+    "Research questions appear after abstract/introduction and before article body",
+    "Unicode equations and complete hierarchy are visible without missing glyphs",
+    "Figures are complete and within page margins",
+    "Paragraphs, tables and page furniture do not overlap",
+    "References and licence are visible",
+    "Article 3 pilot table fits on page 7"
+  ],
+  "resolved_prior_findings": [
+    "Article 1 IPS and DR equations no longer show literal markdown asterisks",
+    "Article 1 References is a separate heading without literal ###"
+  ],
+  "issues": []
+}

@@ -1,0 +1,10 @@
+build/*
+!build/README.md
+!build/*.py
+!build/*.ps1
+!build/*.lua
+!build/*.json
+!build/publication-header.tex
+!build/appendices/
+linkedin_diagrams/all_diagrams.md
+linkedin_diagrams/00_linkedin_diagrams_contact_sheet.png

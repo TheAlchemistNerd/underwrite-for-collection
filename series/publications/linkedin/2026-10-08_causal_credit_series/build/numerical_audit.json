@@ -1,0 +1,343 @@
+{
+  "date": "2026-10-09",
+  "scope": "Articles 1/2 numerical and cash-ledger corrections; appendices 1/3/4 numerical examples. Article 3 source recovery is separately owned.",
+  "changes": [
+    {
+      "file": "ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.md",
+      "old": "The difference is 4.7 percentage points.",
+      "new": "The difference calculated from the unrounded fractions is 4.8 percentage points (4.7778 before rounding).",
+      "already_applied": true
+    },
+    {
+      "file": "ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.md",
+      "old": "The reward should reflect the decision objective and the time period. For a complete one-period loan, with financing expense recorded explicitly, a realised cash contribution can be written:\n\n**R = cash received − initial advance − funding cost − servicing cost**\n\nCash received includes actual principal, interest, fees and recoveries. A missed receipt has already reduced that amount, so the same shortfall is counted once. A real credit offer generates dated cash flows, and an asset-level present-value convention can instead handle funding through its declared discount curve:\n\n**V(a,x)=E[−P₀(a)+∑ₜ₌₁ᵀ dₜ(Qₜ(a)−OPEXₜ(a)) | X=x]**\n\nHere **P₀** is the initial advance, **Qₜ** is actual borrower and recovery cash, **OPEXₜ** is attributable operating cost, and **dₜ** is the chosen discount factor. This convention keeps an additional funding charge out of the same present-value calculation. A contractual-receipts formulation deducts the discounted cash shortfall instead; the appendix derives the reconciliation between the two presentations. The calculation should account for take-up, prepayment, delinquency, cure, recovery timing, funding and capital conventions, with the horizon extended to include the relevant recovery cash or an explicitly valued terminal position. It should report affordability, complaints and other borrower outcomes beside financial value. A scalar reward may support optimization, but its weights must be explicit; legal rights and safety limits remain constraints outside that scalar.",
+      "new": "The reward should reflect the decision objective and the time period. For a complete one-period loan, with financing expense recorded explicitly, a realised cash contribution can be written:\n\n**R = cash received − initial advance − funding cost − servicing cost**\n\nCash received includes actual principal, interest, fees and recoveries. A missed receipt has already reduced that amount, so the same shortfall is counted once. A real credit offer generates dated cash flows, and an asset-level present-value convention can instead handle funding through its declared discount curve:\n\n**V(a,x)=E[−P₀(a)+∑ₜ₌₁ᵀ dₜ(Qₜ(a)−OPEXₜ(a)) | X=x]**\n\nHere **P₀** is the initial advance, **Qₜ** is actual borrower and recovery cash, **OPEXₜ** is attributable operating cost, and **dₜ** is the chosen discount factor. This convention keeps an additional funding charge out of the same present-value calculation. A contractual-receipts formulation deducts the discounted cash shortfall instead; the appendix derives the reconciliation between the two presentations. The calculation should account for take-up, prepayment, delinquency, cure, recovery timing, funding and capital conventions, with the horizon extended to include the relevant recovery cash or an explicitly valued terminal position. It should report affordability, complaints and other borrower outcomes beside financial value. A scalar reward may support optimization, but its weights must be explicit; legal rights and safety limits remain constraints outside that scalar."
+    },
+    {
+      "file": "ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.md",
+      "old": "The crude day-60 difference is eight percentage points, while the day-90 difference is seven points.",
+      "new": "With 50 assigned cases per arm, the day-60 rates are 76% and 92%, a difference of 16 percentage points; the day-90 rates are 68% and 82%, a difference of 14 percentage points.",
+      "already_applied": true
+    },
+    {
+      "file": "build/appendices/ARTICLE_1_MATHEMATICAL_APPENDIX.md",
+      "old": "or−7.49 to 19.49 percentage points",
+      "new": "or −7.49 to 19.49 percentage points",
+      "already_applied": true
+    },
+    {
+      "file": "build/appendices/ARTICLE_1_MATHEMATICAL_APPENDIX.md",
+      "old": "the approximation is 392.45, rounded up to 393 per arm.",
+      "new": "using unrounded normal quantiles, the approximation is 392.44, rounded up to 393 per arm.",
+      "already_applied": true
+    }
+  ],
+  "checks": {
+    "a1_funded_difference_pp": {
+      "calculated": 4.77777777777778,
+      "expected": 4.777777777777778,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_assigned_combined_endpoint_pp": {
+      "calculated": 6.000000000000005,
+      "expected": 6,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_standard_error": {
+      "calculated": 0.06884765791223402,
+      "expected": 0.06884766,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_normal_interval_lower_pp": {
+      "calculated": -7.494140950797867,
+      "expected": -7.4941409508,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_normal_interval_upper_pp": {
+      "calculated": 19.494140950797867,
+      "expected": 19.4941409508,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_annuity_contribution": {
+      "calculated": 5797.728250755623,
+      "expected": 5797.73,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    "a1_planning_sample_size": {
+      "calculated": 392.4439867174542,
+      "expected": 392.4439867,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "a1_policy_favoured_probability": {
+      "calculated": 0.9,
+      "expected": 0.9,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_ucb_first": {
+      "calculated": 2.5,
+      "expected": 2.5,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_ucb_second": {
+      "calculated": 2.0,
+      "expected": 2,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_ips": {
+      "calculated": 6.0,
+      "expected": 6,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_ess": {
+      "calculated": 3.2,
+      "expected": 3.2,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_dr": {
+      "calculated": 6.0,
+      "expected": 6,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_censoring_weight": {
+      "calculated": 1.25,
+      "expected": 1.25,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a1_default_cif_percent": {
+      "calculated": 3.625384938440363,
+      "expected": 3.6254,
+      "tolerance": 5e-05,
+      "pass": true
+    },
+    "a1_single_hazard_percent": {
+      "calculated": 3.9210560847676823,
+      "expected": 3.9211,
+      "tolerance": 5e-05,
+      "pass": true
+    },
+    "a2_pilot_day60_pp": {
+      "calculated": 16.000000000000004,
+      "expected": 16,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a2_pilot_day90_pp": {
+      "calculated": 13.99999999999999,
+      "expected": 14,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a2_incremental_cash": {
+      "calculated": 850,
+      "expected": 850,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a2_cash_capital_percent": {
+      "calculated": 17.0,
+      "expected": 17,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a2_break_even_percent": {
+      "calculated": 6.0,
+      "expected": 6,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a2_extension_value": {
+      "calculated": 400.0,
+      "expected": 400,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a3_bound_lower_percent": {
+      "calculated": 3.0,
+      "expected": 3,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a3_bound_upper_percent": {
+      "calculated": 43.00000000000001,
+      "expected": 43,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a3_raw_selected_percent": {
+      "calculated": 13.333333333333334,
+      "expected": 13.3333333333,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a3_ipw_target_percent": {
+      "calculated": 15.0,
+      "expected": 15,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a3_reject_odds_0.5_percent": {
+      "calculated": 2.5641025641025643,
+      "expected": 2.5641,
+      "tolerance": 5e-05,
+      "pass": true
+    },
+    "a3_all_odds_0.5_percent": {
+      "calculated": 4.025641025641026,
+      "expected": 4.0256,
+      "tolerance": 5e-05,
+      "pass": true
+    },
+    "a3_reject_odds_1_percent": {
+      "calculated": 5.0,
+      "expected": 5,
+      "tolerance": 5e-05,
+      "pass": true
+    },
+    "a3_all_odds_1_percent": {
+      "calculated": 5.0,
+      "expected": 5,
+      "tolerance": 5e-05,
+      "pass": true
+    },
+    "a3_reject_odds_2_percent": {
+      "calculated": 9.523809523809524,
+      "expected": 9.5238,
+      "tolerance": 5e-05,
+      "pass": true
+    },
+    "a3_all_odds_2_percent": {
+      "calculated": 6.80952380952381,
+      "expected": 6.8095,
+      "tolerance": 5e-05,
+      "pass": true
+    },
+    "a3_unfunded": {
+      "calculated": 920,
+      "expected": 920,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a3_wilson_lower": {
+      "calculated": 0.01961323712729556,
+      "expected": 0.01961324,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a3_wilson_upper": {
+      "calculated": 0.121624525510822,
+      "expected": 0.12162453,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a3_jeffreys_mean_percent": {
+      "calculated": 5.555555555555555,
+      "expected": 5.5556,
+      "tolerance": 5e-05,
+      "pass": true
+    },
+    "a3_expected_loss": {
+      "calculated": 2000.0,
+      "expected": 2000,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a3_loss_lower": {
+      "calculated": 1025.6410256410256,
+      "expected": 1025.64,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    "a3_loss_upper": {
+      "calculated": 3809.523809523809,
+      "expected": 3809.52,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    "a3_economic_capital": {
+      "calculated": 38000,
+      "expected": 38000,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a4_contribution": {
+      "calculated": 70000.00000000006,
+      "expected": 70000,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a4_repricing_change": {
+      "calculated": -28333.333333333336,
+      "expected": -28333.33,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    "a4_repriced_contribution": {
+      "calculated": 41666.666666666664,
+      "expected": 41666.67,
+      "tolerance": 0.005,
+      "pass": true
+    },
+    "a4_deposit_base": {
+      "calculated": 3350000.0,
+      "expected": 3350000,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a4_deposit_stress": {
+      "calculated": 2880000.0,
+      "expected": 2880000,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a4_deposit_replacement": {
+      "calculated": 5080000.0,
+      "expected": 5080000,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a4_lcr_initial_percent": {
+      "calculated": 120.0,
+      "expected": 120,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a4_lcr_stress_percent": {
+      "calculated": 106.4814814814815,
+      "expected": 106.48148,
+      "tolerance": 1e-05,
+      "pass": true
+    },
+    "a4_eve_improvement_billion": {
+      "calculated": 0.8,
+      "expected": 0.8,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    "a4_collateral_increase_billion": {
+      "calculated": 3,
+      "expected": 3,
+      "tolerance": 1e-08,
+      "pass": true
+    }
+  },
+  "pass": true,
+  "article3_required_text": "There are 900 applicants not offered the contract and 20 offered but not funded, leaving 920 without an observed funded-loan repayment path.",
+  "cash_tex_mapping": {
+    "R = cash received − initial advance − funding cost − servicing cost": "R=\\text{cash received}-\\text{initial advance}-\\text{funding cost}-\\text{servicing cost}",
+    "V(a,x)=E[−P₀(a)+∑ₜ₌₁ᵀ dₜ(Qₜ(a)−OPEXₜ(a)) | X=x]": "V(a,x)=\\mathbb E\\!\\left[-P_0(a)+\\sum_{t=1}^{T}d_t\\{Q_t(a)-\\operatorname{OPEX}_t(a)\\}\\mid X=x\\right]"
+  }
+}
