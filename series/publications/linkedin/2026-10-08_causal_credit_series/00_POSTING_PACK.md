@@ -24,6 +24,8 @@ Every article has its own source, short LinkedIn post and Word document. Word eq
 
 [Combined PDF with TeX equations](publications/UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.pdf)
 
+[Equation register](EQUATION_REGISTER.md): body equations use article numbers such as (2.1); appendix equations use (A2.1). The PDF includes clickable equation and page references, a topic guide and a complete register connecting the five articles and their derivations.
+
 [Combined-edition LinkedIn post — 2,000 characters](publications/UNDERWRITE_FOR_COLLECTION_LINKEDIN_POST_2026-10-08.md)
 
 ### Mathematical appendices in the PDF

@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-10",
+  "file": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\publications\\UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.pdf",
+  "pages": 136,
+  "sha256": "93b37fcc9e3723e7b9363e50a23425c3bd954a93269634239d717e9c6ac14b2a",
+  "display_equations": 309,
+  "counts_by_scope": {
+    "1": 13,
+    "A1": 43,
+    "2": 45,
+    "A2": 49,
+    "3": 25,
+    "A3": 52,
+    "4": 7,
+    "A4": 30,
+    "5": 3,
+    "A5": 42
+  },
+  "equation_labels_correct": true,
+  "all_equation_numbers_found_in_pdf": true,
+  "all_equation_tex_preserved_verbatim": true,
+  "number_text_check": "Poppler; font-mapped ornate parentheses normalised for comparison",
+  "contextual_link_paragraphs": 8,
+  "cross_reference_occurrences": 676,
+  "internal_pdf_links": 760,
+  "invalid_links": [],
+  "final_tex_diagnostics": [],
+  "draft_for_review_removed": true,
+  "rendered_pages": 136,
+  "visual_review_complete": true,
+  "contacts": [
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_001_004.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_005_008.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_009_012.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_013_016.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_017_020.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_021_024.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_025_028.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_029_032.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_033_036.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_037_040.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_041_044.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_045_048.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_049_052.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_053_056.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_057_060.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_061_064.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_065_068.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_069_072.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_073_076.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_077_080.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_081_084.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_085_088.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_089_092.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_093_096.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_097_100.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_101_104.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_105_108.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_109_112.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_113_116.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_117_120.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_121_124.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_125_128.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_129_132.png",
+    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\numbered_pdf_qa_2026-10-10\\contact_133_136.png"
+  ],
+  "visual_review_segments": [
+    {
+      "pages": [
+        1,
+        48
+      ],
+      "reviewer": "finish_numbered_pdf",
+      "status": "passed"
+    },
+    {
+      "pages": [
+        49,
+        68
+      ],
+      "reviewer": "root",
+      "status": "passed"
+    },
+    {
+      "pages": [
+        69,
+        136
+      ],
+      "reviewer": "numbered_pdf_later_qa",
+      "status": "passed"
+    }
+  ],
+  "final_changed_content_pages": [
+    48
+  ],
+  "final_changed_pages_visually_reviewed": [
+    48
+  ]
+}

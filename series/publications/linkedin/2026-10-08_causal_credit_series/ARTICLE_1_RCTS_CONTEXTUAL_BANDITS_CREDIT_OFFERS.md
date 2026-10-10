@@ -2,7 +2,7 @@
 
 ## From randomized trials to contextual bandits in sustainable MSME lending
 
-**Underwrite for Collection · LinkedIn research article · Draft for review · 8 October 2026**
+**Underwrite for Collection · LinkedIn research article · 8 October 2026**
 
 ### Abstract
 
@@ -16,7 +16,7 @@ Credit pricing decisions influence who takes up a loan, how much cash the busine
 
 ### The question starts with a repayment pathway
 
-The *Underwrite for Collection* work began with a practical concern: a credit decision is not complete when funds are disbursed. The loan must fit the borrower’s actual cash generation and the lender must be able to monitor whether that repayment source remains available. For an operating MSME, cash is shaped by sales, working capital, suppliers, seasonality, tax, owner withdrawals and existing obligations. For a ring-fenced receivables stream, repayment depends on eligible invoices, obligor performance, dilution, assignment, account control, servicing continuity, collection timing and the waterfall. A price that appears profitable on a spreadsheet can be uncollectable if its instalment profile conflicts with cash conversion or if the underlying receivable is disputed. Credit experimentation should therefore evaluate the offer as a whole and follow the cash journey after the decision.
+The *Underwrite for Collection* work began with a practical concern: a credit decision is not complete when funds are disbursed. The loan must fit the borrower’s actual cash generation and the lender must be able to monitor whether that repayment source remains available. For an operating MSME, cash is shaped by sales, working capital, suppliers, seasonality, tax, owner withdrawals and existing obligations. For a ring-fenced receivables stream, repayment depends on eligible invoices, obligor performance, dilution, assignment, account control, servicing continuity, collection timing and the waterfall. A price that appears profitable on a spreadsheet can be uncollectable if its instalment profile conflicts with cash conversion or if the underlying receivable is disputed. Credit experimentation should therefore evaluate the offer as a whole and follow the cash journey after the decision. Financing ring-fenced receivables is the general proposition used throughout this series. In the worked examples that use a special-purpose vehicle (SPV), the vehicle is the chosen structure for holding the receivables and allocating their collections. The underwriting evidence follows the receivables, collection controls and contractual payment priorities of that structure.
 
 An RCT and a contextual bandit are related, but they answer questions differently. A prespecified RCT assigns among allowed offers according to a fixed design so that effects can be estimated with a clear comparison. The allocation need not be uniform: it can be stratified by risk or product, or use unequal probabilities established in the protocol. A contextual bandit also uses randomized assignment, but it updates allocation as outcomes arrive, often assigning more frequently to actions that appear to perform well for particular contexts. That adaptation can improve learning efficiency or participant outcomes under some designs, yet it changes the data-generating process and complicates inference. The decision to adapt should follow a demonstrated need, a credible reward signal and an analysis plan capable of accounting for changing probabilities [1], [2].
 

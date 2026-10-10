@@ -6,4 +6,6 @@ The sequence develops credit-offer experiments, sequential collection control, r
 
 Word editions use ordinary Unicode mathematical text and embedded PNG charts. The combined PDF uses TeX mathematical typesetting and includes a derivation appendix after each article. Logistic and survival models carry the hierarchy through group distributions and hyperpriors; the Bayesian decision-limit discussion cites the decision-analysis reference used in Mwendo Pamoja. Original text and diagrams are licensed under [CC BY-NC-SA 4.0](LICENCE.md).
 
+The PDF numbers 309 displayed equations by article and appendix, with linked references and an [equation register](EQUATION_REGISTER.md). Financing ring-fenced receivables is the general proposition; an SPV is the vehicle used in particular worked examples.
+
 [Validation and file hashes](RELEASE_VALIDATION.md) | [Build instructions](build/README.md)

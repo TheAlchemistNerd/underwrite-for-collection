@@ -2,7 +2,7 @@
 
 ## How to learn which collection action helps, for whom, and when
 
-**Underwrite for Collection · Article 2 of 5 · LinkedIn research article · Draft for review · 8 October 2026**
+**Underwrite for Collection · Article 2 of 5 · LinkedIn research article · 8 October 2026**
 
 ### Abstract
 
@@ -393,6 +393,6 @@ For Kenyan application, privacy and data-protection duties shape the dataset, ex
 
 ---
 
-**Publication note.** Scenario figures in this article are explicitly hypothetical. This draft describes a research and governance pathway; it does not report a completed Kenyan randomized trial, fitted collection controller or production deployment. The legal references should be checked against the institution’s current classification and the authoritative consolidated instruments before publication.
+**Publication note.** Scenario figures in this article are explicitly hypothetical. This article describes a research and governance pathway; it does not report a completed Kenyan randomized trial, fitted collection controller or production deployment. The legal references should be checked against the institution’s current classification and the authoritative consolidated instruments before publication.
 
 **Licence:** © 2026 Nevil Maloba. Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International (CC BY-NC-SA 4.0). https://creativecommons.org/licenses/by-nc-sa/4.0/

@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-10",
+  "status": "passed",
+  "scope": "Final Word revisions, all six package integrity checks and targeted rendered-page review after earlier full visual QA",
+  "prior_full_review": [
+    "build/word_1_3_visual_qa.json",
+    "build/word_4_5_combined_visual_qa.json"
+  ],
+  "documents": [
+    {
+      "document": 1,
+      "docx": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\publications\\word\\ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.docx",
+      "sha256": "0786191678dbb92a82d0d2af240b96399810f51f622cf89f29d04fb34a2f377f",
+      "render_pdf": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\word\\qa\\ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS\\ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.pdf",
+      "render_sha256": "ce73904c8b96a197b0f52488c7bfe23d95786eee872a82dee1aa74bfb9b1b60a",
+      "pages": 11,
+      "unicode_text": true,
+      "unicode_symbol_count": 40,
+      "native_math_or_latex": false,
+      "embedded_diagrams": 1,
+      "changed_pages_since_previous_render": [],
+      "pages_rendered_for_final_revision_review": [
+        1,
+        6,
+        11
+      ],
+      "visual_reviewed_pages": [
+        1,
+        6,
+        11
+      ],
+      "visual_status": "passed"
+    },
+    {
+      "document": 2,
+      "docx": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\publications\\word\\ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.docx",
+      "sha256": "f531832a867bbc9e0d7860a42ca7345cf78a68fb2035c0b20f4de9b3d0424304",
+      "render_pdf": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\word\\qa\\ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION\\ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.pdf",
+      "render_sha256": "b8e7ab06ac9c9d9f40a7e9fb0cc9e6c53b5487acd2f03e903237918ffb957633",
+      "pages": 21,
+      "unicode_text": true,
+      "unicode_symbol_count": 64,
+      "native_math_or_latex": false,
+      "embedded_diagrams": 2,
+      "changed_pages_since_previous_render": [
+        21
+      ],
+      "pages_rendered_for_final_revision_review": [
+        1,
+        21
+      ],
+      "visual_reviewed_pages": [
+        1,
+        21
+      ],
+      "visual_status": "passed"
+    },
+    {
+      "document": 3,
+      "docx": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\publications\\word\\ARTICLE_3_REJECT_INFERENCE_AND_SELECTIVE_LABELS.docx",
+      "sha256": "031cd74bc2cd63358ca7da289cfc5798a6629eb880a9e367d2105378bda475f2",
+      "render_pdf": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\word\\qa\\ARTICLE_3_REJECT_INFERENCE_AND_SELECTIVE_LABELS\\ARTICLE_3_REJECT_INFERENCE_AND_SELECTIVE_LABELS.pdf",
+      "render_sha256": "b4d27305306f0a682b128eca64627ccef29637e7d28a17b138dbd8467540449e",
+      "pages": 12,
+      "unicode_text": true,
+      "unicode_symbol_count": 48,
+      "native_math_or_latex": false,
+      "embedded_diagrams": 1,
+      "changed_pages_since_previous_render": [],
+      "pages_rendered_for_final_revision_review": [
+        1,
+        7,
+        12
+      ],
+      "visual_reviewed_pages": [
+        1,
+        7,
+        12
+      ],
+      "visual_status": "passed"
+    },
+    {
+      "document": 4,
+      "docx": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\publications\\word\\ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.docx",
+      "sha256": "d988486389edf15351c1022f4116c27d8251e469a9d835607d596aa36849a234",
+      "render_pdf": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\word\\qa\\ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL\\ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.pdf",
+      "render_sha256": "fdb8e474adefdc0737659c3619b03dada8c931d4af3e42922a44d8bfc90ed806",
+      "pages": 12,
+      "unicode_text": true,
+      "unicode_symbol_count": 30,
+      "native_math_or_latex": false,
+      "embedded_diagrams": 2,
+      "changed_pages_since_previous_render": [],
+      "pages_rendered_for_final_revision_review": [
+        1,
+        12
+      ],
+      "visual_reviewed_pages": [
+        1,
+        12
+      ],
+      "visual_status": "passed"
+    },
+    {
+      "document": 5,
+      "docx": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\publications\\word\\ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.docx",
+      "sha256": "0dfa994b113182935411c4fb736a69ecac48dd65aa96bae79542a96466d8970b",
+      "render_pdf": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\word\\qa\\ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY\\ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.pdf",
+      "render_sha256": "aa683f182a4bef3498a8549cdeaa2490a2ac9782a709127b6d6df78138618ee6",
+      "pages": 10,
+      "unicode_text": true,
+      "unicode_symbol_count": 16,
+      "native_math_or_latex": false,
+      "embedded_diagrams": 1,
+      "changed_pages_since_previous_render": [],
+      "pages_rendered_for_final_revision_review": [
+        1,
+        4,
+        10
+      ],
+      "visual_reviewed_pages": [
+        1,
+        4,
+        10
+      ],
+      "visual_status": "passed"
+    },
+    {
+      "document": 6,
+      "docx": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\publications\\UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.docx",
+      "sha256": "750387abb3151d6b00014390d603524ec2757925a2f5feacddec361f52f7a7fb",
+      "render_pdf": "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\word\\qa\\UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08\\UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.pdf",
+      "render_sha256": "0f18a5a2b76b921d2016ffae90f4850bbdfa670e1ea44c6e682bea96b392fa0c",
+      "pages": 67,
+      "unicode_text": true,
+      "unicode_symbol_count": 77,
+      "native_math_or_latex": false,
+      "embedded_diagrams": 7,
+      "changed_pages_since_previous_render": [
+        33
+      ],
+      "pages_rendered_for_final_revision_review": [
+        1,
+        2,
+        7,
+        12,
+        13,
+        33,
+        34,
+        40,
+        45,
+        46,
+        57,
+        58,
+        61,
+        67
+      ],
+      "visual_reviewed_pages": [
+        1,
+        2,
+        7,
+        12,
+        13,
+        33,
+        34,
+        40,
+        45,
+        46,
+        57,
+        58,
+        61,
+        67
+      ],
+      "visual_status": "passed"
+    }
+  ],
+  "issues": [],
+  "visual_review_complete": true,
+  "reviewer": "final_word_checks",
+  "visual_review_method": "Reviewed rendered pages listed for every document, including all final wording and ring-fenced receivables changes, against prior full-page QA. Final Word rerender completed for all six documents; page-text comparison shows only Article 2 page 21 and combined page 33 changed from the preceding render. Those final pages were inspected after refresh.",
+  "checks": [
+    "Unicode mathematics remain copyable ordinary Word text",
+    "Embedded diagrams retained: 1,2,1,2,1 and combined 7",
+    "Draft for review removed from headers; final This draft changed to This article",
+    "Ring-fenced receivables general proposition and SPV-specific examples visible",
+    "Final rendered page counts 11,21,12,12,10 and 67",
+    "No clipping, overlap or missing mathematical glyphs on final reviewed pages"
+  ]
+}

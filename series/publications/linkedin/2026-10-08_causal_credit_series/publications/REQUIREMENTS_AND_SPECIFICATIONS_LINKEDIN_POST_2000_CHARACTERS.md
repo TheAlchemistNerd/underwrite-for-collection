@@ -1,22 +1,24 @@
-From five research articles to a bank-ready specification
+From research to bank-ready requirements
 
-The next phase turns the research into requirements for credit, operations, risk and technology teams. The articles supply methods and examples; specifications make their use precise.
+The five articles provide a basis for business, model and software specifications. Requirements define what a bank must decide, calculate, explain and evidence.
 
-Business requirements come first: which decisions are supported, who may propose and approve them, when maker–checker review applies, and how customers obtain explanations, corrections and reconsideration. Each requirement needs measurable acceptance criteria and an accountable owner.
+Business requirements establish users, decision rights, maker–checker approvals, customer-review routes and acceptance criteria. Model specifications define inputs, units, horizons, causal assumptions, posteriors, numerical tolerances, validation and versioning.
 
-The model specification defines inputs, units, time horizons, posterior summaries, causal assumptions and permitted actions. It records numerical tolerances, response-time targets, validation checks and model versions. Reviewers should see credible intervals, predictive ranges and the probability of crossing a risk boundary and the expected outcomes.
+CRISP-DM can structure the analytical lifecycle: business understanding, data understanding, preparation, modelling, evaluation and deployment. Each stage produces reviewable evidence, with monitoring feeding the next cycle.
 
-Three practical tests guide this work:
+Three questions guide implementation:
 
 • Can an independent reviewer reproduce a limit recommendation, inspect its uncertainty, identify its approver and reconcile the resulting action?
 
 • Can the team trace a changed recommendation to corrected evidence, a revised model or an approved policy change?
 
-• Can an interrupted or repeated request resume safely, preserving the customer’s rights and producing one authorised action?
+• Can an interrupted or repeated request resume safely, preserve the customer’s rights and produce one authorised action?
 
-Software specifications link these tests to API contracts, access controls and bank systems. Candidates include C++ calculation kernels, C# enterprise services, Excel-DNA, Office.js or Windows VSTO integrations, React widgets, and adapters for CRM, ERP and Treasury systems. These are proposals; technology choices follow the requirements.
+Data-engineering pipelines must connect ingestion, quality checks, entity resolution, lineage, versioned features and reconciled outcomes. Batch and streaming designs follow the decision’s timing and reliability needs.
 
-A correlation ID links the case to dated evidence, model and policy versions, immutable events, the approving identity and execution receipts. Purpose limitation, data minimisation and pseudonymisation govern what each service receives.
+C++ could support numerical kernels; C# enterprise services; Excel-DNA, Office.js or VSTO spreadsheet integration; and React operational interfaces. Power BI and Tableau could present validated measures, uncertainty and portfolio monitoring. Adapters connect CRM, ERP and Treasury systems through governed data contracts.
+
+A correlation ID connects the workflow. Event IDs, timestamps, model versions, approver identities and execution receipts establish what happened. Purpose limitation, data minimisation and pseudonymisation shape access throughout.
 
 A design a bank can implement, test and supervise.
 

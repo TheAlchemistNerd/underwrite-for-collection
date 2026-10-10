@@ -1,4 +1,4 @@
-param([int]$Passes = 2, [string]$PythonExecutable = 'python')
+param([int]$Passes = 3, [string]$PythonExecutable = 'python')
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $diagramDir = Join-Path $root 'linkedin_diagrams'
@@ -19,10 +19,12 @@ foreach ($name in $files) {
     $articleNumber++
     $source = Join-Path $root $name
     $parts.Add("`n\newpage`n")
+    $parts.Add("<!-- equation-scope: $articleNumber -->")
     $parts.Add([System.IO.File]::ReadAllText($source, [System.Text.Encoding]::UTF8))
     $appendix = Join-Path $PSScriptRoot "appendices\ARTICLE_${articleNumber}_MATHEMATICAL_APPENDIX.md"
     if (-not (Test-Path -LiteralPath $appendix)) { throw "Missing mathematical appendix: $appendix" }
     $parts.Add("`n\clearpage`n")
+    $parts.Add("<!-- equation-scope: A$articleNumber -->")
     $parts.Add([System.IO.File]::ReadAllText($appendix, [System.Text.Encoding]::UTF8))
 }
 $utf8 = [System.Text.UTF8Encoding]::new($false)
@@ -30,6 +32,9 @@ $utf8 = [System.Text.UTF8Encoding]::new($false)
 & $PythonExecutable (Join-Path $PSScriptRoot 'typeset_math.py') $combined
 if ($LASTEXITCODE -ne 0) { throw 'Mathematics preparation failed' }
 $typeset = Join-Path $PSScriptRoot 'UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_TYPESET.md'
+& $PythonExecutable (Join-Path $PSScriptRoot 'number_equations.py') $typeset
+if ($LASTEXITCODE -ne 0) { throw 'Equation numbering and cross-reference preparation failed' }
+$typeset = Join-Path $PSScriptRoot 'UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_NUMBERED.md'
 $env:MERMAID_OUTDIR = $diagramDir
 $env:MERMAID_PUPPETEER_CONFIG = Join-Path $PSScriptRoot 'puppeteer.json'
 $env:MERMAID_ARTICLE = 'underwrite_for_collection'

@@ -2,7 +2,7 @@
 
 ## From KESONIA and FTP to constrained ALM, IRRBB and ALCO decisions
 
-**Underwrite for Collection · Article 4 of 5 · LinkedIn research article · Draft for review · 8 October 2026**
+**Underwrite for Collection · Article 4 of 5 · LinkedIn research article · 8 October 2026**
 
 ### Abstract
 

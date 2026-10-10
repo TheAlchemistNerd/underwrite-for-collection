@@ -15,3 +15,5 @@ The Word builder preserves mathematical expressions as ordinary Unicode text. Th
 Final editions are in `publications/`; editable diagrams are in `linkedin_diagrams/`. Inspect the rebuilt files visually before publication. Generated intermediates in this build directory can be reproduced from the committed sources.
 
 The five editable mathematical appendices are in `appendices/`. The PDF builder inserts each appendix after its corresponding article and uses `publication-header.tex` for layout. Appendix citations share the article's numbered bibliography. The Word editions retain the article bodies and Unicode formulations.
+
+`number_equations.py` numbers displayed blocks by article and appendix, adds linked cross-references and produces `EQUATION_REGISTER.md`. The PDF build runs three TeX passes to resolve the linked page references. Short inline expressions remain unnumbered; an aligned derivation receives one number for the whole block. The Word editions preserve ordinary Unicode mathematics for LinkedIn.
