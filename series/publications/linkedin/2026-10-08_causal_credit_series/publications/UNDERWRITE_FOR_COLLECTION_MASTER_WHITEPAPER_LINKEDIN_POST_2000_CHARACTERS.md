@@ -4,7 +4,7 @@ How can lenders support sustainable MSME repayment across a facility’s life?
 
 What began as LinkedIn articles has become six manuscripts across five parts, with two reproducible cases. The paper connects product design, cash-flow evidence, underwriting, fair servicing, monitoring, collection and recovery to expected loss, capital and funding.
 
-Financing an operating business starts with its cash generation, obligations and continuing activity. Financing ring-fenced receivables follows identified repayment claims and the cash dedicated to them. The cases connect both: the enterprise’s operating cycle supports loan repayment; transferred loan claims then feed vehicle accounts, reserves and a distribution waterfall.
+Financing an operating business examines its cash generation, obligations and operations. Financing ring-fenced receivables follows identified claims and the cash dedicated to them. The enterprise’s operating cycle supports repayment; collections from transferred receivables enter designated collection accounts, fund required reserves and follow the agreed payment waterfall.
 
 Exploring the IFoA introduction to banking module supplied an academic motivation and an actuarial lens for these practical questions.
 
@@ -19,6 +19,6 @@ A follow-on five-article series explores credit experiments, sequential collecti
 The whitepaper offers a research foundation, with worked cases, methods, governance and questions for empirical validation.
 
 Licence: CC BY-NC-SA 4.0
-Zenodo: [add link after deposit]
+Full whitepaper attached below.
 
 #MSMECredit #CreditRisk #Banking #ActuarialScience #Kenya #IFoA
