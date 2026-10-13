@@ -1,0 +1,8 @@
+{
+  "article_words_including_section_headings": 2000,
+  "article_word_count_excludes": "Title, byline, DOI metadata and closing resource links",
+  "post_characters": 2000,
+  "doi": "10.5281/zenodo.23343888",
+  "article_docx": "UNDERWRITE_FOR_COLLECTION_WHITEPAPER_SUMMARY_ARTICLE_2000_WORDS.docx",
+  "description_words": 325
+}
