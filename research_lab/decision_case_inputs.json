@@ -1,0 +1,42 @@
+{
+  "case_id": "U4C-GOV-001",
+  "status": "Hypothetical internal-policy and transaction fixtures, denominated in KES",
+  "economic_unit": "MSME-001",
+  "review_window": "September 2026, immediately before the existing order case",
+  "accounts": [
+    {"id": "BANK-A", "opening": "180000", "owner": "MSME-001", "effective_from": "2026-09-01", "known_at": "2026-09-01", "method": "verified legal account identifier"},
+    {"id": "BANK-B", "opening": "20000", "owner": "MSME-001", "effective_from": "2026-09-01", "known_at": "2026-09-01", "method": "verified legal account identifier"}
+  ],
+  "transactions": [
+    {"id":"T01","account":"BANK-A","amount":"100000","settled_at":"2026-09-03","known_at":"2026-09-03","class":"financing","reference":"prior bridge-loan draw"},
+    {"id":"T02","account":"BANK-A","amount":"120000","settled_at":"2026-09-06","known_at":"2026-09-06","class":"operating_receipt","reference":"settled customer invoice INV-01"},
+    {"id":"T03","account":"BANK-A","amount":"-70000","settled_at":"2026-09-08","known_at":"2026-09-08","class":"internal_transfer","pair":"XFER-01","reference":"transfer to BANK-B"},
+    {"id":"T04","account":"BANK-B","amount":"70000","settled_at":"2026-09-08","known_at":"2026-09-08","class":"internal_transfer","pair":"XFER-01","reference":"receipt from BANK-A"},
+    {"id":"T05","account":"BANK-B","amount":"30000","settled_at":"2026-09-10","known_at":"2026-09-10","class":"capital","reference":"owner capital contribution"},
+    {"id":"T06","account":"BANK-A","amount":"20000","settled_at":"2026-09-15","known_at":"2026-09-15","class":"operating_receipt","reference":"subsequently reversed credit"},
+    {"id":"T07","account":"BANK-A","amount":"-20000","settled_at":"2026-09-16","known_at":"2026-09-16","class":"reversal","reverses":"T06","reference":"same-value reversal of T06"},
+    {"id":"T08","account":"BANK-A","amount":"50000","settled_at":"2026-09-25","known_at":"2026-09-25","class":"unresolved","related_party":true,"reference":"connected counterparty; purpose evidence pending"},
+    {"id":"T09","account":"BANK-A","amount":"-150000","settled_at":"2026-09-28","known_at":"2026-09-28","class":"operating_cost","reference":"settled prior-window supplier and payroll costs"},
+    {"id":"T10","account":"BANK-A","amount":"-100000","settled_at":"2026-09-29","known_at":"2026-09-29","class":"financing","reference":"prior bridge-loan principal fully repaid"}
+  ],
+  "classification_versions": [
+    {"transaction_id":"T08","effective_at":"2026-09-25","known_at":"2026-10-03","verified_at":"2026-10-03","class":"related_operating_receipt","evidence":"invoice INV-02 and customer receipt match","reviewer":"Credit evidence officer","version":"class-v2"}
+  ],
+  "policy": {
+    "id":"HYPOTHETICAL-POLICY-001","material_unresolved_share":"0.10","cash_floor":"100000",
+    "maximum_approved_concession_loss":"4000","authority":"Credit officer delegated amendment mandate"
+  },
+  "action_events": [
+    {"id":"A01","kind":"reviewed","known_at":"2026-11-16","effective_at":"2026-11-16","evidence_version":"receipt-v2","recommended_due_day":90},
+    {"id":"A02","kind":"approved","known_at":"2026-11-18","effective_at":"2026-11-18","authority":true,"borrower_agreement":true,"evidence_version":"receipt-v2","actor":"Delegated credit officer"},
+    {"id":"A03","kind":"booked","known_at":"2026-11-19","effective_at":"2026-11-19","approval_id":"A02","evidence_version":"receipt-v2","actor":"Servicing controller"},
+    {"id":"A04","kind":"settled","known_at":"2026-12-31","effective_at":"2026-12-30","amount":"522500","booking_id":"A03","rail_reference":"HYPOTHETICAL-RECEIPT-001"}
+  ],
+  "protection_evidence": [
+    {"id":"P01","effective_at":"2026-10-01","known_at":"2026-10-01","verified_at":"2026-10-01","result":"confirmed","gross_recovery":"200000","owner":"Protection verification team"},
+    {"id":"P02","effective_at":"2026-11-08","known_at":"2026-11-08","result":"source_unavailable","owner":"Protection verification team"},
+    {"id":"P03","effective_at":"2026-11-05","known_at":"2026-11-10","result":"dispute_received","gross_recovery_scenario":"100000","owner":"Protection verification team"},
+    {"id":"P04","effective_at":"2026-11-05","known_at":"2026-11-15","verified_at":"2026-11-15","result":"confirmed_change","gross_recovery":"100000","owner":"Authorised protection specialist",
+     "customer_decision":{"id":"CD01","known_at":"2026-11-15","action":"retain_contract","authority":true,"actor":"Delegated credit officer","rationale":"Borrower remains performing; the specialist review changes recovery assumptions. Retain the customer schedule and continue monitoring.","next_review_at":"2026-12-15"}}
+  ]
+}

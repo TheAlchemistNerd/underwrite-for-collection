@@ -1,5 +1,7 @@
 # Underwrite for Collection: MSME Lifecycle Credit Research Series
 
+[IFoA practical-application review](series/research/IFOA_PRACTICAL_APPLICATION_REVIEW_2026-10-03.md) · [AI, bandits, reinforcement learning and Treasury review](series/research/AI_BANDITS_RL_AND_TREASURY_REVIEW_2026-10-04.md). These notes identify existing evidence and proposed development requirements.
+
 This workspace develops **Underwrite for Collection** from a practitioner article into a six-part Kenyan MSME credit-research series issued as seven manuscripts: Part 1, Part 2a, Part 2b, Part 3, Part 4, Part 5, and Part 6.
 
 The series asks a practical question:
@@ -53,3 +55,17 @@ Files under `source_library` are frozen research copies. They must not be edited
 ## Repository reconciliation
 
 The standalone repository is now the authoritative working location. See [the migration record](MIGRATION_2026-09-26.md) for the restored series layout and transferred reviews.
+
+## Reproducible worked case: 1 October 2026
+
+The active series now includes one connected MSME operating and finance case, with chapter exhibits and a full [worked appendix](series/appendices/WORKED_OPERATING_AND_FINANCE_CASE.md). The [standard-library case lab on GitHub](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) reproduces the borrower ledger, margin-to-cash-earnings bridge, discounted receipts, protection, verification/workflow examples and optional receivables waterfall. All inputs are hypothetical.
+
+Run the tests and exact-regeneration check described in the lab before rebuilding the [master whitepaper](series/build/README.md). Generated PDF/HTML exports remain local; source, tests and canonical numerical outputs are versionable.
+
+## Governed evidence and intervention case
+
+The [Part 3 companion appendix](series/appendices/GOVERNED_EVIDENCE_AND_INTERVENTION_CASE.md) connects bank-cash provenance, evidence review, affordability, permission, contract booking and observed settlement. It uses the same opening cash and loan as the finance case. Parts 3 and 5 contain linked exhibits; both appendices enter the master HTML/PDF build.
+
+Run `python research_lab/run_decision_case.py --write-appendix`, then `python research_lab/run_cases.py` and the checks in the lab README before publication. The first command regenerates the governed example; the second refreshes the primary case's whole-chapter fingerprints after integration.
+
+**Worked-case reader update, 13 October 2026:** the two appendices, six operating-case exhibits and two governance summaries now link to the public research lab. Their descriptions state the assumptions, results and practical institution-application steps. The master PDF rebuilds as `Underwrite_for_Collection_MSME_Credit_Lifecycle_Whitepaper.pdf`.

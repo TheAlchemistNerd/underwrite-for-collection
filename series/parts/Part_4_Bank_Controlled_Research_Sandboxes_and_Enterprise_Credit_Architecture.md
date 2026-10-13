@@ -298,6 +298,16 @@ Service levels describe customer and risk consequences, not only uptime. They in
 
 The phrase *regulatory sandbox* remains reserved for a regulator-operated testing regime with its own admission and safeguards. Kenya's Capital Markets Authority, for example, publishes a Regulatory Sandbox Policy Guidance Note for innovative capital-markets products [14]. That framework does not establish a CBK banking pathway for this programme. The proposed environment is therefore a bank-controlled research sandbox followed, where required, by a regulator-engaged controlled pilot under a pathway agreed in writing with the relevant authority.
 
+<!-- U4C-CASE-4-START -->
+
+### Worked replay case: settlement is an observable state
+
+The companion local fixture replays draft, review, approval, execution, a failed settlement attempt, retry and referenced settlement. Execution requires approval, duplicate IDs must agree, and settlement requires a bank reference; exact repeated events are idempotent. Cash becomes available only in the settled state. The verified transitions provide a basis for institution integration: connect the bank interface, authenticate external references, configure production permissions and reconcile the general ledger.
+
+See the worked case appendix, U4C-MSME-001, and the [GitHub research lab](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) for the declared hypothetical assumptions, full schedules, calculation code, tests and instructions for reproducing both worked cases.
+
+<!-- U4C-CASE-4-END -->
+
 ## 9. Conclusion
 
 Part 4 turns lifecycle underwriting from a compelling method into an accountable banking capability. The source records remain authoritative, research moves to governed data, the champion becomes a complete approved artefact, policy and human authority remain visible, and every intervention returns as a reproducible cash and customer outcome. Synthetic development, retrospective reconstruction, shadow scoring and bounded live use form successive standards of evidence. Privacy, cybersecurity, model risk and operational resilience are designed into those stages rather than added after deployment.

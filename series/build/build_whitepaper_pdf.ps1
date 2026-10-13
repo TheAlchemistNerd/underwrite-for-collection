@@ -1,5 +1,6 @@
 param(
-    [string]$OutputName = 'Underwrite_for_Collection_MSME_Lifecycle_White_Paper_2026-09-15.pdf'
+    [string]$OutputName = 'Underwrite_for_Collection_MSME_Credit_Lifecycle_Whitepaper.pdf',
+    [switch]$AssembleOnly
 )
 
 $ErrorActionPreference = 'Stop'
@@ -54,6 +55,21 @@ $parts = @(
         Label = 'Part 5'
         Title = 'KESONIA Pricing, Expected Credit Loss, Capital and Funding'
         File = 'Part_5_KESONIA_Pricing_Expected_Credit_Loss_Capital_and_Funding.md'
+    },
+    [pscustomobject]@{
+        Label = 'Worked case appendix'
+        Title = 'One Order, Several Cash Clocks: Reproducible Operating and Finance Case'
+        File = '../appendices/WORKED_OPERATING_AND_FINANCE_CASE.md'
+    },
+    [pscustomobject]@{
+        Label = 'Governed evidence appendix'
+        Title = 'Governing Evidence and Intervention: Reproducible Decision Traces'
+        File = '../appendices/GOVERNED_EVIDENCE_AND_INTERVENTION_CASE.md'
+    },
+    [pscustomobject]@{
+        Label = 'Acknowledgements'
+        Title = 'Acknowledgements'
+        File = '../appendices/ACKNOWLEDGEMENTS_AND_LINKEDIN_INPUTS_2026-10-04.md'
     }
 )
 
@@ -129,6 +145,11 @@ foreach ($part in $parts) {
 
 $utf8 = [System.Text.UTF8Encoding]::new($false)
 [System.IO.File]::WriteAllText($assemblyPath, $builder.ToString(), $utf8)
+
+if ($AssembleOnly) {
+    Write-Output $assemblyPath
+    return
+}
 
 $resourcePath = "$sourceDirectory;$seriesRoot;$projectRoot"
 $pandocArguments = @(

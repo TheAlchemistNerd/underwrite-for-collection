@@ -1,7 +1,7 @@
-"""Generate the Part 1 matched-population chart panel.
+"""Generate the Part 1 dated, separately scoped population chart panel.
 
-The values reproduce data already cited in Part 1. The three panels intentionally
-retain different populations and dates rather than presenting them as one series.
+The values reproduce data cited in Part 1. The panels intentionally retain their
+populations and dates rather than presenting unlike observations as one series.
 """
 
 from pathlib import Path
@@ -63,7 +63,7 @@ def main() -> None:
     )
 
     figure = plt.figure(figsize=(10, 14), dpi=240, facecolor="white", constrained_layout=True)
-    grid = figure.add_gridspec(3, 1, height_ratios=[1.0, 1.05, 1.15], hspace=0.22)
+    grid = figure.add_gridspec(3, 1, height_ratios=[1.0, 1.2, 1.15], hspace=0.22)
 
     # Panel A: grouped bars within one fixed CBK MSME population.
     axis_a = figure.add_subplot(grid[0, 0])
@@ -105,48 +105,40 @@ def main() -> None:
     )
     add_horizontal_labels(axis_a, [npl_bars, other_bars])
 
-    # Panel B: columns with separate scopes and reporting dates.
+    # Panel B: horizontal bars with separate scopes and reporting dates.
     axis_b = figure.add_subplot(grid[1, 0])
     style_axis(
         axis_b,
         "B. Value-based NPL ratios across separately scoped populations",
-        "The columns are a scope comparison, not a time series",
+        "The values are a scope comparison, not a time series",
     )
     population_labels = [
         "CBK surveyed MSMEs\nDec 2024",
+        "CBK all commercial banks\nDec 2025",
         "KBA selected MSMEs\nJun 2026",
-        "Commercial banks, all loans\nJun 2026",
+        "CBK all commercial banks\nJun 2026",
     ]
-    population_values = [19.1, 24.5, 14.8]
-    population_colours = [LINK_BLUE, GOLD, DEEP_BLUE]
-    columns = axis_b.bar(
+    population_values = [19.1, 16.0, 24.5, 14.8]
+    population_colours = [LINK_BLUE, DEEP_BLUE, GOLD, SLATE]
+    bars = axis_b.barh(
         np.arange(len(population_labels)),
         population_values,
-        width=0.58,
+        height=0.62,
         color=population_colours,
     )
-    axis_b.set_xticks(np.arange(len(population_labels)), population_labels)
-    axis_b.set_ylim(0, 30)
-    axis_b.set_ylabel("Value-based NPL ratio (%)")
-    axis_b.yaxis.grid(True, color=GRID, linewidth=0.8)
+    axis_b.set_yticks(np.arange(len(population_labels)), population_labels)
+    axis_b.invert_yaxis()
+    axis_b.set_xlim(0, 30)
+    axis_b.set_xlabel("Reported value-based NPL ratio (%)")
+    axis_b.xaxis.grid(True, color=GRID, linewidth=0.8)
     axis_b.set_axisbelow(True)
     axis_b.bar_label(
-        columns,
+        bars,
         labels=[f"{value:.1f}%" for value in population_values],
-        padding=6,
-        fontsize=12,
+        padding=5,
+        fontsize=10.5,
         fontweight="bold",
         color=TEXT,
-    )
-    axis_b.text(
-        0.5,
-        -0.22,
-        "Different reporting populations, coverage and dates must remain attached to every ratio.",
-        transform=axis_b.transAxes,
-        ha="center",
-        va="top",
-        fontsize=10,
-        color=SLATE,
     )
 
     # Panel C: pie chart for the approximate active-account composition.
@@ -174,17 +166,6 @@ def main() -> None:
     percentages[0].set_fontweight("bold")
     percentages[1].set_color(DEEP_BLUE)
     percentages[1].set_fontweight("bold")
-    axis_c.text(
-        0.5,
-        0.04,
-        "Account mix does not equal credit-value mix.",
-        transform=axis_c.transAxes,
-        ha="center",
-        va="bottom",
-        fontsize=10.5,
-        color=SLATE,
-    )
-
     figure.suptitle(
         "Matched populations reveal different credit-risk questions",
         fontsize=21,
@@ -193,15 +174,6 @@ def main() -> None:
         x=0.02,
         ha="left",
     )
-    figure.text(
-        0.02,
-        0.006,
-        "Values reproduce the manuscript's cited CBK and KBA sources [1], [3], [4]. Percentages are rounded as reported.",
-        fontsize=9.5,
-        color=SLATE,
-        ha="left",
-    )
-
     output = Path(__file__).resolve().parents[1] / "assets" / "figures" / "part1_matched_population_views.png"
     output.parent.mkdir(parents=True, exist_ok=True)
     figure.savefig(output, dpi=240, facecolor="white", bbox_inches="tight")

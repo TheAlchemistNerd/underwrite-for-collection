@@ -170,6 +170,26 @@ The Credit Policy and Compliance Gate owns the permissible route. It receives po
 
 Pricing governance also asks whether the premium remains sustainable for the enterprise. A higher charge may cover a greater expected loss on paper while increasing payment stress, adverse selection or early exit. The bank should therefore test acceptance, utilisation, first-payment default, cure, net recovery, complaints and repeat borrowing by price band. Part 6 will treat those outcomes as evidence to be measured rather than assuming that a wider margin always improves risk-adjusted return.
 
+<!-- U4C-CASE-5-START -->
+
+### Worked finance case: reconcile the budget to the cash paths
+
+For the illustrative KES 500,000 fixed-rate loan, the contractual margin budget produces KES -1,700.00 economic profit at an 18% ACT/360 coupon. Its budget hurdle is 20.04%. A separate scenario-weighted cash-earnings calculation includes foregone interest, late funding and capital time; its economic profit is KES -3,724.00 and its conditional hurdle coupon is 22.655%. The explicit KES 2,024 reconciliation connects the budget and cash-earnings conventions. Each hurdle is conditional on the stated assumptions; an actual quote adds market evidence, affordability and the applicable benchmark and contract terms.
+
+The revolving alternative earns coupon on KES 550,000 average funded balance while using KES 630,000 conditional default EAD. The cash-shortfall exhibit derives its own EIR and separates receipt timing from workout cost. Protection is valued at its actual assumed payment date. The optional ten-loan pool then allocates the same type of loan receivable through a KES 5.25 million sources-and-uses statement, a funded reserve and a dated waterfall. Its base equity cash is KES 830,000.00; a timing delay reduces it to KES 814,777.78 despite unchanged ultimate asset receipts. The vehicle clock, transfer price and contractual priority are stated separately from the bank case.
+
+See the worked case appendix, U4C-MSME-001, and the [GitHub research lab](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) for the declared hypothetical assumptions, full schedules, calculation code, tests and instructions for reproducing both worked cases.
+
+<!-- U4C-CASE-5-END -->
+
+<!-- U4C-GOV-5-START -->
+
+### The evidence-to-finance bridge
+
+Companion case U4C-GOV-001 reconstructs the same MSME's opening cash from two controlled accounts. KES 390,000 in gross credits contains KES 120,000 in confirmed operating receipts at the first cutoff. Later invoice verification supports KES 170,000; settled enterprise cash stays KES 250,000. Classification, affordability, contractual execution and financial measurement therefore retain separate records. The governed example also carries the 90-day extension through approval, booking and an observed synthetic payment, and traces a recovery-assumption change to the responsible reviewer and a documented decision to retain the borrower's terms. See the governed evidence appendix and the [GitHub research lab](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) for the reconciled cash bridge, four decision traces and reproduction instructions.
+
+<!-- U4C-GOV-5-END -->
+
 ## 3. One lifecycle distribution, several financial measures
 
 Once a facility has been disbursed, its financial meaning is carried by cash and time. A scheduled instalment is a contractual claim. A settled payment is liquidity. A missed payment is a state transition whose eventual loss depends on cure, modification, recovery and cost. A guarantee is a contingent cash flow whose value depends on coverage, documentation, claim acceptance and settlement timing. A model that stops at default probability leaves most of that economic path unrepresented.

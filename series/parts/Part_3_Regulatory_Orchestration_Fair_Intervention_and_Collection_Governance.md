@@ -329,6 +329,30 @@ where \(\widehat e\) is the logged or estimated treatment propensity and \(\wide
 
 When randomisation is unavailable, the design follows the assignment mechanism. A policy threshold may support regression discontinuity near the cutoff. Staggered branch adoption may support difference-in-differences if pre-trends and concurrent changes are credible. A capacity lottery can serve as an instrument when it affects the outcome through treatment and satisfies the other identifying conditions. Target-trial emulation can structure an observational comparison using explicit eligibility, time zero, strategies, follow-up and censoring. Each route identifies a narrower claim than an RCT, and the evidence label travels with the resulting treatment estimate into the gate.
 
+<!-- U4C-CASE-3-START -->
+
+### Worked intervention case: change the contract through an accountable decision
+
+Moving the example loan's due date from day 60 to day 90, with 90 days of simple interest, produces minimum borrower cash of KES 120,000.00 instead of an unfinanced deficit. The change requires a documented revised schedule, borrower acceptance, authority and execution evidence. This contractual scenario comparison defines the financial outcomes to measure in a subsequent causal evaluation of the policy. Holding PD and recovery fixed solely to isolate timing, the lender's margin-budget economic profit changes from KES -1,700.00 to KES -3,650.00. Borrower feasibility and lender value are both part of the decision.
+
+See the worked case appendix, U4C-MSME-001, and the [GitHub research lab](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) for the declared hypothetical assumptions, full schedules, calculation code, tests and instructions for reproducing both worked cases.
+
+<!-- U4C-CASE-3-END -->
+
+<!-- U4C-GOV-3-START -->
+
+### Worked governance case: connect evidence, permission and delivered action
+
+The companion case U4C-GOV-001 starts with two controlled accounts whose September activity reconciles to the existing MSME example's KES250,000 opening cash. Gross credits of KES390,000 include a paired self-transfer, a reversed credit, a repaid financing draw, owner capital and an unresolved related-party receipt. Confirmed operating receipts are KES120,000 at the September decision cutoff. Subsequent invoice evidence supports KES170,000 in the updated classification; consolidated settled cash remains KES250,000. A replay retains the evidence that was knowable at each decision.
+
+The same case takes the day 90 extension through an illustrative internal policy. Its minimum borrower cash is KES120,000 and its margin-budget economic profit is KES−3,650 under the stated timing sensitivity. The officer reviews that trade-off, verifies the receipt date and records authority and borrower agreement. Approval, booking and settlement have separate events: the original schedule remains effective until booking; the booked amendment establishes the expected payment, and the settlement record establishes received cash. The synthetic follow-up exercises payment reconciliation and defines outcome fields for a subsequent intervention evaluation.
+
+A second review follows protection evidence from source outage to disputed information to specialist verification. The verified gross-recovery assumption changes from KES200,000 to KES100,000; with the case's PD held at 4%, expected nominal loss rises from KES12,800 to KES16,800. The specialist records the approved model-assumption change and an authorised decision to retain the performing borrower's contract, with a reason and next review date. Retaining the existing contract is therefore an explicit decision with a responsible owner and review date.
+
+See the appendix *Governing evidence and intervention: a reproducible operating case* and the [GitHub research lab](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) for the transaction fixture, four decision traces, exact financial results and replay tests. The policy thresholds, roles and later observations are explicitly hypothetical.
+
+<!-- U4C-GOV-3-END -->
+
 ## 8. Portfolio triggers and accountable management information
 
 Individual actions accumulate into portfolio consequences. The management pack connects model, policy, treatment, cash and customer outcomes by product, vintage, sector, geography, institution and intervention cohort. It reports calibration, missingness, support-range exceptions, approval and limit movements, arrears entry, modification, cure, re-default, gross and net recovery, contact cost, complaints, human-review volume and override outcomes. Finance can reconcile these states to balances and cash; risk can reconcile them to exposure and loss; conduct teams can examine treatment and recourse.

@@ -1,0 +1,23 @@
+{
+  "case_id": "U4C-MSME-001",
+  "edition": "2026-10-01",
+  "numeric_precision": 40,
+  "source_sha256": {
+    "case_inputs.json": "07cadbdff9005789bdf16de76cf32a50653e952f3a14c24f0957cae283d62c6b",
+    "cases.py": "ff6d10779c2dcf3976cd8d75da7096268988eeb8df9e9794ad74573a0eb8fd6a",
+    "test_cases.py": "2388a3707a6eaf34658b0f4f26674840025a37b4a777151eb651348775501db5",
+    "run_cases.py": "53558a37a463a4aff8ad3ba4af41c7f8aabcdd286e808f31e780221d5846059a",
+    "appendix_template.md": "12433e9be18c7f2c6aa87e4a124ecd5a028900f000ed51e5a6030af55ef02c5c",
+    "publication_baseline.sha256": "d7e14a6eadc6e197276406bf327d2234ac55b09daf74b629f3e07968bcceaf60"
+  },
+  "generated_sha256": {
+    "research_lab/results/case_results.json": "ca013d8024f07c2c02af73a54c23334892588a6bb2022ed5eee169e7f7dcf6c2",
+    "series/appendices/WORKED_OPERATING_AND_FINANCE_CASE.md": "a4ea710f68341937320cee9fbbadf881823fdc519203d3fab16c7ba5d67e0d06",
+    "series/parts/Part_1_MSME_Credit_Lifecycle_and_Collection_Cascades.md": "a12ee1dbdb1a0da1cd09c2dc7421414b33a63783c39a6607c80d2c598f455e65",
+    "series/parts/Part_2a_Temporal_Evidence_and_Feature_Engineering.md": "61e5380ad754b30a28a914eebb7406419e7926f0baf14171880179db0539cdc3",
+    "series/parts/Part_2b_Hierarchical_Bayesian_Underwriting_Causal_Identification_and_Lifecycle_Dependence.md": "8f579eb2a95459dd248410c5a1a2d44d78fe52766be9081249d73c3c1085edcb",
+    "series/parts/Part_3_Regulatory_Orchestration_Fair_Intervention_and_Collection_Governance.md": "3da1c975daa7d2491e5a1608d0f1428ae130bfabf6d24febc183d68c761960f0",
+    "series/parts/Part_4_Bank_Controlled_Research_Sandboxes_and_Enterprise_Credit_Architecture.md": "ebe3aa73bab8d855a6195712886120d8b71a47793224cb949e2dcf78668576f6",
+    "series/parts/Part_5_KESONIA_Pricing_Expected_Credit_Loss_Capital_and_Funding.md": "9c463c397211a91ff7f7c30a3b8d518ee47620f2ba04591939a0c61beb135474"
+  }
+}

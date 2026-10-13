@@ -1,0 +1,746 @@
+{
+  "borrower": {
+    "on_time": {
+      "rows": [
+        {
+          "day": 0,
+          "date": "2026-10-01",
+          "opening": "250000",
+          "receipts": "200000",
+          "draw": "500000",
+          "operating": "600000",
+          "debt": "0",
+          "fee": "10000",
+          "closing": "340000",
+          "financing_needed": "0"
+        },
+        {
+          "day": 30,
+          "date": "2026-10-31",
+          "opening": "340000",
+          "receipts": "0",
+          "draw": "0",
+          "operating": "120000",
+          "debt": "0",
+          "fee": "0",
+          "closing": "220000",
+          "financing_needed": "0"
+        },
+        {
+          "day": 60,
+          "date": "2026-11-30",
+          "opening": "220000",
+          "receipts": "800000",
+          "draw": "0",
+          "operating": "100000",
+          "debt": "515000.00",
+          "fee": "0",
+          "closing": "405000.00",
+          "financing_needed": "0"
+        }
+      ],
+      "closing": "405000.00",
+      "minimum": "220000",
+      "peak_financing_needed": "0",
+      "finance_cost": "25000.00",
+      "terminal_headroom": "305000.00",
+      "operating_surplus": "180000",
+      "executable_without_new_finance": true
+    },
+    "delay_unfinanced": {
+      "rows": [
+        {
+          "day": 0,
+          "date": "2026-10-01",
+          "opening": "250000",
+          "receipts": "200000",
+          "draw": "500000",
+          "operating": "600000",
+          "debt": "0",
+          "fee": "10000",
+          "closing": "340000",
+          "financing_needed": "0"
+        },
+        {
+          "day": 30,
+          "date": "2026-10-31",
+          "opening": "340000",
+          "receipts": "0",
+          "draw": "0",
+          "operating": "120000",
+          "debt": "0",
+          "fee": "0",
+          "closing": "220000",
+          "financing_needed": "0"
+        },
+        {
+          "day": 60,
+          "date": "2026-11-30",
+          "opening": "220000",
+          "receipts": "0",
+          "draw": "0",
+          "operating": "100000",
+          "debt": "515000.00",
+          "fee": "0",
+          "closing": "-395000.00",
+          "financing_needed": "495000.00"
+        },
+        {
+          "day": 90,
+          "date": "2026-12-30",
+          "opening": "-395000.00",
+          "receipts": "800000",
+          "draw": "0",
+          "operating": "0",
+          "debt": "0",
+          "fee": "0",
+          "closing": "405000.00",
+          "financing_needed": "0"
+        }
+      ],
+      "closing": "405000.00",
+      "minimum": "-395000.00",
+      "peak_financing_needed": "495000.00",
+      "finance_cost": "25000.00",
+      "terminal_headroom": "305000.00",
+      "operating_surplus": "180000",
+      "executable_without_new_finance": false
+    },
+    "approved_extension": {
+      "rows": [
+        {
+          "day": 0,
+          "date": "2026-10-01",
+          "opening": "250000",
+          "receipts": "200000",
+          "draw": "500000",
+          "operating": "600000",
+          "debt": "0",
+          "fee": "10000",
+          "closing": "340000",
+          "financing_needed": "0"
+        },
+        {
+          "day": 30,
+          "date": "2026-10-31",
+          "opening": "340000",
+          "receipts": "0",
+          "draw": "0",
+          "operating": "120000",
+          "debt": "0",
+          "fee": "0",
+          "closing": "220000",
+          "financing_needed": "0"
+        },
+        {
+          "day": 60,
+          "date": "2026-11-30",
+          "opening": "220000",
+          "receipts": "0",
+          "draw": "0",
+          "operating": "100000",
+          "debt": "0",
+          "fee": "0",
+          "closing": "120000",
+          "financing_needed": "0"
+        },
+        {
+          "day": 90,
+          "date": "2026-12-30",
+          "opening": "120000",
+          "receipts": "800000",
+          "draw": "0",
+          "operating": "0",
+          "debt": "522500.00",
+          "fee": "0",
+          "closing": "397500.00",
+          "financing_needed": "0"
+        }
+      ],
+      "closing": "397500.00",
+      "minimum": "120000",
+      "peak_financing_needed": "0",
+      "finance_cost": "32500.00",
+      "terminal_headroom": "297500.00",
+      "operating_surplus": "180000",
+      "executable_without_new_finance": true
+    },
+    "revolver": {
+      "rows": [
+        {
+          "day": 0,
+          "date": "2026-10-01",
+          "opening": "250000",
+          "receipts": "200000",
+          "draw": "500000",
+          "operating": "600000",
+          "debt": "0",
+          "fee": "10000",
+          "closing": "340000",
+          "financing_needed": "0"
+        },
+        {
+          "day": 30,
+          "date": "2026-10-31",
+          "opening": "340000",
+          "receipts": "0",
+          "draw": "100000",
+          "operating": "120000",
+          "debt": "0",
+          "fee": "0",
+          "closing": "320000",
+          "financing_needed": "0"
+        },
+        {
+          "day": 60,
+          "date": "2026-11-30",
+          "opening": "320000",
+          "receipts": "800000",
+          "draw": "0",
+          "operating": "100000",
+          "debt": "616666.6666666666666666666666666666666667",
+          "fee": "0",
+          "closing": "403333.3333333333333333333333333333333333",
+          "financing_needed": "0"
+        }
+      ],
+      "closing": "403333.3333333333333333333333333333333333",
+      "minimum": "320000",
+      "peak_financing_needed": "0",
+      "finance_cost": "26666.66666666666666666666666666666666667",
+      "terminal_headroom": "303333.3333333333333333333333333333333333",
+      "operating_surplus": "180000",
+      "executable_without_new_finance": true
+    }
+  },
+  "pricing": {
+    "term": {
+      "days": 60,
+      "average_drawn": "500000",
+      "average_undrawn": "0",
+      "ead": "500000",
+      "lgd": "0.64",
+      "coupon": "15000.00",
+      "upfront_fee": "10000",
+      "commitment_fee": "0.00",
+      "income": "25000.00",
+      "funding": "7500.00",
+      "operating_cost": "5000",
+      "liquidity_cost": "0.000",
+      "expected_loss": "12800.0000",
+      "capital": "60000.00",
+      "capital_charge": "1400.0000",
+      "contribution": "-300.0000",
+      "economic_profit": "-1700.0000",
+      "period_raroc": "-0.005",
+      "annualised_simple_raroc": "-0.030",
+      "hurdle_coupon": "0.2004000000000000000000000000000000000000"
+    },
+    "extension": {
+      "days": 90,
+      "average_drawn": "500000",
+      "average_undrawn": "0",
+      "ead": "500000",
+      "lgd": "0.64",
+      "coupon": "22500.00",
+      "upfront_fee": "10000",
+      "commitment_fee": "0.00",
+      "income": "32500.00",
+      "funding": "11250.00",
+      "operating_cost": "10000",
+      "liquidity_cost": "0.000",
+      "expected_loss": "12800.0000",
+      "capital": "60000.00",
+      "capital_charge": "2100.0000",
+      "contribution": "-1550.0000",
+      "economic_profit": "-3650.0000",
+      "period_raroc": "-0.02583333333333333333333333333333333333333",
+      "annualised_simple_raroc": "-0.1033333333333333333333333333333333333333",
+      "hurdle_coupon": "0.2092"
+    },
+    "revolver": {
+      "days": 60,
+      "average_drawn": "550000",
+      "average_undrawn": "100000",
+      "ead": "630000.00",
+      "lgd": "0.64",
+      "coupon": "16500.00",
+      "upfront_fee": "10000",
+      "commitment_fee": "166.6666666666666666666666666666666666667",
+      "income": "26666.66666666666666666666666666666666667",
+      "funding": "8250.00",
+      "operating_cost": "5000",
+      "liquidity_cost": "83.33333333333333333333333333333333333333",
+      "expected_loss": "16128.000000",
+      "capital": "75600.0000",
+      "capital_charge": "1764.000000",
+      "contribution": "-2794.666666666666666666666666666666666663",
+      "economic_profit": "-4558.666666666666666666666666666666666663",
+      "period_raroc": "-0.03696649029982363315696649029982363315692",
+      "annualised_simple_raroc": "-0.2217989417989417989417989417989417989415",
+      "hurdle_coupon": "0.2297309090909090909090909090909090909090"
+    }
+  },
+  "cash_shortfall": {
+    "net_proceeds": "490000",
+    "due": "515000.00",
+    "eir": "0.353529804053563068679207886895160418671",
+    "rows": [
+      {
+        "name": "on_time",
+        "weight": "0.80",
+        "day": 60,
+        "amount": "515000.00",
+        "pv": "489999.9999999999999999999999999999999999",
+        "weighted_pv": "391999.9999999999999999999999999999999999"
+      },
+      {
+        "name": "late_same_cash",
+        "weight": "0.16",
+        "day": 90,
+        "amount": "515000.00",
+        "pv": "477958.8478040497131283956094199017435059",
+        "weighted_pv": "76473.41564864795410054329750718427896094"
+      },
+      {
+        "name": "default_gross_receipt",
+        "weight": "0.04",
+        "day": 180,
+        "amount": "200000.00",
+        "pv": "172264.8017299837928412128555439739294443",
+        "weighted_pv": "6890.592069199351713648514221758957177772"
+      }
+    ],
+    "expected_receipts_pv": "475364.0077178473058141918117289432361386",
+    "receipt_shortfall": "14635.9922821526941858081882710567638614",
+    "separate_workout_cost_pv": "689.0592069199351713648514221758957177772",
+    "management_shortfall_with_cost": "15325.05148907262935717303969323265957918",
+    "late_only_time_loss": "12041.1521959502868716043905800982564941"
+  },
+  "scenario_profit": {
+    "rows": [
+      {
+        "name": "on_time",
+        "weight": "0.80",
+        "resolution_day": 60,
+        "receipt": "515000.00",
+        "funding": "7500.00",
+        "workout": "0",
+        "contribution": "12500.00",
+        "capital_charge": "1400.0000",
+        "economic_profit": "11100.0000"
+      },
+      {
+        "name": "late_same_cash",
+        "weight": "0.16",
+        "resolution_day": 90,
+        "receipt": "515000.00",
+        "funding": "11250.00",
+        "workout": "0",
+        "contribution": "8750.00",
+        "capital_charge": "2100.0000",
+        "economic_profit": "6650.0000"
+      },
+      {
+        "name": "default",
+        "weight": "0.04",
+        "resolution_day": 180,
+        "receipt": "200000.00",
+        "funding": "22500.00",
+        "workout": "20000.00",
+        "contribution": "-337500.00",
+        "capital_charge": "4200.0000",
+        "economic_profit": "-341700.0000"
+      }
+    ],
+    "expected_contribution": "-2100.0000",
+    "expected_capital_charge": "1624.000000",
+    "expected_economic_profit": "-3724.000000",
+    "required_coupon": "0.22655",
+    "bridge_from_margin_budget": "-2024.000000"
+  },
+  "protection": {
+    "gross_recovery": "200000.00",
+    "workout_cost": "20000.00",
+    "guarantee_payment": "150000.0000",
+    "claim_net": "147000.0000",
+    "unprotected_nrv_at_default": "174971.7369268793840651338498383681007511",
+    "protected_nrv_at_default": "315855.3340144616328598180103789842949662",
+    "incremental_nrv_at_default": "140883.5970875822487946841605406161942151",
+    "expected_net_benefit_at_day_0": "556.075286804612020592261118311950326308",
+    "weaker_lgd": "0.84",
+    "weaker_expected_loss": "16800.0000"
+  },
+  "evidence": [
+    {
+      "cutoff": 0,
+      "last_verified": 0,
+      "age_days": 0,
+      "recovery_fraction": "0.40",
+      "source_outage": false,
+      "pending_verification": false
+    },
+    {
+      "cutoff": 35,
+      "last_verified": 0,
+      "age_days": 35,
+      "recovery_fraction": "0.40",
+      "source_outage": true,
+      "pending_verification": false
+    },
+    {
+      "cutoff": 42,
+      "last_verified": 0,
+      "age_days": 42,
+      "recovery_fraction": "0.40",
+      "source_outage": true,
+      "pending_verification": true
+    },
+    {
+      "cutoff": 45,
+      "last_verified": 45,
+      "age_days": 0,
+      "recovery_fraction": "0.20",
+      "source_outage": false,
+      "pending_verification": false
+    }
+  ],
+  "workflow": [
+    {
+      "cutoff": 52,
+      "state": "approved",
+      "unique_events": 3,
+      "available_cash": false
+    },
+    {
+      "cutoff": 53,
+      "state": "executed",
+      "unique_events": 4,
+      "available_cash": false
+    },
+    {
+      "cutoff": 54,
+      "state": "failed",
+      "unique_events": 5,
+      "available_cash": false
+    },
+    {
+      "cutoff": 55,
+      "state": "executed",
+      "unique_events": 6,
+      "available_cash": false
+    },
+    {
+      "cutoff": 56,
+      "state": "settled",
+      "unique_events": 7,
+      "available_cash": true
+    }
+  ],
+  "vintage": {
+    "original": 100,
+    "ever90": 20,
+    "current90": 5,
+    "active": 95,
+    "difference_same_denominator": 15,
+    "currently_current_after90": 6,
+    "confirmed_three_month_current": 3,
+    "followup_incomplete": 3,
+    "ever_rate": "0.2",
+    "current_rate_active": "0.05263157894736842105263157894736842105263",
+    "mixed_denominator_difference": "0.1473684210526315789473684210526315789474"
+  },
+  "pool": {
+    "base": {
+      "rows": [
+        {
+          "day": 30,
+          "opening_cash": "0",
+          "opening_reserve": "250000",
+          "opening_notes": {
+            "a": "3500000",
+            "b": "1000000"
+          },
+          "receipts": "2575000.00",
+          "eligible_principal": "2500000",
+          "oc_before_collections": "1.111111111111111111111111111111111111111",
+          "early_amortisation": false,
+          "payments": {
+            "fees": "10000",
+            "a_interest": "23333.33333333333333333333333333333333333",
+            "a_principal": "1750000.0",
+            "b_interest": "10000.00",
+            "b_principal": "500000.0"
+          },
+          "reserve_draw": "0",
+          "reserve_topup": "0",
+          "reserve_release": "0",
+          "closing_cash": "0",
+          "closing_reserve": "250000",
+          "closing_notes": {
+            "a": "1750000.0",
+            "b": "500000.0"
+          },
+          "unpaid_interest": {
+            "a": "0E-35",
+            "b": "0.00"
+          },
+          "fees_due": "0",
+          "equity": "281666.666666666666666666666666666666667",
+          "conservation_residual": "0E-33"
+        },
+        {
+          "day": 60,
+          "opening_cash": "0",
+          "opening_reserve": "250000",
+          "opening_notes": {
+            "a": "1750000.0",
+            "b": "500000.0"
+          },
+          "receipts": "2575000.00",
+          "eligible_principal": "0",
+          "oc_before_collections": "1.111111111111111111111111111111111111111",
+          "early_amortisation": false,
+          "payments": {
+            "fees": "10000",
+            "a_interest": "11666.66666666666666666666666666666666667",
+            "a_principal": "1750000.0",
+            "b_interest": "5000.000",
+            "b_principal": "500000.0"
+          },
+          "reserve_draw": "0",
+          "reserve_topup": "0",
+          "reserve_release": "250000",
+          "closing_cash": "0",
+          "closing_reserve": "0",
+          "closing_notes": {
+            "a": "0.0",
+            "b": "0.0"
+          },
+          "unpaid_interest": {
+            "a": "0E-35",
+            "b": "0.000"
+          },
+          "fees_due": "0",
+          "equity": "548333.3333333333333333333333333333333330",
+          "conservation_residual": "0E-34"
+        }
+      ],
+      "purchase": "5000000",
+      "opening_sources": "5250000",
+      "equity_invested": "750000",
+      "total_equity_cash": "830000.0000000000000000000000000000000000",
+      "equity_profit": "80000.0000000000000000000000000000000000",
+      "terminal_note_loss": "0.0",
+      "total_receipts": "5150000.00",
+      "total_fees": "20000",
+      "total_note_interest": "50000.00000000000000000000000000000000000"
+    },
+    "delay": {
+      "rows": [
+        {
+          "day": 30,
+          "opening_cash": "0",
+          "opening_reserve": "250000",
+          "opening_notes": {
+            "a": "3500000",
+            "b": "1000000"
+          },
+          "receipts": "0.00",
+          "eligible_principal": "5000000",
+          "oc_before_collections": "1.111111111111111111111111111111111111111",
+          "early_amortisation": true,
+          "payments": {
+            "fees": "10000.00",
+            "a_interest": "23333.33333333333333333333333333333333333",
+            "a_principal": "216666.6666666666666666666666666666666667",
+            "b_interest": "0E-34",
+            "b_principal": "0E-34"
+          },
+          "reserve_draw": "250000.0000000000000000000000000000000000",
+          "reserve_topup": "0",
+          "reserve_release": "0",
+          "closing_cash": "0E-34",
+          "closing_reserve": "0E-34",
+          "closing_notes": {
+            "a": "3283333.333333333333333333333333333333333",
+            "b": "1000000.000000000000000000000000000000000"
+          },
+          "unpaid_interest": {
+            "a": "0E-35",
+            "b": "10000.0000000000000000000000000000000000"
+          },
+          "fees_due": "0.00",
+          "equity": "0",
+          "conservation_residual": "0E-34"
+        },
+        {
+          "day": 60,
+          "opening_cash": "0E-34",
+          "opening_reserve": "0E-34",
+          "opening_notes": {
+            "a": "3283333.333333333333333333333333333333333",
+            "b": "1000000.000000000000000000000000000000000"
+          },
+          "receipts": "5150000.00",
+          "eligible_principal": "0",
+          "oc_before_collections": "1.167315175097276264591439688715953307393",
+          "early_amortisation": true,
+          "payments": {
+            "fees": "10000.00",
+            "a_interest": "21888.88888888888888888888888888888888888",
+            "a_principal": "3283333.333333333333333333333333333333333",
+            "b_interest": "20000.0000000000000000000000000000000000",
+            "b_principal": "1000000.000000000000000000000000000000000"
+          },
+          "reserve_draw": "0",
+          "reserve_topup": "0",
+          "reserve_release": "0E-34",
+          "closing_cash": "0",
+          "closing_reserve": "0",
+          "closing_notes": {
+            "a": "0E-33",
+            "b": "0E-33"
+          },
+          "unpaid_interest": {
+            "a": "0E-35",
+            "b": "0E-34"
+          },
+          "fees_due": "0.00",
+          "equity": "814777.7777777777777777777777777777777780",
+          "conservation_residual": "0E-34"
+        }
+      ],
+      "purchase": "5000000",
+      "opening_sources": "5250000",
+      "equity_invested": "750000",
+      "total_equity_cash": "814777.7777777777777777777777777777777780",
+      "equity_profit": "64777.7777777777777777777777777777777780",
+      "terminal_note_loss": "0E-33",
+      "total_receipts": "5150000.00",
+      "total_fees": "20000.00",
+      "total_note_interest": "65222.22222222222222222222222222222222221"
+    },
+    "default": {
+      "rows": [
+        {
+          "day": 30,
+          "opening_cash": "0",
+          "opening_reserve": "250000",
+          "opening_notes": {
+            "a": "3500000",
+            "b": "1000000"
+          },
+          "receipts": "2060000.00",
+          "eligible_principal": "2500000",
+          "oc_before_collections": "1",
+          "early_amortisation": true,
+          "payments": {
+            "fees": "10000",
+            "a_interest": "23333.33333333333333333333333333333333333",
+            "a_principal": "2026666.666666666666666666666666666666667",
+            "b_interest": "10000.000000000000000000000000000000000",
+            "b_principal": "0E-33"
+          },
+          "reserve_draw": "10000.000000000000000000000000000000000",
+          "reserve_topup": "0",
+          "reserve_release": "0",
+          "closing_cash": "0E-33",
+          "closing_reserve": "240000.000000000000000000000000000000000",
+          "closing_notes": {
+            "a": "1473333.333333333333333333333333333333333",
+            "b": "1000000.000000000000000000000000000000000"
+          },
+          "unpaid_interest": {
+            "a": "0E-35",
+            "b": "0E-33"
+          },
+          "fees_due": "0",
+          "equity": "0",
+          "conservation_residual": "0E-33"
+        },
+        {
+          "day": 60,
+          "opening_cash": "0E-33",
+          "opening_reserve": "240000.000000000000000000000000000000000",
+          "opening_notes": {
+            "a": "1473333.333333333333333333333333333333333",
+            "b": "1000000.000000000000000000000000000000000"
+          },
+          "receipts": "2575000.00",
+          "eligible_principal": "0",
+          "oc_before_collections": "1.010781671159029649595687331536388140162",
+          "early_amortisation": true,
+          "payments": {
+            "fees": "10000",
+            "a_interest": "9822.222222222222222222222222222222222217",
+            "a_principal": "1473333.333333333333333333333333333333333",
+            "b_interest": "10000.000000000000000000000000000000000",
+            "b_principal": "1000000.000000000000000000000000000000000"
+          },
+          "reserve_draw": "0",
+          "reserve_topup": "0",
+          "reserve_release": "0",
+          "closing_cash": "71844.444444444444444444444444444444445",
+          "closing_reserve": "240000.000000000000000000000000000000000",
+          "closing_notes": {
+            "a": "0E-33",
+            "b": "0E-33"
+          },
+          "unpaid_interest": {
+            "a": "0E-36",
+            "b": "0E-33"
+          },
+          "fees_due": "0",
+          "equity": "0",
+          "conservation_residual": "0E-33"
+        },
+        {
+          "day": 180,
+          "opening_cash": "71844.444444444444444444444444444444445",
+          "opening_reserve": "240000.000000000000000000000000000000000",
+          "opening_notes": {
+            "a": "0E-33",
+            "b": "0E-33"
+          },
+          "receipts": "200000.00",
+          "eligible_principal": "0",
+          "oc_before_collections": null,
+          "early_amortisation": true,
+          "payments": {
+            "fees": "60000.00",
+            "a_interest": "0E-36",
+            "a_principal": "0E-33",
+            "b_interest": "0E-35",
+            "b_principal": "0E-33"
+          },
+          "reserve_draw": "0",
+          "reserve_topup": "0",
+          "reserve_release": "240000.000000000000000000000000000000000",
+          "closing_cash": "0",
+          "closing_reserve": "0",
+          "closing_notes": {
+            "a": "0E-33",
+            "b": "0E-33"
+          },
+          "unpaid_interest": {
+            "a": "0E-36",
+            "b": "0E-35"
+          },
+          "fees_due": "0.00",
+          "equity": "451844.4444444444444444444444444444444450",
+          "conservation_residual": "0E-34"
+        }
+      ],
+      "purchase": "5000000",
+      "opening_sources": "5250000",
+      "equity_invested": "750000",
+      "total_equity_cash": "451844.4444444444444444444444444444444450",
+      "equity_profit": "-298155.5555555555555555555555555555555550",
+      "terminal_note_loss": "0E-33",
+      "total_receipts": "4835000.00",
+      "total_fees": "80000.00",
+      "total_note_interest": "53155.55555555555555555555555555555555555"
+    }
+  }
+}

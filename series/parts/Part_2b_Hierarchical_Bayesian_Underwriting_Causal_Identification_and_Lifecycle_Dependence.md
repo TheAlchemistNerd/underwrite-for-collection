@@ -723,6 +723,16 @@ Portfolio aggregation retains scenario coherence. Posterior draws are propagated
 
 The handoff to pricing, accounting and structured finance is a versioned distributional output, not one undifferentiated score. It includes horizon PD, transition probabilities, EAD paths, discounted recovery paths, expected loss, tail loss, calibration segment, posterior uncertainty, scenario and model version. Part 5 can then translate the same cash logic into KESONIA-linked pricing, expected credit loss, capital, reserve and ring-fenced funding decisions without redefining the underlying credit event.
 
+<!-- U4C-CASE-2b-START -->
+
+### Worked outcome case: distinguish current status, cure and loss
+
+The account-path fixture contains 20 loans that have ever been 90+ days past due: five remain 90+, four are in lesser arrears, six are current, three prepaid and two exited through foreclosure. Only three have enough follow-up to satisfy the illustrative three-consecutive-current-month rule. The 15 accounts that left 90+ comprise several outcomes; the sustained-current count is three under the stated rule. The associated finance case also keeps nominal principal loss, dated recovery cash and discounted contractual shortfall as separate targets. These definitions establish the outcome labels for subsequent hierarchical estimation and intervention evaluation using observed account histories.
+
+See the worked case appendix, U4C-MSME-001, and the [GitHub research lab](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) for the declared hypothetical assumptions, full schedules, calculation code, tests and instructions for reproducing both worked cases.
+
+<!-- U4C-CASE-2b-END -->
+
 ## 10. Common shocks and residual dependence
 
 MSME defaults cluster because firms share customers, suppliers, platforms, neighbourhoods, transport corridors, weather, policy changes, interest rates and demand conditions. The first response is to model these observed channels directly. Macroeconomic regimes enter the contextual evidence set; sector, geography, institution and origination cohort receive hierarchical effects; connected enterprises are grouped; and validation holds out entire common-risk units. Residual dependence is considered only after the marginal models are calibrated under those shared factors.

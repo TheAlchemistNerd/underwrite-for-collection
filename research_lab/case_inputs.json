@@ -1,0 +1,41 @@
+{
+  "case_id": "U4C-MSME-001",
+  "currency": "KES",
+  "valuation_date": "2026-10-01",
+  "status": "Hypothetical teaching case; no fitted or observed outcomes",
+  "operating": {
+    "opening_cash": "250000", "cash_floor": "100000",
+    "customer_advance": "200000", "customer_balance": "800000",
+    "supplier_day_0": "600000", "payroll_day_30": "120000",
+    "completion_day_60": "100000"
+  },
+  "loan": {
+    "principal": "500000", "coupon": "0.18", "fee": "10000",
+    "term_days": 60, "delayed_receipt_day": 90,
+    "funding_rate": "0.09", "operating_cost": "5000",
+    "extension_admin_cost": "5000", "capital_ratio": "0.12",
+    "capital_hurdle": "0.14", "day_basis": 360
+  },
+  "credit": {
+    "default_probability": "0.04", "late_nondefault_probability": "0.16",
+    "gross_recovery_fraction": "0.40", "workout_cost_fraction": "0.04",
+    "recovery_day": 180, "recovery_discount_rate": "0.09",
+    "weakened_gross_recovery_fraction": "0.20"
+  },
+  "revolver": {
+    "limit": "650000", "second_draw_day_30": "100000",
+    "undrawn_fee_rate": "0.01", "undrawn_liquidity_cost_rate": "0.005",
+    "stress_ccf": "0.60"
+  },
+  "protection": {
+    "share_of_unrecovered_principal": "0.50", "cap": "250000",
+    "acceptance_day": 90, "payment_day": 240,
+    "claim_cost": "3000", "premium_day_0": "5000"
+  },
+  "pool": {
+    "loan_count": 10, "first_batch_count": 5,
+    "class_a": "3500000", "class_b": "1000000", "equity": "750000",
+    "reserve": "250000", "a_coupon": "0.08", "b_coupon": "0.12",
+    "fee_per_30_days": "10000", "oc_trigger": "1.05"
+  }
+}

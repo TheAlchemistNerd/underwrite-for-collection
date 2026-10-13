@@ -1,0 +1,7 @@
+{
+  "case_id": "U4C-GOV-001",
+  "input_fingerprints": {
+    "decision_case_inputs.json": "5a327d6dd9eed00260c191061dd6a8c69ee032e1e2ffba351b8f3c490f69a946",
+    "case_inputs.json": "b3df30e315cd550b71d4c72c94fbc1d4ea6da0693d4e053ebb6fba832867ee6e"
+  }
+}

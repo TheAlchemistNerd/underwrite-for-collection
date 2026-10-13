@@ -508,6 +508,16 @@ Reconstruction tests should use deliberately difficult examples rather than rand
 
 The resulting training row is a documented information set, not merely a vector. It identifies the entity, decision, feature values, masks, source vintages, definition versions and outcome-maturity status. That record allows the bank to distinguish a model error from a stale source, a late event, a policy change or a reconstruction defect. It also gives the next section a reliable base on which to define explicit lifecycle features.
 
+<!-- U4C-CASE-2a-START -->
+
+### Worked evidence case: availability precedes model use
+
+In the connected case, a rights change effective on day 20 first becomes known on day 40 and is verified on day 45. The day-35 forecast uses the evidence known by day 35. A feed outage on day 30 preserves the day-0 verification timestamp and prompts a freshness review. At day 42 the change is known but pending review; the record retains that uncertainty and the last verified parameter. This separation of effective, known and verified dates is exercised by the reproducible fixture. Feed freshness and borrower performance are reviewed as separate evidence dimensions.
+
+See the worked case appendix, U4C-MSME-001, and the [GitHub research lab](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) for the declared hypothetical assumptions, full schedules, calculation code, tests and instructions for reproducing both worked cases.
+
+<!-- U4C-CASE-2a-END -->
+
 ## 5. Explicit lifecycle features with economic meaning
 
 Behavioural scoring becomes credible when each variable describes an observable part of enterprise cash generation, contractual obligation or payment response. The model should not begin with thousands of convenient aggregations and search for a story afterwards. It should begin with an economic question, define the event population and clock, and then test whether the resulting measure is stable and incrementally useful.
