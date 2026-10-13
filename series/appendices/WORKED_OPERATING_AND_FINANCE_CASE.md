@@ -294,7 +294,7 @@ The default stress produces zero note principal loss under the stated inputs and
 
 ## A10. Reproduce, change and validate
 
-The assumptions, cash schedules and calculation rules needed to follow the results are stated in sections A1-A9. The [GitHub research lab](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) contains the companion software for **U4C-MSME-001**, edition **1 October 2026**: editable inputs, calculation routines, automated checks and version fingerprints. Open its [reproduction guide](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab/README.md) for the execution commands and file inventory. The governed evidence case U4C-GOV-001 uses the same financial functions.
+The assumptions, cash schedules and calculation rules needed to follow the results are stated in sections A1-A9. The [GitHub research lab](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/research_lab) contains the companion software for **U4C-MSME-001**, edition **1 October 2026**: editable inputs, calculation routines, automated checks and version fingerprints. Open its [reproduction guide](https://github.com/TheAlchemistNerd/underwrite-for-collection/blob/main/research_lab/README.md) for the execution commands and file inventory. The governed evidence case U4C-GOV-001 uses the same financial functions.
 
 The implementation retains 40-digit decimal precision and rounds monetary values only for presentation. It verifies the following independently:
 
