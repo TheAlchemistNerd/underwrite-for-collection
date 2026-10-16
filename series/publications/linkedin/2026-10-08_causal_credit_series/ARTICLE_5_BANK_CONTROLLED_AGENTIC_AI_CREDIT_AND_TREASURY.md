@@ -82,11 +82,26 @@ Credit and Treasury follow their own mandates within this common structure. A cr
 
 Consider an illustrative food processor with a KES 500,000 revolving limit, KES 300,000 drawn and a request for an additional KES 100,000 of headroom. A missed instalment and an unpaid customer invoice trigger review. The evidence service links the contractual schedule, verified sales receipts, supplier payments, owner transfers and invoice status as known that morning. It flags the expected invoice receipt as uncertain and distinguishes the requested limit from an actual drawing. For illustration, suppose the candidate-limit model returns a Beta(4,96) posterior for twelve-month default probability. Its mean is 4%, its central 95% credible interval is approximately 1.11%–8.60%, and the probability of exceeding 6% is approximately 14.84%. These constructed figures illustrate the review mechanics and are not estimates from a borrower study [7].
 
+![Beta(4,96) posterior density with mean 4.0%, central 95% credible interval from 1.11% to 8.60%, 6.0% risk threshold, and 14.84% exceedance probability against a 10% review tolerance.](linkedin_diagrams/05_beta_4_96_posterior_limit_gate.png)
+
+*Figure 5.1. Beta(4, 96) posterior and limit-review gate. Mean 4.0%; central 95% credible interval 1.11%–8.60%; at 6%, exceedance probability is 14.84%, above the illustrative 10% review-route tolerance.*
+
+
 Suppose the bank’s illustrative policy requires the probability of exceeding that 6% threshold to be at most 10% for the proposed approval route. The mean alone would give the reviewer an incomplete picture: the exceedance probability directs the case to additional evidence or a different authority. The officer asks for verified invoice acceptance, updates the short-term affordability view and considers retaining the existing limit while the evidence is resolved. Separately, a model supported by an eligible collection experiment may estimate the incremental ninety-day net cash benefit of a supportive action. To illustrate a second uncertainty display, take a Normal distribution with mean KES 8,000 and standard deviation KES 4,000. Its central 90% credible interval is approximately KES 1,421–14,579, and its probability of positive benefit is approximately 97.72%.
+
+![Normal posterior density for incremental ninety-day net cash benefit, centered at KES 8,000 with standard deviation KES 4,000, showing the central 90% interval and positive-benefit probability.](linkedin_diagrams/05_intervention_benefit_posterior.png)
+
+*Figure 5.2. Posterior for incremental ninety-day net cash benefit. Normal mean KES 8,000 and standard deviation KES 4,000; central 90% interval KES 1,421–14,579; probability of positive benefit 97.72%.*
+
 
 Those summaries enter separate decisions. The first concerns uncertainty about default risk at the proposed limit; the second concerns the expected incremental outcome for the defined intervention population under its identification assumptions. The caseworker examines whether the customer falls within that population and whether the action remains appropriate given the disputed or delayed invoice. The officer can approve a support-oriented contact while deferring the higher limit. Meanwhile, the cash forecast represents the timing and amount of the expected receipt, including a delay scenario. Treasury receives the approved portfolio-level aggregation with those timing assumptions. A promised receipt remains distinct from settled liquidity, and an undrawn approved limit contributes to the relevant drawing scenarios and commitment measures under the bank’s methodology.
 
 For a simple predictive-cash illustration, suppose the thirty-day model assigns probabilities of 30%, 50% and 20% to available cash of KES 20,000, KES 100,000 and KES 180,000. The predictive mean is KES 92,000. If obligations due within the same period require KES 70,000, the probability of a shortfall is 30%, even though average cash exceeds the requirement. These deliberately simplified scenarios demonstrate why the reviewer needs the distribution and timing alongside the mean. The bank would replace them with a validated model tied to dated receipts, expenses and obligations. A support plan can then address the plausible low-cash outcome, and Treasury can aggregate scenarios using justified dependence assumptions across accounts rather than summing isolated adverse cases mechanically.
+
+![Discrete predictive cash distribution with outcomes KES 20,000, KES 100,000, and KES 180,000 at probabilities 30%, 50%, and 20%, compared with the KES 70,000 obligation and KES 92,000 predictive mean.](linkedin_diagrams/05_predictive_cash_vs_obligation.png)
+
+*Figure 5.3. Thirty-day predictive available cash. The mean is KES 92,000; the KES 70,000 obligation is unmet in the KES 20,000 scenario, giving 30% shortfall probability.*
+
 
 The approved support action creates an expiring instruction with case, customer, channel, content conditions and authority. A separate execution service validates the instruction, checks current case status and records submission, delivery and response using a unique action identifier. If the invoice later pays, the payment reference is reconciled to the account, facility and available-cash date. A failed delivery or duplicate retry remains visible in the operational record. The experiment record keeps the original assignment, actual receipt, human override and matured outcome, allowing analysts to distinguish what was offered from what was delivered. The credit review can then be reopened with the new evidence, using the appropriate model and policy versions rather than treating the earlier approval packet as permanently current.
 
@@ -143,7 +158,7 @@ flowchart TB
 
 ### References
 
-[1] N. Maloba, “Part 4: Bank-Controlled Research Sandboxes and Enterprise Credit Architecture,” in *Underwrite for Collection*, research-edition whitepaper, 2026.
+[1] N. Maloba, “Part 4: Bank-Controlled Research Sandboxes and Enterprise Credit Architecture,” in *Underwrite for Collection*, research-edition whitepaper, 2026. Zenodo: https://doi.org/10.5281/zenodo.23343888.
 
 [2] National Institute of Standards and Technology, *Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile*, NIST AI 600-1, Jul. 2024, doi: 10.6028/NIST.AI.600-1. Available: https://doi.org/10.6028/NIST.AI.600-1.
 

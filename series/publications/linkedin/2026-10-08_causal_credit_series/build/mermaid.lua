@@ -13,6 +13,7 @@ covers = split_pipe(os.getenv("MERMAID_COVER_NAMES"))
 cover_captions = split_pipe(os.getenv("MERMAID_COVER_CAPTIONS"))
 local article = os.getenv("MERMAID_ARTICLE") or "underwrite_for_collection"
 local image_prefix = os.getenv("MERMAID_IMAGE_PREFIX") or "linkedin_diagrams/"
+local figure_numbers = {"1.1", "2.1", "2.2", "3.1", "4.3", "4.4", "5.4"}
 local sequence = 0
 local definitions = {}
 local reuse_assets = true
@@ -50,7 +51,7 @@ function CodeBlock(el)
   end
   write_file(mmd, el.text .. "\n")
   table.insert(definitions, "```mermaid\n" .. el.text .. "\n```\n")
-  return pandoc.RawBlock("latex", "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=0.92\\linewidth,height=0.72\\textheight,keepaspectratio]{" .. image_prefix .. name .. ".png}\n\\caption{" .. caption .. "}\n\\end{figure}")
+  return pandoc.RawBlock("latex", "\\begin{figure}[H]\n\\centering\n\\includegraphics[width=0.92\\linewidth,height=0.85\\textheight,keepaspectratio]{" .. image_prefix .. name .. ".png}\n\\caption*{Figure " .. figure_numbers[sequence] .. ". " .. caption .. "}\n\\end{figure}")
 end
 function Str(el)
   local missing = {[0x2208]=true,[0x223C]=true,[0x204E]=true,[0x2AEB]=true}

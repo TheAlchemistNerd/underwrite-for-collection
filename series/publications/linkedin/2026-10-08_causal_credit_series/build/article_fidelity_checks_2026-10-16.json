@@ -1,0 +1,31 @@
+{
+  "baseline": "Pre-revision snapshots saved on 16 October; includes previously approved figures and legal refresh",
+  "normalization": "References excluded; only DOI sentence, citation numbering and whitespace normalized in body",
+  "checks": [
+    {
+      "article": "ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.md",
+      "source_sha256": "997017d71276bf282f2d4bda83e696c17819085f862f8856787c020c936e5d78",
+      "article_body_unchanged_except_declared_DOI_citation_addition": true
+    },
+    {
+      "article": "ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.md",
+      "source_sha256": "0d5c44da406f238a5ea6b0d47323fab477252aeb95aadd3969de65cddc86ff00",
+      "article_body_unchanged_except_declared_DOI_citation_addition": true
+    },
+    {
+      "article": "ARTICLE_3_REJECT_INFERENCE_AND_SELECTIVE_LABELS.md",
+      "source_sha256": "c882290dc9bf9fd11327fbda61c0eb4ea463eeeb57d2ee51075148dc6bebf877",
+      "article_body_unchanged_except_declared_DOI_citation_addition": true
+    },
+    {
+      "article": "ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.md",
+      "source_sha256": "ee73eda5536bd2ca15d985c437eeb9dbcc26964a9072c42e4f54893deea34779",
+      "article_body_unchanged_except_declared_DOI_citation_addition": true
+    },
+    {
+      "article": "ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.md",
+      "source_sha256": "1b1752ba57e8392a24947ae7ac0ba729ab904e99f335b725dda9ed198a7b1ce8",
+      "article_body_unchanged_except_declared_DOI_citation_addition": true
+    }
+  ]
+}

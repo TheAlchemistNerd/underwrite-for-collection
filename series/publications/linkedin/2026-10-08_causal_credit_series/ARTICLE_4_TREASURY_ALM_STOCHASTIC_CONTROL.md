@@ -58,6 +58,11 @@ Consider a purely hypothetical one-year KES variable-rate business loan of KES 1
 13.0% − 9.4% − 0.6% − 0.3% − 1.2% − 0.8% = 0.7%,  
 before taxes, unmodelled costs and any additional adjustments. The arithmetic is only an illustrative bridge; an actual product requires institution-approved bases, measurement conventions, amortization, repricing and accounting treatment. It does not assert that a Kenyan bank uses these exact components or values.
 
+![Waterfall chart of the illustrative annual FTP contribution: a 13.0% customer rate less funding, liquidity, operating, credit and capital allocations leaves a 0.7% residual.](linkedin_diagrams/04_ftp_contribution_bridge.png)
+
+*Figure 4.1. Illustrative annual FTP contribution bridge (percentage points). The 13.0% customer rate covers 9.4% marginal funding, 0.6% liquidity, 0.3% operations, 1.2% expected credit and 0.8% allocated capital, leaving 0.7% residual.*
+
+
 Suppose KESONIA compounded over the customer’s reset period rises by 100 basis points while the contractual premium stays fixed. The customer rate may reset according to the product’s documented terms, but the internal profitability analysis must also update its funding, behavioural, liquidity and risk assumptions. If the bank’s internal one-year funding curve rises by 120 basis points and the loan’s effective repricing lags by one month, the mismatch can compress interim margin. The size and timing depend on cash-flow dates, balance amortization, repricing caps or floors, benchmark conventions, funding strategy and the chosen internal FTP method. The purpose of the example is to identify the questions to calculate and reconcile, not to imply that an overnight index and one-year bank funding costs move one-for-one.
 
 The business case should be carried from origination through its life. At each review date, it can compare realized interest income and fees with the customer benchmark and margin; the approved FTP debit or credit; actual and expected funding costs; liquidity and capital allocations; credit losses and servicing costs; and the business unit’s net contribution. New production, early repayment, delinquency, deposit migration, hedges and non-linear options can all change later economics. The result is a versioned profitability path rather than a single rate at loan approval. A robust implementation records both the original pricing decision and subsequent repricing or assumption changes, allowing management to distinguish model variance from customer behaviour, market movements, strategic subsidy and operational error.
@@ -85,6 +90,11 @@ Structural funding decisions also affect lending growth and internal business in
 A hedge can lower one risk measure while adding another. An interest-rate swap may reduce a fixed-versus-floating repricing mismatch and improve EVE or NII under a selected shock, but it creates counterparty exposure, basis and hedge-accounting considerations, and collateral calls under market moves. A hedge that is attractive in an average scenario can become hard to fund during a joint rates, spread and liquidity shock. The bank should calculate potential future exposure, initial and variation margin needs where applicable, eligible collateral, haircuts, concentration, settlement timing and cash buffers alongside market-risk benefit. LCR treatment and liquidity stress should reflect collateral outflows using the applicable rules, and internal stress tests should include larger or faster calls than the base case [6], [8].
 
 A simple hedge comparison should place measures side by side. For example, a hypothetical swap might reduce a parallel-up-shock ΔEVE loss from KES 2.0 billion to KES 1.2 billion, while raising modeled peak collateral needs from KES 1 billion to KES 4 billion under a joint stress. The decision depends on the bank’s appetite, available liquidity, hedge basis, counterparty terms and time path—not simply the 0.8 billion EVE benefit. These illustrative figures are not estimates for any institution. The comparison should include market value and earnings effects, collateral and liquidity, counterparty limits, accounting consequences, operational capacity, unwind cost and the impact of simultaneous customer deposit withdrawals. ALCO can then review the trade-off rather than seeing a single optimized hedge ratio.
+
+![Grouped bar chart comparing the hypothetical hedge's reduction in EVE loss magnitude from KES 2.0 billion to KES 1.2 billion and increase in modeled peak collateral from KES 1 billion to KES 4 billion.](linkedin_diagrams/04_hedge_eve_collateral_tradeoff.png)
+
+*Figure 4.2. Illustrative hedge trade-off under joint stress (KES billions). The swap reduces ΔEVE loss magnitude from 2.0 to 1.2 while modeled peak collateral need rises from 1.0 to 4.0.*
+
 
 ### Constrained stochastic control rather than reward-only optimization
 
@@ -179,6 +189,8 @@ Reinforcement learning and stochastic control offer a useful research lens for T
 
 A credible AI program begins with deterministic and stochastic baselines, checks simulator realism, evaluates policies offline, runs shadow recommendations, and preserves human approval under the institution’s ALCO and risk governance. Hard limits remain hard constraints, while uncertainty and model boundaries are visible in the decision paper. Data protection applies wherever personal data enter the process, with the Act and General Regulations mapped to the actual controller, purpose and decision; section 35 is relevant to qualifying individual decisions based solely on automated processing, not every portfolio-level optimization. This fourth article extends the first three from offers, collection and selective outcomes to the bank’s own balance sheet. It extends the analysis to an institutional scale, preparing for Article 5’s bank-controlled agentic workflow, which connects the analytical tools to evidence access, human review, authorised execution and monitored outcomes.
 
+The foundational whitepaper, *Underwrite for Collection*, is available on Zenodo [12].
+
 ### References
 
 [1] Basel Committee on Banking Supervision, *Interest Rate Risk in the Banking Book*, Bank for International Settlements, Apr. 2016. Available: https://www.bis.org/bcbs/publ/d368.htm.
@@ -203,9 +215,11 @@ A credible AI program begins with deterministic and stochastic baselines, checks
 
 [11] Republic of Kenya, *Data Protection (General) Regulations*, 2021, regs. 22 and 49–53. Official copy: https://www.odpc.go.ke/wp-content/uploads/2024/03/THE-DATA-PROTECTION-GENERAL-REGULATIONS-2021-1.pdf.
 
-[12] L. P. Kaelbling, M. L. Littman, and A. R. Cassandra, “Planning and acting in partially observable stochastic domains,” *Artificial Intelligence*, vol. 101, nos. 1–2, pp. 99–134, 1998, doi: 10.1016/S0004-3702(98)00023-X. Author copy: https://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf.
+[12] N. Maloba, *Underwrite for Collection*, integrated research whitepaper, 2026. Zenodo. https://doi.org/10.5281/zenodo.23343888.
 
-[13] Central Bank of Kenya, “Revised Risk-Based Credit Pricing Model,” *36th Monetary Policy Committee Meeting Background Data*, Apr. 2026. Available: https://www.centralbank.go.ke/uploads/monetary_policy_reports/131378250_36th%20Monetary%20Policy%20Committee%20Report%2C%20April%202026.pdf.
+[13] L. P. Kaelbling, M. L. Littman, and A. R. Cassandra, “Planning and acting in partially observable stochastic domains,” *Artificial Intelligence*, vol. 101, nos. 1–2, pp. 99–134, 1998, doi: 10.1016/S0004-3702(98)00023-X. Author copy: https://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf.
+
+[14] Central Bank of Kenya, “Revised Risk-Based Credit Pricing Model,” *36th Monetary Policy Committee Meeting Background Data*, Apr. 2026. Available: https://www.centralbank.go.ke/uploads/monetary_policy_reports/131378250_36th%20Monetary%20Policy%20Committee%20Report%2C%20April%202026.pdf.
 
 ---
 

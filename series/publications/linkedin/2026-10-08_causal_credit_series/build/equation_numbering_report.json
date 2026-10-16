@@ -1,19 +1,19 @@
 {
-  "display_equations": 309,
+  "display_equations": 269,
   "counts_by_scope": {
     "1": 13,
     "A1": 43,
     "2": 45,
-    "A2": 49,
+    "A2": 48,
     "3": 25,
-    "A3": 52,
+    "A3": 34,
     "4": 7,
-    "A4": 30,
+    "A4": 24,
     "5": 3,
-    "A5": 42
+    "A5": 27
   },
-  "cross_reference_occurrences": 676,
-  "contextual_cross_reference_paragraphs": 8,
+  "cross_reference_occurrences": 559,
+  "contextual_cross_reference_paragraphs": 5,
   "undefined_references": [],
   "entries": [
     {
@@ -30,13 +30,13 @@
     {
       "scope": "1",
       "number": "1.2",
-      "label": "eq:a1-discounted-cash-value",
+      "label": "eq:1-four-elements-of-a-contextual-bandit-c9b2e6c934",
       "section": "Four elements of a contextual bandit",
       "step": 2,
       "latex": "V(a,x)=\\mathbb E\\!\\left[-P_0(a)+\\sum_{t=1}^{T}d_t\\{Q_t(a)-\\operatorname{OPEX}_t(a)\\}\\,\\middle|\\,X=x\\right]",
       "start": 7016,
       "end": 7128,
-      "description": "Discounted cash value"
+      "description": "Four elements of a contextual bandit: step 2"
     },
     {
       "scope": "1",
@@ -118,24 +118,24 @@
     {
       "scope": "1",
       "number": "1.10",
-      "label": "eq:a1-ips-policy-value",
+      "label": "eq:1-off-policy-evaluation-and-the-limits-of-propensities-a07f569388",
       "section": "Off-policy evaluation and the limits of propensities",
       "step": 1,
       "latex": "\\widehat{V}_{\\mathrm{IPS}}(\\pi)=\\frac{1}{n}\\sum_i\\frac{\\pi(A_i\\mid X_i)}{\\pi_0(A_i\\mid X_i)}R_i.",
       "start": 23289,
       "end": 23391,
-      "description": "Ips policy value"
+      "description": "Off-policy evaluation and the limits of propensities: step 1"
     },
     {
       "scope": "1",
       "number": "1.11",
-      "label": "eq:a1-dr-policy-value",
+      "label": "eq:1-off-policy-evaluation-and-the-limits-of-propensities-08b9f5f78e",
       "section": "Off-policy evaluation and the limits of propensities",
       "step": 2,
       "latex": "\\begin{aligned}\\widehat{V}_{\\mathrm{DR}}(\\pi)=\\frac{1}{n}\\sum_i\\Biggl[&\\sum_a\\pi(a\\mid X_i)m(X_i,a)\\\\&+\\frac{\\pi(A_i\\mid X_i)}{\\pi_0(A_i\\mid X_i)}\\bigl(R_i-m(X_i,A_i)\\bigr)\\Biggr]\\end{aligned}.",
       "start": 24064,
       "end": 24263,
-      "description": "Dr policy value"
+      "description": "Off-policy evaluation and the limits of propensities: step 2"
     },
     {
       "scope": "1",
@@ -144,8 +144,8 @@
       "section": "A worked example with explicit assumptions",
       "step": 1,
       "latex": "\\frac{58}{72}=80.6\\%",
-      "start": 31025,
-      "end": 31051,
+      "start": 31537,
+      "end": 31563,
       "description": "A worked example with explicit assumptions: step 1"
     },
     {
@@ -155,8 +155,8 @@
       "section": "A worked example with explicit assumptions",
       "step": 2,
       "latex": "\\frac{64}{75}=85.3\\%",
-      "start": 31054,
-      "end": 31080,
+      "start": 31566,
+      "end": 31592,
       "description": "A worked example with explicit assumptions: step 2"
     },
     {
@@ -166,8 +166,8 @@
       "section": "A1.2 Construct the reward from a dated cash ledger",
       "step": 1,
       "latex": "W=-P_0+\\sum_{t=1}^{\\tau}d_t(Q_t-O_t).",
-      "start": 43508,
-      "end": 43551,
+      "start": 44253,
+      "end": 44296,
       "description": "A1.2 Construct the reward from a dated cash ledger: step 1"
     },
     {
@@ -177,8 +177,8 @@
       "section": "A1.2 Construct the reward from a dated cash ledger",
       "step": 2,
       "latex": "L_{\\mathrm{PV}}=\\sum_{t=1}^{\\tau}d_t\n  \\left(Q_t^{\\mathrm{ctr}}-Q_t\\right).",
-      "start": 44301,
-      "end": 44382,
+      "start": 45046,
+      "end": 45127,
       "description": "A1.2 Construct the reward from a dated cash ledger: step 2"
     },
     {
@@ -188,8 +188,8 @@
       "section": "A1.2 Construct the reward from a dated cash ledger",
       "step": 3,
       "latex": "\\begin{aligned}\nW\n&=-P_0+\\sum_t d_t(Q_t^{\\mathrm{ctr}}-O_t)-L_{\\mathrm{PV}}\\\\\n&=-P_0+\\sum_t d_t(Q_t-O_t).\n\\end{aligned}",
-      "start": 44417,
-      "end": 44542,
+      "start": 45162,
+      "end": 45287,
       "description": "A1.2 Construct the reward from a dated cash ledger: step 3"
     },
     {
@@ -199,8 +199,8 @@
       "section": "A1.2 Construct the reward from a dated cash ledger",
       "step": 4,
       "latex": "V(a,x)=E\\!\\left[\n-P_0(a)+\\sum_t d_t\\{Q_t^{\\mathrm{ctr}}(a)-O_t(a)\\}\n-L_{\\mathrm{PV}}(a)\\mid X=x\\right].",
-      "start": 44628,
-      "end": 44737,
+      "start": 45373,
+      "end": 45482,
       "description": "A1.2 Construct the reward from a dated cash ledger: step 4"
     },
     {
@@ -210,8 +210,8 @@
       "section": "A1.2 Construct the reward from a dated cash ledger",
       "step": 5,
       "latex": "\\begin{aligned}\nd_t&=(1.01)^{-t},\\\\\nW&=-100{,}000+9{,}400\\sum_{t=1}^{12}(1.01)^{-t}\\\\\n&=-100{,}000+9{,}400\\frac{1-(1.01)^{-12}}{0.01}\\\\\n&=5{,}797.73\\ \\mathrm{KES}.\n\\end{aligned}",
-      "start": 45580,
-      "end": 45763,
+      "start": 46325,
+      "end": 46508,
       "description": "A1.2 Construct the reward from a dated cash ledger: step 5"
     },
     {
@@ -221,8 +221,8 @@
       "section": "A1.2 Construct the reward from a dated cash ledger",
       "step": 6,
       "latex": "E[Y(a)\\mid X=x]\n=-C_a^{\\mathrm{offer}}(x)\n+\\Pr\\{U(a)=1\\mid x\\}\\,\n E[W_a\\mid U(a)=1,x].",
-      "start": 46281,
-      "end": 46373,
+      "start": 47026,
+      "end": 47118,
       "description": "A1.2 Construct the reward from a dated cash ledger: step 6"
     },
     {
@@ -232,8 +232,8 @@
       "section": "A1.3 Random assignment, intention to treat and take-up",
       "step": 1,
       "latex": "\\Delta_{\\mathrm{ITT}}=E[Y(a)-Y(b)].",
-      "start": 46997,
-      "end": 47038,
+      "start": 47742,
+      "end": 47783,
       "description": "A1.3 Random assignment, intention to treat and take-up: step 1"
     },
     {
@@ -243,8 +243,8 @@
       "section": "A1.3 Random assignment, intention to treat and take-up",
       "step": 2,
       "latex": "\\begin{aligned}\nE[Y\\mid A=a]&=E[Y(a)\\mid A=a]=E[Y(a)],\\\\\nE[Y\\mid A=b]&=E[Y(b)\\mid A=b]=E[Y(b)].\n\\end{aligned}",
-      "start": 47202,
-      "end": 47317,
+      "start": 47947,
+      "end": 48062,
       "description": "A1.3 Random assignment, intention to treat and take-up: step 2"
     },
     {
@@ -254,8 +254,8 @@
       "section": "A1.3 Random assignment, intention to treat and take-up",
       "step": 3,
       "latex": "E[Y\\mid A=a,U=1]\n=E[Y(a)\\mid U(a)=1].",
-      "start": 47672,
-      "end": 47715,
+      "start": 48417,
+      "end": 48460,
       "description": "A1.3 Random assignment, intention to treat and take-up: step 3"
     },
     {
@@ -265,8 +265,8 @@
       "section": "A1.3 Random assignment, intention to treat and take-up",
       "step": 4,
       "latex": "\\frac{58}{72}=80.5556\\%,\\qquad\n\\frac{64}{75}=85.3333\\%,",
-      "start": 48194,
-      "end": 48255,
+      "start": 48939,
+      "end": 49000,
       "description": "A1.3 Random assignment, intention to treat and take-up: step 4"
     },
     {
@@ -276,8 +276,8 @@
       "section": "A1.3 Random assignment, intention to treat and take-up",
       "step": 5,
       "latex": "\\widehat{\\mathrm{SE}}\n=\\sqrt{\\frac{0.64(0.36)}{100}+\\frac{0.58(0.42)}{100}}\n=0.06885.",
-      "start": 48766,
-      "end": 48857,
+      "start": 49511,
+      "end": 49602,
       "description": "A1.3 Random assignment, intention to treat and take-up: step 5"
     },
     {
@@ -287,8 +287,8 @@
       "section": "A1.3 Random assignment, intention to treat and take-up",
       "step": 6,
       "latex": "\\operatorname{Var}(\\widehat\\Delta)\n=\\frac{S_a^2}{n_a}+\\frac{S_b^2}{n_b}\n-\\frac{S_{a-b}^2}{N},",
-      "start": 49238,
-      "end": 49337,
+      "start": 49983,
+      "end": 50082,
       "description": "A1.3 Random assignment, intention to treat and take-up: step 6"
     },
     {
@@ -298,8 +298,8 @@
       "section": "A1.3 Random assignment, intention to treat and take-up",
       "step": 7,
       "latex": "n_{\\mathrm{per\\ arm}}\\approx\n\\frac{2(z_{1-\\alpha/2}+z_{1-\\beta})^2p_0(1-p_0)}{\\delta^2}.",
-      "start": 49927,
-      "end": 50021,
+      "start": 50672,
+      "end": 50766,
       "description": "A1.3 Random assignment, intention to treat and take-up: step 7"
     },
     {
@@ -309,8 +309,8 @@
       "section": "A1.3 Random assignment, intention to treat and take-up",
       "step": 8,
       "latex": "\\frac{E[Y\\mid Z=1]-E[Y\\mid Z=0]}\n{E[U\\mid Z=1]-E[U\\mid Z=0]}\n=E[Y(1)-Y(0)\\mid U(1)>U(0)].",
-      "start": 50995,
-      "end": 51090,
+      "start": 51740,
+      "end": 51835,
       "description": "A1.3 Random assignment, intention to treat and take-up: step 8"
     },
     {
@@ -320,8 +320,8 @@
       "section": "A1.4 Adaptive probabilities and the linear-UCB calculation",
       "step": 1,
       "latex": "\\pi_i(a\\mid X_i,H_{i-1})\n=(1-\\epsilon_i)\\widehat\\pi_i(a\\mid X_i,H_{i-1})\n+\\epsilon_iq_i(a\\mid X_i,H_{i-1}).",
-      "start": 52129,
-      "end": 52242,
+      "start": 52874,
+      "end": 52987,
       "description": "A1.4 Adaptive probabilities and the linear-UCB calculation: step 1"
     },
     {
@@ -331,8 +331,8 @@
       "section": "A1.4 Adaptive probabilities and the linear-UCB calculation",
       "step": 2,
       "latex": "R_i=\\phi_i(A_i)^\\top\\theta+\\varepsilon_i,\n\\qquad E[\\varepsilon_i\\mid X_i,A_i,H_{i-1}]=0.",
-      "start": 52976,
-      "end": 53070,
+      "start": 53721,
+      "end": 53815,
       "description": "A1.4 Adaptive probabilities and the linear-UCB calculation: step 2"
     },
     {
@@ -342,8 +342,8 @@
       "section": "A1.4 Adaptive probabilities and the linear-UCB calculation",
       "step": 3,
       "latex": "\\begin{aligned}\nB_i&=\\lambda I+\\sum_{j<i}\\phi_j(A_j)\\phi_j(A_j)^\\top,\\\\\nb_i&=\\sum_{j<i}\\phi_j(A_j)R_j,\\\\\n\\widehat\\theta_i&=B_i^{-1}b_i.\n\\end{aligned}",
-      "start": 53217,
-      "end": 53372,
+      "start": 53962,
+      "end": 54117,
       "description": "A1.4 Adaptive probabilities and the linear-UCB calculation: step 3"
     },
     {
@@ -353,8 +353,8 @@
       "section": "A1.4 Adaptive probabilities and the linear-UCB calculation",
       "step": 4,
       "latex": "\\phi^\\top\\theta\n\\le\\phi^\\top\\widehat\\theta_i\n+c_i\\sqrt{\\phi^\\top B_i^{-1}\\phi}.",
-      "start": 53484,
-      "end": 53569,
+      "start": 54229,
+      "end": 54314,
       "description": "A1.4 Adaptive probabilities and the linear-UCB calculation: step 4"
     },
     {
@@ -364,8 +364,8 @@
       "section": "A1.4 Adaptive probabilities and the linear-UCB calculation",
       "step": 5,
       "latex": "A_i\\in\\arg\\max_{a\\in\\mathcal A(X_i)}\n\\widetilde Q_i(X_i,a).",
-      "start": 54435,
-      "end": 54500,
+      "start": 55180,
+      "end": 55245,
       "description": "A1.4 Adaptive probabilities and the linear-UCB calculation: step 5"
     },
     {
@@ -375,8 +375,8 @@
       "section": "A1.5 Derive inverse-propensity policy evaluation",
       "step": 1,
       "latex": "V(\\pi)=E_X\\left[\\sum_a\\pi(a\\mid X)\\mu(X,a)\\right].",
-      "start": 55756,
-      "end": 55812,
+      "start": 56633,
+      "end": 56689,
       "description": "A1.5 Derive inverse-propensity policy evaluation: step 1"
     },
     {
@@ -386,8 +386,8 @@
       "section": "A1.5 Derive inverse-propensity policy evaluation",
       "step": 2,
       "latex": "\\begin{aligned}\nE\\!\\left[\\frac{\\pi(A_i\\mid X_i)}{e_i(A_i\\mid X_i,H_{i-1})}R_i\n\\,\\middle|\\,X_i,H_{i-1}\\right]\n&=\\sum_a e_i(a)\\frac{\\pi(a\\mid X_i)}{e_i(a)}\\mu(X_i,a)\\\\\n&=\\sum_a\\pi(a\\mid X_i)\\mu(X_i,a).\n\\end{aligned}",
-      "start": 56096,
-      "end": 56315,
+      "start": 56973,
+      "end": 57192,
       "description": "A1.5 Derive inverse-propensity policy evaluation: step 2"
     },
     {
@@ -397,8 +397,8 @@
       "section": "A1.5 Derive inverse-propensity policy evaluation",
       "step": 3,
       "latex": "\\widehat V_{\\mathrm{IPS}}(\\pi)\n=\\frac1n\\sum_i\n\\frac{\\pi(A_i\\mid X_i)}{e_i(A_i\\mid X_i,H_{i-1})}R_i.",
-      "start": 56386,
-      "end": 56491,
+      "start": 57263,
+      "end": 57368,
       "description": "A1.5 Derive inverse-propensity policy evaluation: step 3"
     },
     {
@@ -408,8 +408,8 @@
       "section": "A1.5 Derive inverse-propensity policy evaluation",
       "step": 4,
       "latex": "n_{\\mathrm{eff}}=\\frac{(\\sum_iw_i)^2}{\\sum_iw_i^2}.",
-      "start": 57014,
-      "end": 57071,
+      "start": 57891,
+      "end": 57948,
       "description": "A1.5 Derive inverse-propensity policy evaluation: step 4"
     },
     {
@@ -419,8 +419,8 @@
       "section": "A1.6 Derive the doubly robust estimator and its remainder",
       "step": 1,
       "latex": "\\psi_i=\n\\sum_a\\pi(a\\mid X_i)\\widehat m(X_i,a)\n+\\frac{\\pi(A_i\\mid X_i)}{\\widehat e_i(A_i)}\n\\{R_i-\\widehat m(X_i,A_i)\\}.",
-      "start": 57805,
-      "end": 57929,
+      "start": 58682,
+      "end": 58806,
       "description": "A1.6 Derive the doubly robust estimator and its remainder: step 1"
     },
     {
@@ -430,8 +430,8 @@
       "section": "A1.6 Derive the doubly robust estimator and its remainder",
       "step": 2,
       "latex": "E[\\psi_i\\mid X_i,H_{i-1}]\n=\\sum_a\\pi(a)\\left[\n\\widehat m_a+\\frac{e_i(a)}{\\widehat e_i(a)}(\\mu_a-\\widehat m_a)\n\\right].",
-      "start": 57991,
-      "end": 58115,
+      "start": 58868,
+      "end": 58992,
       "description": "A1.6 Derive the doubly robust estimator and its remainder: step 2"
     },
     {
@@ -441,8 +441,8 @@
       "section": "A1.6 Derive the doubly robust estimator and its remainder",
       "step": 3,
       "latex": "E[\\psi_i\\mid X_i,H_{i-1}]-\\sum_a\\pi(a)\\mu_a\n=\\sum_a\\pi(a)\n\\left(\\frac{e_i(a)}{\\widehat e_i(a)}-1\\right)\n(\\mu_a-\\widehat m_a).",
-      "start": 58167,
-      "end": 58298,
+      "start": 59044,
+      "end": 59175,
       "description": "A1.6 Derive the doubly robust estimator and its remainder: step 3"
     },
     {
@@ -452,8 +452,8 @@
       "section": "A1.6 Derive the doubly robust estimator and its remainder",
       "step": 4,
       "latex": "\\widehat V_{\\mathrm{IPS}}=(12+2+9+1)/4=6,\n\\qquad n_{\\mathrm{eff}}=4^2/5=3.2.",
-      "start": 58878,
-      "end": 58960,
+      "start": 59755,
+      "end": 59837,
       "description": "A1.6 Derive the doubly robust estimator and its remainder: step 4"
     },
     {
@@ -463,8 +463,8 @@
       "section": "A1.6 Derive the doubly robust estimator and its remainder",
       "step": 5,
       "latex": "\\widehat V_{\\mathrm{DR}}=5.5+(3+0+0-1)/4=6.",
-      "start": 59121,
-      "end": 59170,
+      "start": 59998,
+      "end": 60047,
       "description": "A1.6 Derive the doubly robust estimator and its remainder: step 5"
     },
     {
@@ -474,8 +474,8 @@
       "section": "A1.7 Delayed outcomes and censoring",
       "step": 1,
       "latex": "E\\!\\left[\\frac{M_iR_i}{g_i}\\middle|X_i,A_i,H_{i-1}\\right]\n=E[R_i\\mid X_i,A_i,H_{i-1}].",
-      "start": 59914,
-      "end": 60006,
+      "start": 60791,
+      "end": 60883,
       "description": "A1.7 Delayed outcomes and censoring: step 1"
     },
     {
@@ -485,8 +485,8 @@
       "section": "A1.7 Delayed outcomes and censoring",
       "step": 2,
       "latex": "\\widehat V=\\frac{1}{n}\\sum_i\n\\frac{\\pi(A_i\\mid X_i)}{e_i(A_i\\mid X_i,H_{i-1})}\n\\frac{M_iR_i}{g_i}.",
-      "start": 60072,
-      "end": 60176,
+      "start": 60949,
+      "end": 61053,
       "description": "A1.7 Delayed outcomes and censoring: step 2"
     },
     {
@@ -496,8 +496,8 @@
       "section": "A1.7 Delayed outcomes and censoring",
       "step": 3,
       "latex": "L_i=\\lambda_i(\\widetilde T_i)^{\\delta_i}\n\\exp\\{-\\Lambda_i(\\widetilde T_i)\\},\n\\qquad\n\\Lambda_i(t)=\\int_0^t\\lambda_i(u)\\,du.",
-      "start": 60997,
-      "end": 61125,
+      "start": 61874,
+      "end": 62002,
       "description": "A1.7 Delayed outcomes and censoring: step 3"
     },
     {
@@ -507,8 +507,8 @@
       "section": "A1.8 Hazard, survival and competing-risk incidence",
       "step": 1,
       "latex": "\\frac{d\\log S(t)}{dt}=-\\lambda(t),\n\\qquad\nS(t)=\\exp\\left\\{-\\int_0^t\\lambda(u)\\,du\\right\\}.",
-      "start": 61688,
-      "end": 61784,
+      "start": 62565,
+      "end": 62661,
       "description": "A1.8 Hazard, survival and competing-risk incidence: step 1"
     },
     {
@@ -518,8 +518,8 @@
       "section": "A1.8 Hazard, survival and competing-risk incidence",
       "step": 2,
       "latex": "S(t\\mid x,a)=\\exp\\{-\\Lambda_0(t)\\exp[x^\\top\\beta+g(a,x)]\\}.",
-      "start": 61901,
-      "end": 61966,
+      "start": 62778,
+      "end": 62843,
       "description": "A1.8 Hazard, survival and competing-risk incidence: step 2"
     },
     {
@@ -529,20 +529,20 @@
       "section": "A1.8 Hazard, survival and competing-risk incidence",
       "step": 3,
       "latex": "S(t)=\\exp\\left\\{-\\int_0^t\\sum_k\\lambda_k(u)\\,du\\right\\}.",
-      "start": 62390,
-      "end": 62452,
+      "start": 63267,
+      "end": 63329,
       "description": "A1.8 Hazard, survival and competing-risk incidence: step 3"
     },
     {
       "scope": "A1",
       "number": "A1.35",
-      "label": "eq:a1-competing-risk-incidence-derivation",
+      "label": "eq:a1-hazard-survival-and-competing-risk-incidence-bbbce47aca",
       "section": "A1.8 Hazard, survival and competing-risk incidence",
       "step": 4,
       "latex": "F_k(\\tau)=\\Pr(T\\le\\tau,J=k)\n=\\int_0^\\tau S(u-)\\lambda_k(u)\\,du,\n\\qquad\nS(\\tau)+\\sum_kF_k(\\tau)=1.",
-      "start": 62622,
-      "end": 62725,
-      "description": "Competing risk incidence derivation"
+      "start": 63499,
+      "end": 63602,
+      "description": "A1.8 Hazard, survival and competing-risk incidence: step 4"
     },
     {
       "scope": "A1",
@@ -551,8 +551,8 @@
       "section": "A1.8 Hazard, survival and competing-risk incidence",
       "step": 5,
       "latex": "F_D(1)=\\frac{0.04}{0.20}(1-e^{-0.20})=3.6254\\%.",
-      "start": 62856,
-      "end": 62909,
+      "start": 63733,
+      "end": 63786,
       "description": "A1.8 Hazard, survival and competing-risk incidence: step 5"
     },
     {
@@ -562,8 +562,8 @@
       "section": "A1.8 Hazard, survival and competing-risk incidence",
       "step": 6,
       "latex": "\\widehat S(t)=\\prod_{t_j\\le t}(1-d_j/n_j),\n\\qquad\n\\widehat F_k(t)=\\sum_{t_j\\le t}\n\\widehat S(t_j-)\\frac{d_{kj}}{n_j}.",
-      "start": 63520,
-      "end": 63643,
+      "start": 64397,
+      "end": 64520,
       "description": "A1.8 Hazard, survival and competing-risk incidence: step 6"
     },
     {
@@ -573,8 +573,8 @@
       "section": "A1.8 Hazard, survival and competing-risk incidence",
       "step": 7,
       "latex": "\\frac{\\partial P(s,t)}{\\partial t}=P(s,t)Q(t),\n\\qquad P(s,s)=I.",
-      "start": 63936,
-      "end": 64005,
+      "start": 64813,
+      "end": 64882,
       "description": "A1.8 Hazard, survival and competing-risk incidence: step 7"
     },
     {
@@ -584,8 +584,8 @@
       "section": "A1.8 Hazard, survival and competing-risk incidence",
       "step": 8,
       "latex": "\\widehat P(s,t)=\\prod_{s<u\\le t}(I+d\\widehat A(u)).",
-      "start": 64141,
-      "end": 64198,
+      "start": 65018,
+      "end": 65075,
       "description": "A1.8 Hazard, survival and competing-risk incidence: step 8"
     },
     {
@@ -595,8 +595,8 @@
       "section": "A1.8 Hazard, survival and competing-risk incidence",
       "step": 9,
       "latex": "\\widetilde\\lambda_D(t)\n=\\frac{F_D'(t)}{1-F_D(t)},\n\\qquad\nF_D(t)=1-\\exp\\left\\{-\\int_0^t\\widetilde\\lambda_D(u)\\,du\\right\\}.",
-      "start": 64435,
-      "end": 64562,
+      "start": 65312,
+      "end": 65439,
       "description": "A1.8 Hazard, survival and competing-risk incidence: step 9"
     },
     {
@@ -606,8 +606,8 @@
       "section": "A1.9 Fairness measures and uncertainty shown to reviewers",
       "step": 1,
       "latex": "\\operatorname{TPR}_g=\\Pr(\\widehat Y=1\\mid Y=1,G=g),\n\\qquad\n\\operatorname{FPR}_g=\\Pr(\\widehat Y=1\\mid Y=0,G=g).",
-      "start": 65365,
-      "end": 65481,
+      "start": 66242,
+      "end": 66358,
       "description": "A1.9 Fairness measures and uncertainty shown to reviewers: step 1"
     },
     {
@@ -617,8 +617,8 @@
       "section": "A1.9 Fairness measures and uncertainty shown to reviewers",
       "step": 2,
       "latex": "\\operatorname{Accuracy}_g\n=p_g\\operatorname{TPR}_g+(1-p_g)(1-\\operatorname{FPR}_g).",
-      "start": 65637,
-      "end": 65726,
+      "start": 66514,
+      "end": 66603,
       "description": "A1.9 Fairness measures and uncertainty shown to reviewers: step 2"
     },
     {
@@ -628,31 +628,31 @@
       "section": "A1.9 Fairness measures and uncertainty shown to reviewers",
       "step": 3,
       "latex": "\\operatorname{Var}(Y_{\\mathrm{new}}\\mid D)\n=E[\\operatorname{Var}(Y_{\\mathrm{new}}\\mid\\vartheta,D)\\mid D]\n+\\operatorname{Var}(E[Y_{\\mathrm{new}}\\mid\\vartheta,D]\\mid D).",
-      "start": 66391,
-      "end": 66564,
+      "start": 67268,
+      "end": 67441,
       "description": "A1.9 Fairness measures and uncertainty shown to reviewers: step 3"
     },
     {
       "scope": "2",
       "number": "2.1",
-      "label": "eq:a2-bellman-value",
+      "label": "eq:2-sequential-control-changes-the-mathematical-problem-55688a4047",
       "section": "Sequential control changes the mathematical problem",
       "step": 1,
       "latex": "V_t(s)=\\max_{a\\in A(s)}\\mathbb{E}\\!\\left[r_t(s,a,S_{t+1})+\\gamma V_{t+1}(S_{t+1})\\right],",
-      "start": 77137,
-      "end": 77232,
-      "description": "Bellman value"
+      "start": 78014,
+      "end": 78109,
+      "description": "Sequential control changes the mathematical problem: step 1"
     },
     {
       "scope": "2",
       "number": "2.2",
-      "label": "eq:a2-belief-state",
+      "label": "eq:2-sequential-control-changes-the-mathematical-problem-5cf8d8bdf4",
       "section": "Sequential control changes the mathematical problem",
       "step": 2,
       "latex": "b_t(z)=\\Pr(z_t=z\\mid o_{1:t},a_{1:t-1}).",
-      "start": 78882,
-      "end": 78928,
-      "description": "Belief state"
+      "start": 79759,
+      "end": 79805,
+      "description": "Sequential control changes the mathematical problem: step 2"
     },
     {
       "scope": "2",
@@ -661,8 +661,8 @@
       "section": "Sequential control changes the mathematical problem",
       "step": 3,
       "latex": "\\lambda_i(t)=\\lambda_0(t)\\exp\\!\\bigl(x_i^{\\mathsf T}\\beta^H+u^H_{s(i)}+v^H_{r(i)}+w^H_{c(i)}\\bigr)",
-      "start": 79499,
-      "end": 79603,
+      "start": 80376,
+      "end": 80480,
       "description": "Sequential control changes the mathematical problem: step 3"
     },
     {
@@ -672,8 +672,8 @@
       "section": "Sequential control changes the mathematical problem",
       "step": 4,
       "latex": "\\begin{aligned}\\operatorname{logit}(p_{i,\\tau})={}&\\alpha^L+x_i^{\\mathsf T}\\beta^L\\\\&+u^L_{s(i)}+v^L_{r(i)}+w^L_{c(i)}\\end{aligned}",
-      "start": 79733,
-      "end": 79870,
+      "start": 80610,
+      "end": 80747,
       "description": "Sequential control changes the mathematical problem: step 4"
     },
     {
@@ -683,8 +683,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 1,
       "latex": "D_i(\\tau)\\sim\\operatorname{Bernoulli}(p_{i,\\tau})",
-      "start": 80335,
-      "end": 80390,
+      "start": 81212,
+      "end": 81267,
       "description": "Put the risk models inside the decision problem: step 1"
     },
     {
@@ -694,8 +694,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 2,
       "latex": "\\begin{aligned}\\operatorname{logit}(p_{i,\\tau})={}&\\alpha^L+X_i^{\\mathsf T}\\beta^L\\\\&+u^L_{s(i)}+v^L_{r(i)}+w^L_{c(i)}\\end{aligned};",
-      "start": 80403,
-      "end": 80541,
+      "start": 81280,
+      "end": 81418,
       "description": "Put the risk models inside the decision problem: step 2"
     },
     {
@@ -705,8 +705,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 3,
       "latex": "\\lambda_i(t\\mid X_i)=\\lambda_0(t)\\exp\\!\\bigl(X_i^{\\mathsf T}\\beta^H+u^H_{s(i)}+v^H_{r(i)}+w^H_{c(i)}\\bigr),",
-      "start": 80625,
-      "end": 80738,
+      "start": 81502,
+      "end": 81615,
       "description": "Put the risk models inside the decision problem: step 3"
     },
     {
@@ -716,8 +716,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 4,
       "latex": "S_i(t)=\\exp\\!\\left(-\\int_0^t\\lambda_i(u)\\,\\mathrm{d}u\\right)",
-      "start": 80760,
-      "end": 80826,
+      "start": 81637,
+      "end": 81703,
       "description": "Put the risk models inside the decision problem: step 4"
     },
     {
@@ -727,8 +727,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 5,
       "latex": "u_s^m=\\sigma_u^m z_{us}^m,\\qquad z_{us}^m\\sim N(0,1)",
-      "start": 83965,
-      "end": 84023,
+      "start": 84842,
+      "end": 84900,
       "description": "Put the risk models inside the decision problem: step 5"
     },
     {
@@ -738,8 +738,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 6,
       "latex": "v_r^m=\\sigma_v^m z_{vr}^m,\\qquad z_{vr}^m\\sim N(0,1)",
-      "start": 84027,
-      "end": 84085,
+      "start": 84904,
+      "end": 84962,
       "description": "Put the risk models inside the decision problem: step 6"
     },
     {
@@ -749,8 +749,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 7,
       "latex": "w_c^m=\\sigma_w^m z_{wc}^m,\\qquad z_{wc}^m\\sim N(0,1)",
-      "start": 84089,
-      "end": 84147,
+      "start": 84966,
+      "end": 85024,
       "description": "Put the risk models inside the decision problem: step 7"
     },
     {
@@ -760,8 +760,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 8,
       "latex": "\\begin{gathered}\\sigma_k^m\\sim\\operatorname{HalfStudentT}(3,s_{0,k}^m),\\\\ k\\in\\{u,v,w\\},\\quad m\\in\\{L,H\\}\\end{gathered}",
-      "start": 84151,
-      "end": 84276,
+      "start": 85028,
+      "end": 85153,
       "description": "Put the risk models inside the decision problem: step 8"
     },
     {
@@ -771,8 +771,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 9,
       "latex": "\\alpha^L\\sim N(0,s_\\alpha^2),\\qquad\\beta^m\\sim N(0,B^m)",
-      "start": 84280,
-      "end": 84341,
+      "start": 85157,
+      "end": 85218,
       "description": "Put the risk models inside the decision problem: step 9"
     },
     {
@@ -782,8 +782,8 @@
       "section": "Put the risk models inside the decision problem",
       "step": 10,
       "latex": "\\lambda_{0,\\ell}\\sim\\operatorname{Gamma}(\\mathrm{shape}=a_\\ell,\\mathrm{rate}=b_\\ell)",
-      "start": 84345,
-      "end": 84435,
+      "start": 85222,
+      "end": 85312,
       "description": "Put the risk models inside the decision problem: step 10"
     },
     {
@@ -793,8 +793,8 @@
       "section": "An IFRS 9 transition model is an accounting component, not the whole controller",
       "step": 1,
       "latex": "\\mathrm{EL}\\approx\\mathrm{PD}\\times\\mathrm{LGD}\\times\\mathrm{EAD}",
-      "start": 85873,
-      "end": 85944,
+      "start": 86750,
+      "end": 86821,
       "description": "An IFRS 9 transition model is an accounting component, not the whole controller: step 1"
     },
     {
@@ -804,8 +804,8 @@
       "section": "Fairness diagnostics need precise targets",
       "step": 1,
       "latex": "\\max_{\\pi}\\mathbb{E}_{\\pi}\\!\\left[\\sum_t\\gamma^t r_t\\right]",
-      "start": 87606,
-      "end": 87671,
+      "start": 88483,
+      "end": 88548,
       "description": "Fairness diagnostics need precise targets: step 1"
     },
     {
@@ -815,8 +815,8 @@
       "section": "Fairness diagnostics need precise targets",
       "step": 2,
       "latex": "\\mathbb{E}_{\\pi}\\!\\left[\\sum_t c_{k,t}\\right]\\le B_k",
-      "start": 87689,
-      "end": 87747,
+      "start": 88566,
+      "end": 88624,
       "description": "Fairness diagnostics need precise targets: step 2"
     },
     {
@@ -826,8 +826,8 @@
       "section": "Economic capital and RAROC require separate, declared conventions",
       "step": 1,
       "latex": "\\mathrm{EC}_a=\\operatorname{VaR}_a(L)-\\mathbb{E}[L];",
-      "start": 88858,
-      "end": 88916,
+      "start": 89735,
+      "end": 89793,
       "description": "Economic capital and RAROC require separate, declared conventions: step 1"
     },
     {
@@ -837,8 +837,8 @@
       "section": "Economic capital and RAROC require separate, declared conventions",
       "step": 2,
       "latex": "\\mathrm{RAROC}=\\frac{\\begin{gathered}\\text{risk-adjusted income}-\\text{expected loss}-\\text{funding cost}\\\\-\\text{operating cost}-\\text{tax adjustments}\\end{gathered}}{\\text{economic capital}},",
-      "start": 89487,
-      "end": 89686,
+      "start": 90364,
+      "end": 90563,
       "description": "Economic capital and RAROC require separate, declared conventions: step 2"
     },
     {
@@ -848,8 +848,8 @@
       "section": "Economic capital and RAROC require separate, declared conventions",
       "step": 3,
       "latex": "\\frac{\\text{KES }850}{\\text{KES }5{,}000}=17\\%",
-      "start": 90760,
-      "end": 90812,
+      "start": 91637,
+      "end": 91689,
       "description": "Economic capital and RAROC require separate, declared conventions: step 3"
     },
     {
@@ -859,8 +859,8 @@
       "section": "Default dependence: Clayton can be a challenger, not a contagion story",
       "step": 1,
       "latex": "\\theta>0",
-      "start": 91580,
-      "end": 91594,
+      "start": 92457,
+      "end": 92471,
       "description": "Default dependence: Clayton can be a challenger, not a contagion story: step 1"
     },
     {
@@ -870,8 +870,8 @@
       "section": "Default dependence: Clayton can be a challenger, not a contagion story",
       "step": 2,
       "latex": "\\lambda_L=2^{-1/\\theta}",
-      "start": 91627,
-      "end": 91656,
+      "start": 92504,
+      "end": 92533,
       "description": "Default dependence: Clayton can be a challenger, not a contagion story: step 2"
     },
     {
@@ -881,8 +881,8 @@
       "section": "Default dependence: Clayton can be a challenger, not a contagion story",
       "step": 3,
       "latex": "\\tau=\\frac{\\theta}{\\theta+2}.",
-      "start": 91757,
-      "end": 91792,
+      "start": 92634,
+      "end": 92669,
       "description": "Default dependence: Clayton can be a challenger, not a contagion story: step 3"
     },
     {
@@ -892,8 +892,8 @@
       "section": "Pólya–Gamma computation supports posterior estimation",
       "step": 1,
       "latex": "\\eta_i=x_i^{\\mathsf T}\\beta,",
-      "start": 93490,
-      "end": 93524,
+      "start": 94367,
+      "end": 94401,
       "description": "Pólya–Gamma computation supports posterior estimation: step 1"
     },
     {
@@ -903,8 +903,8 @@
       "section": "Pólya–Gamma computation supports posterior estimation",
       "step": 2,
       "latex": "\\kappa_i=y_i-\\frac{1}{2},",
-      "start": 93536,
-      "end": 93567,
+      "start": 94413,
+      "end": 94444,
       "description": "Pólya–Gamma computation supports posterior estimation: step 2"
     },
     {
@@ -914,8 +914,8 @@
       "section": "Pólya–Gamma computation supports posterior estimation",
       "step": 3,
       "latex": "\\omega_i\\sim\\operatorname{PG}(1,\\eta_i).",
-      "start": 93585,
-      "end": 93631,
+      "start": 94462,
+      "end": 94508,
       "description": "Pólya–Gamma computation supports posterior estimation: step 3"
     },
     {
@@ -925,8 +925,8 @@
       "section": "Pólya–Gamma computation supports posterior estimation",
       "step": 4,
       "latex": "\\Sigma^{\\ast}=\\left(X^{\\mathsf T}\\Omega X+\\Sigma_0^{-1}\\right)^{-1}",
-      "start": 93809,
-      "end": 93882,
+      "start": 94686,
+      "end": 94759,
       "description": "Pólya–Gamma computation supports posterior estimation: step 4"
     },
     {
@@ -936,8 +936,8 @@
       "section": "Half-Student-t priors connect partial pooling to decision uncertainty",
       "step": 1,
       "latex": "u_j=\\sigma z_j,\\qquad z_j\\sim\\mathcal{N}(0,1)",
-      "start": 97197,
-      "end": 97248,
+      "start": 98074,
+      "end": 98125,
       "description": "Half-Student-t priors connect partial pooling to decision uncertainty: step 1"
     },
     {
@@ -947,8 +947,8 @@
       "section": "Half-Student-t priors connect partial pooling to decision uncertainty",
       "step": 2,
       "latex": "\\sigma\\sim\\operatorname{Half\\!\\text{-}\\!Student\\!\\text{-}t}(\\nu=3,\\mathrm{scale}=s_0)",
-      "start": 97252,
-      "end": 97343,
+      "start": 98129,
+      "end": 98220,
       "description": "Half-Student-t priors connect partial pooling to decision uncertainty: step 2"
     },
     {
@@ -958,8 +958,8 @@
       "section": "Half-Student-t priors connect partial pooling to decision uncertainty",
       "step": 3,
       "latex": "\\lambda\\sim\\operatorname{Gamma}(\\mathrm{shape}=3/2,\\mathrm{rate}=3/2)",
-      "start": 98175,
-      "end": 98250,
+      "start": 99052,
+      "end": 99127,
       "description": "Half-Student-t priors connect partial pooling to decision uncertainty: step 3"
     },
     {
@@ -969,8 +969,8 @@
       "section": "Half-Student-t priors connect partial pooling to decision uncertainty",
       "step": 4,
       "latex": "q\\mid\\lambda\\sim\\mathcal{N}(0,s_0^2/\\lambda),\\qquad\\sigma=|q|",
-      "start": 98254,
-      "end": 98321,
+      "start": 99131,
+      "end": 99198,
       "description": "Half-Student-t priors connect partial pooling to decision uncertainty: step 4"
     },
     {
@@ -980,8 +980,8 @@
       "section": "Bayesian decision boundaries turn predictions into limit-review evidence",
       "step": 1,
       "latex": "\\bar p=\\mathbb{E}[p\\mid D]",
-      "start": 101338,
-      "end": 101370,
+      "start": 102215,
+      "end": 102247,
       "description": "Bayesian decision boundaries turn predictions into limit-review evidence: step 1"
     },
     {
@@ -991,8 +991,8 @@
       "section": "Bayesian decision boundaries turn predictions into limit-review evidence",
       "step": 2,
       "latex": "\\mathbb{E}[V(\\mathrm{extend})\\mid D]=(1-\\bar p)G-\\bar pL",
-      "start": 101374,
-      "end": 101436,
+      "start": 102251,
+      "end": 102313,
       "description": "Bayesian decision boundaries turn predictions into limit-review evidence: step 2"
     },
     {
@@ -1002,20 +1002,20 @@
       "section": "Bayesian decision boundaries turn predictions into limit-review evidence",
       "step": 3,
       "latex": "\\mathbb{E}[V(\\mathrm{decline})\\mid D]=-(1-\\bar p)O",
-      "start": 101440,
-      "end": 101496,
+      "start": 102317,
+      "end": 102373,
       "description": "Bayesian decision boundaries turn predictions into limit-review evidence: step 3"
     },
     {
       "scope": "2",
       "number": "2.35",
-      "label": "eq:a2-bayesian-limit-threshold",
+      "label": "eq:2-bayesian-decision-boundaries-turn-predictions-into-limit-review-eviden-a86f778d81",
       "section": "Bayesian decision boundaries turn predictions into limit-review evidence",
       "step": 4,
       "latex": "p^{\\ast}=\\frac{G+O}{G+O+L}",
-      "start": 101500,
-      "end": 101532,
-      "description": "Bayesian limit threshold"
+      "start": 102377,
+      "end": 102409,
+      "description": "Bayesian decision boundaries turn predictions into limit-review evidence: step 4"
     },
     {
       "scope": "2",
@@ -1024,8 +1024,8 @@
       "section": "Bayesian decision boundaries turn predictions into limit-review evidence",
       "step": 5,
       "latex": "p^{\\ast}=\\frac{1{,}200}{1{,}200+18{,}800}=6\\%",
-      "start": 102402,
-      "end": 102453,
+      "start": 103279,
+      "end": 103330,
       "description": "Bayesian decision boundaries turn predictions into limit-review evidence: step 5"
     },
     {
@@ -1035,8 +1035,8 @@
       "section": "Bayesian decision boundaries turn predictions into limit-review evidence",
       "step": 6,
       "latex": "\\mathbb{E}[V(\\mathrm{extend})\\mid D]=0.96\\times1{,}200-0.04\\times18{,}800=\\text{KES }400",
-      "start": 102457,
-      "end": 102551,
+      "start": 103334,
+      "end": 103428,
       "description": "Bayesian decision boundaries turn predictions into limit-review evidence: step 6"
     },
     {
@@ -1046,8 +1046,8 @@
       "section": "Bayesian decision boundaries turn predictions into limit-review evidence",
       "step": 7,
       "latex": "\\begin{gathered}\\Pr(p>p_{\\mathrm{cap}}\\mid D)>\\varepsilon\\\\\\Longrightarrow\\text{apply the approved uncertainty-review route}\\end{gathered}",
-      "start": 103467,
-      "end": 103611,
+      "start": 104344,
+      "end": 104488,
       "description": "Bayesian decision boundaries turn predictions into limit-review evidence: step 7"
     },
     {
@@ -1057,8 +1057,8 @@
       "section": "Relationship graphs, contextual bandits and sequential search",
       "step": 1,
       "latex": "x_t=\\varphi(G_t)",
-      "start": 110465,
-      "end": 110487,
+      "start": 111342,
+      "end": 111364,
       "description": "Relationship graphs, contextual bandits and sequential search: step 1"
     },
     {
@@ -1068,8 +1068,8 @@
       "section": "Relationship graphs, contextual bandits and sequential search",
       "step": 2,
       "latex": "\\operatorname{UCB}_t(x,a)=x_t(a)^{\\mathsf T}\\widehat{\\theta}_t+\\alpha\\sqrt{x_t(a)^{\\mathsf T}A_t^{-1}x_t(a)}",
-      "start": 111066,
-      "end": 111180,
+      "start": 111943,
+      "end": 112057,
       "description": "Relationship graphs, contextual bandits and sequential search: step 2"
     },
     {
@@ -1079,8 +1079,8 @@
       "section": "Relationship graphs, contextual bandits and sequential search",
       "step": 3,
       "latex": "\\widetilde{\\theta}_t\\sim p(\\theta\\mid D_t),\\qquad\\widetilde{p}_t(a)=\\sigma\\!\\bigl(x_t(a)^{\\mathsf T}\\widetilde{\\theta}_t\\bigr)",
-      "start": 111391,
-      "end": 111523,
+      "start": 112268,
+      "end": 112400,
       "description": "Relationship graphs, contextual bandits and sequential search: step 3"
     },
     {
@@ -1090,8 +1090,8 @@
       "section": "Relationship graphs, contextual bandits and sequential search",
       "step": 4,
       "latex": "a_t=\\operatorname*{arg\\,max}_{a\\in A_{\\mathrm{safe}}}\\widetilde{Q}_t(a)",
-      "start": 111527,
-      "end": 111604,
+      "start": 112404,
+      "end": 112481,
       "description": "Relationship graphs, contextual bandits and sequential search: step 4"
     },
     {
@@ -1101,8 +1101,8 @@
       "section": "Relationship graphs, contextual bandits and sequential search",
       "step": 5,
       "latex": "U_{\\mathrm{MCTS}}(s,a)=Q(s,a)+c\\sqrt{\\frac{\\ln N(s)}{N(s,a)}}",
-      "start": 112498,
-      "end": 112565,
+      "start": 113375,
+      "end": 113442,
       "description": "Relationship graphs, contextual bandits and sequential search: step 5"
     },
     {
@@ -1112,8 +1112,8 @@
       "section": "Relationship graphs, contextual bandits and sequential search",
       "step": 6,
       "latex": "Q_H(s,a)=\\mathbb{E}\\!\\left[\\sum_{k=0}^{H}\\gamma^k r_{t+k}\\,\\middle|\\,s_t=s,a_t=a,\\text{model}\\right]",
-      "start": 112620,
-      "end": 112726,
+      "start": 113497,
+      "end": 113603,
       "description": "Relationship graphs, contextual bandits and sequential search: step 6"
     },
     {
@@ -1123,8 +1123,8 @@
       "section": "A worked example with deliberately hypothetical numbers",
       "step": 1,
       "latex": "\\text{KES }1{,}100-\\text{KES }250=\\text{KES }850\\quad\\text{per assigned case}",
-      "start": 120320,
-      "end": 120403,
+      "start": 121197,
+      "end": 121280,
       "description": "A worked example with deliberately hypothetical numbers: step 1"
     },
     {
@@ -1134,8 +1134,8 @@
       "section": "A2.2 Bellman recursion",
       "step": 1,
       "latex": "V_t^\\pi(s)=\\mathbb E^\\pi\\left[\n\\sum_{j=t}^{T-1}\\gamma^{j-t}r_j+\\gamma^{T-t}g_T(S_T)\n\\mid S_t=s\\right].",
-      "start": 142171,
-      "end": 142279,
+      "start": 143673,
+      "end": 143781,
       "description": "A2.2 Bellman recursion: step 1"
     },
     {
@@ -1145,8 +1145,8 @@
       "section": "A2.2 Bellman recursion",
       "step": 2,
       "latex": "V_t^\\pi(s)=\\sum_{a\\in\\mathcal A_t(s)}\\pi_t(a\\mid s)\n\\int\\left[r_t(s,a,s')+\\gamma V_{t+1}^\\pi(s')\\right]P_t(ds'\\mid s,a).",
-      "start": 142432,
-      "end": 142558,
+      "start": 143934,
+      "end": 144060,
       "description": "A2.2 Bellman recursion: step 2"
     },
     {
@@ -1156,8 +1156,8 @@
       "section": "A2.2 Bellman recursion",
       "step": 3,
       "latex": "\\begin{aligned}\nV_t(s)&=\\max_{a\\in\\mathcal A_t(s)}\n\\int[r_t(s,a,s')+\\gamma V_{t+1}(s')]P_t(ds'\\mid s,a),\\\\\nV_T(s)&=g_T(s).\n\\end{aligned}",
-      "start": 142603,
-      "end": 142745,
+      "start": 144105,
+      "end": 144247,
       "description": "A2.2 Bellman recursion: step 3"
     },
     {
@@ -1167,8 +1167,8 @@
       "section": "A2.3 POMDP prediction and observation update",
       "step": 1,
       "latex": "b_t(z)=\\Pr(Z_t=z\\mid O_{1:t},A_{1:t-1}).",
-      "start": 143277,
-      "end": 143323,
+      "start": 144779,
+      "end": 144825,
       "description": "A2.3 POMDP prediction and observation update: step 1"
     },
     {
@@ -1178,8 +1178,8 @@
       "section": "A2.3 POMDP prediction and observation update",
       "step": 2,
       "latex": "\\begin{aligned}\n\\bar b_{t+1}(z')&=\\sum_z T_{a_t}(z'\\mid z)b_t(z),\\\\\np(o\\mid b_t,a_t)&=\\sum_{z'}L_{a_t}(o\\mid z')\\bar b_{t+1}(z'),\\\\\nb_{t+1}(z')&=\n\\frac{L_{a_t}(o_{t+1}\\mid z')\\bar b_{t+1}(z')}\n{\\sum_{\\tilde z}L_{a_t}(o_{t+1}\\mid\\tilde z)\\bar b_{t+1}(\\tilde z)}.\n\\end{aligned}",
-      "start": 143427,
-      "end": 143708,
+      "start": 144929,
+      "end": 145210,
       "description": "A2.3 POMDP prediction and observation update: step 2"
     },
     {
@@ -1189,8 +1189,8 @@
       "section": "A2.3 POMDP prediction and observation update",
       "step": 3,
       "latex": "V_t(b)=\\max_{a\\in\\mathcal A_t(b)}\n\\left\\{\\bar r(b,a)+\\gamma\\sum_o p(o\\mid b,a)\nV_{t+1}(\\mathcal B(b,a,o))\\right\\}.",
-      "start": 143930,
-      "end": 144050,
+      "start": 145432,
+      "end": 145552,
       "description": "A2.3 POMDP prediction and observation update: step 3"
     },
     {
@@ -1200,31 +1200,31 @@
       "section": "A2.4 Semi-Markov timing",
       "step": 1,
       "latex": "V(s)=\\max_{a\\in\\mathcal A(s)}\n\\int\\left[r(s,a,s',u)+e^{-\\rho u}V(s')\\right]K(ds',du\\mid s,a).",
-      "start": 144560,
-      "end": 144659,
+      "start": 146062,
+      "end": 146161,
       "description": "A2.4 Semi-Markov timing: step 1"
     },
     {
       "scope": "A2",
       "number": "A2.8",
-      "label": "eq:a2-logistic-hierarchy",
+      "label": "eq:a2-complete-logistic-hierarchy-024cb99fad",
       "section": "A2.5 Complete logistic hierarchy",
       "step": 1,
       "latex": "\\begin{aligned}\nD_i(\\tau)&\\sim\\operatorname{Bernoulli}(p_{i,\\tau}),\\\\\np_{i,\\tau}&=\\frac{e^{\\eta_i^L}}{1+e^{\\eta_i^L}},\\\\\n\\eta_i^L&=\\alpha^L+X_i^\\mathsf T\\beta^L\n+u_{s(i)}^L+v_{r(i)}^L+w_{c(i)}^L,\\\\\n\\mathcal L_L&=\\prod_i p_{i,\\tau}^{D_i(\\tau)}\n(1-p_{i,\\tau})^{1-D_i(\\tau)}.\n\\end{aligned}",
-      "start": 145140,
-      "end": 145432,
-      "description": "Logistic hierarchy"
+      "start": 146642,
+      "end": 146934,
+      "description": "A2.5 Complete logistic hierarchy: step 1"
     },
     {
       "scope": "A2",
       "number": "A2.9",
-      "label": "eq:a2-group-distributions-hyperpriors",
+      "label": "eq:a2-complete-logistic-hierarchy-42eb6d2d53",
       "section": "A2.5 Complete logistic hierarchy",
       "step": 2,
       "latex": "\\begin{aligned}\nu_s^m&=\\sigma_u^m z_{us}^m,&z_{us}^m&\\sim N(0,1),\\\\\nv_r^m&=\\sigma_v^m z_{vr}^m,&z_{vr}^m&\\sim N(0,1),\\\\\nw_c^m&=\\sigma_w^m z_{wc}^m,&z_{wc}^m&\\sim N(0,1),\\\\\n\\sigma_k^m&\\sim\\operatorname{HalfStudentT}(3,s_{0,k}^m),\n&&k\\in\\{u,v,w\\},\\\\\n\\alpha^L&\\sim N(0,s_\\alpha^2),&\\beta^m&\\sim N(0,B^m).\n\\end{aligned}",
-      "start": 145493,
-      "end": 145814,
-      "description": "Group distributions hyperpriors"
+      "start": 146995,
+      "end": 147316,
+      "description": "A2.5 Complete logistic hierarchy: step 2"
     },
     {
       "scope": "A2",
@@ -1233,8 +1233,8 @@
       "section": "A2.5 Complete logistic hierarchy",
       "step": 3,
       "latex": "\\mathbb E[u_s\\mid\\hat u_s,\\sigma_u]\n=\\frac{\\sigma_u^2}{\\sigma_u^2+v_s}\\hat u_s,\\qquad\n\\operatorname{Var}(u_s\\mid\\hat u_s,\\sigma_u)\n=(v_s^{-1}+\\sigma_u^{-2})^{-1}.",
-      "start": 146514,
-      "end": 146682,
+      "start": 148328,
+      "end": 148496,
       "description": "A2.5 Complete logistic hierarchy: step 3"
     },
     {
@@ -1244,427 +1244,416 @@
       "section": "A2.6 Hierarchical hazards and their likelihood",
       "step": 1,
       "latex": "\\eta_i^H(t)=X_i(t)^\\mathsf T\\beta^H\n+u_{s(i)}^H+v_{r(i)}^H+w_{c(i)}^H,\\qquad\n\\lambda_i(t)=\\lambda_0(t)e^{\\eta_i^H(t)}.",
-      "start": 147031,
-      "end": 147155,
+      "start": 148845,
+      "end": 148969,
       "description": "A2.6 Hierarchical hazards and their likelihood: step 1"
     },
     {
       "scope": "A2",
       "number": "A2.12",
-      "label": "eq:a2-hierarchical-hazards-and-their-likelihood-9b37ea0838",
+      "label": "eq:a2-hierarchical-hazards-and-their-likelihood-a93e2a9d9f",
       "section": "A2.6 Hierarchical hazards and their likelihood",
       "step": 2,
-      "latex": "S_i(t)=\\exp\\left[-\\int_0^t\\lambda_i(u)du\\right],\\qquad\nf_i(t)=\\lambda_i(t)S_i(t).",
-      "start": 147679,
-      "end": 147766,
+      "latex": "\\mathcal L_H=\\prod_i\\lambda_i(y_i)^{\\delta_i}\n\\exp\\left[-\\int_0^{y_i}\\lambda_i(u)du\\right].",
+      "start": 149677,
+      "end": 149774,
       "description": "A2.6 Hierarchical hazards and their likelihood: step 2"
     },
     {
       "scope": "A2",
       "number": "A2.13",
-      "label": "eq:a2-hazard-likelihood",
+      "label": "eq:a2-hierarchical-hazards-and-their-likelihood-01217becb2",
       "section": "A2.6 Hierarchical hazards and their likelihood",
       "step": 3,
-      "latex": "\\mathcal L_H=\\prod_i\\lambda_i(y_i)^{\\delta_i}\n\\exp\\left[-\\int_0^{y_i}\\lambda_i(u)du\\right].",
-      "start": 147923,
-      "end": 148020,
-      "description": "Hazard likelihood"
+      "latex": "\\mathcal L_{\\rm partial}=\n\\prod_{i:\\delta_i=1}\n\\frac{e^{\\eta_i^H(t_i)}}{\\sum_{j\\in\\mathcal R(t_i)}e^{\\eta_j^H(t_i)}}.",
+      "start": 149903,
+      "end": 150026,
+      "description": "A2.6 Hierarchical hazards and their likelihood: step 3"
     },
     {
       "scope": "A2",
       "number": "A2.14",
-      "label": "eq:a2-hierarchical-hazards-and-their-likelihood-01217becb2",
+      "label": "eq:a2-hierarchical-hazards-and-their-likelihood-fe8b7f282c",
       "section": "A2.6 Hierarchical hazards and their likelihood",
       "step": 4,
-      "latex": "\\mathcal L_{\\rm partial}=\n\\prod_{i:\\delta_i=1}\n\\frac{e^{\\eta_i^H(t_i)}}{\\sum_{j\\in\\mathcal R(t_i)}e^{\\eta_j^H(t_i)}}.",
-      "start": 148149,
-      "end": 148272,
+      "latex": "\\lambda_{0\\ell}\\mid\\cdots\\sim\n\\operatorname{Gamma}(a_\\ell+d_\\ell,b_\\ell+E_\\ell).",
+      "start": 150341,
+      "end": 150427,
       "description": "A2.6 Hierarchical hazards and their likelihood: step 4"
     },
     {
       "scope": "A2",
       "number": "A2.15",
-      "label": "eq:a2-hierarchical-hazards-and-their-likelihood-fe8b7f282c",
+      "label": "eq:a2-hierarchical-hazards-and-their-likelihood-a393f80ade",
       "section": "A2.6 Hierarchical hazards and their likelihood",
       "step": 5,
-      "latex": "\\lambda_{0\\ell}\\mid\\cdots\\sim\n\\operatorname{Gamma}(a_\\ell+d_\\ell,b_\\ell+E_\\ell).",
-      "start": 148587,
-      "end": 148673,
+      "latex": "\\overline S_i(t\\mid D)=\\int\\exp[-\\Lambda_i(t;\\vartheta)]p(\\vartheta\\mid D)\\,d\\vartheta\n\\approx\\frac1B\\sum_{b=1}^B\\exp[-\\Lambda_i(t;\\vartheta^{(b)})].",
+      "start": 150759,
+      "end": 150914,
       "description": "A2.6 Hierarchical hazards and their likelihood: step 5"
     },
     {
       "scope": "A2",
       "number": "A2.16",
-      "label": "eq:a2-hierarchical-hazards-and-their-likelihood-a393f80ade",
-      "section": "A2.6 Hierarchical hazards and their likelihood",
-      "step": 6,
-      "latex": "\\overline S_i(t\\mid D)=\\int\\exp[-\\Lambda_i(t;\\vartheta)]p(\\vartheta\\mid D)\\,d\\vartheta\n\\approx\\frac1B\\sum_{b=1}^B\\exp[-\\Lambda_i(t;\\vartheta^{(b)})].",
-      "start": 149005,
-      "end": 149160,
-      "description": "A2.6 Hierarchical hazards and their likelihood: step 6"
-    },
-    {
-      "scope": "A2",
-      "number": "A2.17",
-      "label": "eq:a2-hierarchical-hazards-and-their-likelihood-beb39ca72b",
-      "section": "A2.6 Hierarchical hazards and their likelihood",
-      "step": 7,
-      "latex": "\\begin{aligned}\nS_i(t)&=\\exp\\left[-\\int_0^t\\sum_k\\lambda_{ik}(u)du\\right],\\\\\nF_{ik}(t)&=\\int_0^t S_i(u-)\\lambda_{ik}(u)du,\\\\\nS_i(t)+\\sum_k F_{ik}(t)&=1.\n\\end{aligned}",
-      "start": 149835,
-      "end": 150007,
-      "description": "A2.6 Hierarchical hazards and their likelihood: step 7"
-    },
-    {
-      "scope": "A2",
-      "number": "A2.18",
       "label": "eq:a2-expected-loss-cash-shortfall-and-capital-34acad4450",
       "section": "A2.7 Expected loss, cash shortfall and capital",
       "step": 1,
       "latex": "\\operatorname{ECL}=\\sum_j w_j\\sum_t d_t\n(C_t^{\\rm contract}-C_{tj}^{\\rm received}),\\qquad \\sum_j w_j=1.",
-      "start": 150849,
-      "end": 150958,
+      "start": 152435,
+      "end": 152544,
       "description": "A2.7 Expected loss, cash shortfall and capital: step 1"
     },
     {
       "scope": "A2",
-      "number": "A2.19",
+      "number": "A2.17",
       "label": "eq:a2-expected-loss-cash-shortfall-and-capital-693e8e9255",
       "section": "A2.7 Expected loss, cash shortfall and capital",
       "step": 2,
       "latex": "\\mathbb E[Z]=\\operatorname{PD}\\,\n\\mathbb E[\\operatorname{EAD}\\operatorname{LGD}\\mid\\text{default}].",
-      "start": 151211,
-      "end": 151316,
+      "start": 152797,
+      "end": 152902,
       "description": "A2.7 Expected loss, cash shortfall and capital: step 2"
     },
     {
       "scope": "A2",
-      "number": "A2.20",
+      "number": "A2.18",
       "label": "eq:a2-expected-loss-cash-shortfall-and-capital-e0aa94370c",
       "section": "A2.7 Expected loss, cash shortfall and capital",
       "step": 3,
       "latex": "\\operatorname{ES}_\\alpha(L)=\n\\frac1{1-\\alpha}\\int_\\alpha^1\\operatorname{VaR}_u(L)\\,du.",
-      "start": 151714,
-      "end": 151806,
+      "start": 153300,
+      "end": 153392,
       "description": "A2.7 Expected loss, cash shortfall and capital: step 3"
     },
     {
       "scope": "A2",
-      "number": "A2.21",
+      "number": "A2.19",
       "label": "eq:a2-constraints-and-fairness-8e7723c6b8",
       "section": "A2.8 Constraints and fairness",
       "step": 1,
       "latex": "\\mathcal L(\\pi,\\lambda)=J(\\pi)\n-\\sum_k\\lambda_k\\{C_k(\\pi)-B_k\\},\\qquad\\lambda_k\\ge0.",
-      "start": 152434,
-      "end": 152524,
+      "start": 154020,
+      "end": 154110,
       "description": "A2.8 Constraints and fairness: step 1"
     },
     {
       "scope": "A2",
-      "number": "A2.22",
-      "label": "eq:a2-constraints-and-fairness-03b094a5a0",
+      "number": "A2.20",
+      "label": "eq:a2-constraints-and-fairness-815afd1284",
       "section": "A2.8 Constraints and fairness",
       "step": 2,
-      "latex": "\\begin{aligned}\n\\operatorname{TPR}_g&=\\Pr(\\hat Y=1\\mid Y=1,G=g),\\\\\n\\operatorname{FPR}_g&=\\Pr(\\hat Y=1\\mid Y=0,G=g),\\\\\ns_g&=\\Pr(\\hat Y=1\\mid G=g).\n\\end{aligned}",
-      "start": 152815,
-      "end": 152980,
+      "latex": "s_g=\\Pr(\\widehat Y=1\\mid G=g),\\qquad\n\\operatorname{SelectionRatio}_{g,g_0}=s_g/s_{g_0},\\quad s_{g_0}>0.",
+      "start": 154531,
+      "end": 154640,
       "description": "A2.8 Constraints and fairness: step 2"
     },
     {
       "scope": "A2",
-      "number": "A2.23",
+      "number": "A2.21",
       "label": "eq:a2-clayton-copula-57e2eb1e95",
       "section": "A2.9 Clayton copula",
       "step": 1,
       "latex": "C_\\theta(u,v)=(u^{-\\theta}+v^{-\\theta}-1)^{-1/\\theta}.",
-      "start": 153393,
-      "end": 153453,
+      "start": 155175,
+      "end": 155235,
       "description": "A2.9 Clayton copula: step 1"
     },
     {
       "scope": "A2",
-      "number": "A2.24",
+      "number": "A2.22",
       "label": "eq:a2-clayton-copula-f91ac1cc16",
       "section": "A2.9 Clayton copula",
       "step": 2,
       "latex": "\\lambda_L=\\lim_{q\\downarrow0}\\frac{C(q,q)}q\n=\\lim_{q\\downarrow0}(2-q^\\theta)^{-1/\\theta}\n=2^{-1/\\theta}.",
-      "start": 153507,
-      "end": 153617,
+      "start": 155289,
+      "end": 155399,
       "description": "A2.9 Clayton copula: step 2"
     },
     {
       "scope": "A2",
-      "number": "A2.25",
+      "number": "A2.23",
       "label": "eq:a2-clayton-copula-3d6d6950cb",
       "section": "A2.9 Clayton copula",
       "step": 3,
       "latex": "\\begin{aligned}\n\\tau&=1+4\\int_0^1\\frac{\\varphi(u)}{\\varphi'(u)}du\\\\\n&=1-\\frac4\\theta\\left(\\frac12-\\frac1{\\theta+2}\\right)\n=\\frac\\theta{\\theta+2}.\n\\end{aligned}",
-      "start": 153796,
-      "end": 153961,
+      "start": 155578,
+      "end": 155743,
       "description": "A2.9 Clayton copula: step 3"
     },
     {
       "scope": "A2",
-      "number": "A2.26",
+      "number": "A2.24",
       "label": "eq:a2-polyagamma-derivation-1dda744ed3",
       "section": "A2.10 Pólya–Gamma derivation",
       "step": 1,
       "latex": "\\frac{e^{y_i\\eta_i}}{(1+e^{\\eta_i})^{b_i}}\n=2^{-b_i}e^{\\kappa_i\\eta_i}\n\\int_0^\\infty e^{-\\omega_i\\eta_i^2/2}\np_{\\operatorname{PG}(b_i,0)}(\\omega_i)d\\omega_i.",
-      "start": 154357,
-      "end": 154520,
+      "start": 156139,
+      "end": 156302,
       "description": "A2.10 Pólya–Gamma derivation: step 1"
     },
     {
       "scope": "A2",
-      "number": "A2.27",
+      "number": "A2.25",
       "label": "eq:a2-polyagamma-derivation-fd911630ad",
       "section": "A2.10 Pólya–Gamma derivation",
       "step": 2,
       "latex": "\\log p(\\theta\\mid\\cdots)=\n-\\tfrac12\\theta^\\mathsf T(Z^\\mathsf T\\Omega Z+V_0^{-1})\\theta\n+\\theta^\\mathsf T(Z^\\mathsf T\\kappa+V_0^{-1}m_0)+\\text{constant}.",
-      "start": 154898,
-      "end": 155057,
+      "start": 156680,
+      "end": 156839,
       "description": "A2.10 Pólya–Gamma derivation: step 2"
     },
     {
       "scope": "A2",
-      "number": "A2.28",
-      "label": "eq:a2-pg-gaussian-posterior",
+      "number": "A2.26",
+      "label": "eq:a2-polyagamma-derivation-bd8cebaa5f",
       "section": "A2.10 Pólya–Gamma derivation",
       "step": 3,
       "latex": "\\begin{aligned}\nV_*&=(Z^\\mathsf T\\Omega Z+V_0^{-1})^{-1},\\\\\nm_*&=V_*(Z^\\mathsf T\\kappa+V_0^{-1}m_0),\\\\\n\\theta\\mid\\omega,\\text{scales},D&\\sim N(m_*,V_*).\n\\end{aligned}",
-      "start": 155081,
-      "end": 155253,
-      "description": "Pólya–Gamma Gaussian conditional posterior"
+      "start": 156863,
+      "end": 157035,
+      "description": "A2.10 Pólya–Gamma derivation: step 3"
+    },
+    {
+      "scope": "A2",
+      "number": "A2.27",
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-19084c3f8c",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 1,
+      "latex": "\\begin{aligned}\n\\lambda_{\\beta j}&\\sim\\operatorname{Gamma}(\\nu/2,\\nu/2),\\qquad\n\\beta_j\\mid\\lambda_{\\beta j}\\sim N(0,s_{\\beta j}^2/\\lambda_{\\beta j}),\\\\\np(\\beta_j)&=\\frac{\\Gamma((\\nu+1)/2)}{\\Gamma(\\nu/2)\\sqrt{\\nu\\pi}\\,s_{\\beta j}}\n\\left(1+\\frac{\\beta_j^2}{\\nu s_{\\beta j}^2}\\right)^{-(\\nu+1)/2},\\\\\n\\lambda_{\\beta j}\\mid\\beta_j&\\sim\\operatorname{Gamma}\\left(\n\\frac{\\nu+1}{2},\\frac{\\nu+\\beta_j^2/s_{\\beta j}^2}{2}\\right).\n\\end{aligned}",
+      "start": 158813,
+      "end": 159251,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 1"
+    },
+    {
+      "scope": "A2",
+      "number": "A2.28",
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-0093fb415d",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 2,
+      "latex": "\\lambda_{\\sigma k}\\sim\\operatorname{Gamma}(\\nu/2,\\nu/2),\\qquad\n\\widetilde{\\sigma}_k\\mid\\lambda_{\\sigma k}\\sim N(0,s_{0,k}^2/\\lambda_{\\sigma k}),\\qquad\n\\sigma_k=|\\widetilde{\\sigma}_k|.",
+      "start": 159975,
+      "end": 160164,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 2"
     },
     {
       "scope": "A2",
       "number": "A2.29",
-      "label": "eq:a2-half-t-mixture-and-scale-updates-43b968079f",
-      "section": "A2.11 Half-t mixture and scale updates",
-      "step": 1,
-      "latex": "\\begin{aligned}\np(q)&=\\frac{(\\nu/2)^{\\nu/2}}{\\Gamma(\\nu/2)\\sqrt{2\\pi}\\,s_0}\n\\int_0^\\infty\n\\lambda^{(\\nu+1)/2-1}\n\\exp[-(\\nu+q^2/s_0^2)\\lambda/2]\\,d\\lambda\\\\\n&=\\frac{\\Gamma((\\nu+1)/2)}\n{\\Gamma(\\nu/2)\\sqrt{\\nu\\pi}\\,s_0}\n\\left(1+\\frac{q^2}{\\nu s_0^2}\\right)^{-(\\nu+1)/2}.\n\\end{aligned}",
-      "start": 156468,
-      "end": 156755,
-      "description": "A2.11 Half-t mixture and scale updates: step 1"
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-679071288b",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 3,
+      "latex": "p(\\sigma_k)=\\frac{2\\Gamma((\\nu+1)/2)}{\\Gamma(\\nu/2)\\sqrt{\\nu\\pi}\\,s_{0,k}}\n\\left(1+\\frac{\\sigma_k^2}{\\nu s_{0,k}^2}\\right)^{-(\\nu+1)/2},\\qquad\\sigma_k>0.",
+      "start": 160237,
+      "end": 160396,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 3"
     },
     {
       "scope": "A2",
       "number": "A2.30",
-      "label": "eq:a2-half-t-mixture-and-scale-updates-7748d49d9a",
-      "section": "A2.11 Half-t mixture and scale updates",
-      "step": 2,
-      "latex": "p(\\sigma)=\\frac4{\\pi\\sqrt3\\,s_0}\n\\left(1+\\frac{\\sigma^2}{3s_0^2}\\right)^{-2},\\qquad\\sigma>0.",
-      "start": 156848,
-      "end": 156946,
-      "description": "A2.11 Half-t mixture and scale updates: step 2"
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-339e7f1b77",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 4,
+      "latex": "p(\\sigma_k)=\\frac{4}{\\pi\\sqrt{3}\\,s_{0,k}}\n\\left(1+\\frac{\\sigma_k^2}{3s_{0,k}^2}\\right)^{-2},\\qquad\\sigma_k>0.",
+      "start": 160428,
+      "end": 160544,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 4"
     },
     {
       "scope": "A2",
       "number": "A2.31",
-      "label": "eq:a2-half-t-mixture-and-scale-updates-a9fe80c46e",
-      "section": "A2.11 Half-t mixture and scale updates",
-      "step": 3,
-      "latex": "\\log p(\\sigma\\mid u,\\lambda)\n=-J\\log\\sigma-\\frac{\\sum_j u_j^2}{2\\sigma^2}\n-\\frac{\\lambda\\sigma^2}{2s_0^2}+\\text{constant}.",
-      "start": 157444,
-      "end": 157572,
-      "description": "A2.11 Half-t mixture and scale updates: step 3"
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-a8a1b2ba8a",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 5,
+      "latex": "\\lambda_{\\sigma k}\\mid\\sigma_k\\sim\\operatorname{Gamma}\\left(\n\\frac{\\nu+1}{2},\\frac{\\nu+\\sigma_k^2/s_{0,k}^2}{2}\\right).",
+      "start": 161028,
+      "end": 161153,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 5"
     },
     {
       "scope": "A2",
       "number": "A2.32",
-      "label": "eq:a2-half-t-mixture-and-scale-updates-db19c55e7f",
-      "section": "A2.11 Half-t mixture and scale updates",
-      "step": 4,
-      "latex": "\\sigma^2\\mid a\\sim\\operatorname{IG}(\\nu/2,\\nu/a),\n\\qquad a\\sim\\operatorname{IG}(1/2,1/s_0^2).",
-      "start": 157947,
-      "end": 158046,
-      "description": "A2.11 Half-t mixture and scale updates: step 4"
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-f7ab8bcf29",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 6,
+      "latex": "\\log p(\\sigma_k\\mid u,\\lambda_{\\sigma k})\n=-J_k\\log\\sigma_k-\\frac{\\sum_s u_{ks}^2}{2\\sigma_k^2}\n-\\frac{\\lambda_{\\sigma k}\\sigma_k^2}{2s_{0,k}^2}+\\text{constant},\\qquad\\sigma_k>0.",
+      "start": 161340,
+      "end": 161524,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 6"
     },
     {
       "scope": "A2",
       "number": "A2.33",
-      "label": "eq:a2-half-t-mixture-and-scale-updates-13cfb709a2",
-      "section": "A2.11 Half-t mixture and scale updates",
-      "step": 5,
-      "latex": "\\begin{aligned}\n\\sigma^2\\mid a,u&\\sim\\operatorname{IG}\n\\left(\\frac{\\nu+J}{2},\\frac\\nu a+\\frac12\\sum_j u_j^2\\right),\\\\\na\\mid\\sigma^2&\\sim\\operatorname{IG}\n\\left(\\frac{\\nu+1}{2},\\frac\\nu{\\sigma^2}+\\frac1{s_0^2}\\right).\n\\end{aligned}",
-      "start": 158272,
-      "end": 158508,
-      "description": "A2.11 Half-t mixture and scale updates: step 5"
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-2b221a401f",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 7,
+      "latex": "\\sigma_k^2\\mid a_k\\sim\\operatorname{IG}(\\nu/2,\\nu/a_k),\\qquad\na_k\\sim\\operatorname{IG}(1/2,1/s_{0,k}^2).",
+      "start": 161964,
+      "end": 162074,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 7"
     },
     {
       "scope": "A2",
       "number": "A2.34",
-      "label": "eq:a2-half-t-mixture-and-scale-updates-5045df8088",
-      "section": "A2.11 Half-t mixture and scale updates",
-      "step": 6,
-      "latex": "p(\\sigma\\mid z,\\omega,\\ldots)\\propto\n\\mathbf1\\{\\sigma>0\\}\n\\exp\\left[-\\frac{\\sigma^2}{2}v^{\\mathsf T}\\Omega v\n+\\sigma v^{\\mathsf T}(\\kappa-\\Omega c)\\right]p(\\sigma).",
-      "start": 159098,
-      "end": 159268,
-      "description": "A2.11 Half-t mixture and scale updates: step 6"
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-36f839d781",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 8,
+      "latex": "\\begin{aligned}\n\\sigma_k^2\\mid a_k,u&\\sim\\operatorname{IG}\\left(\n\\frac{\\nu+J_k}{2},\\frac{\\nu}{a_k}+\\frac12\\sum_s u_{ks}^2\\right),\\\\\na_k\\mid\\sigma_k^2&\\sim\\operatorname{IG}\\left(\n\\frac{\\nu+1}{2},\\frac{\\nu}{\\sigma_k^2}+\\frac1{s_{0,k}^2}\\right).\n\\end{aligned}",
+      "start": 162364,
+      "end": 162626,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 8"
     },
     {
       "scope": "A2",
       "number": "A2.35",
-      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-6f6da3b0d1",
-      "section": "A2.12 Limit boundary and human-review uncertainty",
-      "step": 1,
-      "latex": "\\begin{aligned}\n\\mathbb E[V_1\\mid D]&=(1-\\bar p)G-\\bar pL,\\\\\n\\mathbb E[V_0\\mid D]&=-(1-\\bar p)O,\\\\\n\\mathbb E[V_1-V_0\\mid D]&=(G+O)-\\bar p(G+O+L).\n\\end{aligned}",
-      "start": 160022,
-      "end": 160187,
-      "description": "A2.12 Limit boundary and human-review uncertainty: step 1"
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-bb6b6aa608",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 9,
+      "latex": "p(\\sigma_k\\mid z,\\omega,\\ldots)\\propto\n\\mathbf1\\{\\sigma_k>0\\}\n\\exp\\left[-\\frac{\\sigma_k^2}{2}v^{\\mathsf T}\\Omega v\n+\\sigma_kv^{\\mathsf T}(\\kappa-\\Omega c)\\right]p(\\sigma_k).",
+      "start": 162891,
+      "end": 163070,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 9"
     },
     {
       "scope": "A2",
       "number": "A2.36",
-      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-0c9ec9fc0e",
-      "section": "A2.12 Limit boundary and human-review uncertainty",
-      "step": 2,
-      "latex": "p^*=\\frac{G+O}{G+O+L}.",
-      "start": 160224,
-      "end": 160252,
-      "description": "A2.12 Limit boundary and human-review uncertainty: step 2"
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-b27d4ccc43",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 10,
+      "latex": "q_{\\sigma k}=v^{\\mathsf T}\\Omega v+\\lambda_{\\sigma k}/s_{0,k}^2,\n\\qquad m_{\\sigma k}=q_{\\sigma k}^{-1}v^{\\mathsf T}(\\kappa-\\Omega c).",
+      "start": 163175,
+      "end": 163314,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 10"
     },
     {
       "scope": "A2",
       "number": "A2.37",
-      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-4f2462d20e",
-      "section": "A2.12 Limit boundary and human-review uncertainty",
-      "step": 3,
-      "latex": "a^*=\\arg\\max_{a\\in\\mathcal A^{\\rm permitted}}\n\\int\\!\\int U(v,a)\\,p(v\\mid\\vartheta,D,a)\np(\\vartheta\\mid D)\\,dv\\,d\\vartheta.",
-      "start": 161065,
-      "end": 161193,
-      "description": "A2.12 Limit boundary and human-review uncertainty: step 3"
+      "label": "eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-3ca7c695d2",
+      "section": "A2.11 Student-t coefficient priors and half-t group-scale updates",
+      "step": 11,
+      "latex": "\\sigma_k\\mid z,\\omega,\\lambda_{\\sigma k},D\n\\sim N(m_{\\sigma k},q_{\\sigma k}^{-1})\\ \\text{truncated to }(0,\\infty).",
+      "start": 163346,
+      "end": 163466,
+      "description": "A2.11 Student-t coefficient priors and half-t group-scale updates: step 11"
     },
     {
       "scope": "A2",
       "number": "A2.38",
-      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-2235226d82",
+      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-6f6da3b0d1",
       "section": "A2.12 Limit boundary and human-review uncertainty",
-      "step": 4,
-      "latex": "\\hat q_{\\rm cap}=\\frac1B\\sum_{b=1}^B\n1\\{p^{(b)}>p_{\\rm cap}\\}.",
-      "start": 161517,
-      "end": 161585,
-      "description": "A2.12 Limit boundary and human-review uncertainty: step 4"
+      "step": 1,
+      "latex": "\\begin{aligned}\n\\mathbb E[V_1\\mid D]&=(1-\\bar p)G-\\bar pL,\\\\\n\\mathbb E[V_0\\mid D]&=-(1-\\bar p)O,\\\\\n\\mathbb E[V_1-V_0\\mid D]&=(G+O)-\\bar p(G+O+L).\n\\end{aligned}",
+      "start": 164891,
+      "end": 165056,
+      "description": "A2.12 Limit boundary and human-review uncertainty: step 1"
     },
     {
       "scope": "A2",
       "number": "A2.39",
-      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-3dd0d3a588",
+      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-0c9ec9fc0e",
       "section": "A2.12 Limit boundary and human-review uncertainty",
-      "step": 5,
-      "latex": "\\operatorname{Var}(V_1-V_0)=\n\\operatorname{Var}(V_1)+\\operatorname{Var}(V_0)\n-2\\operatorname{Cov}(V_1,V_0).",
-      "start": 162169,
-      "end": 162282,
-      "description": "A2.12 Limit boundary and human-review uncertainty: step 5"
+      "step": 2,
+      "latex": "p^*=\\frac{G+O}{G+O+L}.",
+      "start": 165093,
+      "end": 165121,
+      "description": "A2.12 Limit boundary and human-review uncertainty: step 2"
     },
     {
       "scope": "A2",
       "number": "A2.40",
-      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-58a777137d",
+      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-4f2462d20e",
       "section": "A2.12 Limit boundary and human-review uncertainty",
-      "step": 6,
-      "latex": "p(C\\mid D,a)=\\int p(C\\mid\\theta,a)p(\\theta\\mid D)d\\theta.",
-      "start": 162923,
-      "end": 162986,
-      "description": "A2.12 Limit boundary and human-review uncertainty: step 6"
+      "step": 3,
+      "latex": "a^*=\\arg\\max_{a\\in\\mathcal A^{\\rm permitted}}\n\\int\\!\\int U(v,a)\\,p(v\\mid\\vartheta,D,a)\np(\\vartheta\\mid D)\\,dv\\,d\\vartheta.",
+      "start": 165934,
+      "end": 166062,
+      "description": "A2.12 Limit boundary and human-review uncertainty: step 3"
     },
     {
       "scope": "A2",
       "number": "A2.41",
-      "label": "eq:a2-linear-ucb-and-logistic-thompson-sampling-5d77f9a0d9",
-      "section": "A2.13 Linear UCB and logistic Thompson sampling",
-      "step": 1,
-      "latex": "A_t=\\lambda I+\\sum_{j<t}x_jx_j^\\mathsf T,\\quad\nb_t=\\sum_{j<t}x_jr_j,\\quad\n\\hat\\theta_t=A_t^{-1}b_t.",
-      "start": 163479,
-      "end": 163584,
-      "description": "A2.13 Linear UCB and logistic Thompson sampling: step 1"
+      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-2235226d82",
+      "section": "A2.12 Limit boundary and human-review uncertainty",
+      "step": 4,
+      "latex": "\\hat q_{\\rm cap}=\\frac1B\\sum_{b=1}^B\n1\\{p^{(b)}>p_{\\rm cap}\\}.",
+      "start": 166386,
+      "end": 166454,
+      "description": "A2.12 Limit boundary and human-review uncertainty: step 4"
     },
     {
       "scope": "A2",
       "number": "A2.42",
-      "label": "eq:a2-linear-ucb-and-logistic-thompson-sampling-35d8406b33",
-      "section": "A2.13 Linear UCB and logistic Thompson sampling",
-      "step": 2,
-      "latex": "\\max_{\\theta\\text{ in ellipsoid}}x^\\mathsf T\\theta\n=x^\\mathsf T\\hat\\theta_t+\\alpha_t\\sqrt{x^\\mathsf TA_t^{-1}x}.",
-      "start": 163761,
-      "end": 163879,
-      "description": "A2.13 Linear UCB and logistic Thompson sampling: step 2"
+      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-3dd0d3a588",
+      "section": "A2.12 Limit boundary and human-review uncertainty",
+      "step": 5,
+      "latex": "\\operatorname{Var}(V_1-V_0)=\n\\operatorname{Var}(V_1)+\\operatorname{Var}(V_0)\n-2\\operatorname{Cov}(V_1,V_0).",
+      "start": 167038,
+      "end": 167151,
+      "description": "A2.12 Limit boundary and human-review uncertainty: step 5"
     },
     {
       "scope": "A2",
       "number": "A2.43",
-      "label": "eq:a2-linear-ucb-and-logistic-thompson-sampling-188de47862",
-      "section": "A2.13 Linear UCB and logistic Thompson sampling",
-      "step": 3,
-      "latex": "\\tilde\\theta_t\\sim p(\\theta\\mid D_t),\\qquad\n\\tilde p_t(a)=\\{1+e^{-z_t(a)^\\mathsf T\\tilde\\theta_t}\\}^{-1},\n\\qquad a_t=\\arg\\max_{a\\in\\mathcal A_{{\\rm safe},t}}\\tilde Q_t(a).",
-      "start": 164040,
-      "end": 164217,
-      "description": "A2.13 Linear UCB and logistic Thompson sampling: step 3"
+      "label": "eq:a2-limit-boundary-and-human-review-uncertainty-58a777137d",
+      "section": "A2.12 Limit boundary and human-review uncertainty",
+      "step": 6,
+      "latex": "p(C\\mid D,a)=\\int p(C\\mid\\theta,a)p(\\theta\\mid D)d\\theta.",
+      "start": 167792,
+      "end": 167855,
+      "description": "A2.12 Limit boundary and human-review uncertainty: step 6"
     },
     {
       "scope": "A2",
       "number": "A2.44",
-      "label": "eq:a2-mcts-and-graph-explanations-ca19b42c1e",
-      "section": "A2.14 MCTS and graph explanations",
+      "label": "eq:a2-linear-ucb-and-logistic-thompson-sampling-188de47862",
+      "section": "A2.13 Linear UCB and logistic Thompson sampling",
       "step": 1,
-      "latex": "Q_H(s,a)=\\mathbb E\\left[\\sum_{k=0}^H\\gamma^kr_{t+k}\n\\mid S_t=s,a_t=a,\\text{rollout policy and model}\\right].",
-      "start": 164628,
-      "end": 164742,
-      "description": "A2.14 MCTS and graph explanations: step 1"
+      "latex": "\\tilde\\theta_t\\sim p(\\theta\\mid D_t),\\qquad\n\\tilde p_t(a)=\\{1+e^{-z_t(a)^\\mathsf T\\tilde\\theta_t}\\}^{-1},\n\\qquad a_t=\\arg\\max_{a\\in\\mathcal A_{{\\rm safe},t}}\\tilde Q_t(a).",
+      "start": 168427,
+      "end": 168604,
+      "description": "A2.13 Linear UCB and logistic Thompson sampling: step 1"
     },
     {
       "scope": "A2",
       "number": "A2.45",
-      "label": "eq:a2-mcts-and-graph-explanations-b727eb09a5",
+      "label": "eq:a2-mcts-and-graph-explanations-ca19b42c1e",
       "section": "A2.14 MCTS and graph explanations",
-      "step": 2,
-      "latex": "U(s,a)=\\hat Q(s,a)+c\\sqrt{\\frac{\\log N(s)}{N(s,a)}}.",
-      "start": 164856,
-      "end": 164914,
-      "description": "A2.14 MCTS and graph explanations: step 2"
+      "step": 1,
+      "latex": "Q_H(s,a)=\\mathbb E\\left[\\sum_{k=0}^H\\gamma^kr_{t+k}\n\\mid S_t=s,a_t=a,\\text{rollout policy and model}\\right].",
+      "start": 169015,
+      "end": 169129,
+      "description": "A2.14 MCTS and graph explanations: step 1"
     },
     {
       "scope": "A2",
       "number": "A2.46",
-      "label": "eq:a2-mcts-and-graph-explanations-3c967071e7",
+      "label": "eq:a2-mcts-and-graph-explanations-b727eb09a5",
       "section": "A2.14 MCTS and graph explanations",
-      "step": 3,
-      "latex": "\\phi_j=\\sum_{S\\subseteq\\{1,\\ldots,M\\}\\setminus\\{j\\}}\n\\frac{|S|!(M-|S|-1)!}{M!}\n[v(S\\cup\\{j\\})-v(S)].",
-      "start": 165716,
-      "end": 165822,
-      "description": "A2.14 MCTS and graph explanations: step 3"
+      "step": 2,
+      "latex": "U(s,a)=\\hat Q(s,a)+c\\sqrt{\\frac{\\log N(s)}{N(s,a)}}.",
+      "start": 169243,
+      "end": 169301,
+      "description": "A2.14 MCTS and graph explanations: step 2"
     },
     {
       "scope": "A2",
       "number": "A2.47",
-      "label": "eq:a2-off-policy-evaluation-and-pilot-arithmetic-ff638071e3",
-      "section": "A2.15 Off-policy evaluation and pilot arithmetic",
-      "step": 1,
-      "latex": "\\mathbb E\\left[\\frac{\\pi(A\\mid X)}{e(A\\mid X)}R\\mid X\\right]\n=\\sum_a\\pi(a\\mid X)\\mathbb E[R\\mid X,A=a].",
-      "start": 166880,
-      "end": 166989,
-      "description": "A2.15 Off-policy evaluation and pilot arithmetic: step 1"
+      "label": "eq:a2-mcts-and-graph-explanations-3c967071e7",
+      "section": "A2.14 MCTS and graph explanations",
+      "step": 3,
+      "latex": "\\phi_j=\\sum_{S\\subseteq\\{1,\\ldots,M\\}\\setminus\\{j\\}}\n\\frac{|S|!(M-|S|-1)!}{M!}\n[v(S\\cup\\{j\\})-v(S)].",
+      "start": 170103,
+      "end": 170209,
+      "description": "A2.14 MCTS and graph explanations: step 3"
     },
     {
       "scope": "A2",
       "number": "A2.48",
-      "label": "eq:a2-off-policy-evaluation-and-pilot-arithmetic-713d8b1bc3",
-      "section": "A2.15 Off-policy evaluation and pilot arithmetic",
-      "step": 2,
-      "latex": "\\psi=\\sum_a\\pi(a\\mid X)m(X,a)\n+\\frac{\\pi(A\\mid X)}{e(A\\mid X)}[R-m(X,A)].",
-      "start": 167051,
-      "end": 167130,
-      "description": "A2.15 Off-policy evaluation and pilot arithmetic: step 2"
-    },
-    {
-      "scope": "A2",
-      "number": "A2.49",
       "label": "eq:a2-off-policy-evaluation-and-pilot-arithmetic-0914b29a59",
       "section": "A2.15 Off-policy evaluation and pilot arithmetic",
-      "step": 3,
+      "step": 1,
       "latex": "\\hat V_0(H_0)+\\sum_{t=0}^{T-1}\\gamma^t\\rho_t\n[R_t+\\gamma\\hat V_{t+1}(H_{t+1})-\\hat Q_t(H_t,A_t)],\n\\qquad\\hat V_T=0.",
-      "start": 167625,
-      "end": 167746,
-      "description": "A2.15 Off-policy evaluation and pilot arithmetic: step 3"
+      "start": 171549,
+      "end": 171670,
+      "description": "A2.15 Off-policy evaluation and pilot arithmetic: step 1"
     },
     {
       "scope": "3",
@@ -1673,8 +1662,8 @@
       "section": "Define the potential outcome under a complete contract",
       "step": 1,
       "latex": "S_i=1",
-      "start": 174728,
-      "end": 174739,
+      "start": 178460,
+      "end": 178471,
       "description": "Define the potential outcome under a complete contract: step 1"
     },
     {
@@ -1684,8 +1673,8 @@
       "section": "Define the potential outcome under a complete contract",
       "step": 2,
       "latex": "D_i^a(\\tau)=1",
-      "start": 175008,
-      "end": 175027,
+      "start": 178740,
+      "end": 178759,
       "description": "Define the potential outcome under a complete contract: step 2"
     },
     {
@@ -1695,8 +1684,8 @@
       "section": "Define the potential outcome under a complete contract",
       "step": 3,
       "latex": "p_{i,\\tau}(a)=\\Pr(D_i^a(\\tau)=1\\mid X_i).",
-      "start": 175138,
-      "end": 175185,
+      "start": 178870,
+      "end": 178917,
       "description": "Define the potential outcome under a complete contract: step 3"
     },
     {
@@ -1706,8 +1695,8 @@
       "section": "Define the potential outcome under a complete contract",
       "step": 4,
       "latex": "T_i^a=1",
-      "start": 175564,
-      "end": 175577,
+      "start": 179296,
+      "end": 179309,
       "description": "Define the potential outcome under a complete contract: step 4"
     },
     {
@@ -1717,8 +1706,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 1,
       "latex": "D_i^a(\\tau)\\sim\\operatorname{Bernoulli}\\!\\bigl(p_{i,\\tau}(a)\\bigr),",
-      "start": 177418,
-      "end": 177491,
+      "start": 181150,
+      "end": 181223,
       "description": "What a hierarchical Bayesian model contributes: step 1"
     },
     {
@@ -1728,8 +1717,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 2,
       "latex": "\\begin{aligned}\\operatorname{logit}(p_{i,\\tau}(a))={}&\\alpha^L+u^L_{s(i)}+v^L_{r(i)}+w^L_{c(i)}\\\\&+f^L(X_i)+h^L(a,X_i)\\end{aligned}.",
-      "start": 177504,
-      "end": 177642,
+      "start": 181236,
+      "end": 181374,
       "description": "What a hierarchical Bayesian model contributes: step 2"
     },
     {
@@ -1739,8 +1728,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 3,
       "latex": "\\begin{aligned}\\lambda_i(t\\mid X_i,a)=\\lambda_0(t)\\exp\\bigl(&X_i^{\\mathsf T}\\beta^H+q^H(a,X_i)\\\\&+u^H_{s(i)}+v^H_{r(i)}+w^H_{c(i)}\\bigr)\\end{aligned},",
-      "start": 178419,
-      "end": 178575,
+      "start": 182151,
+      "end": 182307,
       "description": "What a hierarchical Bayesian model contributes: step 3"
     },
     {
@@ -1750,8 +1739,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 4,
       "latex": "S_i(t)=\\exp\\!\\left(-\\int_0^t\\lambda_i(u)\\,\\mathrm{d}u\\right)",
-      "start": 178597,
-      "end": 178663,
+      "start": 182329,
+      "end": 182395,
       "description": "What a hierarchical Bayesian model contributes: step 4"
     },
     {
@@ -1761,8 +1750,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 5,
       "latex": "u_s^m=\\sigma_u^m z_{us}^m,\\qquad z_{us}^m\\sim N(0,1)",
-      "start": 180334,
-      "end": 180392,
+      "start": 184066,
+      "end": 184124,
       "description": "What a hierarchical Bayesian model contributes: step 5"
     },
     {
@@ -1772,8 +1761,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 6,
       "latex": "v_r^m=\\sigma_v^m z_{vr}^m,\\qquad z_{vr}^m\\sim N(0,1)",
-      "start": 180396,
-      "end": 180454,
+      "start": 184128,
+      "end": 184186,
       "description": "What a hierarchical Bayesian model contributes: step 6"
     },
     {
@@ -1783,8 +1772,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 7,
       "latex": "w_c^m=\\sigma_w^m z_{wc}^m,\\qquad z_{wc}^m\\sim N(0,1)",
-      "start": 180458,
-      "end": 180516,
+      "start": 184190,
+      "end": 184248,
       "description": "What a hierarchical Bayesian model contributes: step 7"
     },
     {
@@ -1794,8 +1783,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 8,
       "latex": "\\begin{gathered}\\sigma_k^m\\sim\\operatorname{HalfStudentT}(3,s_{0,k}^m),\\\\ k\\in\\{u,v,w\\},\\quad m\\in\\{L,H\\}\\end{gathered}",
-      "start": 180520,
-      "end": 180645,
+      "start": 184252,
+      "end": 184377,
       "description": "What a hierarchical Bayesian model contributes: step 8"
     },
     {
@@ -1805,8 +1794,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 9,
       "latex": "\\alpha^L\\sim N(0,s_\\alpha^2),\\qquad\\beta^m\\sim N(0,B^m)",
-      "start": 180649,
-      "end": 180710,
+      "start": 184381,
+      "end": 184442,
       "description": "What a hierarchical Bayesian model contributes: step 9"
     },
     {
@@ -1816,8 +1805,8 @@
       "section": "What a hierarchical Bayesian model contributes",
       "step": 10,
       "latex": "\\lambda_{0,\\ell}\\sim\\operatorname{Gamma}(\\mathrm{shape}=a_\\ell,\\mathrm{rate}=b_\\ell)",
-      "start": 180714,
-      "end": 180804,
+      "start": 184446,
+      "end": 184536,
       "description": "What a hierarchical Bayesian model contributes: step 10"
     },
     {
@@ -1827,8 +1816,8 @@
       "section": "Model the selection process, then test its assumptions",
       "step": 1,
       "latex": "e(x)=\\Pr(S=1\\mid X=x)",
-      "start": 180875,
-      "end": 180902,
+      "start": 184607,
+      "end": 184634,
       "description": "Model the selection process, then test its assumptions: step 1"
     },
     {
@@ -1838,8 +1827,8 @@
       "section": "Model the selection process, then test its assumptions",
       "step": 2,
       "latex": "0<e(x)<1",
-      "start": 181190,
-      "end": 181204,
+      "start": 184922,
+      "end": 184936,
       "description": "Model the selection process, then test its assumptions: step 2"
     },
     {
@@ -1849,8 +1838,8 @@
       "section": "Model the selection process, then test its assumptions",
       "step": 3,
       "latex": "e(x)=0",
-      "start": 181372,
-      "end": 181384,
+      "start": 185104,
+      "end": 185116,
       "description": "Model the selection process, then test its assumptions: step 3"
     },
     {
@@ -1860,8 +1849,8 @@
       "section": "Model the selection process, then test its assumptions",
       "step": 4,
       "latex": "\\begin{aligned}\\operatorname{logit}\\Pr(D^a=1\\mid X,S=0)={}&\\operatorname{logit}\\Pr(D^a=1\\mid X,S=1)\\\\&+\\delta_g\\end{aligned},",
-      "start": 182839,
-      "end": 182970,
+      "start": 186571,
+      "end": 186702,
       "description": "Model the selection process, then test its assumptions: step 4"
     },
     {
@@ -1871,8 +1860,8 @@
       "section": "Pólya–Gamma helps compute a model; it does not reveal missing outcomes",
       "step": 1,
       "latex": "\\eta_i=x_i^{\\mathsf T}\\beta,",
-      "start": 185053,
-      "end": 185087,
+      "start": 188785,
+      "end": 188819,
       "description": "Pólya–Gamma helps compute a model; it does not reveal missing outcomes: step 1"
     },
     {
@@ -1882,8 +1871,8 @@
       "section": "Pólya–Gamma helps compute a model; it does not reveal missing outcomes",
       "step": 2,
       "latex": "\\kappa_i=y_i-\\frac{1}{2}",
-      "start": 185102,
-      "end": 185132,
+      "start": 188834,
+      "end": 188864,
       "description": "Pólya–Gamma helps compute a model; it does not reveal missing outcomes: step 2"
     },
     {
@@ -1893,8 +1882,8 @@
       "section": "Pólya–Gamma helps compute a model; it does not reveal missing outcomes",
       "step": 3,
       "latex": "\\omega_i\\sim\\operatorname{PG}(1,\\eta_i).",
-      "start": 185161,
-      "end": 185207,
+      "start": 188893,
+      "end": 188939,
       "description": "Pólya–Gamma helps compute a model; it does not reveal missing outcomes: step 3"
     },
     {
@@ -1904,8 +1893,8 @@
       "section": "Pólya–Gamma helps compute a model; it does not reveal missing outcomes",
       "step": 4,
       "latex": "\\Sigma^{\\ast}=\\left(X^{\\mathsf T}\\Omega X+\\Sigma_0^{-1}\\right)^{-1}",
-      "start": 185389,
-      "end": 185462,
+      "start": 189121,
+      "end": 189194,
       "description": "Pólya–Gamma helps compute a model; it does not reveal missing outcomes: step 4"
     },
     {
@@ -1915,8 +1904,8 @@
       "section": "Generate evidence through a guarded offer design",
       "step": 1,
       "latex": "\\pi_t(a\\mid x)=(1-\\varepsilon_t)\\widehat{\\pi}_t(a\\mid x)+\\varepsilon_t q(a\\mid x),",
-      "start": 189806,
-      "end": 189894,
+      "start": 193538,
+      "end": 193626,
       "description": "Generate evidence through a guarded offer design: step 1"
     },
     {
@@ -1926,8 +1915,8 @@
       "section": "A worked example: four defaults among eighty funded pilot loans",
       "step": 1,
       "latex": "\\frac{4}{80}=5\\%.",
-      "start": 191058,
-      "end": 191081,
+      "start": 194790,
+      "end": 194813,
       "description": "A worked example: four defaults among eighty funded pilot loans: step 1"
     },
     {
@@ -1937,8 +1926,8 @@
       "section": "IFRS 9, expected loss and capital remain distinct",
       "step": 1,
       "latex": "\\mathrm{EL}\\approx\\mathrm{PD}\\times\\mathrm{LGD}\\times\\mathrm{EAD}",
-      "start": 202419,
-      "end": 202490,
+      "start": 206554,
+      "end": 206625,
       "description": "IFRS 9, expected loss and capital remain distinct: step 1"
     },
     {
@@ -1948,8 +1937,8 @@
       "section": "A3.1 Define the offer, funding and outcome separately",
       "step": 1,
       "latex": "\\begin{aligned}\np_a(x)&=\\Pr\\{D_i^a(\\tau)=1\\mid X_i=x\\},\\\\\nt_a(x)&=\\Pr\\{U_i(a)=1\\mid X_i=x\\},\\\\\np_a^{\\mathrm{takers}}(x)\n&=\\Pr\\{D_i^a(\\tau)=1\\mid X_i=x,U_i(a)=1\\},\\\\\nv_a(x)&=E[Y_i^{\\mathrm{offer}}(a)\\mid X_i=x].\n\\end{aligned}",
-      "start": 214679,
-      "end": 214909,
+      "start": 219045,
+      "end": 219275,
       "description": "A3.1 Define the offer, funding and outcome separately: step 1"
     },
     {
@@ -1959,8 +1948,8 @@
       "section": "A3.2 Why observed labels do not identify missing outcomes by themselves",
       "step": 1,
       "latex": "e(x)=\\Pr(S=1\\mid X=x),\\qquad\nm_s(x)=\\Pr\\{D^a(\\tau)=1\\mid X=x,S=s\\}.",
-      "start": 215966,
-      "end": 216039,
+      "start": 220332,
+      "end": 220405,
       "description": "A3.2 Why observed labels do not identify missing outcomes by themselves: step 1"
     },
     {
@@ -1970,8 +1959,8 @@
       "section": "A3.2 Why observed labels do not identify missing outcomes by themselves",
       "step": 2,
       "latex": "p_a(x)=e(x)m_1(x)+\\{1-e(x)\\}m_0(x).",
-      "start": 216077,
-      "end": 216118,
+      "start": 220443,
+      "end": 220484,
       "description": "A3.2 Why observed labels do not identify missing outcomes by themselves: step 2"
     },
     {
@@ -1981,8 +1970,8 @@
       "section": "A3.2 Why observed labels do not identify missing outcomes by themselves",
       "step": 3,
       "latex": "e(x)m_1(x)\\le p_a(x)\\le e(x)m_1(x)+1-e(x).",
-      "start": 216370,
-      "end": 216418,
+      "start": 220736,
+      "end": 220784,
       "description": "A3.2 Why observed labels do not identify missing outcomes by themselves: step 3"
     },
     {
@@ -1992,8 +1981,8 @@
       "section": "A3.2 Why observed labels do not identify missing outcomes by themselves",
       "step": 4,
       "latex": "\\sum_{d=0}^{1}p_\\theta(x)^d\\{1-p_\\theta(x)\\}^{1-d}\n=p_\\theta(x)+1-p_\\theta(x)=1.",
-      "start": 216879,
-      "end": 216965,
+      "start": 221245,
+      "end": 221331,
       "description": "A3.2 Why observed labels do not identify missing outcomes by themselves: step 4"
     },
     {
@@ -2003,8 +1992,8 @@
       "section": "A3.2 Why observed labels do not identify missing outcomes by themselves",
       "step": 5,
       "latex": "\\begin{aligned}\n\\Pr(S=1,D=1\\mid x)&=e_1(x)p_a(x),\\\\\n\\Pr(S=1,D=0\\mid x)&=e_0(x)\\{1-p_a(x)\\},\\\\\n\\Pr(S=0\\mid x)&=1-e_1(x)p_a(x)-e_0(x)\\{1-p_a(x)\\}.\n\\end{aligned}",
-      "start": 217482,
-      "end": 217646,
+      "start": 221848,
+      "end": 222012,
       "description": "A3.2 Why observed labels do not identify missing outcomes by themselves: step 5"
     },
     {
@@ -2014,8 +2003,8 @@
       "section": "A3.3 Transport from financed applicants to a defined target",
       "step": 1,
       "latex": "D^a(\\tau)\\mathrel{\\perp\\!\\!\\!\\perp}S\\mid X,",
-      "start": 218501,
-      "end": 218550,
+      "start": 222867,
+      "end": 222916,
       "description": "A3.3 Transport from financed applicants to a defined target: step 1"
     },
     {
@@ -2025,20 +2014,20 @@
       "section": "A3.3 Transport from financed applicants to a defined target",
       "step": 2,
       "latex": "\\begin{aligned}\nE\\left[\\frac{SD}{e(X)}\\middle|X\\right]\n&=\\frac{\\Pr(S=1\\mid X)}{e(X)}E[D\\mid X,S=1]\\\\\n&=m(X).\n\\end{aligned}",
-      "start": 219071,
-      "end": 219199,
+      "start": 223437,
+      "end": 223565,
       "description": "A3.3 Transport from financed applicants to a defined target: step 2"
     },
     {
       "scope": "A3",
       "number": "A3.9",
-      "label": "eq:a3-selection-transport",
+      "label": "eq:a3-transport-from-financed-applicants-to-a-defined-target-874b6dc6db",
       "section": "A3.3 Transport from financed applicants to a defined target",
       "step": 3,
       "latex": "\\widehat\\mu_{\\mathrm{IPW}}\n=\\frac1N\\sum_{i=1}^N\\frac{S_iD_i}{\\widehat e(X_i)}",
-      "start": 219216,
-      "end": 219299,
-      "description": "Selection transport"
+      "start": 223582,
+      "end": 223665,
+      "description": "A3.3 Transport from financed applicants to a defined target: step 3"
     },
     {
       "scope": "A3",
@@ -2047,8 +2036,8 @@
       "section": "A3.3 Transport from financed applicants to a defined target",
       "step": 4,
       "latex": "\\begin{aligned}\nE[D^a\\mid S=0]\n&=\\frac{E[\\{1-e(X)\\}m(X)]}{\\Pr(S=0)}\\\\\n&=\\frac{E\\left[S\\frac{1-e(X)}{e(X)}D\\right]}{\\Pr(S=0)}.\n\\end{aligned}",
-      "start": 219629,
-      "end": 219774,
+      "start": 223995,
+      "end": 224140,
       "description": "A3.3 Transport from financed applicants to a defined target: step 4"
     },
     {
@@ -2058,8 +2047,8 @@
       "section": "A3.4 Doubly robust selection adjustment",
       "step": 1,
       "latex": "\\widehat\\mu_{\\mathrm{DR}}\n=\\frac1N\\sum_i\\left[\n\\widehat m(X_i)+\\frac{S_i}{\\widehat e(X_i)}\n\\{D_i-\\widehat m(X_i)\\}\\right].",
-      "start": 221387,
-      "end": 221515,
+      "start": 225753,
+      "end": 225881,
       "description": "A3.4 Doubly robust selection adjustment: step 1"
     },
     {
@@ -2069,8 +2058,8 @@
       "section": "A3.4 Doubly robust selection adjustment",
       "step": 2,
       "latex": "\\begin{aligned}\nE\\left[\\widehat m(X)+\\frac{S}{\\widehat e(X)}\n(D-\\widehat m(X))\\middle|X\\right]\n&=\\widehat m(X)+\\frac{e(X)}{\\widehat e(X)}\\{m(X)-\\widehat m(X)\\},\\\\\n\\operatorname{Bias}(X)\n&=\\left(\\frac{e(X)}{\\widehat e(X)}-1\\right)\n\\{m(X)-\\widehat m(X)\\}.\n\\end{aligned}",
-      "start": 221573,
-      "end": 221846,
+      "start": 225939,
+      "end": 226212,
       "description": "A3.4 Doubly robust selection adjustment: step 2"
     },
     {
@@ -2080,8 +2069,8 @@
       "section": "A3.4 Doubly robust selection adjustment",
       "step": 3,
       "latex": "\\widehat\\mu_a=\\frac{1}{N}\\sum_i\\left[\n\\widehat m_a(X_i)+\\frac{I_i(a)}{\\widehat e_a(X_i)}\n\\{D_i-\\widehat m_a(X_i)\\}\\right].",
-      "start": 222517,
-      "end": 222645,
+      "start": 226883,
+      "end": 227011,
       "description": "A3.4 Doubly robust selection adjustment: step 3"
     },
     {
@@ -2091,8 +2080,8 @@
       "section": "A3.5 Derive log-odds sensitivity for unobserved selection",
       "step": 1,
       "latex": "\\operatorname{logit}m_0(x)\n=\\operatorname{logit}m_1(x)+\\delta_g.",
-      "start": 223379,
-      "end": 223449,
+      "start": 227745,
+      "end": 227815,
       "description": "A3.5 Derive log-odds sensitivity for unobserved selection: step 1"
     },
     {
@@ -2102,20 +2091,20 @@
       "section": "A3.5 Derive log-odds sensitivity for unobserved selection",
       "step": 2,
       "latex": "\\frac{m_0(x)}{1-m_0(x)}\n=e^{\\delta_g}\\frac{m_1(x)}{1-m_1(x)}.",
-      "start": 223521,
-      "end": 223588,
+      "start": 227887,
+      "end": 227954,
       "description": "A3.5 Derive log-odds sensitivity for unobserved selection: step 2"
     },
     {
       "scope": "A3",
       "number": "A3.16",
-      "label": "eq:a3-selection-sensitivity",
+      "label": "eq:a3-derive-log-odds-sensitivity-for-unobserved-selection-8024031e64",
       "section": "A3.5 Derive log-odds sensitivity for unobserved selection",
       "step": 3,
       "latex": "m_0(x;\\delta_g)\n=\\frac{e^{\\delta_g}m_1(x)}{1-m_1(x)+e^{\\delta_g}m_1(x)}.",
-      "start": 223635,
-      "end": 223713,
-      "description": "Selection sensitivity"
+      "start": 228001,
+      "end": 228079,
+      "description": "A3.5 Derive log-odds sensitivity for unobserved selection: step 3"
     },
     {
       "scope": "A3",
@@ -2124,8 +2113,8 @@
       "section": "A3.5 Derive log-odds sensitivity for unobserved selection",
       "step": 4,
       "latex": "0.6(0.05)+0.4m_0\n=4.0256\\%,\\quad5.0000\\%,\\quad6.8095\\%.",
-      "start": 224049,
-      "end": 224110,
+      "start": 228415,
+      "end": 228476,
       "description": "A3.5 Derive log-odds sensitivity for unobserved selection: step 4"
     },
     {
@@ -2135,382 +2124,184 @@
       "section": "A3.5 Derive log-odds sensitivity for unobserved selection",
       "step": 5,
       "latex": "\\mu_a^{(b)}(\\delta)\n=\\frac1N\\sum_i\\left[\ne^{(b)}(X_i)m_1^{(b)}(X_i)\n+\\{1-e^{(b)}(X_i)\\}m_0^{(b)}(X_i;\\delta)\n\\right].",
-      "start": 224269,
-      "end": 224392,
+      "start": 228635,
+      "end": 228758,
       "description": "A3.5 Derive log-odds sensitivity for unobserved selection: step 5"
     },
     {
       "scope": "A3",
       "number": "A3.19",
-      "label": "eq:a3-the-common-sector-region-and-vintage-hierarchy-65d38ca4df",
-      "section": "A3.6 The common sector, region and vintage hierarchy",
+      "label": "eq:a3-article-3-action-term-within-the-shared-hierarchy-4c14cf78dc",
+      "section": "A3.6 Article 3 action term within the shared hierarchy",
       "step": 1,
-      "latex": "\\begin{aligned}\nD_i^a(\\tau)\\mid p_i&\\sim\\operatorname{Bernoulli}(p_i),\\\\\np_i&=\\operatorname{logit}^{-1}(\\eta_i),\\\\\n\\eta_i&=\\alpha^L+u^L_{s(i)}+v^L_{r(i)}+w^L_{c(i)}\n+f^L(X_i)+h^L(a,X_i).\n\\end{aligned}",
-      "start": 224970,
-      "end": 225176,
-      "description": "A3.6 The common sector, region and vintage hierarchy: step 1"
+      "latex": "\\begin{aligned}\nD_i^a(\\tau)\\mid X_i&\\sim\\operatorname{Bernoulli}(p_{i,a,\\tau}^L),\\\\\n\\operatorname{logit}(p_{i,a,\\tau}^L)\n&=\\alpha^L+X_i^\\mathsf T\\beta^L\n+u^L_{s(i)}+v^L_{r(i)}+w^L_{c(i)}+g^L(a,X_i).\n\\end{aligned}",
+      "start": 229556,
+      "end": 229774,
+      "description": "A3.6 Article 3 action term within the shared hierarchy: step 1"
     },
     {
       "scope": "A3",
       "number": "A3.20",
-      "label": "eq:a3-the-common-sector-region-and-vintage-hierarchy-ec5dfa9002",
-      "section": "A3.6 The common sector, region and vintage hierarchy",
-      "step": 2,
-      "latex": "\\begin{aligned}\nu^m_s&=\\sigma^m_u\\widetilde u^m_s,&\\widetilde u^m_s&\\sim N(0,1),\\\\\nv^m_r&=\\sigma^m_v\\widetilde v^m_r,&\\widetilde v^m_r&\\sim N(0,1),\\\\\nw^m_c&=\\sigma^m_w\\widetilde w^m_c,&\\widetilde w^m_c&\\sim N(0,1),\\\\\n\\sigma^m_k&\\sim\\operatorname{HalfStudentT}(\\nu=3,s^m_{0,k}),\n&&k\\in\\{u,v,w\\},\\quad m\\in\\{L,H\\},\\\\\n\\alpha^L&\\sim N(0,s_\\alpha^2),&\\beta^m&\\sim N(0,B^m),\\\\\n\\lambda_{0,\\ell}&\\sim\\operatorname{Gamma}(a_\\ell,b_\\ell).\n\\end{aligned}",
-      "start": 225791,
-      "end": 226239,
-      "description": "A3.6 The common sector, region and vintage hierarchy: step 2"
+      "label": "eq:a3-article-3-conditional-update-check-93b4bbc235",
+      "section": "A3.8 Article 3 conditional-update check",
+      "step": 1,
+      "latex": "V_*=(2+1/4)^{-1}=4/9,\n\\qquad\nm_*=(4/9)(-3.5)=-14/9,\n\\qquad\n\\alpha\\mid\\omega,y\\sim N(-14/9,4/9).",
+      "start": 233997,
+      "end": 234098,
+      "description": "A3.8 Article 3 conditional-update check: step 1"
     },
     {
       "scope": "A3",
       "number": "A3.21",
-      "label": "eq:a3-the-common-sector-region-and-vintage-hierarchy-30d0ec7564",
-      "section": "A3.6 The common sector, region and vintage hierarchy",
-      "step": 3,
-      "latex": "E[u_j\\mid\\overline y_j]\n=\\frac{\\tau^2}{\\tau^2+s^2/n_j}\\overline y_j.",
-      "start": 227201,
-      "end": 227275,
-      "description": "A3.6 The common sector, region and vintage hierarchy: step 3"
+      "label": "eq:a3-align-logistic-and-hazard-outcomes-for-reject-inference-3c57f02266",
+      "section": "A3.9 Align logistic and hazard outcomes for reject inference",
+      "step": 1,
+      "latex": "p_{L,a}(\\tau\\mid x)=\\Pr\\{D^a(\\tau)=1\\mid X=x\\}.",
+      "start": 235614,
+      "end": 235667,
+      "description": "A3.9 Align logistic and hazard outcomes for reject inference: step 1"
     },
     {
       "scope": "A3",
       "number": "A3.22",
-      "label": "eq:a3-half-student-t-scale-mixtures-and-their-computational-role-37d0260300",
-      "section": "A3.7 Half-Student-t scale mixtures and their computational role",
-      "step": 1,
-      "latex": "\\lambda\\sim\\operatorname{Gamma}(\\nu/2,\\nu/2),\n\\qquad q\\mid\\lambda\\sim N(0,s_0^2/\\lambda).",
-      "start": 228395,
-      "end": 228490,
-      "description": "A3.7 Half-Student-t scale mixtures and their computational role: step 1"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.23",
-      "label": "eq:a3-half-student-t-scale-mixtures-and-their-computational-role-e90407cb0f",
-      "section": "A3.7 Half-Student-t scale mixtures and their computational role",
-      "step": 2,
-      "latex": "p(q,\\lambda)\\propto\n\\lambda^{(\\nu+1)/2-1}\n\\exp\\left[-\\frac{\\lambda}{2}\n\\left(\\nu+\\frac{q^2}{s_0^2}\\right)\\right].",
-      "start": 228582,
-      "end": 228701,
-      "description": "A3.7 Half-Student-t scale mixtures and their computational role: step 2"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.24",
-      "label": "eq:a3-half-student-t-scale-mixtures-and-their-computational-role-679c028d6b",
-      "section": "A3.7 Half-Student-t scale mixtures and their computational role",
-      "step": 3,
-      "latex": "p(q)=\\frac{\\Gamma((\\nu+1)/2)}\n{\\Gamma(\\nu/2)\\sqrt{\\nu\\pi}\\,s_0}\n\\left(1+\\frac{q^2}{\\nu s_0^2}\\right)^{-(\\nu+1)/2}.",
-      "start": 228793,
-      "end": 228913,
-      "description": "A3.7 Half-Student-t scale mixtures and their computational role: step 3"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.25",
-      "label": "eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-89738a4834",
-      "section": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior",
-      "step": 1,
-      "latex": "p(y_i\\mid\\eta_i)=\\frac{e^{y_i\\eta_i}}{1+e^{\\eta_i}}.",
-      "start": 230230,
-      "end": 230288,
-      "description": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 1"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.26",
-      "label": "eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-10ea4185d5",
-      "section": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior",
-      "step": 2,
-      "latex": "p(y_i\\mid\\eta_i)=\\frac12e^{\\kappa_i\\eta_i}\\cosh^{-1}(\\eta_i/2).",
-      "start": 230369,
-      "end": 230438,
-      "description": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 2"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.27",
-      "label": "eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-5ee19ebf7e",
-      "section": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior",
-      "step": 3,
-      "latex": "E[e^{-\\omega\\eta^2/2}]=\\cosh^{-1}(\\eta/2).",
-      "start": 230526,
-      "end": 230574,
-      "description": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 3"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.28",
-      "label": "eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-d05ae37a67",
-      "section": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior",
-      "step": 4,
-      "latex": "p(y_i\\mid\\eta_i)\n=\\frac12e^{\\kappa_i\\eta_i}\n\\int_0^\\infty e^{-\\omega_i\\eta_i^2/2}\np_{\\mathrm{PG}(1,0)}(\\omega_i)\\,d\\omega_i.",
-      "start": 230617,
-      "end": 230747,
-      "description": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 4"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.29",
-      "label": "eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-0af9397c21",
-      "section": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior",
-      "step": 5,
-      "latex": "\\log p(\\theta\\mid\\omega,y,\\text{scales})\n=-\\frac12\\theta^\\top(Z^\\top\\Omega Z+Q_0)\\theta\n+\\theta^\\top(Z^\\top\\kappa+Q_0m_0)+\\text{constant}.",
-      "start": 231273,
-      "end": 231417,
-      "description": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 5"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.30",
-      "label": "eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-d4d23af51f",
-      "section": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior",
-      "step": 6,
-      "latex": "\\begin{aligned}\nV_*&=(Z^\\top\\Omega Z+Q_0)^{-1},\\\\\nm_*&=V_*(Z^\\top\\kappa+Q_0m_0),\\\\\n\\theta\\mid\\omega,y,\\text{scales}&\\sim N(m_*,V_*).\n\\end{aligned}",
-      "start": 231448,
-      "end": 231600,
-      "description": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 6"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.31",
-      "label": "eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-e159d53e7c",
-      "section": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior",
-      "step": 7,
-      "latex": "V_*=(2+1/4)^{-1}=4/9,\n\\qquad m_*=(4/9)(-3.5)=-14/9.",
-      "start": 232287,
-      "end": 232344,
-      "description": "A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 7"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.32",
-      "label": "eq:a3-survival-likelihood-hierarchy-and-default-incidence-f636157a43",
-      "section": "A3.9 Survival likelihood, hierarchy and default incidence",
-      "step": 1,
-      "latex": "\\lambda_i(t\\mid a)=\\lambda_0(t)\n\\exp\\{X_i^\\top\\beta^H+q^H(a,X_i)+u^H_{s(i)}+v^H_{r(i)}+w^H_{c(i)}\\}.",
-      "start": 233730,
-      "end": 233836,
-      "description": "A3.9 Survival likelihood, hierarchy and default incidence: step 1"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.33",
-      "label": "eq:a3-survival-likelihood-hierarchy-and-default-incidence-aa95d633e8",
-      "section": "A3.9 Survival likelihood, hierarchy and default incidence",
-      "step": 2,
-      "latex": "L=\\prod_i\\lambda_i(t_i)^{\\delta_i}S_i(t_i)\n=\\prod_i\\lambda_0(t_i)^{\\delta_i}\n\\exp\\{\\delta_i\\eta_i-e^{\\eta_i}\\Lambda_0(t_i)\\}.",
-      "start": 234308,
-      "end": 234439,
-      "description": "A3.9 Survival likelihood, hierarchy and default incidence: step 2"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.34",
-      "label": "eq:a3-survival-likelihood-hierarchy-and-default-incidence-dbc0c569c9",
-      "section": "A3.9 Survival likelihood, hierarchy and default incidence",
-      "step": 3,
-      "latex": "\\Pr(i\\text{ fails}\\mid\\mathcal R(t_i),\\text{one event})\n=\\frac{e^{\\eta_i}}{\\sum_{j\\in\\mathcal R(t_i)}e^{\\eta_j}}.",
-      "start": 234608,
-      "end": 234727,
-      "description": "A3.9 Survival likelihood, hierarchy and default incidence: step 3"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.35",
-      "label": "eq:a3-survival-likelihood-hierarchy-and-default-incidence-541e902a44",
-      "section": "A3.9 Survival likelihood, hierarchy and default incidence",
-      "step": 4,
-      "latex": "\\lambda_{0,\\ell}\\mid\\text{event data},\\eta\n\\sim\\operatorname{Gamma}\\left(a_\\ell+d_\\ell,\nb_\\ell+\\sum_i e_{i\\ell}e^{\\eta_i}\\right).",
-      "start": 235386,
-      "end": 235521,
-      "description": "A3.9 Survival likelihood, hierarchy and default incidence: step 4"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.36",
-      "label": "eq:a3-survival-likelihood-hierarchy-and-default-incidence-2ecaba2556",
-      "section": "A3.9 Survival likelihood, hierarchy and default incidence",
-      "step": 5,
-      "latex": "L_i=\\left\\{\\prod_k\\lambda_{ik}(t_i)^{1\\{\\delta_i=1,J_i=k\\}}\\right\\}\n\\exp\\left[-\\int_0^{t_i}\\sum_k\\lambda_{ik}(u)\\,du\\right].",
-      "start": 235845,
-      "end": 235975,
-      "description": "A3.9 Survival likelihood, hierarchy and default incidence: step 5"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.37",
-      "label": "eq:a3-survival-likelihood-hierarchy-and-default-incidence-43ba46a500",
-      "section": "A3.9 Survival likelihood, hierarchy and default incidence",
-      "step": 6,
-      "latex": "F_{iD}(\\tau)=\\int_0^\\tau\n\\exp\\left[-\\int_0^u\\sum_k\\lambda_{ik}(v)\\,dv\\right]\n\\lambda_{iD}(u)\\,du.",
-      "start": 236021,
-      "end": 236124,
-      "description": "A3.9 Survival likelihood, hierarchy and default incidence: step 6"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.38",
       "label": "eq:a3-the-guarded-pilot-and-the-wilson-interval-c17f0a7aef",
       "section": "A3.10 The guarded pilot and the Wilson interval",
       "step": 1,
       "latex": "\\widehat{\\Pr}(\\text{offered})=100/1{,}000=10\\%,\n\\quad\n\\widehat{\\Pr}(\\text{draw}\\mid\\text{offered})=80/100=80\\%,\n\\quad\n\\widehat p=4/80=5\\%.",
-      "start": 236871,
-      "end": 237015,
+      "start": 237636,
+      "end": 237780,
       "description": "A3.10 The guarded pilot and the Wilson interval: step 1"
     },
     {
       "scope": "A3",
-      "number": "A3.39",
+      "number": "A3.23",
       "label": "eq:a3-the-guarded-pilot-and-the-wilson-interval-1e4ecea815",
       "section": "A3.10 The guarded pilot and the Wilson interval",
       "step": 2,
       "latex": "\\frac{(\\widehat p-p)^2}{p(1-p)/n}\\le z^2,\n\\qquad z=z_{1-\\alpha/2}.",
-      "start": 237539,
-      "end": 237611,
+      "start": 238304,
+      "end": 238376,
       "description": "A3.10 The guarded pilot and the Wilson interval: step 2"
     },
     {
       "scope": "A3",
-      "number": "A3.40",
+      "number": "A3.24",
       "label": "eq:a3-the-guarded-pilot-and-the-wilson-interval-a2068cdb9f",
       "section": "A3.10 The guarded pilot and the Wilson interval",
       "step": 3,
       "latex": "(n+z^2)p^2-(2n\\widehat p+z^2)p+n\\widehat p^{\\,2}\\le0.",
-      "start": 237669,
-      "end": 237728,
+      "start": 238434,
+      "end": 238493,
       "description": "A3.10 The guarded pilot and the Wilson interval: step 3"
     },
     {
       "scope": "A3",
-      "number": "A3.41",
+      "number": "A3.25",
       "label": "eq:a3-the-guarded-pilot-and-the-wilson-interval-faec07eec3",
       "section": "A3.10 The guarded pilot and the Wilson interval",
       "step": 4,
       "latex": "\\frac{\\widehat p+z^2/(2n)}{1+z^2/n}\n\\ \\pm\\ \n\\frac{z}{1+z^2/n}\n\\sqrt{\\frac{\\widehat p(1-\\widehat p)}n+\\frac{z^2}{4n^2}}.",
-      "start": 237791,
-      "end": 237916,
+      "start": 238556,
+      "end": 238681,
       "description": "A3.10 The guarded pilot and the Wilson interval: step 4"
     },
     {
       "scope": "A3",
-      "number": "A3.42",
+      "number": "A3.26",
       "label": "eq:a3-the-guarded-pilot-and-the-wilson-interval-601f0605e5",
       "section": "A3.10 The guarded pilot and the Wilson interval",
       "step": 5,
       "latex": "[0.01961324,\\;0.12162453],",
-      "start": 238031,
-      "end": 238063,
+      "start": 238796,
+      "end": 238828,
       "description": "A3.10 The guarded pilot and the Wilson interval: step 5"
     },
     {
       "scope": "A3",
-      "number": "A3.43",
+      "number": "A3.27",
       "label": "eq:a3-the-guarded-pilot-and-the-wilson-interval-fbfc4c4f12",
       "section": "A3.10 The guarded pilot and the Wilson interval",
       "step": 6,
       "latex": "p\\mid K=k,n\\sim\\operatorname{Beta}(a_0+k,b_0+n-k).",
-      "start": 238609,
-      "end": 238665,
+      "start": 239374,
+      "end": 239430,
       "description": "A3.10 The guarded pilot and the Wilson interval: step 6"
     },
     {
       "scope": "A3",
-      "number": "A3.44",
+      "number": "A3.28",
       "label": "eq:a3-adaptive-offers-preserve-an-explicit-observation-process-1d0bf656fa",
       "section": "A3.11 Adaptive offers preserve an explicit observation process",
       "step": 1,
       "latex": "\\pi_t(a\\mid x)\n=(1-\\epsilon_t)\\widehat\\pi_t(a\\mid x)+\\epsilon_tq(a\\mid x).",
-      "start": 239630,
-      "end": 239710,
+      "start": 240395,
+      "end": 240475,
       "description": "A3.11 Adaptive offers preserve an explicit observation process: step 1"
     },
     {
       "scope": "A3",
-      "number": "A3.45",
+      "number": "A3.29",
       "label": "eq:a3-expected-loss-cash-shortfall-and-tail-capital-7939c58238",
       "section": "A3.12 Expected loss, cash shortfall and tail capital",
       "step": 1,
       "latex": "\\begin{aligned}\nE[L]\n&=\\Pr(D=1)E[EG\\mid D=1]\\\\\n&=\\mathrm{PD}\\left[\nE[E\\mid D=1]E[G\\mid D=1]\n+\\operatorname{Cov}(E,G\\mid D=1)\\right].\n\\end{aligned}",
-      "start": 241260,
-      "end": 241412,
+      "start": 242025,
+      "end": 242177,
       "description": "A3.12 Expected loss, cash shortfall and tail capital: step 1"
     },
     {
       "scope": "A3",
-      "number": "A3.46",
-      "label": "eq:a3-expected-loss-cash-shortfall-and-tail-capital-6856c063aa",
+      "number": "A3.30",
+      "label": "eq:a3-expected-loss-cash-shortfall-and-tail-capital-30571f1daf",
       "section": "A3.12 Expected loss, cash shortfall and tail capital",
       "step": 2,
-      "latex": "\\mathrm{ECL}=\\sum_s w_s\\sum_t d_t^{\\mathrm{EIR}}\n\\{C_t-R_t^{(s)}\\}.",
-      "start": 242370,
-      "end": 242443,
+      "latex": "\\mathrm{ECL}_{12}\n=\\int_0^{12\\,\\mathrm{months}}\nE[\\text{discounted lifetime shortfall}\\mid T_D=u]\\,dF_D(u),",
+      "start": 243409,
+      "end": 243522,
       "description": "A3.12 Expected loss, cash shortfall and tail capital: step 2"
     },
     {
       "scope": "A3",
-      "number": "A3.47",
-      "label": "eq:a3-expected-loss-cash-shortfall-and-tail-capital-30571f1daf",
-      "section": "A3.12 Expected loss, cash shortfall and tail capital",
-      "step": 3,
-      "latex": "\\mathrm{ECL}_{12}\n=\\int_0^{12\\,\\mathrm{months}}\nE[\\text{discounted lifetime shortfall}\\mid T_D=u]\\,dF_D(u),",
-      "start": 242829,
-      "end": 242942,
-      "description": "A3.12 Expected loss, cash shortfall and tail capital: step 3"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.48",
-      "label": "eq:a3-expected-loss-cash-shortfall-and-tail-capital-24b9d4a618",
-      "section": "A3.12 Expected loss, cash shortfall and tail capital",
-      "step": 4,
-      "latex": "\\operatorname{VaR}_\\alpha(L)\n=\\inf\\{\\ell:\\Pr(L\\le\\ell)\\ge\\alpha\\},\n\\qquad\n\\mathrm{EC}_\\alpha=\\operatorname{VaR}_\\alpha(L)-E[L].",
-      "start": 243244,
-      "end": 243377,
-      "description": "A3.12 Expected loss, cash shortfall and tail capital: step 4"
-    },
-    {
-      "scope": "A3",
-      "number": "A3.49",
+      "number": "A3.31",
       "label": "eq:a3-evidence-delivered-to-the-human-reviewer-fd2fa51fb9",
       "section": "A3.13 Evidence delivered to the human reviewer",
       "step": 1,
       "latex": "\\widehat{\\Pr}(p_a>p_{\\mathrm{cap}}\\mid D)\n=\\frac1B\\sum_{b=1}^B1\\{p_a^{(b)}>p_{\\mathrm{cap}}\\}.",
-      "start": 244519,
-      "end": 244619,
+      "start": 245084,
+      "end": 245184,
       "description": "A3.13 Evidence delivered to the human reviewer: step 1"
     },
     {
       "scope": "A3",
-      "number": "A3.50",
+      "number": "A3.32",
       "label": "eq:a3-classification-diagnostics-in-a-selectively-observed-portfolio-03f7a5bad5",
       "section": "A3.14 Classification diagnostics in a selectively observed portfolio",
       "step": 1,
       "latex": "\\begin{aligned}\n\\mathrm{AUC}_{S=1}\n={}&\\Pr(r_i>r_j\\mid D_i=1,D_j=0,S_i=S_j=1)\\\\\n&+\\tfrac12\\Pr(r_i=r_j\\mid D_i=1,D_j=0,S_i=S_j=1).\n\\end{aligned}",
-      "start": 245593,
-      "end": 245742,
+      "start": 246158,
+      "end": 246307,
       "description": "A3.14 Classification diagnostics in a selectively observed portfolio: step 1"
     },
     {
       "scope": "A3",
-      "number": "A3.51",
+      "number": "A3.33",
       "label": "eq:a3-classification-diagnostics-in-a-selectively-observed-portfolio-136d321d6b",
       "section": "A3.14 Classification diagnostics in a selectively observed portfolio",
       "step": 2,
       "latex": "\\mathrm{TPR}_{g,S=1}=\\Pr(\\widehat D=1\\mid D=1,G=g,S=1),\n\\qquad\n\\mathrm{FPR}_{g,S=1}=\\Pr(\\widehat D=1\\mid D=0,G=g,S=1).",
-      "start": 246284,
-      "end": 246408,
+      "start": 246849,
+      "end": 246973,
       "description": "A3.14 Classification diagnostics in a selectively observed portfolio: step 2"
     },
     {
       "scope": "A3",
-      "number": "A3.52",
+      "number": "A3.34",
       "label": "eq:a3-classification-diagnostics-in-a-selectively-observed-portfolio-5dbd1fab5e",
       "section": "A3.14 Classification diagnostics in a selectively observed portfolio",
       "step": 3,
       "latex": "\\widehat{\\mathrm{TPR}}_g\n=\\frac{\\sum_i S_i\\widehat e(X_i)^{-1}\n  1\\{G_i=g,D_i=1,\\widehat D_i=1\\}}\n {\\sum_i S_i\\widehat e(X_i)^{-1}1\\{G_i=g,D_i=1\\}}.",
-      "start": 246760,
-      "end": 246914,
+      "start": 247325,
+      "end": 247479,
       "description": "A3.14 Classification diagnostics in a selectively observed portfolio: step 3"
     },
     {
@@ -2520,8 +2311,8 @@
       "section": "Economic value, earnings and the risks that connect them",
       "step": 1,
       "latex": "\\begin{aligned}\\Delta\\mathrm{EVE}={}&\\mathrm{EVE}(\\text{shocked curves, behavioural cash flows})\\\\&-\\mathrm{EVE}(\\text{base curves, behavioural cash flows})\\end{aligned}.",
-      "start": 256064,
-      "end": 256240,
+      "start": 256731,
+      "end": 256907,
       "description": "Economic value, earnings and the risks that connect them: step 1"
     },
     {
@@ -2531,8 +2322,8 @@
       "section": "Economic value, earnings and the risks that connect them",
       "step": 2,
       "latex": "\\Delta\\mathrm{EVE}\\approx-D_{\\mathrm{eff}}\\times\\mathrm{EVE}_0\\times\\Delta r,",
-      "start": 256292,
-      "end": 256375,
+      "start": 256959,
+      "end": 257042,
       "description": "Economic value, earnings and the risks that connect them: step 2"
     },
     {
@@ -2542,8 +2333,8 @@
       "section": "Economic value, earnings and the risks that connect them",
       "step": 3,
       "latex": "\\begin{aligned}\\mathrm{NII}_s(H)={}&\\sum_{t=1}^{H}\\bigl[\\text{interest income}_{t,s}-\\text{interest expense}_{t,s}\\bigr]\\\\&+\\text{relevant fee and hedge effects}\\end{aligned},",
-      "start": 256719,
-      "end": 256900,
+      "start": 257386,
+      "end": 257567,
       "description": "Economic value, earnings and the risks that connect them: step 3"
     },
     {
@@ -2553,8 +2344,8 @@
       "section": "A worked FTP illustration",
       "step": 1,
       "latex": "13.0\\%-9.4\\%-0.6\\%-0.3\\%-1.2\\%-0.8\\%=0.7\\%,",
-      "start": 261149,
-      "end": 261198,
+      "start": 261816,
+      "end": 261865,
       "description": "A worked FTP illustration: step 1"
     },
     {
@@ -2564,8 +2355,8 @@
       "section": "Liquidity and funding: the constraint that changes the optimum",
       "step": 1,
       "latex": "\\frac{120-5}{100+8}=106.5\\%.",
-      "start": 267178,
-      "end": 267212,
+      "start": 268313,
+      "end": 268347,
       "description": "Liquidity and funding: the constraint that changes the optimum: step 1"
     },
     {
@@ -2575,8 +2366,8 @@
       "section": "Constrained stochastic control rather than reward-only optimization",
       "step": 1,
       "latex": "J(\\pi)=\\mathbb{E}_{\\pi}\\!\\left[\\sum_{t=0}^{T}\\gamma^t r(x_t,a_t,x_{t+1})\\right],",
-      "start": 270319,
-      "end": 270405,
+      "start": 271907,
+      "end": 271993,
       "description": "Constrained stochastic control rather than reward-only optimization: step 1"
     },
     {
@@ -2586,8 +2377,8 @@
       "section": "Constrained stochastic control rather than reward-only optimization",
       "step": 2,
       "latex": "\\begin{aligned}a_t&\\in A(x_t),&\\mathrm{LCR}_t&\\ge\\ell_t,\\\\\\mathrm{NSFR}_t&\\ge n_t,&\\text{capital}_t&\\ge c_t,\\\\|\\Delta\\mathrm{EVE}_t|&\\le e_t,&\\text{liquidity stress}_t&\\le q_t\\end{aligned}",
-      "start": 270422,
-      "end": 270616,
+      "start": 272010,
+      "end": 272204,
       "description": "Constrained stochastic control rather than reward-only optimization: step 2"
     },
     {
@@ -2597,8 +2388,8 @@
       "section": "A4.2 From dated cash flows to EVE and duration",
       "step": 1,
       "latex": "\\operatorname{EVE}_s=\\sum_{t=1}^{T}P_s(0,t)N_{t,s},\n\\qquad\n\\Delta\\operatorname{EVE}_s=\\operatorname{EVE}_s-\\operatorname{EVE}_0.",
-      "start": 294018,
-      "end": 294152,
+      "start": 295827,
+      "end": 295961,
       "description": "A4.2 From dated cash flows to EVE and duration: step 1"
     },
     {
@@ -2608,8 +2399,8 @@
       "section": "A4.2 From dated cash flows to EVE and duration",
       "step": 2,
       "latex": "V(y)=\\sum_t N_t e^{-yu_t},\\qquad\nV'(y)=-\\sum_t u_tN_t e^{-yu_t}.",
-      "start": 294324,
-      "end": 294394,
+      "start": 296133,
+      "end": 296203,
       "description": "A4.2 From dated cash flows to EVE and duration: step 2"
     },
     {
@@ -2619,8 +2410,8 @@
       "section": "A4.2 From dated cash flows to EVE and duration",
       "step": 3,
       "latex": "V(y+\\Delta y)-V(y)\n=V'(y)\\Delta y+\\frac12V''(y)(\\Delta y)^2+O((\\Delta y)^3),",
-      "start": 294463,
-      "end": 294545,
+      "start": 296272,
+      "end": 296354,
       "description": "A4.2 From dated cash flows to EVE and duration: step 3"
     },
     {
@@ -2630,8 +2421,8 @@
       "section": "A4.2 From dated cash flows to EVE and duration",
       "step": 4,
       "latex": "\\Delta V\\approx-D(y)V(y)\\Delta y.",
-      "start": 294547,
-      "end": 294586,
+      "start": 296356,
+      "end": 296395,
       "description": "A4.2 From dated cash flows to EVE and duration: step 4"
     },
     {
@@ -2641,8 +2432,8 @@
       "section": "A4.2 From dated cash flows to EVE and duration",
       "step": 5,
       "latex": "D_{\\mathrm{eff}}=\n\\frac{V(y-h)-V(y+h)}{2hV(y)},",
-      "start": 294759,
-      "end": 294812,
+      "start": 296568,
+      "end": 296621,
       "description": "A4.2 From dated cash flows to EVE and duration: step 5"
     },
     {
@@ -2652,8 +2443,8 @@
       "section": "A4.3 Earnings over an explicit horizon",
       "step": 1,
       "latex": "\\operatorname{NII}_s(H)=\n\\sum_{t=1}^{H}\\tau_t\n\\left(B^A_{t,s}r^A_{t,s}-B^L_{t,s}r^L_{t,s}\\right)\n+\\sum_{t=1}^{H}J_{t,s}.",
-      "start": 295431,
-      "end": 295557,
+      "start": 297240,
+      "end": 297366,
       "description": "A4.3 Earnings over an explicit horizon: step 1"
     },
     {
@@ -2663,8 +2454,8 @@
       "section": "A4.4 Curves, overnight compounding and FTP",
       "step": 1,
       "latex": "V^{\\mathrm{quote}}=\\sum_{j=1}^{m}CF_jP(0,t_j).",
-      "start": 296673,
-      "end": 296725,
+      "start": 298482,
+      "end": 298534,
       "description": "A4.4 Curves, overnight compounding and FTP: step 1"
     },
     {
@@ -2674,8 +2465,8 @@
       "section": "A4.4 Curves, overnight compounding and FTP",
       "step": 2,
       "latex": "P(0,t_m)=\n\\frac{V^{\\mathrm{quote}}-\\sum_{j=1}^{m-1}CF_jP(0,t_j)}{CF_m}.",
-      "start": 296820,
-      "end": 296897,
+      "start": 298629,
+      "end": 298706,
       "description": "A4.4 Curves, overnight compounding and FTP: step 2"
     },
     {
@@ -2685,8 +2476,8 @@
       "section": "A4.4 Curves, overnight compounding and FTP",
       "step": 3,
       "latex": "F(0;t_{j-1},t_j)=\n\\frac{P(0,t_{j-1})/P(0,t_j)-1}{\\tau_j}.",
-      "start": 297025,
-      "end": 297088,
+      "start": 298834,
+      "end": 298897,
       "description": "A4.4 Curves, overnight compounding and FTP: step 3"
     },
     {
@@ -2696,20 +2487,20 @@
       "section": "A4.4 Curves, overnight compounding and FTP",
       "step": 4,
       "latex": "\\tau=\\sum_j\\frac{d_j}{B},\\qquad\nk_{\\mathrm{comp}}=\n\\frac{\\prod_j(1+k_jd_j/B)-1}{\\tau}.",
-      "start": 297508,
-      "end": 297600,
+      "start": 299317,
+      "end": 299409,
       "description": "A4.4 Curves, overnight compounding and FTP: step 4"
     },
     {
       "scope": "A4",
       "number": "A4.11",
-      "label": "eq:a4-ftp-cash-charge",
+      "label": "eq:a4-curves-overnight-compounding-and-ftp-256679ca5b",
       "section": "A4.4 Curves, overnight compounding and FTP",
       "step": 5,
       "latex": "\\operatorname{FTP}_t=B^{\\mathrm{FTP}}_tf^{\\mathrm{FTP}}_t\\tau_t,",
-      "start": 298115,
-      "end": 298185,
-      "description": "Ftp cash charge"
+      "start": 299924,
+      "end": 299994,
+      "description": "A4.4 Curves, overnight compounding and FTP: step 5"
     },
     {
       "scope": "A4",
@@ -2718,8 +2509,8 @@
       "section": "A4.4 Curves, overnight compounding and FTP",
       "step": 6,
       "latex": "\\bar f=\n\\frac{\\sum_t d_t B^{\\mathrm{FTP}}_tf^{\\mathrm{FTP}}_t\\tau_t}\n{\\sum_t d_t B^{\\mathrm{FTP}}_t\\tau_t},",
-      "start": 298394,
-      "end": 298507,
+      "start": 300203,
+      "end": 300316,
       "description": "A4.4 Curves, overnight compounding and FTP: step 6"
     },
     {
@@ -2729,8 +2520,8 @@
       "section": "A4.5 Reproduce the KES 10 million contribution bridge",
       "step": 1,
       "latex": "\\begin{aligned}\n\\operatorname{Contribution}\n&=10{,}000{,}000\n(0.130-0.094-0.006-0.003-0.012-0.008)\\\\\n&=10{,}000{,}000(0.007)\n=70{,}000\\ \\mathrm{KES}.\n\\end{aligned}",
-      "start": 298987,
-      "end": 299156,
+      "start": 300796,
+      "end": 300965,
       "description": "A4.5 Reproduce the KES 10 million contribution bridge: step 1"
     },
     {
@@ -2740,8 +2531,8 @@
       "section": "A4.5 Reproduce the KES 10 million contribution bridge",
       "step": 2,
       "latex": "\\Delta\\operatorname{Contribution}\n=10{,}000{,}000\n\\left(0.010\\frac{11}{12}-0.012\\right)\n=-28{,}333.33\\ \\mathrm{KES}.",
-      "start": 299925,
-      "end": 300047,
+      "start": 301734,
+      "end": 301856,
       "description": "A4.5 Reproduce the KES 10 million contribution bridge: step 2"
     },
     {
@@ -2751,8 +2542,8 @@
       "section": "A4.6 Deposit beta, migration and replication",
       "step": 1,
       "latex": "\\Delta r^{\\mathrm{dep}}_t\n=\\alpha+\\beta\\Delta r^{\\mathrm{market}}_t+\\varepsilon_t,",
-      "start": 300808,
-      "end": 300896,
+      "start": 302617,
+      "end": 302705,
       "description": "A4.6 Deposit beta, migration and replication: step 1"
     },
     {
@@ -2762,8 +2553,8 @@
       "section": "A4.6 Deposit beta, migration and replication",
       "step": 2,
       "latex": "\\widehat\\beta=\n\\frac{\\sum_t(\\Delta r^{\\mathrm{market}}_t-\\overline{\\Delta r^{\\mathrm{market}}})\n(\\Delta r^{\\mathrm{dep}}_t-\\overline{\\Delta r^{\\mathrm{dep}}})}\n{\\sum_t(\\Delta r^{\\mathrm{market}}_t-\\overline{\\Delta r^{\\mathrm{market}}})^2}.",
-      "start": 301014,
-      "end": 301259,
+      "start": 302823,
+      "end": 303068,
       "description": "A4.6 Deposit beta, migration and replication: step 2"
     },
     {
@@ -2773,8 +2564,8 @@
       "section": "A4.6 Deposit beta, migration and replication",
       "step": 3,
       "latex": "\\min_{\\boldsymbol w}\\sum_{t\\in\\mathcal T}\n\\left(z_t-\\sum_jw_jg_{jt}\\right)^2,\n\\qquad w_j\\ge0,\\quad\\sum_jw_j=1,",
-      "start": 302040,
-      "end": 302156,
+      "start": 303849,
+      "end": 303965,
       "description": "A4.6 Deposit beta, migration and replication: step 3"
     },
     {
@@ -2784,8 +2575,8 @@
       "section": "A4.7 Liquidity ratios and the article’s 106.5% result",
       "step": 1,
       "latex": "\\operatorname{LCR}=\\frac{H}{O-\\min(I,0.75O)},",
-      "start": 302608,
-      "end": 302659,
+      "start": 304417,
+      "end": 304468,
       "description": "A4.7 Liquidity ratios and the article’s 106.5% result: step 1"
     },
     {
@@ -2795,8 +2586,8 @@
       "section": "A4.7 Liquidity ratios and the article’s 106.5% result",
       "step": 2,
       "latex": "\\operatorname{LCR}_0=\\frac{120}{100}=1.20,\n\\qquad\n\\operatorname{LCR}_1=\\frac{115}{108}=1.0648148\\approx106.5\\%.",
-      "start": 303172,
-      "end": 303289,
+      "start": 304981,
+      "end": 305098,
       "description": "A4.7 Liquidity ratios and the article’s 106.5% result: step 2"
     },
     {
@@ -2806,8 +2597,8 @@
       "section": "A4.7 Liquidity ratios and the article’s 106.5% result",
       "step": 3,
       "latex": "\\operatorname{NSFR}\n=\\frac{\\operatorname{ASF}}{\\operatorname{RSF}},\\qquad\n\\operatorname{ASF}=\\sum_i a_iL_i,\\qquad\n\\operatorname{RSF}=\\sum_j b_jA_j+\\operatorname{RSF}^{\\mathrm{off}}.",
-      "start": 303650,
-      "end": 303837,
+      "start": 305459,
+      "end": 305646,
       "description": "A4.7 Liquidity ratios and the article’s 106.5% result: step 3"
     },
     {
@@ -2817,8 +2608,8 @@
       "section": "A4.8 Hedging, collateral and cash availability",
       "step": 1,
       "latex": "C_t^{\\mathrm{req}}=\\max(-V_t-H_t,0)+IM_t,\n\\qquad\n\\Delta C_t=C_t^{\\mathrm{req}}-C_{t-1}^{\\mathrm{held}},",
-      "start": 304946,
-      "end": 305055,
+      "start": 306755,
+      "end": 306864,
       "description": "A4.8 Hedging, collateral and cash availability: step 1"
     },
     {
@@ -2828,130 +2619,64 @@
       "section": "A4.8 Hedging, collateral and cash availability",
       "step": 2,
       "latex": "K_{t+1}=K_t+\\operatorname{receipts}_t\n+\\operatorname{funding}_t-\\operatorname{payments}_t\n-\\operatorname{drawings}_t-\\operatorname{collateral\\ posted}_t\n+\\operatorname{collateral\\ returned}_t.",
-      "start": 305414,
-      "end": 305612,
+      "start": 307223,
+      "end": 307421,
       "description": "A4.8 Hedging, collateral and cash availability: step 2"
     },
     {
       "scope": "A4",
       "number": "A4.23",
-      "label": "eq:a4-finite-horizon-stochastic-control-and-bellman-recursion-164782c1ff",
-      "section": "A4.9 Finite-horizon stochastic control and Bellman recursion",
-      "step": 1,
-      "latex": "K_t(dx'\\mid x,a)\n=\\Pr\\{F_t(x,a,w_{t+1})\\in dx'\\mid x,a\\}.",
-      "start": 306207,
-      "end": 306270,
-      "description": "A4.9 Finite-horizon stochastic control and Bellman recursion: step 1"
-    },
-    {
-      "scope": "A4",
-      "number": "A4.24",
-      "label": "eq:a4-finite-horizon-stochastic-control-and-bellman-recursion-439c1a2cbc",
-      "section": "A4.9 Finite-horizon stochastic control and Bellman recursion",
-      "step": 2,
-      "latex": "J(\\pi)=\\mathbb E_\\pi\\left[\n\\sum_{t=0}^{T}\\gamma^tr_t(x_t,a_t,x_{t+1})\n+\\gamma^{T+1}g(x_{T+1})\\right].",
-      "start": 306460,
-      "end": 306567,
-      "description": "A4.9 Finite-horizon stochastic control and Bellman recursion: step 2"
-    },
-    {
-      "scope": "A4",
-      "number": "A4.25",
-      "label": "eq:a4-finite-horizon-stochastic-control-and-bellman-recursion-699d10d487",
-      "section": "A4.9 Finite-horizon stochastic control and Bellman recursion",
-      "step": 3,
-      "latex": "V_{T+1}(x)=g(x),",
-      "start": 306929,
-      "end": 306951,
-      "description": "A4.9 Finite-horizon stochastic control and Bellman recursion: step 3"
-    },
-    {
-      "scope": "A4",
-      "number": "A4.26",
-      "label": "eq:a4-feasible-bellman-recursion",
-      "section": "A4.9 Finite-horizon stochastic control and Bellman recursion",
-      "step": 4,
-      "latex": "V_t(x)=\\max_{a\\in\\mathcal A_t^{\\mathrm{feas}}(x)}\n\\int\\left[r_t(x,a,x')+\\gamma V_{t+1}(x')\\right]\nK_t(dx'\\mid x,a).",
-      "start": 306953,
-      "end": 307074,
-      "description": "Feasible bellman recursion"
-    },
-    {
-      "scope": "A4",
-      "number": "A4.27",
-      "label": "eq:a4-partial-observation-predictive-cash-and-policy-evaluation-e77b8e0c6d",
+      "label": "eq:a4-partial-observation-predictive-cash-and-policy-evaluation-5f3d84b4ea",
       "section": "A4.10 Partial observation, predictive cash and policy evaluation",
       "step": 1,
-      "latex": "b_{t+1}(z')=\n\\frac{O(y_{t+1}\\mid z',a_t)\\sum_zK(z'\\mid z,a_t)b_t(z)}\n{\\sum_{u}O(y_{t+1}\\mid u,a_t)\\sum_zK(u\\mid z,a_t)b_t(z)}.",
-      "start": 308450,
-      "end": 308582,
+      "latex": "\\operatorname{Var}(C)\n=\\sum_i\\operatorname{Var}(C_i)\n+2\\sum_{i<j}\\operatorname{Cov}(C_i,C_j).",
+      "start": 311386,
+      "end": 311485,
       "description": "A4.10 Partial observation, predictive cash and policy evaluation: step 1"
     },
     {
       "scope": "A4",
-      "number": "A4.28",
-      "label": "eq:a4-partial-observation-predictive-cash-and-policy-evaluation-7a2f36c5bf",
-      "section": "A4.10 Partial observation, predictive cash and policy evaluation",
-      "step": 2,
-      "latex": "V_t(b)=\\max_{a\\in\\mathcal A_t^{\\mathrm{feas}}(b)}\n\\left\\{\\bar r_t(b,a)+\\gamma\\sum_y\n\\Pr(y\\mid b,a)V_{t+1}(\\mathcal B(b,a,y))\\right\\}.",
-      "start": 308800,
-      "end": 308939,
-      "description": "A4.10 Partial observation, predictive cash and policy evaluation: step 2"
-    },
-    {
-      "scope": "A4",
-      "number": "A4.29",
-      "label": "eq:a4-partial-observation-predictive-cash-and-policy-evaluation-5f3d84b4ea",
-      "section": "A4.10 Partial observation, predictive cash and policy evaluation",
-      "step": 3,
-      "latex": "\\operatorname{Var}(C)\n=\\sum_i\\operatorname{Var}(C_i)\n+2\\sum_{i<j}\\operatorname{Cov}(C_i,C_j).",
-      "start": 309210,
-      "end": 309309,
-      "description": "A4.10 Partial observation, predictive cash and policy evaluation: step 3"
-    },
-    {
-      "scope": "A4",
-      "number": "A4.30",
+      "number": "A4.24",
       "label": "eq:a4-partial-observation-predictive-cash-and-policy-evaluation-2244ec8e30",
       "section": "A4.10 Partial observation, predictive cash and policy evaluation",
-      "step": 4,
+      "step": 2,
       "latex": "\\widehat{\\Delta J}=\\frac1M\\sum_{m=1}^{M}\n\\left(G_m^{\\mathrm{candidate}}-G_m^{\\mathrm{baseline}}\\right),",
-      "start": 309547,
-      "end": 309656,
-      "description": "A4.10 Partial observation, predictive cash and policy evaluation: step 4"
+      "start": 311814,
+      "end": 311923,
+      "description": "A4.10 Partial observation, predictive cash and policy evaluation: step 2"
     },
     {
       "scope": "5",
       "number": "5.1",
-      "label": "eq:a5-risk-cap-probability",
+      "label": "eq:5-show-the-reviewer-three-kinds-of-uncertainty-33c623b4b9",
       "section": "Show the reviewer three kinds of uncertainty",
       "step": 1,
       "latex": "q_p=\\Pr(p_{12}(a)>p_{\\max}\\mid D)",
-      "start": 322912,
-      "end": 322951,
-      "description": "Risk cap probability"
+      "start": 325277,
+      "end": 325316,
+      "description": "Show the reviewer three kinds of uncertainty: step 1"
     },
     {
       "scope": "5",
       "number": "5.2",
-      "label": "eq:a5-benefit-probability",
+      "label": "eq:5-show-the-reviewer-three-kinds-of-uncertainty-9f0e805ab9",
       "section": "Show the reviewer three kinds of uncertainty",
       "step": 2,
       "latex": "q_{\\Delta}=\\Pr\\!\\bigl(\\Delta(a,a_0)>\\delta\\mid D,\\text{identification assumptions}\\bigr)",
-      "start": 322955,
-      "end": 323049,
-      "description": "Benefit probability"
+      "start": 325320,
+      "end": 325414,
+      "description": "Show the reviewer three kinds of uncertainty: step 2"
     },
     {
       "scope": "5",
       "number": "5.3",
-      "label": "eq:a5-cash-shortfall-probability",
+      "label": "eq:5-show-the-reviewer-three-kinds-of-uncertainty-895a789b8a",
       "section": "Show the reviewer three kinds of uncertainty",
       "step": 3,
       "latex": "q_C=\\Pr(C_{30}(a)<B_{30}\\mid D,a)",
-      "start": 323053,
-      "end": 323092,
-      "description": "Cash shortfall probability"
+      "start": 325418,
+      "end": 325457,
+      "description": "Show the reviewer three kinds of uncertainty: step 3"
     },
     {
       "scope": "A5",
@@ -2960,8 +2685,8 @@
       "section": "A5.1 Three probability statements with separate meanings",
       "step": 1,
       "latex": "q_p=\\Pr\\{p_{12}(a)>p_{\\max}\\mid D\\},",
-      "start": 346280,
-      "end": 346322,
+      "start": 350042,
+      "end": 350084,
       "description": "A5.1 Three probability statements with separate meanings: step 1"
     },
     {
@@ -2971,8 +2696,8 @@
       "section": "A5.1 Three probability statements with separate meanings",
       "step": 2,
       "latex": "q_\\Delta=\\Pr\\{\\Delta(a,a_0)>\\delta\\mid D,\\mathcal I\\},",
-      "start": 346324,
-      "end": 346384,
+      "start": 350086,
+      "end": 350146,
       "description": "A5.1 Three probability statements with separate meanings: step 2"
     },
     {
@@ -2982,8 +2707,8 @@
       "section": "A5.1 Three probability statements with separate meanings",
       "step": 3,
       "latex": "q_C=\\Pr\\{C_{30}(a)<B_{30}\\mid D,a\\}.",
-      "start": 346386,
-      "end": 346428,
+      "start": 350148,
+      "end": 350190,
       "description": "A5.1 Three probability statements with separate meanings: step 3"
     },
     {
@@ -2993,8 +2718,8 @@
       "section": "A5.2 Derive the Beta posterior illustration",
       "step": 1,
       "latex": "\\pi(p)\\propto p^{\\alpha_0-1}(1-p)^{\\beta_0-1},\n\\qquad\nL(p;D)\\propto p^d(1-p)^{n-d}.",
-      "start": 348047,
-      "end": 348136,
+      "start": 351809,
+      "end": 351898,
       "description": "A5.2 Derive the Beta posterior illustration: step 1"
     },
     {
@@ -3004,8 +2729,8 @@
       "section": "A5.2 Derive the Beta posterior illustration",
       "step": 2,
       "latex": "p\\mid D\\sim\\operatorname{Beta}(\\alpha_0+d,\\beta_0+n-d).",
-      "start": 348179,
-      "end": 348240,
+      "start": 351941,
+      "end": 352002,
       "description": "A5.2 Derive the Beta posterior illustration: step 2"
     },
     {
@@ -3015,8 +2740,8 @@
       "section": "A5.2 Derive the Beta posterior illustration",
       "step": 3,
       "latex": "\\mathbb E[p\\mid D]=\\frac{\\alpha}{\\alpha+\\beta}=0.04,",
-      "start": 348611,
-      "end": 348669,
+      "start": 352373,
+      "end": 352431,
       "description": "A5.2 Derive the Beta posterior illustration: step 3"
     },
     {
@@ -3026,8 +2751,8 @@
       "section": "A5.2 Derive the Beta posterior illustration",
       "step": 4,
       "latex": "\\operatorname{Var}(p\\mid D)\n=\\frac{\\alpha\\beta}{(\\alpha+\\beta)^2(\\alpha+\\beta+1)}\n=\\frac{384}{1{,}010{,}000}\\approx0.000380198.",
-      "start": 348671,
-      "end": 348804,
+      "start": 352433,
+      "end": 352566,
       "description": "A5.2 Derive the Beta posterior illustration: step 4"
     },
     {
@@ -3037,8 +2762,8 @@
       "section": "A5.2 Derive the Beta posterior illustration",
       "step": 5,
       "latex": "I_x(\\alpha,\\beta)\n=\\frac{\\int_0^x u^{\\alpha-1}(1-u)^{\\beta-1}\\,du}\n{\\operatorname B(\\alpha,\\beta)},\\qquad\n\\operatorname B(\\alpha,\\beta)\n=\\int_0^1u^{\\alpha-1}(1-u)^{\\beta-1}\\,du.",
-      "start": 348888,
-      "end": 349071,
+      "start": 352650,
+      "end": 352833,
       "description": "A5.2 Derive the Beta posterior illustration: step 5"
     },
     {
@@ -3048,8 +2773,8 @@
       "section": "A5.2 Derive the Beta posterior illustration",
       "step": 6,
       "latex": "[F^{-1}(0.025),F^{-1}(0.975)]\n=[0.0111167488,0.0860112643].",
-      "start": 349143,
-      "end": 349208,
+      "start": 352905,
+      "end": 352970,
       "description": "A5.2 Derive the Beta posterior illustration: step 6"
     },
     {
@@ -3059,8 +2784,8 @@
       "section": "A5.2 Derive the Beta posterior illustration",
       "step": 7,
       "latex": "q_p=1-I_{0.06}(4,96)=0.1483731733\\approx14.84\\%.",
-      "start": 349305,
-      "end": 349359,
+      "start": 353067,
+      "end": 353121,
       "description": "A5.2 Derive the Beta posterior illustration: step 7"
     },
     {
@@ -3070,8 +2795,8 @@
       "section": "A5.2 Derive the Beta posterior illustration",
       "step": 8,
       "latex": "1-I_x(\\alpha,\\beta)\n=\\sum_{k=0}^{\\alpha-1}\n\\binom{\\alpha+\\beta-1}{k}\nx^k(1-x)^{\\alpha+\\beta-1-k}.",
-      "start": 349460,
-      "end": 349563,
+      "start": 353222,
+      "end": 353325,
       "description": "A5.2 Derive the Beta posterior illustration: step 8"
     },
     {
@@ -3081,8 +2806,8 @@
       "section": "A5.3 Derive the incremental-benefit illustration",
       "step": 1,
       "latex": "\\Delta(a,a_0)\n=\\mathbb E\\left[Y(a)-Y(a_0)\\mid\\mathcal P\\right],",
-      "start": 349976,
-      "end": 350045,
+      "start": 353738,
+      "end": 353807,
       "description": "A5.3 Derive the incremental-benefit illustration: step 1"
     },
     {
@@ -3092,8 +2817,8 @@
       "section": "A5.3 Derive the incremental-benefit illustration",
       "step": 2,
       "latex": "\\Delta\\mid D,\\mathcal I\\sim\n\\mathcal N(\\mu_\\Delta,\\sigma_\\Delta^2),\n\\qquad \\mu_\\Delta=8{,}000,\\quad\\sigma_\\Delta=4{,}000\\ \\mathrm{KES}.",
-      "start": 350490,
-      "end": 350631,
+      "start": 354252,
+      "end": 354393,
       "description": "A5.3 Derive the incremental-benefit illustration: step 2"
     },
     {
@@ -3103,8 +2828,8 @@
       "section": "A5.3 Derive the incremental-benefit illustration",
       "step": 3,
       "latex": "\\begin{aligned}\n\\mu_\\Delta\\pm1.6448536269\\sigma_\\Delta\n&=8{,}000\\pm6{,}579.4145\\\\\n&=[1{,}420.5855,14{,}579.4145]\\ \\mathrm{KES}.\n\\end{aligned}",
-      "start": 350822,
-      "end": 350969,
+      "start": 354584,
+      "end": 354731,
       "description": "A5.3 Derive the incremental-benefit illustration: step 3"
     },
     {
@@ -3114,8 +2839,8 @@
       "section": "A5.3 Derive the incremental-benefit illustration",
       "step": 4,
       "latex": "q_\\Delta=1-\\Phi\\left(\\frac{\\delta-8{,}000}{4{,}000}\\right).",
-      "start": 351002,
-      "end": 351067,
+      "start": 354764,
+      "end": 354829,
       "description": "A5.3 Derive the incremental-benefit illustration: step 4"
     },
     {
@@ -3125,8 +2850,8 @@
       "section": "A5.4 Derive the available-cash mixture",
       "step": 1,
       "latex": "\\Pr(C=20{,}000)=0.30,\\quad\n\\Pr(C=100{,}000)=0.50,\\quad\n\\Pr(C=180{,}000)=0.20,",
-      "start": 351458,
-      "end": 351541,
+      "start": 355220,
+      "end": 355303,
       "description": "A5.4 Derive the available-cash mixture: step 1"
     },
     {
@@ -3136,8 +2861,8 @@
       "section": "A5.4 Derive the available-cash mixture",
       "step": 2,
       "latex": "\\mathbb E[C]\n=0.30(20{,}000)+0.50(100{,}000)+0.20(180{,}000)\n=92{,}000\\ \\mathrm{KES}.",
-      "start": 351670,
-      "end": 351761,
+      "start": 355432,
+      "end": 355523,
       "description": "A5.4 Derive the available-cash mixture: step 2"
     },
     {
@@ -3147,8 +2872,8 @@
       "section": "A5.4 Derive the available-cash mixture",
       "step": 3,
       "latex": "\\mathbb E[C^2]=11{,}600{,}000{,}000\\ \\mathrm{KES}^2,",
-      "start": 351799,
-      "end": 351857,
+      "start": 355561,
+      "end": 355619,
       "description": "A5.4 Derive the available-cash mixture: step 3"
     },
     {
@@ -3158,8 +2883,8 @@
       "section": "A5.4 Derive the available-cash mixture",
       "step": 4,
       "latex": "\\operatorname{Var}(C)\n=\\mathbb E[C^2]-\\mathbb E[C]^2\n=3{,}136{,}000{,}000\\ \\mathrm{KES}^2,",
-      "start": 351859,
-      "end": 351955,
+      "start": 355621,
+      "end": 355717,
       "description": "A5.4 Derive the available-cash mixture: step 4"
     },
     {
@@ -3169,8 +2894,8 @@
       "section": "A5.4 Derive the available-cash mixture",
       "step": 5,
       "latex": "q_C=\\Pr(C<70{,}000)=0.30.",
-      "start": 352093,
-      "end": 352124,
+      "start": 355855,
+      "end": 355886,
       "description": "A5.4 Derive the available-cash mixture: step 5"
     },
     {
@@ -3180,8 +2905,8 @@
       "section": "A5.4 Derive the available-cash mixture",
       "step": 6,
       "latex": "\\mathbb E[(70{,}000-C)_+]\n=0.30(50{,}000)=15{,}000\\ \\mathrm{KES},",
-      "start": 352190,
-      "end": 352261,
+      "start": 355952,
+      "end": 356023,
       "description": "A5.4 Derive the available-cash mixture: step 6"
     },
     {
@@ -3191,8 +2916,8 @@
       "section": "A5.4 Derive the available-cash mixture",
       "step": 7,
       "latex": "p(C\\mid D,a)\n=\\int p(C\\mid\\theta,D,a)p(\\theta\\mid D)\\,d\\theta.",
-      "start": 352576,
-      "end": 352644,
+      "start": 356338,
+      "end": 356406,
       "description": "A5.4 Derive the available-cash mixture: step 7"
     },
     {
@@ -3202,237 +2927,72 @@
       "section": "A5.4 Derive the available-cash mixture",
       "step": 8,
       "latex": "\\operatorname{Var}(C\\mid D,a)\n=\\mathbb E_{\\theta\\mid D}[\\operatorname{Var}(C\\mid\\theta,D,a)]\n+\\operatorname{Var}_{\\theta\\mid D}[\\mathbb E(C\\mid\\theta,D,a)].",
-      "start": 352729,
-      "end": 352891,
+      "start": 356491,
+      "end": 356653,
       "description": "A5.4 Derive the available-cash mixture: step 8"
     },
     {
       "scope": "A5",
       "number": "A5.24",
-      "label": "eq:a5-limit-review-logic-and-units-660124e99e",
+      "label": "eq:a5-limit-review-logic-and-units-a4b21c3954",
       "section": "A5.5 Limit-review logic and units",
       "step": 1,
-      "latex": "\\Pr\\{p_{12}(a)>0.06\\mid D\\}\\le0.10.",
-      "start": 353610,
-      "end": 353651,
+      "latex": "\\mathcal A^{\\mathrm{review}}(D)\n=\\left\\{a:\\ G_k(D,a)=1\\ \\forall k,\n\\quad q_p(D,a)\\le\\epsilon_p\\right\\},",
+      "start": 358696,
+      "end": 358805,
       "description": "A5.5 Limit-review logic and units: step 1"
     },
     {
       "scope": "A5",
       "number": "A5.25",
-      "label": "eq:a5-limit-review-logic-and-units-a4b21c3954",
-      "section": "A5.5 Limit-review logic and units",
-      "step": 2,
-      "latex": "\\mathcal A^{\\mathrm{review}}(D)\n=\\left\\{a:\\ G_k(D,a)=1\\ \\forall k,\n\\quad q_p(D,a)\\le\\epsilon_p\\right\\},",
-      "start": 354800,
-      "end": 354909,
-      "description": "A5.5 Limit-review logic and units: step 2"
+      "label": "eq:a5-numerical-error-approximation-tolerances-and-release-checks-67fde7095f",
+      "section": "A5.7 Numerical error, approximation tolerances and release checks",
+      "step": 1,
+      "latex": "\\operatorname{MCSE}(\\widehat q)\n\\approx\\sqrt{\\frac{\\widehat q(1-\\widehat q)}{M}}.",
+      "start": 364341,
+      "end": 364428,
+      "description": "A5.7 Numerical error, approximation tolerances and release checks: step 1"
     },
     {
       "scope": "A5",
       "number": "A5.26",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-129df63455",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 1,
-      "latex": "\\operatorname{logit}(p_{i,\\tau})=\\alpha^L+\\boldsymbol x_i^{\\mathsf T}\\boldsymbol\\beta^L\n+u^L_{s(i)}+v^L_{r(i)}+w^L_{c(i)},",
-      "start": 355527,
-      "end": 355655,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 1"
+      "label": "eq:a5-numerical-error-approximation-tolerances-and-release-checks-9fdc5c9bb5",
+      "section": "A5.7 Numerical error, approximation tolerances and release checks",
+      "step": 2,
+      "latex": "\\max_{i\\in\\mathcal T}|\\widehat q_i^{\\mathrm{service}}-\\widehat q_i^{\\mathrm{reference}}|\n\\le\\varepsilon_q.",
+      "start": 365060,
+      "end": 365172,
+      "description": "A5.7 Numerical error, approximation tolerances and release checks: step 2"
     },
     {
       "scope": "A5",
       "number": "A5.27",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-f96f39a4e5",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 2,
-      "latex": "\\eta_i^H(t)=\\boldsymbol x_i(t)^\\mathsf T\\boldsymbol\\beta^H\n+u^H_{s(i)}+v^H_{r(i)}+w^H_{c(i)},\\qquad\n\\lambda_i(t)=\\lambda_0(t)e^{\\eta_i^H(t)}.",
-      "start": 355876,
-      "end": 356023,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 2"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.28",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-2e7e369f87",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 3,
-      "latex": "\\begin{aligned}\nu_s^m&=\\sigma_u^m z_{us}^m,&z_{us}^m&\\sim N(0,1),\\\\\nv_r^m&=\\sigma_v^m z_{vr}^m,&z_{vr}^m&\\sim N(0,1),\\\\\nw_c^m&=\\sigma_w^m z_{wc}^m,&z_{wc}^m&\\sim N(0,1),\\\\\n\\sigma_k^m&\\sim\\operatorname{HalfStudentT}(3,s_{0,k}^m),\n&&k\\in\\{u,v,w\\},\\\\\n\\alpha^L&\\sim N(0,s_\\alpha^2),&\n\\boldsymbol\\beta^m&\\sim N(\\boldsymbol0,B^m).\n\\end{aligned}",
-      "start": 356181,
-      "end": 356525,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 3"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.29",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-f6c1a8f825",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 4,
-      "latex": "\\mathcal L_H=\\prod_i\\lambda_i(t_i)^{d_i}\n\\exp\\left[-\\int_0^{t_i}\\lambda_i(u)\\,du\\right].",
-      "start": 357311,
-      "end": 357405,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 4"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.30",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-63d6dc1a48",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 5,
-      "latex": "S_i(t)=\\exp\\left[-\\int_0^t\\lambda_i(u)\\,du\\right].",
-      "start": 357496,
-      "end": 357552,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 5"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.31",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-cee9f30fcb",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 6,
-      "latex": "\\frac{e^{y_i\\eta_i}}{1+e^{\\eta_i}}\n=\\frac12e^{\\kappa_i\\eta_i}\n\\int_0^\\infty e^{-\\omega_i\\eta_i^2/2}\np_{\\mathrm{PG}(1,0)}(\\omega_i)\\,d\\omega_i.",
-      "start": 358100,
-      "end": 358248,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 6"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.32",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-01a90e8082",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 7,
-      "latex": "\\log p(\\boldsymbol\\theta\\mid\\boldsymbol\\omega,\\mathcal H,D)\n=-\\frac12\\boldsymbol\\theta^{\\mathsf T}\n(X^{\\mathsf T}\\Omega X+Q_0)\\boldsymbol\\theta\n+\\boldsymbol\\theta^{\\mathsf T}(X^{\\mathsf T}\\boldsymbol\\kappa+Q_0\\boldsymbol m_0)\n+\\mathrm{constant}.",
-      "start": 358415,
-      "end": 358666,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 7"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.33",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-535f92fa8e",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 8,
-      "latex": "\\Sigma_*=(X^{\\mathsf T}\\Omega X+Q_0)^{-1},\\qquad\n\\boldsymbol m_*=\\Sigma_*(X^{\\mathsf T}\\boldsymbol\\kappa+Q_0\\boldsymbol m_0),",
-      "start": 358698,
-      "end": 358829,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 8"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.34",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-91b9f387d9",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 9,
-      "latex": "\\boldsymbol\\theta\\mid\\boldsymbol\\omega,\\mathcal H,D\n\\sim\\mathcal N(\\boldsymbol m_*,\\Sigma_*).",
-      "start": 358831,
-      "end": 358930,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 9"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.35",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-c6e8efc28a",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 10,
-      "latex": "\\sigma^2\\mid\\xi\\sim\\operatorname{IG}\\left(\\frac\\nu2,\\frac\\nu\\xi\\right),\n\\qquad\n\\xi\\sim\\operatorname{IG}\\left(\\frac12,\\frac1{A^2}\\right).",
-      "start": 359884,
-      "end": 360026,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 10"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.36",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-ff1b59e06c",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 11,
-      "latex": "p(\\sigma)\\propto\n\\left(1+\\frac{\\sigma^2}{\\nu A^2}\\right)^{-(\\nu+1)/2},\n\\qquad \\sigma>0.",
-      "start": 360204,
-      "end": 360297,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 11"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.37",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-960cd8acf4",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 12,
-      "latex": "\\sigma^2\\mid\\boldsymbol u,\\xi\n\\sim\\operatorname{IG}\\left(\n\\frac{\\nu+m}{2},\\frac\\nu\\xi+\\frac12\\sum_{j=1}^{m}u_j^2\\right),",
-      "start": 360388,
-      "end": 360514,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 12"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.38",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-70a3cb4c74",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 13,
-      "latex": "\\xi\\mid\\sigma^2\n\\sim\\operatorname{IG}\\left(\n\\frac{\\nu+1}{2},\\frac\\nu{\\sigma^2}+\\frac1{A^2}\\right).",
-      "start": 360516,
-      "end": 360620,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 13"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.39",
-      "label": "eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-09de52d0ba",
-      "section": "A5.6 Conditional Gaussian computation and Student-t hierarchy",
-      "step": 14,
-      "latex": "p(\\sigma\\mid z,\\omega,\\ldots)\\propto\\mathbf1\\{\\sigma>0\\}\n\\exp\\left[-\\tfrac12\\sigma^2v^{\\mathsf T}\\Omega v\n+\\sigma v^{\\mathsf T}(\\kappa-\\Omega c)\\right]p(\\sigma).",
-      "start": 361145,
-      "end": 361312,
-      "description": "A5.6 Conditional Gaussian computation and Student-t hierarchy: step 14"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.40",
-      "label": "eq:a5-posterior-summaries-numerical-error-and-release-checks-428404203f",
-      "section": "A5.7 Posterior summaries, numerical error and release checks",
-      "step": 1,
-      "latex": "\\widehat q_p=\\frac1M\\sum_{m=1}^{M}\n\\mathbf1\\{p^{(m)}>p_{\\max}\\}.",
-      "start": 362315,
-      "end": 362385,
-      "description": "A5.7 Posterior summaries, numerical error and release checks: step 1"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.41",
-      "label": "eq:a5-posterior-summaries-numerical-error-and-release-checks-9fdc5c9bb5",
-      "section": "A5.7 Posterior summaries, numerical error and release checks",
-      "step": 2,
-      "latex": "\\max_{i\\in\\mathcal T}|\\widehat q_i^{\\mathrm{service}}-\\widehat q_i^{\\mathrm{reference}}|\n\\le\\varepsilon_q.",
-      "start": 363063,
-      "end": 363175,
-      "description": "A5.7 Posterior summaries, numerical error and release checks: step 2"
-    },
-    {
-      "scope": "A5",
-      "number": "A5.42",
       "label": "eq:a5-workflow-invariants-and-what-a-replay-test-verifies-b0df1f7001",
       "section": "A5.8 Workflow invariants and what a replay test verifies",
       "step": 1,
       "latex": "\\begin{aligned}\n\\operatorname{Execute}(e,t)\\Rightarrow{}&\n\\operatorname{Approved}(e)\\land\\operatorname{Authorised}(e,t)\\\\\n&{}\\land(t\\le t^{\\mathrm{exp}})\\\\\n&{}\\land\\bigl(\\operatorname{Digest}(\\operatorname{payload})=h\\bigr).\n\\end{aligned}",
-      "start": 363678,
-      "end": 363922,
+      "start": 365996,
+      "end": 366240,
       "description": "A5.8 Workflow invariants and what a replay test verifies: step 1"
     }
   ],
   "article_sources_unchanged": true,
   "inline_math_unnumbered": true,
   "unchanged_source_hashes": {
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_1_LINKEDIN_POST.md": "8728f0689687020a1643f997464b3977d251af9dc80141a14679c10f415fcc18",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.md": "3df8d7b8fb69dbf61a5dbcc54c6d369fc277a01323fb415d1d11915bc9d835c9",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.md": "b330659383752fbdd02c4c19d58daff0e9e2c8d8d7495f679d196ac21f8c35a4",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_2_LINKEDIN_POST.md": "5d5cb60700ca6c230430988612024a876f22878dbbaf1a5a2d9b735b37093a89",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_3_LINKEDIN_POST.md": "f22a303ec355abfbfadfc3180d48cab99aa91f938cba23468b24d8d80cc41aac",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_3_REJECT_INFERENCE_AND_SELECTIVE_LABELS.md": "8ee9744cade6efb8e31de4ef5c83d6140757fd26ac5c260fa1b60fa28e8b7976",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_4_LINKEDIN_POST.md": "7c9d6278c58df668ca0eb12b71ae93bd7b45b5426df0cfee683763a7d2bdbbc9",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.md": "654a32bc00245c5461886add5f0130573386f7990aa0306a4994dbff56ac5459",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.md": "2c2a2fbdc4c6111055104c7f0c0cf2b9523777e194b9a763dbd52fbf088fb570",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\ARTICLE_5_LINKEDIN_POST.md": "b579f62dd8eec00dad01f707d03c567d305884fb22d729fb6e7062e8c295ec07",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\appendices\\ARTICLE_1_MATHEMATICAL_APPENDIX.md": "731d852e763baea47779f1a7c6669139dfd5ee98e732af27d37feba88b82c8f5",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\appendices\\ARTICLE_2_MATHEMATICAL_APPENDIX.md": "32c5d9bdceb35569f56f37871a37654733de8d649eaf5950fb9b767dff36859f",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\appendices\\ARTICLE_3_MATHEMATICAL_APPENDIX.md": "066fc63ae5f15959090148b56f9a76162d2451d24f44fac40815424b4cb7e79d",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\appendices\\ARTICLE_4_MATHEMATICAL_APPENDIX.md": "77c4bfc4fa76dd209860f5baa9144d6ecb912b8fbd6037312e94b9fc3b8aec87",
-    "C:\\Users\\Nevo\\Downloads\\insuretech & embedded finance\\output\\underwrite_rl_linkedin_articles_2026-10-08\\build\\appendices\\ARTICLE_5_MATHEMATICAL_APPENDIX.md": "48c5f497bad71405e8f1aab6c5a4d7a1bbd303d6ad05cbe55036d0a3f20a7351"
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_1_LINKEDIN_POST.md": "8728f0689687020a1643f997464b3977d251af9dc80141a14679c10f415fcc18",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.md": "2d40d232e9d2213fb8a237ee952dd4c0e1ecd5f48e823eb1f0692d65ddbb1490",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.md": "6877511e312f936716890d28e8efd351f271f9a727f859b5b86eefdf967957f2",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_2_LINKEDIN_POST.md": "5d5cb60700ca6c230430988612024a876f22878dbbaf1a5a2d9b735b37093a89",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_3_LINKEDIN_POST.md": "f22a303ec355abfbfadfc3180d48cab99aa91f938cba23468b24d8d80cc41aac",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_3_REJECT_INFERENCE_AND_SELECTIVE_LABELS.md": "4b65b3c514a290c2e5404b9122905a6b63fa60f404db66975114c8df6448f1b7",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_4_LINKEDIN_POST.md": "7c9d6278c58df668ca0eb12b71ae93bd7b45b5426df0cfee683763a7d2bdbbc9",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.md": "e176cfa25e6c35fa588c3f71be8bc7982d5545ed5759e781b2d80fee398d642d",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.md": "deef62e60e9062da6ebe25857ed00329c156b1583fa3a225437d03edb965b25b",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\ARTICLE_5_LINKEDIN_POST.md": "b579f62dd8eec00dad01f707d03c567d305884fb22d729fb6e7062e8c295ec07",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\appendices\\ARTICLE_1_MATHEMATICAL_APPENDIX.md": "5ca965e997780ba5098e547f731a914b2f4c0a05499557a6f666604ecc017cbe",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\appendices\\ARTICLE_2_MATHEMATICAL_APPENDIX.md": "a00f4b2b093e2eb8c19baee99c0c80c498255fd8fa0c98233733d708fa4ca71e",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\appendices\\ARTICLE_3_MATHEMATICAL_APPENDIX.md": "2bce7faf83871a18bb606fb9f4b24571e40aee08f521d11ffa5d79af3c852a23",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\appendices\\ARTICLE_4_MATHEMATICAL_APPENDIX.md": "e0c661fdc5e8d6d07ecc0479deafa05075f68554675f92373fb45c34fb39a55c",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\appendices\\ARTICLE_5_MATHEMATICAL_APPENDIX.md": "723d272b7a6b60acca9bf88694e05c893259f21003c7f2a1c37e13e82878bdac"
   }
 }

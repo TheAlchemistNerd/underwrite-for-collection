@@ -20,7 +20,7 @@ Every article has its own source, short LinkedIn post and Word document. Word eq
 
 ## Combined edition
 
-[Combined Unicode Word document](publications/UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.docx)
+[Combined Word edition with native mathematical equations](publications/UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.docx)
 
 [Combined PDF with TeX equations](publications/UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.pdf)
 
@@ -30,7 +30,7 @@ Every article has its own source, short LinkedIn post and Word document. Word eq
 
 ### Mathematical appendices in the PDF
 
-Each article is followed by its own derivation appendix in the combined PDF. The Word editions keep the article text, Unicode equations and embedded diagrams for LinkedIn. References restart at [1] for each article; its appendix uses the same bibliography and numbering.
+Each article is followed by its own derivation appendix in both combined editions. The combined Word edition is built from the same numbered TeX mathematical source as the independently compiled PDF and includes the full articles, appendices, figures and equation register. The five individual Word files keep Unicode equations and embedded diagrams for LinkedIn. References restart at [1] for each article; its appendix uses the same bibliography and numbering.
 
 1. [Experiments, cash value, bandits and competing risks](build/appendices/ARTICLE_1_MATHEMATICAL_APPENDIX.md)
 2. [Sequential control, hierarchical models and Bayesian decision limits](build/appendices/ARTICLE_2_MATHEMATICAL_APPENDIX.md)
@@ -46,7 +46,7 @@ Each article is followed by its own derivation appendix in the combined PDF. The
 
 [Seven named charts — PNG, SVG and Mermaid](linkedin_diagrams/00_LINKEDIN_DIAGRAMS_INDEX.md)
 
-[Download all seven PNGs together](publications/LinkedIn_Chart_PNGs.zip)
+[Download all twelve PNGs together](publications/LinkedIn_Chart_PNGs.zip)
 
 [CC BY-NC-SA 4.0 licence](LICENCE.md)
 

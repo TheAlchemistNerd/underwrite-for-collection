@@ -242,62 +242,19 @@ $$
 
 Every item uses actual availability dates. Peak collateral demand is $\max_t C_t^{\mathrm{req}}$, while liquidity stress may measure $\max_t\max(K_t^{\mathrm{minimum}}-K_t,0)$. These path measures expose a funding problem that can coexist with improved EVE sensitivity.
 
-## A4.9 Finite-horizon stochastic control and Bellman recursion
+## A4.9 Treasury application of finite-horizon stochastic control
 
-The recursion follows the dynamic-programming framework in [12], connected to bank balance-sheet control in [9].
+A2.2 derives the finite-horizon objective, terminal-value boundary and Bellman recursion under the Markov and measurability assumptions. This section applies that control structure to the bank balance-sheet problem in [9], using the dynamic-programming framework in [13]. The Treasury state combines the dated asset and liability book, yield and funding curves, deposit behaviour, available cash, collateral positions and remaining limits. An action records its amount, tenor, currency, execution date and authorised mandate. The transition $x_{t+1}=F_t(x_t,a_t,w_{t+1})$ then carries both the balance-sheet consequences of that action and the next common market or behavioural shock. Integrating over the conditional shock distribution supplies the state-transition kernel used in A2.2.
 
-Represent the next state by $x_{t+1}=F_t(x_t,a_t,w_{t+1})$. Integrating over the conditional shock distribution defines the transition kernel
+Article 4's objective uses period rewards and a discount factor $0<\gamma\le1$ matched to the period length. A terminal-value function records the chosen treatment of residual assets, liabilities and obligations beyond the planning horizon; the article's displayed objective corresponds to setting that function to zero. Rewards and terminal values use one declared unit and accounting convention. Funding flows, accrued earnings, valuation changes and internal FTP credits therefore enter through the cash and profitability reconciliations in A4.3-A4.8, with an explicit rule for any terminal valuation.
 
-$$
-K_t(dx'\mid x,a)
-=\Pr\{F_t(x,a,w_{t+1})\in dx'\mid x,a\}.
-$$
+The Treasury-specific feasible action set includes mandate, counterparty, currency, concentration and operational restrictions, together with modelled LCR, NSFR, capital, EVE and cash-stress checks. For example, $\operatorname{LCR}\ge\ell_t$, $\operatorname{NSFR}\ge n_t$, $C_t^{\mathrm{capital}}\ge c_t$, $|\Delta\operatorname{EVE}|\le e_t$ and $\operatorname{CashStress}\le q_t$, with each threshold's units declared. A ratio-based capital constraint uses a ratio threshold; an absolute-capital constraint uses KES. These restrictions instantiate the feasible set in A2.2 and are assessed before a candidate action is eligible for approval.
 
-The article’s conditional notation involving both a state kernel and $w_{t+1}$ can be interpreted through this transition mechanism. A finite-horizon objective with terminal value $g$ is
-
-$$
-J(\pi)=\mathbb E_\pi\left[
-\sum_{t=0}^{T}\gamma^tr_t(x_t,a_t,x_{t+1})
-+\gamma^{T+1}g(x_{T+1})\right].
-$$
-
-Setting $g=0$ gives the displayed article objective. The policy $\pi$ selects an allowed action using information available at $t$, and $0<\gamma\le1$ discounts consistently with the period length. Rewards and terminal values require one declared unit and economic accounting convention.
-
-Split the first reward from later rewards and condition on $x_{t+1}$:
-
-$$
-V_{T+1}(x)=g(x),
-$$
-
-$$
-V_t(x)=\max_{a\in\mathcal A_t^{\mathrm{feas}}(x)}
-\int\left[r_t(x,a,x')+\gamma V_{t+1}(x')\right]
-K_t(dx'\mid x,a).
-$$
-
-This is the Bellman recursion under the Markov and measurability assumptions. The feasible set includes mandate, counterparty, currency, concentration and operational restrictions. It also includes the modelled LCR, NSFR, capital, EVE and cash-stress checks. For example, $\operatorname{LCR}\ge\ell_t$, $\operatorname{NSFR}\ge n_t$, $C_t^{\mathrm{capital}}\ge c_t$, $|\Delta\operatorname{EVE}|\le e_t$ and $\operatorname{CashStress}\le q_t$, with each threshold’s units declared. A ratio-based capital constraint uses a ratio threshold; an absolute-capital constraint uses KES.
-
-If feasibility is tested across a scenario set $\Omega_t$, write $g_k(x,a,\omega)\le0$ for every required constraint $k$ and $\omega\in\Omega_t$. A statistical chance constraint, $\Pr(g_k>0)\le\epsilon_k$, is a separate modelled risk control and does not relax a binding legal limit. Finite scenario coverage establishes compliance within those scenarios; it does not prove compliance for every future state. An empty feasible set invokes the defined contingency and escalation process.
+For a declared scenario set $\Omega_t$, the control implementation checks $g_k(x,a,\omega)\le0$ for each required constraint $k$ and scenario $\omega\in\Omega_t$. A statistical chance constraint, $\Pr(g_k>0)\le\epsilon_k$, provides an additional modelled risk control alongside binding legal limits. The validation record states the scenarios and uncertainty ranges covered by these tests. An empty feasible set invokes the defined contingency and escalation process, with the evidence and limits that produced the result retained for ALCO review.
 
 ## A4.10 Partial observation, predictive cash and policy evaluation
 
-The belief-state update follows [12].
-
-For hidden economic state $z_t$, let $b_t(z)=\Pr(z_t=z\mid h_t)$ be the belief after observed history $h_t$. With hidden-state transition $K(z'\mid z,a)$ and observation likelihood $O(y\mid z',a)$,
-
-$$
-b_{t+1}(z')=
-\frac{O(y_{t+1}\mid z',a_t)\sum_zK(z'\mid z,a_t)b_t(z)}
-{\sum_{u}O(y_{t+1}\mid u,a_t)\sum_zK(u\mid z,a_t)b_t(z)}.
-$$
-
-Replace sums by integrals for continuous states. The denominator is the predictive probability of the observation. A belief-state Bellman equation uses expected reward $\bar r(b,a)$ and the update map $\mathcal B$:
-
-$$
-V_t(b)=\max_{a\in\mathcal A_t^{\mathrm{feas}}(b)}
-\left\{\bar r_t(b,a)+\gamma\sum_y
-\Pr(y\mid b,a)V_{t+1}(\mathcal B(b,a,y))\right\}.
-$$
+A2.3 derives the generic POMDP belief update and its decision implications. Article 4 applies that construction when deposit persistence, market stress or other economic conditions are only partly observed. The belief $b_t(z)=\Pr(z_t=z\mid h_t)$ conditions on the information available at the decision time, including dated balances, observed flows and market data. Its transition and observation models must distinguish an unobserved change in behaviour from a delayed or incomplete report. The predictive observation probability normalises the update, as derived in A2.3; the resulting belief supplies the Treasury feasible-set and continuation-value calculations. This application follows [13].
 
 Behavioural parameters, deposit persistence and latent stress states require an identified observation process and validation. Cash forecasts supplied by borrower hierarchies preserve shared sector, region and vintage effects. For total portfolio cash $C=\sum_i C_i$,
 
@@ -307,7 +264,7 @@ $$
 +2\sum_{i<j}\operatorname{Cov}(C_i,C_j).
 $$
 
-Scenario generation must retain those dependencies and any declared common shocks. Summing independently generated customer distributions would generally discard them.
+Scenario generation carries those dependencies and any declared common shocks into the same dated cash ledger. Joint simulation of customer cash, deposit migration, funding and collateral makes their combined liquidity effect available to the control policy.
 
 For $M$ common simulated scenarios, a paired policy comparison is
 
@@ -316,7 +273,7 @@ $$
 \left(G_m^{\mathrm{candidate}}-G_m^{\mathrm{baseline}}\right),
 $$
 
-where $G_m$ is the discounted return. Its Monte Carlo standard error is the sample standard deviation of paired differences divided by $\sqrt M$ when scenarios are independent. This quantifies simulation sampling error, separately from parameter, simulator and policy-identification uncertainty. All comparisons also report constraint breaches, tail outcomes and implementation feasibility.
+where $G_m$ is the discounted return on the same accounting basis for both policies. Its Monte Carlo standard error is the sample standard deviation of paired differences divided by $\sqrt M$ when scenarios are independent. This quantifies simulation sampling error; parameter, simulator and policy-identification uncertainty are assessed through their own sensitivity and validation analyses. All comparisons also report constraint breaches, tail outcomes and implementation feasibility.
 
 ### Sources supporting this appendix
 
@@ -324,4 +281,4 @@ The financial context follows Article 4’s cited primary materials: the IRRBB s
 
 ### Further methodological reading
 
-Additional sources retained from the article bibliography: [13].
+Additional sources retained from the article bibliography: [14].

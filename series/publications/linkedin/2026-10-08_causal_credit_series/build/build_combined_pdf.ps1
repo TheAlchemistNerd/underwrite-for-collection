@@ -48,7 +48,7 @@ $pdf = Join-Path $pdfDir 'UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITIO
 $tex = Join-Path $PSScriptRoot 'UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.tex'
 $resourcePath = "$root;$diagramDir"
 $pandocArgs = @(
-    $typeset, '--from=markdown+autolink_bare_uris+tex_math_dollars', '--to=latex', '--standalone', '--pdf-engine=xelatex',
+    $typeset, '--from=markdown+autolink_bare_uris+tex_math_dollars-implicit_figures', '--to=latex', '--standalone', '--pdf-engine=xelatex',
     "--lua-filter=$filter", "--resource-path=$resourcePath", '--toc', '--toc-depth=2',
     "--include-in-header=$(Join-Path $PSScriptRoot 'publication-header.tex')",
     '--variable=geometry:margin=0.7in', '--variable=mainfont:Segoe UI', '--variable=fontsize:11pt',

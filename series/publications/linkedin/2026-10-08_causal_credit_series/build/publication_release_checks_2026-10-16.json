@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-16",
+  "pdf_pages": 136,
+  "word_pages": 149,
+  "same_content_source": true,
+  "numbered_display_equations": 269,
+  "figures": 12,
+  "numerical_checks_passed": 37,
+  "word_visual_review": "All pages of prior full render reviewed; final refreshed TOC/register pages2-4 and132-149 inspected. Individual articles1-5 visually reviewed; refreshed A3p9-13,A4all15,A5all12 inspected.",
+  "pdf_visual_review": "All138pages of preceding build reviewed; final136-page build received targeted checks after caption, chart, equation-register heading and figure-size corrections. No TeX missing-glyph, undefined-reference or overflow diagnostics.",
+  "individual_word_math": "Unicode text",
+  "combined_word_math": "Native OMML from same numbered TeX mathematical source as PDF",
+  "source_fidelity_report": "article_fidelity_checks_2026-10-16.json",
+  "files": {
+    "publications/word/ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.docx": "6d68fa506a50aae4c73c0ab0ff73660d9a3a09599fdd23564cd2ee86e690dcec",
+    "publications/word/ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.docx": "196f2b277cf131b87bd202bc71c0e2b7a7398504d93dbd80c04eb0208a9641f4",
+    "publications/word/ARTICLE_3_REJECT_INFERENCE_AND_SELECTIVE_LABELS.docx": "a0b05eaa0d70919aef513eb2207737f8407af73295b473b23b84bc3f822aa76d",
+    "publications/word/ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.docx": "1722ccf0e54fc1ac21b383f8b8d784ced5264decf1da44e761a2ad5aa2fb8ad6",
+    "publications/word/ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.docx": "0fe72855c7862de85764a6c04f3192f86d3542197d626c78df8008242280a281",
+    "publications/UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.pdf": "fe0e9e3c6a46e3863d996173b7dd917afb73827ffb97281d83a44a6af4fcc450",
+    "publications/UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.docx": "eff13a403cfac620a36500f3272aca04f1627c065fd738f25a2322a78aa6f44e",
+    "publications/LinkedIn_Chart_PNGs.zip": "e4ffd1ff53d488d5f9aa00c39236511d47ee8bf866cef8987fd7fd8d8462251d"
+  }
+}

@@ -1,15 +1,13 @@
 # Equation register
 
-Generated for the combined TeX PDF. The article and Unicode Word sources are unchanged.
-
-Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF contains clickable equation/page references. Semantic labels remain stable when unrelated equations are inserted.
+Generated from the shared numbered source for the combined PDF and Word editions.
 
 ## Article 1
 
 | Equation | Topic and derivation step | Stable label |
 | --- | --- | --- |
 | (1.1) | Four elements of a contextual bandit: step 1 | `eq:1-four-elements-of-a-contextual-bandit-7741586d2c` |
-| (1.2) | Discounted cash value | `eq:a1-discounted-cash-value` |
+| (1.2) | Four elements of a contextual bandit: step 2 | `eq:1-four-elements-of-a-contextual-bandit-c9b2e6c934` |
 | (1.3) | Moving from fixed RCT allocation to response-adaptive allocation: step 1 | `eq:1-moving-from-fixed-rct-allocation-to-response-adaptive-allocation-1d9b183864` |
 | (1.4) | Moving from fixed RCT allocation to response-adaptive allocation: step 2 | `eq:1-moving-from-fixed-rct-allocation-to-response-adaptive-allocation-b3fa048df6` |
 | (1.5) | Moving from fixed RCT allocation to response-adaptive allocation: step 3 | `eq:1-moving-from-fixed-rct-allocation-to-response-adaptive-allocation-ddc9b9eae5` |
@@ -17,8 +15,8 @@ Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF 
 | (1.7) | Delayed outcomes need careful handling: step 2 | `eq:1-delayed-outcomes-need-careful-handling-b7dd4d9ab0` |
 | (1.8) | Delayed outcomes need careful handling: step 3 | `eq:1-delayed-outcomes-need-careful-handling-2c563ecc1c` |
 | (1.9) | Delayed outcomes need careful handling: step 4 | `eq:1-delayed-outcomes-need-careful-handling-dac8274e9f` |
-| (1.10) | Ips policy value | `eq:a1-ips-policy-value` |
-| (1.11) | Dr policy value | `eq:a1-dr-policy-value` |
+| (1.10) | Off-policy evaluation and the limits of propensities: step 1 | `eq:1-off-policy-evaluation-and-the-limits-of-propensities-a07f569388` |
+| (1.11) | Off-policy evaluation and the limits of propensities: step 2 | `eq:1-off-policy-evaluation-and-the-limits-of-propensities-08b9f5f78e` |
 | (1.12) | A worked example with explicit assumptions: step 1 | `eq:1-a-worked-example-with-explicit-assumptions-894cbf2980` |
 | (1.13) | A worked example with explicit assumptions: step 2 | `eq:1-a-worked-example-with-explicit-assumptions-da02f7d23d` |
 
@@ -60,7 +58,7 @@ Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF 
 | (A1.32) | A1.8 Hazard, survival and competing-risk incidence: step 1 | `eq:a1-hazard-survival-and-competing-risk-incidence-d438fb017b` |
 | (A1.33) | A1.8 Hazard, survival and competing-risk incidence: step 2 | `eq:a1-hazard-survival-and-competing-risk-incidence-46db09c48a` |
 | (A1.34) | A1.8 Hazard, survival and competing-risk incidence: step 3 | `eq:a1-hazard-survival-and-competing-risk-incidence-912499fc1d` |
-| (A1.35) | Competing risk incidence derivation | `eq:a1-competing-risk-incidence-derivation` |
+| (A1.35) | A1.8 Hazard, survival and competing-risk incidence: step 4 | `eq:a1-hazard-survival-and-competing-risk-incidence-bbbce47aca` |
 | (A1.36) | A1.8 Hazard, survival and competing-risk incidence: step 5 | `eq:a1-hazard-survival-and-competing-risk-incidence-86f59a51cb` |
 | (A1.37) | A1.8 Hazard, survival and competing-risk incidence: step 6 | `eq:a1-hazard-survival-and-competing-risk-incidence-b24e3dba2a` |
 | (A1.38) | A1.8 Hazard, survival and competing-risk incidence: step 7 | `eq:a1-hazard-survival-and-competing-risk-incidence-e1d11e1e6a` |
@@ -74,8 +72,8 @@ Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF 
 
 | Equation | Topic and derivation step | Stable label |
 | --- | --- | --- |
-| (2.1) | Bellman value | `eq:a2-bellman-value` |
-| (2.2) | Belief state | `eq:a2-belief-state` |
+| (2.1) | Sequential control changes the mathematical problem: step 1 | `eq:2-sequential-control-changes-the-mathematical-problem-55688a4047` |
+| (2.2) | Sequential control changes the mathematical problem: step 2 | `eq:2-sequential-control-changes-the-mathematical-problem-5cf8d8bdf4` |
 | (2.3) | Sequential control changes the mathematical problem: step 3 | `eq:2-sequential-control-changes-the-mathematical-problem-ea57bd1f9b` |
 | (2.4) | Sequential control changes the mathematical problem: step 4 | `eq:2-sequential-control-changes-the-mathematical-problem-aceb1275cd` |
 | (2.5) | Put the risk models inside the decision problem: step 1 | `eq:2-put-the-risk-models-inside-the-decision-problem-bc2fd7c09d` |
@@ -108,7 +106,7 @@ Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF 
 | (2.32) | Bayesian decision boundaries turn predictions into limit-review evidence: step 1 | `eq:2-bayesian-decision-boundaries-turn-predictions-into-limit-review-eviden-8c91c593a5` |
 | (2.33) | Bayesian decision boundaries turn predictions into limit-review evidence: step 2 | `eq:2-bayesian-decision-boundaries-turn-predictions-into-limit-review-eviden-79b16f0c8a` |
 | (2.34) | Bayesian decision boundaries turn predictions into limit-review evidence: step 3 | `eq:2-bayesian-decision-boundaries-turn-predictions-into-limit-review-eviden-9803fedf45` |
-| (2.35) | Bayesian limit threshold | `eq:a2-bayesian-limit-threshold` |
+| (2.35) | Bayesian decision boundaries turn predictions into limit-review evidence: step 4 | `eq:2-bayesian-decision-boundaries-turn-predictions-into-limit-review-eviden-a86f778d81` |
 | (2.36) | Bayesian decision boundaries turn predictions into limit-review evidence: step 5 | `eq:2-bayesian-decision-boundaries-turn-predictions-into-limit-review-eviden-420b4e9c87` |
 | (2.37) | Bayesian decision boundaries turn predictions into limit-review evidence: step 6 | `eq:2-bayesian-decision-boundaries-turn-predictions-into-limit-review-eviden-82a1f9b0c9` |
 | (2.38) | Bayesian decision boundaries turn predictions into limit-review evidence: step 7 | `eq:2-bayesian-decision-boundaries-turn-predictions-into-limit-review-eviden-2ce6a20868` |
@@ -131,48 +129,47 @@ Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF 
 | (A2.5) | A2.3 POMDP prediction and observation update: step 2 | `eq:a2-pomdp-prediction-and-observation-update-1e85fe9f92` |
 | (A2.6) | A2.3 POMDP prediction and observation update: step 3 | `eq:a2-pomdp-prediction-and-observation-update-fe62a469fe` |
 | (A2.7) | A2.4 Semi-Markov timing: step 1 | `eq:a2-semi-markov-timing-6370dc2a39` |
-| (A2.8) | Logistic hierarchy | `eq:a2-logistic-hierarchy` |
-| (A2.9) | Group distributions hyperpriors | `eq:a2-group-distributions-hyperpriors` |
+| (A2.8) | A2.5 Complete logistic hierarchy: step 1 | `eq:a2-complete-logistic-hierarchy-024cb99fad` |
+| (A2.9) | A2.5 Complete logistic hierarchy: step 2 | `eq:a2-complete-logistic-hierarchy-42eb6d2d53` |
 | (A2.10) | A2.5 Complete logistic hierarchy: step 3 | `eq:a2-complete-logistic-hierarchy-2c2417e0a6` |
 | (A2.11) | A2.6 Hierarchical hazards and their likelihood: step 1 | `eq:a2-hierarchical-hazards-and-their-likelihood-d01a0fc1d2` |
-| (A2.12) | A2.6 Hierarchical hazards and their likelihood: step 2 | `eq:a2-hierarchical-hazards-and-their-likelihood-9b37ea0838` |
-| (A2.13) | Hazard likelihood | `eq:a2-hazard-likelihood` |
-| (A2.14) | A2.6 Hierarchical hazards and their likelihood: step 4 | `eq:a2-hierarchical-hazards-and-their-likelihood-01217becb2` |
-| (A2.15) | A2.6 Hierarchical hazards and their likelihood: step 5 | `eq:a2-hierarchical-hazards-and-their-likelihood-fe8b7f282c` |
-| (A2.16) | A2.6 Hierarchical hazards and their likelihood: step 6 | `eq:a2-hierarchical-hazards-and-their-likelihood-a393f80ade` |
-| (A2.17) | A2.6 Hierarchical hazards and their likelihood: step 7 | `eq:a2-hierarchical-hazards-and-their-likelihood-beb39ca72b` |
-| (A2.18) | A2.7 Expected loss, cash shortfall and capital: step 1 | `eq:a2-expected-loss-cash-shortfall-and-capital-34acad4450` |
-| (A2.19) | A2.7 Expected loss, cash shortfall and capital: step 2 | `eq:a2-expected-loss-cash-shortfall-and-capital-693e8e9255` |
-| (A2.20) | A2.7 Expected loss, cash shortfall and capital: step 3 | `eq:a2-expected-loss-cash-shortfall-and-capital-e0aa94370c` |
-| (A2.21) | A2.8 Constraints and fairness: step 1 | `eq:a2-constraints-and-fairness-8e7723c6b8` |
-| (A2.22) | A2.8 Constraints and fairness: step 2 | `eq:a2-constraints-and-fairness-03b094a5a0` |
-| (A2.23) | A2.9 Clayton copula: step 1 | `eq:a2-clayton-copula-57e2eb1e95` |
-| (A2.24) | A2.9 Clayton copula: step 2 | `eq:a2-clayton-copula-f91ac1cc16` |
-| (A2.25) | A2.9 Clayton copula: step 3 | `eq:a2-clayton-copula-3d6d6950cb` |
-| (A2.26) | A2.10 Pólya–Gamma derivation: step 1 | `eq:a2-polyagamma-derivation-1dda744ed3` |
-| (A2.27) | A2.10 Pólya–Gamma derivation: step 2 | `eq:a2-polyagamma-derivation-fd911630ad` |
-| (A2.28) | Pólya–Gamma Gaussian conditional posterior | `eq:a2-pg-gaussian-posterior` |
-| (A2.29) | A2.11 Half-t mixture and scale updates: step 1 | `eq:a2-half-t-mixture-and-scale-updates-43b968079f` |
-| (A2.30) | A2.11 Half-t mixture and scale updates: step 2 | `eq:a2-half-t-mixture-and-scale-updates-7748d49d9a` |
-| (A2.31) | A2.11 Half-t mixture and scale updates: step 3 | `eq:a2-half-t-mixture-and-scale-updates-a9fe80c46e` |
-| (A2.32) | A2.11 Half-t mixture and scale updates: step 4 | `eq:a2-half-t-mixture-and-scale-updates-db19c55e7f` |
-| (A2.33) | A2.11 Half-t mixture and scale updates: step 5 | `eq:a2-half-t-mixture-and-scale-updates-13cfb709a2` |
-| (A2.34) | A2.11 Half-t mixture and scale updates: step 6 | `eq:a2-half-t-mixture-and-scale-updates-5045df8088` |
-| (A2.35) | A2.12 Limit boundary and human-review uncertainty: step 1 | `eq:a2-limit-boundary-and-human-review-uncertainty-6f6da3b0d1` |
-| (A2.36) | A2.12 Limit boundary and human-review uncertainty: step 2 | `eq:a2-limit-boundary-and-human-review-uncertainty-0c9ec9fc0e` |
-| (A2.37) | A2.12 Limit boundary and human-review uncertainty: step 3 | `eq:a2-limit-boundary-and-human-review-uncertainty-4f2462d20e` |
-| (A2.38) | A2.12 Limit boundary and human-review uncertainty: step 4 | `eq:a2-limit-boundary-and-human-review-uncertainty-2235226d82` |
-| (A2.39) | A2.12 Limit boundary and human-review uncertainty: step 5 | `eq:a2-limit-boundary-and-human-review-uncertainty-3dd0d3a588` |
-| (A2.40) | A2.12 Limit boundary and human-review uncertainty: step 6 | `eq:a2-limit-boundary-and-human-review-uncertainty-58a777137d` |
-| (A2.41) | A2.13 Linear UCB and logistic Thompson sampling: step 1 | `eq:a2-linear-ucb-and-logistic-thompson-sampling-5d77f9a0d9` |
-| (A2.42) | A2.13 Linear UCB and logistic Thompson sampling: step 2 | `eq:a2-linear-ucb-and-logistic-thompson-sampling-35d8406b33` |
-| (A2.43) | A2.13 Linear UCB and logistic Thompson sampling: step 3 | `eq:a2-linear-ucb-and-logistic-thompson-sampling-188de47862` |
-| (A2.44) | A2.14 MCTS and graph explanations: step 1 | `eq:a2-mcts-and-graph-explanations-ca19b42c1e` |
-| (A2.45) | A2.14 MCTS and graph explanations: step 2 | `eq:a2-mcts-and-graph-explanations-b727eb09a5` |
-| (A2.46) | A2.14 MCTS and graph explanations: step 3 | `eq:a2-mcts-and-graph-explanations-3c967071e7` |
-| (A2.47) | A2.15 Off-policy evaluation and pilot arithmetic: step 1 | `eq:a2-off-policy-evaluation-and-pilot-arithmetic-ff638071e3` |
-| (A2.48) | A2.15 Off-policy evaluation and pilot arithmetic: step 2 | `eq:a2-off-policy-evaluation-and-pilot-arithmetic-713d8b1bc3` |
-| (A2.49) | A2.15 Off-policy evaluation and pilot arithmetic: step 3 | `eq:a2-off-policy-evaluation-and-pilot-arithmetic-0914b29a59` |
+| (A2.12) | A2.6 Hierarchical hazards and their likelihood: step 2 | `eq:a2-hierarchical-hazards-and-their-likelihood-a93e2a9d9f` |
+| (A2.13) | A2.6 Hierarchical hazards and their likelihood: step 3 | `eq:a2-hierarchical-hazards-and-their-likelihood-01217becb2` |
+| (A2.14) | A2.6 Hierarchical hazards and their likelihood: step 4 | `eq:a2-hierarchical-hazards-and-their-likelihood-fe8b7f282c` |
+| (A2.15) | A2.6 Hierarchical hazards and their likelihood: step 5 | `eq:a2-hierarchical-hazards-and-their-likelihood-a393f80ade` |
+| (A2.16) | A2.7 Expected loss, cash shortfall and capital: step 1 | `eq:a2-expected-loss-cash-shortfall-and-capital-34acad4450` |
+| (A2.17) | A2.7 Expected loss, cash shortfall and capital: step 2 | `eq:a2-expected-loss-cash-shortfall-and-capital-693e8e9255` |
+| (A2.18) | A2.7 Expected loss, cash shortfall and capital: step 3 | `eq:a2-expected-loss-cash-shortfall-and-capital-e0aa94370c` |
+| (A2.19) | A2.8 Constraints and fairness: step 1 | `eq:a2-constraints-and-fairness-8e7723c6b8` |
+| (A2.20) | A2.8 Constraints and fairness: step 2 | `eq:a2-constraints-and-fairness-815afd1284` |
+| (A2.21) | A2.9 Clayton copula: step 1 | `eq:a2-clayton-copula-57e2eb1e95` |
+| (A2.22) | A2.9 Clayton copula: step 2 | `eq:a2-clayton-copula-f91ac1cc16` |
+| (A2.23) | A2.9 Clayton copula: step 3 | `eq:a2-clayton-copula-3d6d6950cb` |
+| (A2.24) | A2.10 Pólya–Gamma derivation: step 1 | `eq:a2-polyagamma-derivation-1dda744ed3` |
+| (A2.25) | A2.10 Pólya–Gamma derivation: step 2 | `eq:a2-polyagamma-derivation-fd911630ad` |
+| (A2.26) | A2.10 Pólya–Gamma derivation: step 3 | `eq:a2-polyagamma-derivation-bd8cebaa5f` |
+| (A2.27) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 1 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-19084c3f8c` |
+| (A2.28) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 2 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-0093fb415d` |
+| (A2.29) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 3 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-679071288b` |
+| (A2.30) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 4 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-339e7f1b77` |
+| (A2.31) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 5 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-a8a1b2ba8a` |
+| (A2.32) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 6 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-f7ab8bcf29` |
+| (A2.33) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 7 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-2b221a401f` |
+| (A2.34) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 8 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-36f839d781` |
+| (A2.35) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 9 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-bb6b6aa608` |
+| (A2.36) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 10 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-b27d4ccc43` |
+| (A2.37) | A2.11 Student-t coefficient priors and half-t group-scale updates: step 11 | `eq:a2-student-t-coefficient-priors-and-half-t-group-scale-updates-3ca7c695d2` |
+| (A2.38) | A2.12 Limit boundary and human-review uncertainty: step 1 | `eq:a2-limit-boundary-and-human-review-uncertainty-6f6da3b0d1` |
+| (A2.39) | A2.12 Limit boundary and human-review uncertainty: step 2 | `eq:a2-limit-boundary-and-human-review-uncertainty-0c9ec9fc0e` |
+| (A2.40) | A2.12 Limit boundary and human-review uncertainty: step 3 | `eq:a2-limit-boundary-and-human-review-uncertainty-4f2462d20e` |
+| (A2.41) | A2.12 Limit boundary and human-review uncertainty: step 4 | `eq:a2-limit-boundary-and-human-review-uncertainty-2235226d82` |
+| (A2.42) | A2.12 Limit boundary and human-review uncertainty: step 5 | `eq:a2-limit-boundary-and-human-review-uncertainty-3dd0d3a588` |
+| (A2.43) | A2.12 Limit boundary and human-review uncertainty: step 6 | `eq:a2-limit-boundary-and-human-review-uncertainty-58a777137d` |
+| (A2.44) | A2.13 Linear UCB and logistic Thompson sampling: step 1 | `eq:a2-linear-ucb-and-logistic-thompson-sampling-188de47862` |
+| (A2.45) | A2.14 MCTS and graph explanations: step 1 | `eq:a2-mcts-and-graph-explanations-ca19b42c1e` |
+| (A2.46) | A2.14 MCTS and graph explanations: step 2 | `eq:a2-mcts-and-graph-explanations-b727eb09a5` |
+| (A2.47) | A2.14 MCTS and graph explanations: step 3 | `eq:a2-mcts-and-graph-explanations-3c967071e7` |
+| (A2.48) | A2.15 Off-policy evaluation and pilot arithmetic: step 1 | `eq:a2-off-policy-evaluation-and-pilot-arithmetic-0914b29a59` |
 
 ## Article 3
 
@@ -216,50 +213,32 @@ Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF 
 | (A3.6) | A3.2 Why observed labels do not identify missing outcomes by themselves: step 5 | `eq:a3-why-observed-labels-do-not-identify-missing-outcomes-by-themselves-75302fcd2e` |
 | (A3.7) | A3.3 Transport from financed applicants to a defined target: step 1 | `eq:a3-transport-from-financed-applicants-to-a-defined-target-03fc253604` |
 | (A3.8) | A3.3 Transport from financed applicants to a defined target: step 2 | `eq:a3-transport-from-financed-applicants-to-a-defined-target-d154630a98` |
-| (A3.9) | Selection transport | `eq:a3-selection-transport` |
+| (A3.9) | A3.3 Transport from financed applicants to a defined target: step 3 | `eq:a3-transport-from-financed-applicants-to-a-defined-target-874b6dc6db` |
 | (A3.10) | A3.3 Transport from financed applicants to a defined target: step 4 | `eq:a3-transport-from-financed-applicants-to-a-defined-target-c4e863e8cc` |
 | (A3.11) | A3.4 Doubly robust selection adjustment: step 1 | `eq:a3-doubly-robust-selection-adjustment-db8de43d11` |
 | (A3.12) | A3.4 Doubly robust selection adjustment: step 2 | `eq:a3-doubly-robust-selection-adjustment-8ca469f25c` |
 | (A3.13) | A3.4 Doubly robust selection adjustment: step 3 | `eq:a3-doubly-robust-selection-adjustment-3f0a429d08` |
 | (A3.14) | A3.5 Derive log-odds sensitivity for unobserved selection: step 1 | `eq:a3-derive-log-odds-sensitivity-for-unobserved-selection-2f88122f3a` |
 | (A3.15) | A3.5 Derive log-odds sensitivity for unobserved selection: step 2 | `eq:a3-derive-log-odds-sensitivity-for-unobserved-selection-34de55368e` |
-| (A3.16) | Selection sensitivity | `eq:a3-selection-sensitivity` |
+| (A3.16) | A3.5 Derive log-odds sensitivity for unobserved selection: step 3 | `eq:a3-derive-log-odds-sensitivity-for-unobserved-selection-8024031e64` |
 | (A3.17) | A3.5 Derive log-odds sensitivity for unobserved selection: step 4 | `eq:a3-derive-log-odds-sensitivity-for-unobserved-selection-e679764bec` |
 | (A3.18) | A3.5 Derive log-odds sensitivity for unobserved selection: step 5 | `eq:a3-derive-log-odds-sensitivity-for-unobserved-selection-e8cb8d61a2` |
-| (A3.19) | A3.6 The common sector, region and vintage hierarchy: step 1 | `eq:a3-the-common-sector-region-and-vintage-hierarchy-65d38ca4df` |
-| (A3.20) | A3.6 The common sector, region and vintage hierarchy: step 2 | `eq:a3-the-common-sector-region-and-vintage-hierarchy-ec5dfa9002` |
-| (A3.21) | A3.6 The common sector, region and vintage hierarchy: step 3 | `eq:a3-the-common-sector-region-and-vintage-hierarchy-30d0ec7564` |
-| (A3.22) | A3.7 Half-Student-t scale mixtures and their computational role: step 1 | `eq:a3-half-student-t-scale-mixtures-and-their-computational-role-37d0260300` |
-| (A3.23) | A3.7 Half-Student-t scale mixtures and their computational role: step 2 | `eq:a3-half-student-t-scale-mixtures-and-their-computational-role-e90407cb0f` |
-| (A3.24) | A3.7 Half-Student-t scale mixtures and their computational role: step 3 | `eq:a3-half-student-t-scale-mixtures-and-their-computational-role-679c028d6b` |
-| (A3.25) | A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 1 | `eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-89738a4834` |
-| (A3.26) | A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 2 | `eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-10ea4185d5` |
-| (A3.27) | A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 3 | `eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-5ee19ebf7e` |
-| (A3.28) | A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 4 | `eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-d05ae37a67` |
-| (A3.29) | A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 5 | `eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-0af9397c21` |
-| (A3.30) | A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 6 | `eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-d4d23af51f` |
-| (A3.31) | A3.8 Derive the Pólya–Gamma Gaussian conditional posterior: step 7 | `eq:a3-derive-the-polyagamma-gaussian-conditional-posterior-e159d53e7c` |
-| (A3.32) | A3.9 Survival likelihood, hierarchy and default incidence: step 1 | `eq:a3-survival-likelihood-hierarchy-and-default-incidence-f636157a43` |
-| (A3.33) | A3.9 Survival likelihood, hierarchy and default incidence: step 2 | `eq:a3-survival-likelihood-hierarchy-and-default-incidence-aa95d633e8` |
-| (A3.34) | A3.9 Survival likelihood, hierarchy and default incidence: step 3 | `eq:a3-survival-likelihood-hierarchy-and-default-incidence-dbc0c569c9` |
-| (A3.35) | A3.9 Survival likelihood, hierarchy and default incidence: step 4 | `eq:a3-survival-likelihood-hierarchy-and-default-incidence-541e902a44` |
-| (A3.36) | A3.9 Survival likelihood, hierarchy and default incidence: step 5 | `eq:a3-survival-likelihood-hierarchy-and-default-incidence-2ecaba2556` |
-| (A3.37) | A3.9 Survival likelihood, hierarchy and default incidence: step 6 | `eq:a3-survival-likelihood-hierarchy-and-default-incidence-43ba46a500` |
-| (A3.38) | A3.10 The guarded pilot and the Wilson interval: step 1 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-c17f0a7aef` |
-| (A3.39) | A3.10 The guarded pilot and the Wilson interval: step 2 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-1e4ecea815` |
-| (A3.40) | A3.10 The guarded pilot and the Wilson interval: step 3 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-a2068cdb9f` |
-| (A3.41) | A3.10 The guarded pilot and the Wilson interval: step 4 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-faec07eec3` |
-| (A3.42) | A3.10 The guarded pilot and the Wilson interval: step 5 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-601f0605e5` |
-| (A3.43) | A3.10 The guarded pilot and the Wilson interval: step 6 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-fbfc4c4f12` |
-| (A3.44) | A3.11 Adaptive offers preserve an explicit observation process: step 1 | `eq:a3-adaptive-offers-preserve-an-explicit-observation-process-1d0bf656fa` |
-| (A3.45) | A3.12 Expected loss, cash shortfall and tail capital: step 1 | `eq:a3-expected-loss-cash-shortfall-and-tail-capital-7939c58238` |
-| (A3.46) | A3.12 Expected loss, cash shortfall and tail capital: step 2 | `eq:a3-expected-loss-cash-shortfall-and-tail-capital-6856c063aa` |
-| (A3.47) | A3.12 Expected loss, cash shortfall and tail capital: step 3 | `eq:a3-expected-loss-cash-shortfall-and-tail-capital-30571f1daf` |
-| (A3.48) | A3.12 Expected loss, cash shortfall and tail capital: step 4 | `eq:a3-expected-loss-cash-shortfall-and-tail-capital-24b9d4a618` |
-| (A3.49) | A3.13 Evidence delivered to the human reviewer: step 1 | `eq:a3-evidence-delivered-to-the-human-reviewer-fd2fa51fb9` |
-| (A3.50) | A3.14 Classification diagnostics in a selectively observed portfolio: step 1 | `eq:a3-classification-diagnostics-in-a-selectively-observed-portfolio-03f7a5bad5` |
-| (A3.51) | A3.14 Classification diagnostics in a selectively observed portfolio: step 2 | `eq:a3-classification-diagnostics-in-a-selectively-observed-portfolio-136d321d6b` |
-| (A3.52) | A3.14 Classification diagnostics in a selectively observed portfolio: step 3 | `eq:a3-classification-diagnostics-in-a-selectively-observed-portfolio-5dbd1fab5e` |
+| (A3.19) | A3.6 Article 3 action term within the shared hierarchy: step 1 | `eq:a3-article-3-action-term-within-the-shared-hierarchy-4c14cf78dc` |
+| (A3.20) | A3.8 Article 3 conditional-update check: step 1 | `eq:a3-article-3-conditional-update-check-93b4bbc235` |
+| (A3.21) | A3.9 Align logistic and hazard outcomes for reject inference: step 1 | `eq:a3-align-logistic-and-hazard-outcomes-for-reject-inference-3c57f02266` |
+| (A3.22) | A3.10 The guarded pilot and the Wilson interval: step 1 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-c17f0a7aef` |
+| (A3.23) | A3.10 The guarded pilot and the Wilson interval: step 2 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-1e4ecea815` |
+| (A3.24) | A3.10 The guarded pilot and the Wilson interval: step 3 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-a2068cdb9f` |
+| (A3.25) | A3.10 The guarded pilot and the Wilson interval: step 4 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-faec07eec3` |
+| (A3.26) | A3.10 The guarded pilot and the Wilson interval: step 5 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-601f0605e5` |
+| (A3.27) | A3.10 The guarded pilot and the Wilson interval: step 6 | `eq:a3-the-guarded-pilot-and-the-wilson-interval-fbfc4c4f12` |
+| (A3.28) | A3.11 Adaptive offers preserve an explicit observation process: step 1 | `eq:a3-adaptive-offers-preserve-an-explicit-observation-process-1d0bf656fa` |
+| (A3.29) | A3.12 Expected loss, cash shortfall and tail capital: step 1 | `eq:a3-expected-loss-cash-shortfall-and-tail-capital-7939c58238` |
+| (A3.30) | A3.12 Expected loss, cash shortfall and tail capital: step 2 | `eq:a3-expected-loss-cash-shortfall-and-tail-capital-30571f1daf` |
+| (A3.31) | A3.13 Evidence delivered to the human reviewer: step 1 | `eq:a3-evidence-delivered-to-the-human-reviewer-fd2fa51fb9` |
+| (A3.32) | A3.14 Classification diagnostics in a selectively observed portfolio: step 1 | `eq:a3-classification-diagnostics-in-a-selectively-observed-portfolio-03f7a5bad5` |
+| (A3.33) | A3.14 Classification diagnostics in a selectively observed portfolio: step 2 | `eq:a3-classification-diagnostics-in-a-selectively-observed-portfolio-136d321d6b` |
+| (A3.34) | A3.14 Classification diagnostics in a selectively observed portfolio: step 3 | `eq:a3-classification-diagnostics-in-a-selectively-observed-portfolio-5dbd1fab5e` |
 
 ## Article 4
 
@@ -287,7 +266,7 @@ Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF 
 | (A4.8) | A4.4 Curves, overnight compounding and FTP: step 2 | `eq:a4-curves-overnight-compounding-and-ftp-9846b8bda2` |
 | (A4.9) | A4.4 Curves, overnight compounding and FTP: step 3 | `eq:a4-curves-overnight-compounding-and-ftp-b39d84fddb` |
 | (A4.10) | A4.4 Curves, overnight compounding and FTP: step 4 | `eq:a4-curves-overnight-compounding-and-ftp-e3632ed516` |
-| (A4.11) | Ftp cash charge | `eq:a4-ftp-cash-charge` |
+| (A4.11) | A4.4 Curves, overnight compounding and FTP: step 5 | `eq:a4-curves-overnight-compounding-and-ftp-256679ca5b` |
 | (A4.12) | A4.4 Curves, overnight compounding and FTP: step 6 | `eq:a4-curves-overnight-compounding-and-ftp-1701077eba` |
 | (A4.13) | A4.5 Reproduce the KES 10 million contribution bridge: step 1 | `eq:a4-reproduce-the-kes-10-million-contribution-bridge-02970008dc` |
 | (A4.14) | A4.5 Reproduce the KES 10 million contribution bridge: step 2 | `eq:a4-reproduce-the-kes-10-million-contribution-bridge-c053926d61` |
@@ -299,22 +278,16 @@ Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF 
 | (A4.20) | A4.7 Liquidity ratios and the article’s 106.5% result: step 3 | `eq:a4-liquidity-ratios-and-the-articles-106-5-result-1f21d879ad` |
 | (A4.21) | A4.8 Hedging, collateral and cash availability: step 1 | `eq:a4-hedging-collateral-and-cash-availability-9799de941b` |
 | (A4.22) | A4.8 Hedging, collateral and cash availability: step 2 | `eq:a4-hedging-collateral-and-cash-availability-37bcee2673` |
-| (A4.23) | A4.9 Finite-horizon stochastic control and Bellman recursion: step 1 | `eq:a4-finite-horizon-stochastic-control-and-bellman-recursion-164782c1ff` |
-| (A4.24) | A4.9 Finite-horizon stochastic control and Bellman recursion: step 2 | `eq:a4-finite-horizon-stochastic-control-and-bellman-recursion-439c1a2cbc` |
-| (A4.25) | A4.9 Finite-horizon stochastic control and Bellman recursion: step 3 | `eq:a4-finite-horizon-stochastic-control-and-bellman-recursion-699d10d487` |
-| (A4.26) | Feasible bellman recursion | `eq:a4-feasible-bellman-recursion` |
-| (A4.27) | A4.10 Partial observation, predictive cash and policy evaluation: step 1 | `eq:a4-partial-observation-predictive-cash-and-policy-evaluation-e77b8e0c6d` |
-| (A4.28) | A4.10 Partial observation, predictive cash and policy evaluation: step 2 | `eq:a4-partial-observation-predictive-cash-and-policy-evaluation-7a2f36c5bf` |
-| (A4.29) | A4.10 Partial observation, predictive cash and policy evaluation: step 3 | `eq:a4-partial-observation-predictive-cash-and-policy-evaluation-5f3d84b4ea` |
-| (A4.30) | A4.10 Partial observation, predictive cash and policy evaluation: step 4 | `eq:a4-partial-observation-predictive-cash-and-policy-evaluation-2244ec8e30` |
+| (A4.23) | A4.10 Partial observation, predictive cash and policy evaluation: step 1 | `eq:a4-partial-observation-predictive-cash-and-policy-evaluation-5f3d84b4ea` |
+| (A4.24) | A4.10 Partial observation, predictive cash and policy evaluation: step 2 | `eq:a4-partial-observation-predictive-cash-and-policy-evaluation-2244ec8e30` |
 
 ## Article 5
 
 | Equation | Topic and derivation step | Stable label |
 | --- | --- | --- |
-| (5.1) | Risk cap probability | `eq:a5-risk-cap-probability` |
-| (5.2) | Benefit probability | `eq:a5-benefit-probability` |
-| (5.3) | Cash shortfall probability | `eq:a5-cash-shortfall-probability` |
+| (5.1) | Show the reviewer three kinds of uncertainty: step 1 | `eq:5-show-the-reviewer-three-kinds-of-uncertainty-33c623b4b9` |
+| (5.2) | Show the reviewer three kinds of uncertainty: step 2 | `eq:5-show-the-reviewer-three-kinds-of-uncertainty-9f0e805ab9` |
+| (5.3) | Show the reviewer three kinds of uncertainty: step 3 | `eq:5-show-the-reviewer-three-kinds-of-uncertainty-895a789b8a` |
 
 ## Appendix A5
 
@@ -343,22 +316,7 @@ Use article numbers (1.1)–(5.n) and appendix numbers (A1.1)–(A5.n). The PDF 
 | (A5.21) | A5.4 Derive the available-cash mixture: step 6 | `eq:a5-derive-the-available-cash-mixture-33ce02b9ae` |
 | (A5.22) | A5.4 Derive the available-cash mixture: step 7 | `eq:a5-derive-the-available-cash-mixture-7e56010fd7` |
 | (A5.23) | A5.4 Derive the available-cash mixture: step 8 | `eq:a5-derive-the-available-cash-mixture-bbfa734c13` |
-| (A5.24) | A5.5 Limit-review logic and units: step 1 | `eq:a5-limit-review-logic-and-units-660124e99e` |
-| (A5.25) | A5.5 Limit-review logic and units: step 2 | `eq:a5-limit-review-logic-and-units-a4b21c3954` |
-| (A5.26) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 1 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-129df63455` |
-| (A5.27) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 2 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-f96f39a4e5` |
-| (A5.28) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 3 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-2e7e369f87` |
-| (A5.29) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 4 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-f6c1a8f825` |
-| (A5.30) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 5 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-63d6dc1a48` |
-| (A5.31) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 6 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-cee9f30fcb` |
-| (A5.32) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 7 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-01a90e8082` |
-| (A5.33) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 8 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-535f92fa8e` |
-| (A5.34) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 9 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-91b9f387d9` |
-| (A5.35) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 10 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-c6e8efc28a` |
-| (A5.36) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 11 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-ff1b59e06c` |
-| (A5.37) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 12 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-960cd8acf4` |
-| (A5.38) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 13 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-70a3cb4c74` |
-| (A5.39) | A5.6 Conditional Gaussian computation and Student-t hierarchy: step 14 | `eq:a5-conditional-gaussian-computation-and-student-t-hierarchy-09de52d0ba` |
-| (A5.40) | A5.7 Posterior summaries, numerical error and release checks: step 1 | `eq:a5-posterior-summaries-numerical-error-and-release-checks-428404203f` |
-| (A5.41) | A5.7 Posterior summaries, numerical error and release checks: step 2 | `eq:a5-posterior-summaries-numerical-error-and-release-checks-9fdc5c9bb5` |
-| (A5.42) | A5.8 Workflow invariants and what a replay test verifies: step 1 | `eq:a5-workflow-invariants-and-what-a-replay-test-verifies-b0df1f7001` |
+| (A5.24) | A5.5 Limit-review logic and units: step 1 | `eq:a5-limit-review-logic-and-units-a4b21c3954` |
+| (A5.25) | A5.7 Numerical error, approximation tolerances and release checks: step 1 | `eq:a5-numerical-error-approximation-tolerances-and-release-checks-67fde7095f` |
+| (A5.26) | A5.7 Numerical error, approximation tolerances and release checks: step 2 | `eq:a5-numerical-error-approximation-tolerances-and-release-checks-9fdc5c9bb5` |
+| (A5.27) | A5.8 Workflow invariants and what a replay test verifies: step 1 | `eq:a5-workflow-invariants-and-what-a-replay-test-verifies-b0df1f7001` |

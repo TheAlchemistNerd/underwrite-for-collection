@@ -197,204 +197,74 @@ $$
 
 The quantiles across $b$ quantify posterior uncertainty conditional on a chosen $\delta$. Variation across $\delta$ shows sensitivity to the identification assumption. These two sources of uncertainty should remain visible to the reviewer. A prior for $\delta$ can be used if its external basis and influence are stated; its posterior concentration does not become observed reject performance.
 
-## A3.6 The common sector, region and vintage hierarchy
+## A3.6 Article 3 action term within the shared hierarchy
 
-The multilevel prior and pooling structure follow [4], [5].
-
-For a fixed horizon and contract, let the linear predictor be
+The complete sector, region and origination-vintage hierarchy, its Gaussian coefficient baseline, and its positive half-Student-t group-scale priors are specified in A2.5 and A2.11. This section retains the Article 3 extension for a contract-specific risk target and selective outcomes. For a declared contract $a$ and horizon $\tau$, write
 
 $$
 \begin{aligned}
-D_i^a(\tau)\mid p_i&\sim\operatorname{Bernoulli}(p_i),\\
-p_i&=\operatorname{logit}^{-1}(\eta_i),\\
-\eta_i&=\alpha^L+u^L_{s(i)}+v^L_{r(i)}+w^L_{c(i)}
-+f^L(X_i)+h^L(a,X_i).
+D_i^a(\tau)\mid X_i&\sim\operatorname{Bernoulli}(p_{i,a,\tau}^L),\\
+\operatorname{logit}(p_{i,a,\tau}^L)
+&=\alpha^L+X_i^\mathsf T\beta^L
++u^L_{s(i)}+v^L_{r(i)}+w^L_{c(i)}+g^L(a,X_i).
 \end{aligned}
 $$
 
-Here $s(i),r(i),c(i)$ index sector, region and origination vintage. Superscript $L$ identifies logistic parameters; superscript $H$ identifies hazard parameters. $f^L$ contains declared borrower transformations, while $h^L$ contains offer effects and interactions. A design row $z_i^\top$ can collect these terms so that $\eta_i=z_i^\top\theta$. Group effects require identifiability constraints or proper centred priors together with a declared intercept convention. Reference levels or sum-to-zero constraints must be implemented consistently in scoring and estimation.
+Here $s(i)$, $r(i)$ and $c(i)$ identify sector, region and origination vintage; $g^L(a,X_i)$ represents the declared action basis and any supported interactions. If the data and design do not identify an action effect, the model remains prognostic and this term is omitted or restricted accordingly. The hazard model uses its own $H$ parameters and action term $g^H(a,X_i)$, as set out in A2.6. The shared level names do not imply that logistic and hazard coefficients are equal or that the two likelihoods are jointly fitted.
 
-One non-centred scale specification is
+The current baseline in A2.5 assigns Gaussian priors to regression coefficients and half-Student-t priors to positive group standard deviations; A2.11 contains the scale-mixture derivation and updates. The observed funded-loan likelihood alone describes outcomes in its observed population. A3.1–A3.5 specify the selection assumptions, support and sensitivity analysis needed to interpret or transport those estimates to an applicant target.
 
-$$
-\begin{aligned}
-u^m_s&=\sigma^m_u\widetilde u^m_s,&\widetilde u^m_s&\sim N(0,1),\\
-v^m_r&=\sigma^m_v\widetilde v^m_r,&\widetilde v^m_r&\sim N(0,1),\\
-w^m_c&=\sigma^m_w\widetilde w^m_c,&\widetilde w^m_c&\sim N(0,1),\\
-\sigma^m_k&\sim\operatorname{HalfStudentT}(\nu=3,s^m_{0,k}),
-&&k\in\{u,v,w\},\quad m\in\{L,H\},\\
-\alpha^L&\sim N(0,s_\alpha^2),&\beta^m&\sim N(0,B^m),\\
-\lambda_{0,\ell}&\sim\operatorname{Gamma}(a_\ell,b_\ell).
-\end{aligned}
-$$
+For a local Gaussian pooling illustration, take a group estimate $\widehat u=0.7$, sampling variance $1/n$ and prior variance $\sigma^2=0.04$. Using the normal-normal expression derived in A2.5, $n=10$ gives shrinkage weight $0.04/(0.04+1/10)=2/7$ and posterior mean $0.2$; $n=100$ gives weight $0.8$ and posterior mean $0.56$. This illustrates how greater group information reduces shrinkage. It is an exact calculation for the Gaussian approximation, not a closed-form posterior for the logistic model.
 
-Each $\sigma^m_k$ is a family scale shared across that effect's levels within model $m$. Normal's second argument is variance or covariance; Gamma uses shape and rate. The declared positive $s^m_{0,k},s_\alpha,a_\ell,b_\ell$ and positive-definite $B^m$ complete the prior specification. $\beta^m$ includes the coefficients of the declared feature and action-interaction bases. Prior-predictive checks assess implications on the appropriate log-odds or log-hazard scale. A vintage random walk or autoregression is an optional extension with its own innovation-scale prior and explicit temporal structure; exchangeable vintage effects do not imply that time-series dependence automatically exists.
+*Source connection:* The hierarchical modelling and partial-pooling sources are [4] and [5]; the complete common hierarchy is in A2.5.
 
-**Why pooling depends on information.** In a Gaussian analogue, suppose a noisy group statistic obeys $\overline y_j\mid u_j\sim N(u_j,s^2/n_j)$ with $u_j\sim N(0,\tau^2)$. Multiplying the two normal kernels gives posterior precision $n_j/s^2+1/\tau^2$ and mean
+The local action-effect symbol $g^L$ represents the fixed-horizon response denoted $h^L$ in the article body; $g^H$ represents its hazard response $q^H$. These model-specific labels preserve separate logistic and survival estimands.
 
-$$
-E[u_j\mid\overline y_j]
-=\frac{\tau^2}{\tau^2+s^2/n_j}\overline y_j.
-$$
+## A3.7 Distinguish coefficient priors from group-scale priors
 
-The shrinkage weight approaches one as the group's data become precise and approaches zero as the prior group scale becomes small. For $\tau^2=0.04$, $s^2=1$, $\overline y_j=0.7$, a group of 10 gives posterior mean 0.2; a group of 100 gives 0.56. This is an exact Gaussian demonstration of pooling, not an exact closed-form logistic posterior. The augmented logistic model obtains analogous conditional Gaussian calculations within its full sampler.
+The prior roles are distinct; the normal–Gamma identity and half-Student-t scale derivations are in A2.11. In the current baseline specified in A2.5, fixed-effect coefficients have Gaussian priors, for example $\beta^m\sim N(0,B^m)$, while each $\sigma_k^m>0$ is a half-Student-t(3) prior on a sector, region or vintage group standard deviation. The half-t controls pooling through the scale of conditionally Gaussian group effects. Its degrees of freedom do not turn a regression coefficient into a Student-t variable.
 
-Posterior draws preserve uncertainty about group scales and correlations where those are modelled. A sector–region–vintage subgroup with little information may depend strongly on pooling and prior choices. Human review should therefore display its support and sensitivity alongside its credible interval. To estimate a causal offer effect through $h(a,X)$, the model still needs the experiment or adjustment assumptions that identify the offer comparison.
+A Student-t coefficient prior is a separately declared alternative or sensitivity model. For example, a coefficient-specific mixture for $\beta_j\sim\operatorname{Student\text{-}t}_3(0,s_j)$ uses $\lambda_j\sim\operatorname{Gamma}(3/2,3/2)$ and $\beta_j\mid\lambda_j\sim N(0,s_j^2/\lambda_j)$. Here $\lambda_j$ is a coefficient-specific precision. The auxiliary variables used for a half-t group scale in A2.11 instead belong to the positive scale parameter and its scale-mixture representation. These variables and updates are not interchangeable.
 
-## A3.7 Half-Student-t scale mixtures and their computational role
+Accordingly, a reproducible Article 3 fit records the coefficient-prior family and scales separately from each group-scale prior, parameterisation and update. Under the registered Gaussian-coefficient baseline, the Pólya–Gamma block in A2.10 is conditionally Gaussian with fixed prior precision. Under a Student-t coefficient alternative, the same block is conditionally Gaussian only after conditioning on the coefficient-specific mixture precisions and updating them as part of the sampler. The half-t group-scale updates remain separate. A degrees-of-freedom value of three for the group-scale prior is not evidence that the alternative coefficient prior has been fitted.
 
-The auxiliary scale representation follows [20], Result 5.
+*Source connection:* The prior-scale sources are discussed in A2.11, which supplies the complete mixture and auxiliary-update derivations.
 
-Use a Gamma distribution with shape and rate. For $\nu>0$ and scale $s_0>0$, let
+## A3.8 Article 3 conditional-update check
 
-$$
-\lambda\sim\operatorname{Gamma}(\nu/2,\nu/2),
-\qquad q\mid\lambda\sim N(0,s_0^2/\lambda).
-$$
-
-Multiply the normal and Gamma densities, retaining terms depending on $q$ and $\lambda$:
-
-$$
-p(q,\lambda)\propto
-\lambda^{(\nu+1)/2-1}
-\exp\left[-\frac{\lambda}{2}
-\left(\nu+\frac{q^2}{s_0^2}\right)\right].
-$$
-
-The Gamma integral $\int_0^\infty\lambda^{a-1}e^{-b\lambda}d\lambda=\Gamma(a)/b^a$ gives
-
-$$
-p(q)=\frac{\Gamma((\nu+1)/2)}
-{\Gamma(\nu/2)\sqrt{\nu\pi}\,s_0}
-\left(1+\frac{q^2}{\nu s_0^2}\right)^{-(\nu+1)/2}.
-$$
-
-This is a centred Student-t density. Setting $\sigma=|q|$ yields density $2p(\sigma)$ for $\sigma>0$, the half-t prior. For $\nu=3$, the Gamma shape and rate are both 3/2; the Student-t degrees of freedom are 3. The normal variance is $s_0^2/\lambda$, so its standard deviation is $s_0/\sqrt\lambda$.
-
-In the hierarchy, a group effect is $u_j=\sigma z_j$ with $z_j\sim N(0,1)$. Conditional on $\sigma$, the effect is normal; assigning a half-t to $\sigma$ defines a scale mixture for $u_j$, but its marginal law is not automatically the same Student-t density just derived for $q$. The scale-mixture identity therefore needs its variable labels. It supplies a flexible positive scale prior and useful parameterisations, while coefficient conjugacy in the binary likelihood comes from the separate Pólya–Gamma augmentation below.
-
-*Source connection:* Gelman, “Prior Distributions for Variance Parameters in Hierarchical Models,” motivates calibrated half-t scale priors and sensitivity analysis. The Stan User's Guide, “Reparameterizing a Student-t Distribution,” documents the normal–Gamma representation and its computational use.
-
-## A3.8 Derive the Pólya–Gamma Gaussian conditional posterior
-
-The augmentation identity follows [9].
-
-For observed binary $y_i$ and log-odds $\eta_i$, the Bernoulli likelihood is
-
-$$
-p(y_i\mid\eta_i)=\frac{e^{y_i\eta_i}}{1+e^{\eta_i}}.
-$$
-
-Use $1+e^{\eta}=2e^{\eta/2}\cosh(\eta/2)$ and define $\kappa_i=y_i-1/2$. Then
-
-$$
-p(y_i\mid\eta_i)=\frac12e^{\kappa_i\eta_i}\cosh^{-1}(\eta_i/2).
-$$
-
-The Pólya–Gamma Laplace-transform identity for $\omega\sim\operatorname{PG}(1,0)$ is
-
-$$
-E[e^{-\omega\eta^2/2}]=\cosh^{-1}(\eta/2).
-$$
-
-Substitution rewrites the likelihood as
-
-$$
-p(y_i\mid\eta_i)
-=\frac12e^{\kappa_i\eta_i}
-\int_0^\infty e^{-\omega_i\eta_i^2/2}
-p_{\mathrm{PG}(1,0)}(\omega_i)\,d\omega_i.
-$$
-
-The tilted conditional distribution is $\omega_i\mid\eta_i,y_i\sim\operatorname{PG}(1,\eta_i)$. Conditional on the latent $\omega_i$, its contribution to the log-likelihood is quadratic: $\kappa_i\eta_i-\omega_i\eta_i^2/2$.
-
-Let $Z$ be the full design matrix for the common hierarchy, $\Omega=\operatorname{diag}(\omega_i)$, and $\kappa=(\kappa_i)$. Conditional on hierarchy scales, choose a proper Gaussian coefficient prior $\theta\sim N(m_0,Q_0^{-1})$, where $Q_0$ is its precision matrix. Combine likelihood and prior:
-
-$$
-\log p(\theta\mid\omega,y,\text{scales})
-=-\frac12\theta^\top(Z^\top\Omega Z+Q_0)\theta
-+\theta^\top(Z^\top\kappa+Q_0m_0)+\text{constant}.
-$$
-
-Completing the square gives
-
-$$
-\begin{aligned}
-V_*&=(Z^\top\Omega Z+Q_0)^{-1},\\
-m_*&=V_*(Z^\top\kappa+Q_0m_0),\\
-\theta\mid\omega,y,\text{scales}&\sim N(m_*,V_*).
-\end{aligned}
-$$
-
-For the article's compact notation, substitute the expanded $Z=X$, stacked $\theta=\beta$ and $Q_0=\Sigma_0^{-1}$, obtaining its displayed covariance. The expansion includes sector, region and vintage indicators, with covariance conditional on their current scales. If fixed offsets $c$ are retained outside the updated block, use $Z^\top(\kappa-\Omega c)+Q_0m_0$ in the conditional mean. This accounts for other predictor components while updating a subset of coefficients.
-
-**One conditional-update check.** In an intercept-only model with nine outcomes and one event, $\sum_i\kappa_i=1-9/2=-3.5$. Suppose the current latent draws sum to 2 and the intercept prior is $N(0,4)$. Then
+The Pólya–Gamma identity and full Gaussian conditional derivation are given in A2.10. The following intercept-only calculation retains the Article 3 numerical check. With nine binary outcomes and one event, $\sum_i\kappa_i=1-9/2=-3.5$. Suppose the current Pólya–Gamma draws sum to $2$ and the intercept prior is $N(0,4)$, giving prior precision $1/4$. The conditional update is
 
 $$
 V_*=(2+1/4)^{-1}=4/9,
-\qquad m_*=(4/9)(-3.5)=-14/9.
+\qquad
+m_*=(4/9)(-3.5)=-14/9,
+\qquad
+\alpha\mid\omega,y\sim N(-14/9,4/9).
 $$
 
-The next coefficient draw is therefore $N(-1.5556,0.4444)$ conditional on those latent variables. This single update is not the marginal fitted posterior. Repeated validated updates of latent variables, coefficients, scales and any correlation parameters generate the marginal posterior draws used for reporting. In software, factor and solve the positive-definite precision matrix rather than explicitly forming its inverse whenever feasible; compare numerical residuals and Monte Carlo diagnostics against the declared tolerances.
+Thus this sampler step has conditional mean approximately $-1.5556$ and variance $0.4444$. It is one conditional draw, not the marginal fitted posterior. Posterior reporting requires validated updates of the latent variables, coefficients, hierarchy scales and any other parameters in the registered model, with convergence and effective-sample-size checks. In computation, solve using a factorisation of the positive-definite precision matrix rather than explicitly forming its inverse when feasible.
 
-The hierarchy-scale updates are separate from this Gaussian block. Conditional conjugacy improves a defined computational step; elapsed time, effective sample size, convergence, calibration and decision stability still need measurement. The approved scoring artefact can store posterior draws or validated summaries so that a reviewer receives uncertainty without refitting the full model during every decision.
+For the optional Student-t coefficient model described in A3.7, a Gaussian coefficient update is conditional on its coefficient-specific mixture precisions. The group-scale updates remain distinct and follow A2.11. This example therefore demonstrates a computational block without conflating the two prior families.
 
-*Source connection:* Polson, Scott and Windle, “Bayesian Inference for Logistic Models Using Pólya–Gamma Latent Variables,” supplies the augmentation identity and Gaussian conditional calculation.
+*Source connection:* Polson, Scott and Windle [9] provide the augmentation identity and conditional calculation derived in full at A2.10.
 
-## A3.9 Survival likelihood, hierarchy and default incidence
+## A3.9 Align logistic and hazard outcomes for reject inference
 
-The hazard and partial-likelihood framework follows [6].
+The Article 3 logistic and event-time models can be compared only when their target event, contract, population and horizon match. The general event, competing-cause and cumulative-incidence definitions are in A1.8; the complete hazard likelihood, Cox partial likelihood and piecewise-baseline update are in A2.6. Those sections contain the derivations retained as the canonical treatments.
 
-For event time $T_i$, censoring time $C_i$, observed time $t_i=\min(T_i,C_i)$ and event indicator $\delta_i$, specify
-
-$$
-\lambda_i(t\mid a)=\lambda_0(t)
-\exp\{X_i^\top\beta^H+q^H(a,X_i)+u^H_{s(i)}+v^H_{r(i)}+w^H_{c(i)}\}.
-$$
-
-Using the same sector, region and vintage indexing does not require the logistic and survival coefficients to be numerically identical; they describe different likelihoods and time targets. Any joint sharing needs an explicit joint model. For a time-constant predictor $\eta_i$, cumulative hazard is $\Lambda_i(t)=e^{\eta_i}\Lambda_0(t)$ and survival is $S_i(t)=\exp[-\Lambda_i(t)]$.
-
-Under conditionally independent censoring, the event component of the likelihood is
+For a specified contract $a$, covariates $X=x$ and horizon $\tau$, define the logistic target as
 
 $$
-L=\prod_i\lambda_i(t_i)^{\delta_i}S_i(t_i)
-=\prod_i\lambda_0(t_i)^{\delta_i}
-\exp\{\delta_i\eta_i-e^{\eta_i}\Lambda_0(t_i)\}.
+p_{L,a}(\tau\mid x)=\Pr\{D^a(\tau)=1\mid X=x\}.
 $$
 
-At distinct event times and conditional on one event in the risk set $\mathcal R(t_i)$, the baseline hazard cancels from the probability that unit $i$ is that event:
+The corresponding hazard target is the default cumulative incidence $F_{H,a,D}(\tau\mid x)$ when competing terminal causes are present. In that setting, compare the logistic probability with default incidence, not with $1-S(\tau)$, which is the probability of any terminal event. A logistic endpoint described as “default by twelve months” must therefore use the same default definition and competing-exit rule as the hazard-derived twelve-month incidence. Cure or restructuring followed by possible re-default requires matching transition and terminal-event definitions as well.
 
-$$
-\Pr(i\text{ fails}\mid\mathcal R(t_i),\text{one event})
-=\frac{e^{\eta_i}}{\sum_{j\in\mathcal R(t_i)}e^{\eta_j}}.
-$$
+The comparison also requires the same contract or action, outcome population, follow-up maturity and censoring treatment. An endpoint among originated borrowers is not the same estimand as an offer-policy outcome over all applicants. The terms $g^L(a,X)$ and $g^H(a,X)$ describe model-specific action effects; sharing an action label does not establish equal effects or a causal interpretation. Experimental or adjustment assumptions must support the relevant contrast.
 
-Multiplying these probabilities gives the Cox partial likelihood. Ties need a declared approximation or exact treatment. Absolute default probabilities additionally require an estimated or modelled baseline hazard. The fully Bayesian implementation here uses the $H$ hierarchy and the piecewise baseline Gamma priors in A3.6. Let $d_\ell$ be the number of events in interval $\ell$, and let $e_{i\ell}$ be subject $i$'s observed time at risk in that interval. Conditional on hazard predictors, the likelihood kernel for the interval rate is $\lambda_{0,\ell}^{d_\ell}\exp[-\lambda_{0,\ell}\sum_i e_{i\ell}e^{\eta_i}]$. Multiplying by its Gamma prior gives
+This alignment does not resolve selective labels. A risk estimate fitted to funded, observed loans remains conditional on that evidence unless the selection assumptions and support in A3.2–A3.5 justify transport to the target applicant population. Matching a logistic and hazard horizon cannot supply outcomes for rejected applicants or remove sensitivity to unobserved selection.
 
-$$
-\lambda_{0,\ell}\mid\text{event data},\eta
-\sim\operatorname{Gamma}\left(a_\ell+d_\ell,
-b_\ell+\sum_i e_{i\ell}e^{\eta_i}\right).
-$$
-
-This is a conditional baseline update within the joint posterior; the hazard coefficient and scale updates follow their own likelihood blocks. A partial-likelihood coefficient fit alone does not provide all components of a Bayesian cash-flow forecast.
-
-For competing terminal causes, $\lambda_{ik}$ is cause-specific and
-
-$$
-L_i=\left\{\prod_k\lambda_{ik}(t_i)^{1\{\delta_i=1,J_i=k\}}\right\}
-\exp\left[-\int_0^{t_i}\sum_k\lambda_{ik}(u)\,du\right].
-$$
-
-The contract-specific default incidence is
-
-$$
-F_{iD}(\tau)=\int_0^\tau
-\exp\left[-\int_0^u\sum_k\lambda_{ik}(v)\,dv\right]
-\lambda_{iD}(u)\,du.
-$$
-
-A twelve-month logistic target for default before competing termination should be calibrated to this same event definition if compared with a survival-derived probability. Cure and restructuring often need intermediate states because a loan can later default. Article 1's appendix derives the corresponding Aalen–Johansen transition estimator and distinguishes cause-specific from subdistribution hazards.
+*Source connection:* The event-time model source cited in [6] supports the hazard formulation. A1.8 defines the event and competing-risk targets, and A2.6 gives the complete hazard derivations.
 
 ## A3.10 The guarded pilot and the Wilson interval
 
@@ -485,12 +355,7 @@ $$
 
 The familiar product $\mathrm{PD}\times\mathrm{EAD}\times\mathrm{LGD}$ follows when the exposure and severity definitions already absorb their joint expectation, or when fixed values or appropriate conditional-independence approximations justify dropping the covariance. Wrong-way dependence between drawdown and recovery makes that approximation material. For fixed EAD KES 100,000, LGD 40% and PD 5%, the simplified expected loss is KES 2,000. Applying the sensitivity risks 2.5641% and 9.5238% changes that calculation to KES 1,025.64 and KES 3,809.52; these are assumption-based scenarios rather than booked provisions.
 
-For an accounting cash-shortfall calculation, let $C_t$ denote contractual amounts due, $R_t^{(s)}$ expected receipts including eligible recoveries in scenario $s$, $w_s$ scenario probabilities summing to one, and $d_t^{\mathrm{EIR}}$ the applicable effective-interest discount factors. A schematic probability-weighted amount is
-
-$$
-\mathrm{ECL}=\sum_s w_s\sum_t d_t^{\mathrm{EIR}}
-\{C_t-R_t^{(s)}\}.
-$$
+Appendix A2.7 defines the probability-weighted discounted cash-shortfall calculation. Here the additional task is to carry selection-sensitive default estimates into the same contract, scenario and recovery definitions.
 
 The contractual cash flows, scenarios, discount rate, horizon, modifications and recoveries follow the applicable IFRS 9 measurement requirements. Twelve-month ECL concerns lifetime cash shortfalls associated with default events possible during the next twelve months; it is not simply twelve months of missing instalments. A default-time expression illustrating that distinction is
 
@@ -502,14 +367,7 @@ $$
 
 with the credit model and accounting definition aligned to the relevant default and shortfall conventions. Receipts occurring after twelve months can enter the conditional lifetime shortfall for a default within the next twelve months.
 
-An economic-capital convention may instead use the loss tail:
-
-$$
-\operatorname{VaR}_\alpha(L)
-=\inf\{\ell:\Pr(L\le\ell)\ge\alpha\},
-\qquad
-\mathrm{EC}_\alpha=\operatorname{VaR}_\alpha(L)-E[L].
-$$
+The quantile-based economic-capital convention is defined in Appendix A2.7. Applying it to the selected-label example gives a direct numerical comparison between mean and tail loss.
 
 For a single stylised loan with loss KES 40,000 with probability 5% and zero otherwise, expected loss is KES 2,000 and $\operatorname{VaR}_{0.99}=40{,}000$, giving KES 38,000 under this convention. A portfolio calculation requires dependence, concentration, exposure and recovery modelling; applicable regulatory capital is determined by its own rules. The example isolates the mathematical difference between the mean and the tail, while the research keeps simulated reject outcomes separate from actual ledger events.
 
@@ -560,3 +418,7 @@ $$
 This ratio requires a positive supported denominator and suitable uncertainty analysis. Zero observed defaults in a small group do not establish a perfect default-detection rate. Report group sizes, the observed or transported population, label maturity, posterior or sampling uncertainty and the sensitivity assumptions. The selection derivations explain why an apparently strong aggregate AUC or fairness statistic can coexist with uncertainty about rejected applicants.
 
 *Source connection:* Hardt, Price and Srebro, “Equality of Opportunity in Supervised Learning,” defines the group-error criteria. The pairwise AUC identity and the weighted ratios follow from the definitions of the relevant conditional probabilities.
+
+### Further methodological reading
+
+Additional sources retained from the article bibliography: [21].

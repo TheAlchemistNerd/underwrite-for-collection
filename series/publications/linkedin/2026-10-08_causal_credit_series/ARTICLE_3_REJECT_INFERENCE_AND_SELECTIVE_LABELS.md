@@ -166,7 +166,7 @@ The Data Protection Act, 2019 sets processing principles in section 25 and data-
 
 Regulation 22 of the Data Protection (General) Regulations, 2021 gives operational safeguards for automated individual decision-making, including notice, meaningful information about the logic, measures to prevent errors and bias, suitable statistical procedures, and a route to human intervention and expression of the data subject’s point of view. Regulation 49 identifies processing activities requiring a DPIA, and regulations 50–53 address assessment, prior consultation, consideration and audit [15]. The assessment should distinguish a model that prioritizes a case for human review from one that automatically declines an application, changes a credit limit or triggers a collection outcome. Human review should be substantive: the reviewer needs information, expertise, authority and time to change the recommendation. The workflow should preserve correction and complaint routes. A DPIA identifies and mitigates processing risks; it does not by itself establish every lawful basis or permission needed for the project.
 
-Credit-specific rules depend on the institution and product. The Credit Reference Bureau Regulations govern defined credit-information processes. The Digital Credit Providers Regulations, 2022 apply within their statutory scope and include provisions on responsible lending, debt collection and complaint handling [16], [17]. A bank, microfinance institution, SACCO, digital credit provider, intermediary and chama do not necessarily have the same regulator, permissions or duties. Before a pilot, classify the entity and determine which banking, microfinance, SACCO, credit reporting, consumer-protection and data-protection provisions apply. The research file should record which rule or policy governs eligibility, offer, collection contact, credit reporting, automated decision-making and appeals. Kenyan counsel and compliance teams should verify application against current instruments; a research paper should not generalize a rule for one provider category to the entire credit market.
+Credit-specific rules depend on the institution and product. The Banking (Credit Reference Bureau) Regulations, 2020 govern defined credit-information processes [16]. For non-deposit-taking credit business not regulated under another written law, the Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice No. 191) apply; regulation 3 excludes institutions regulated under banking, microfinance, SACCO and other specified statutes. Regulations 96–97 provide transition for existing licensees and revoke the 2022 Digital Credit Providers Regulations. For providers within scope, the 2026 Regulations set requirements on credit appraisal, collection, customer information and AI lending decisions; regulation 60 requires explanation where AI decisions affect loan applications, customer notice of AI interaction, human oversight, bias risk assessment and technically robust, transparent and explainable systems [17]. Banks, MFIs, SACCOs, NDTCPs, intermediaries and chamas may have distinct regimes, permissions and duties. Before a pilot, classify the entity and determine applicable banking, microfinance, SACCO, credit-reporting, consumer-protection and data-protection provisions. Record which rule governs eligibility, offer, collection contact, bureau reporting, automated decisions and appeals, and apply the selected regime to this study’s evidence path.
 
 ### Fairness and outcome measurement
 
@@ -209,6 +209,8 @@ Reject inference is best handled as a transparent account of what is observed, w
 
 For *Underwrite for Collection*, this method connects application, contract, operating cash, monitoring, collection and recovery. The evidence unit differs between a going-concern business loan and a ring-fenced receivables stream, and it differs again for a collective guarantee. Kenyan privacy, data-protection and sector rules determine what data can be processed and how people can challenge consequential decisions. Fannie Mae and Freddie Mac provide valuable examples of cohort design and performance-data documentation, while local evidence must establish local MSME outcomes. The most credible next step is a governed support map followed by a narrow, affordable study with clear outcomes and a standard-care comparator. The result can improve future lending decisions while stating its limits plainly.
 
+The foundational whitepaper, *Underwrite for Collection*, is available on Zenodo [20].
+
 ### References
 
 [1] H. Lakkaraju, J. Kleinberg, J. Leskovec, J. Ludwig, and S. Mullainathan, “The selective labels problem: Evaluating algorithmic predictions in the presence of unobservables,” in *Proc. 23rd ACM SIGKDD Int. Conf. on Knowledge Discovery and Data Mining*, 2017, pp. 275–284, doi: 10.1145/3097983.3098066. Author copy: https://www.cs.cornell.edu/home/kleinber/kdd17-selective.pdf.
@@ -243,13 +245,15 @@ For *Underwrite for Collection*, this method connects application, contract, ope
 
 [16] Central Bank of Kenya, *The Banking (Credit Reference Bureau) Regulations*, 2020, L.N. 55 of 2020, as amended. https://www.centralbank.go.ke/wp-content/uploads/2026/03/The-Banking-Credit-Reference-Bureau-Regulations.pdf.
 
-[17] Central Bank of Kenya, *Central Bank of Kenya (Digital Credit Providers) Regulations*, 2022, L.N. 46, regs. 18 and 20–22. https://www.centralbank.go.ke/wp-content/uploads/2022/03/L-.N.-No.-46-Central-Bank-of-Kenya-Digital-Credit-Providers-Regulations-2022.pdf.
+[17] Central Bank of Kenya, *The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026*, Legal Notice No. 191 of 2026, regs. 3, 24, 28, 30, 40–41, 44, 53, 60, 96–97. Available: https://new.kenyalaw.org/akn/ke/act/ln/2026/191/eng@2026-09-29/source.pdf.
 
 [18] M. Hardt, E. Price, and N. Srebro, “Equality of opportunity in supervised learning,” in *Advances in Neural Information Processing Systems 29*, 2016.
 
 [19] IFRS Foundation, *IFRS 9 Financial Instruments*, impairment requirements. https://www.ifrs.org/issued-standards/list-of-standards/ifrs-9-financial-instruments/.
 
-[20] M. P. Wand, J. T. Ormerod, S. A. Padoan, and R. Frühwirth, “Mean field variational Bayes for elaborate distributions,” *Bayesian Analysis*, vol. 6, no. 4, pp. 847–900, 2011, doi: 10.1214/11-BA631, Result 5. Author copy: https://matt-p-wand.net/publicns/Wand11.pdf.
+[20] N. Maloba, *Underwrite for Collection*, integrated research whitepaper, 2026. Zenodo. https://doi.org/10.5281/zenodo.23343888.
+
+[21] M. P. Wand, J. T. Ormerod, S. A. Padoan, and R. Frühwirth, “Mean field variational Bayes for elaborate distributions,” *Bayesian Analysis*, vol. 6, no. 4, pp. 847–900, 2011, doi: 10.1214/11-BA631, Result 5. Author copy: https://matt-p-wand.net/publicns/Wand11.pdf.
 
 ---
 

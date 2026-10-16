@@ -48,7 +48,7 @@ for i,page in enumerate(reader.pages):
             link_count+=1
             if destination not in destinations: invalid_links.append((i+1,destination))
 assert not invalid_links,invalid_links
-qa=base/'numbered_pdf_qa_2026-10-10';qa.mkdir(exist_ok=True)
+qa=base/'numbered_pdf_qa_2026-10-16';qa.mkdir(exist_ok=True)
 poppler=Path('C:/Users/Nevo/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/poppler/Library/bin/pdftoppm.exe')
 render_hash=qa/'rendered_pdf_sha256.txt'
 current_hash=hashlib.sha256(pdf.read_bytes()).hexdigest()
@@ -56,7 +56,7 @@ if len(list(qa.glob('page-*.png')))!=len(reader.pages) or not render_hash.exists
     proc=subprocess.run([str(poppler),'-r','80','-png',str(pdf),str(qa/'page')],capture_output=True)
     assert proc.returncode==0,proc.stderr.decode(errors='replace')
     render_hash.write_text(current_hash,encoding='ascii')
-pages=sorted(qa.glob('page-*.png'))
+pages=sorted(p for p in qa.glob('page-*.png') if int(p.stem.split('-')[-1]) <= len(reader.pages))
 assert len(pages)==len(reader.pages),(len(pages),len(reader.pages))
 font=ImageFont.truetype('C:/Windows/Fonts/segoeui.ttf',20)
 contacts=[]
@@ -68,7 +68,7 @@ for start in range(0,len(pages),4):
         draw.text((x+8,y+3),f'Page {start+n+1}',font=font,fill='black')
         sheet.paste(im,(x+(700-im.width)//2,y+30))
     c=qa/f'contact_{start+1:03d}_{min(start+4,len(pages)):03d}.png';sheet.save(c);contacts.append(str(c))
-report={'date':'2026-10-10','file':str(pdf),'pages':len(reader.pages),'sha256':hashlib.sha256(pdf.read_bytes()).hexdigest(),
+report={'date':'2026-10-16','file':str(pdf),'pages':len(reader.pages),'sha256':hashlib.sha256(pdf.read_bytes()).hexdigest(),
         'display_equations':len(labels),'counts_by_scope':numbering['counts_by_scope'],
         'equation_labels_correct':True,'all_equation_numbers_found_in_pdf':True,
         'all_equation_tex_preserved_verbatim':True,

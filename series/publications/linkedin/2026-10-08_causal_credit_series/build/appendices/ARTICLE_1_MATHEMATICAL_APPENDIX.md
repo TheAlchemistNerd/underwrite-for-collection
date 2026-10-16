@@ -210,7 +210,7 @@ A_i\in\arg\max_{a\in\mathcal A(X_i)}
 \widetilde Q_i(X_i,a).
 $$
 
-Here $\widetilde Q_i$ combines the sampled event probability with the documented take-up, exposure, severity, timing and cost model. If the event is default, maximising $p_{\widetilde\theta}$ itself would maximise default probability. The allocation probability of Thompson sampling is the posterior probability that an action wins this value comparison, subject to tie rules and eligibility; it is different from the sampled default probability. Hierarchical coefficient draws and Pólya–Gamma computation are derived in Article 3's appendix. Their sector, region and vintage effects use the same evidence and time-window definitions.
+Here $\widetilde Q_i$ combines the sampled event probability with the documented take-up, exposure, severity, timing and cost model. If the event is default, maximising $p_{\widetilde\theta}$ itself would maximise default probability. The allocation probability of Thompson sampling is the posterior probability that an action wins this value comparison, subject to tie rules and eligibility; it is different from the sampled default probability. The shared hierarchy is specified in A2.5; Pólya–Gamma computation and the distinct coefficient and group-scale priors are derived in A2.10–A2.11. A3.6–A3.8 apply those results to selective labels and provide a numerical check. Their sector, region and vintage effects use the same evidence and time-window definitions.
 
 *Source connection:* Li and colleagues, “A Contextual-Bandit Approach to Personalized News Article Recommendation,” develops the linear-UCB approach. Durand and colleagues, “Contextual Bandits for Adaptive Treatment Allocation,” discusses controlled adaptive allocation. Hadad and colleagues, “Confidence Intervals for Policy Evaluation in Adaptive Experiments,” addresses uncertainty under adaptive sampling.
 
@@ -446,4 +446,4 @@ The first term is future outcome variability conditional on the model; the secon
 
 ### Further methodological reading
 
-Additional sources retained from the article bibliography: [19].
+Additional sources retained from the article bibliography: [20].

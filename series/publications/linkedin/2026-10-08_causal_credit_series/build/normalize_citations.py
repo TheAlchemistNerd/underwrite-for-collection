@@ -76,55 +76,19 @@ def support(appendix,section,text):
     return pat.sub(lambda m:m[0]+'\n'+text+'\n',appendix,count=1)
 
 def prepare(n,body,refs,appendix):
-    for k,v in list(refs.items()):
-        if 'PMC9041715' in v:refs[k]=EHRHARDT
-        if 'Lakkaraju' in v:refs[k]=LAKKARAJU
-        if 'A. C. Clayton' in v:refs[k]=v.replace('A. C. Clayton','D. G. Clayton')+' doi: 10.1093/biomet/65.1.141.'
-        if 'Y. Jiang and L. Li' in v:refs[k]=v.replace('Y. Jiang','N. Jiang')
-    if n==1:
-        cox=add_ref(refs,COX)
-        body=append_cite_to_paragraph(body,'Survival analysis helps represent',[cox])
-        body=append_cite_to_paragraph(body,'The Kenyan legal framework',[16]) if 'The Kenyan legal framework' in body else body
-        appendix=support(appendix,'A1.3','The credit experiment separates assigned offers and subsequent behaviour using the experimental-design logic in [4].')
-        appendix=support(appendix,'A1.4','The linear confidence-bound construction follows [5]; inference under adaptive assignment follows [6].')
-        appendix=support(appendix,'A1.5','The evaluation setting and overlap requirements follow [1], [9].')
-        appendix=support(appendix,'A1.6','The augmented estimator follows the doubly robust policy-evaluation construction in [1].')
-        appendix=support(appendix,'A1.8',f'The hazard specification follows [{cox}], with competing-risk and transition distinctions supported by [17], [18].')
-        appendix=support(appendix,'A1.9','The conditional fairness rates follow [10].')
-    if n==2:
-        bda=add_ref(refs,BDA);wand=add_ref(refs,WAND);cox=add_ref(refs,COX);pomdp=add_ref(refs,POMDP)
-        body=append_cite_to_paragraph(body,'A credit-limit adjustment is a decision',[bda])
-        body=append_cite_to_paragraph(body,'These scale variables and the Pólya',[wand])
-        # In the appendix, early citations support each derivation directly.
-        for sec,txt in [('A2.2',f'The finite-horizon value recursion is the fully observed special case of the control formulation in [{pomdp}].'),('A2.3',f'The belief-state construction and observation update follow [{pomdp}].'),('A2.5',f'The hierarchical posterior and partial-pooling construction follow [{bda}, ch. 5].'),('A2.6',f'The proportional-hazards and partial-likelihood construction follows [{cox}].'),('A2.7','The cash-shortfall interpretation follows [12], and the regulatory/internal capital distinction follows [15].'),('A2.8','The conditional fairness rates follow [9].'),('A2.9','The dependence construction follows [14].'),('A2.10','The augmentation identity and conditional Gaussian calculation follow [16].'),('A2.11',f'The scale prior follows [20], the normal–Gamma representation [21], and the inverse-Gamma auxiliary representation [{wand}, Result 5].'),('A2.12',f'The expected-utility comparison follows [{bda}, ch. 9]. The declared payoff matrix determines the economic threshold.' )]:
-            # Keep all citation brackets numeric-only for automatic export matching.
-            txt=re.sub(r'\[(\d+), ([^\]]+)\]',r'[\1] (\2)',txt)
-            appendix=support(appendix,sec,txt)
-    if n==3:
-        bda=add_ref(refs,BDA);half=add_ref(refs,HALFT);cox=add_ref(refs,COX);wilson=add_ref(refs,WILSON);wand=add_ref(refs,WAND)
-        body=append_cite_to_paragraph(body,'A hierarchical Bayesian logistic model',[bda,half])
-        body=append_cite_to_paragraph(body,'A hierarchical Cox model',[cox])
-        # Cite Wilson where the original score interval is explained.
-        p=next((p for p in body.split('\n\n') if 'Wilson' in p),'')
-        if p:body=body.replace(p,p.rstrip().rstrip('.')+f' [{wilson}].',1)
-        for sec,txt in [('A3.2','The selective-label and reject-inference problem follows [1]–[3].'),('A3.4','The augmented estimator adapts the doubly robust construction in [4], [5] to the stated selection assumptions.'),('A3.6',f'The multilevel prior and pooling structure follow [{bda}], [{half}].'),('A3.7',f'The auxiliary scale representation follows [{wand}], Result 5.'),('A3.8','The augmentation identity follows [6].'),('A3.9',f'The hazard and partial-likelihood framework follows [{cox}].'),('A3.10',f'The score-inversion interval follows [{wilson}].'),('A3.11','The adaptive-allocation setting follows [7].'),('A3.12','The accounting cash-shortfall interpretation follows [15].')]:appendix=support(appendix,sec,txt)
-    if n==4:
-        pomdp=add_ref(refs,POMDP)
-        for sec,txt in [('A4.2','The value and earnings risk perspectives follow [1], [2].'),('A4.4','The customer benchmark and pricing conventions follow [3]–[5].'),('A4.7','The illustrative ratio definitions follow [6], [7].'),('A4.9',f'The recursion follows the dynamic-programming framework in [{pomdp}], connected to bank balance-sheet control in [9].'),('A4.10',f'The belief-state update follows [{pomdp}].')]:appendix=support(appendix,sec,txt)
-        appendix=appendix.replace('Basel Committee, *Interest Rate Risk in the Banking Book* (2016); Basel Framework LCR and NSFR standards; CBK, *Revised Risk-Based Credit Pricing Model* (2025); and H. Englisch et al., “Deep treasury management for banks” (2023).','the IRRBB standard [1], LCR and NSFR definitions [6], [7], revised customer-pricing framework [4], and bank Treasury control study [9].')
-    if n==5:
-        bda=add_ref(refs,BDA);wand=add_ref(refs,WAND)
-        # Explicit decision-analysis and inference authority in the main text.
-        p=next((p for p in body.split('\n\n') if 'Beta(4,96)' in p),'')
-        if p:body=body.replace(p,p.rstrip().rstrip('.')+f' [{bda}].',1)
-        for sec,txt in [('A5.2',f'The conjugate beta–binomial calculation follows [{bda}], ch. 2.'),('A5.5',f'The expected-payoff and uncertainty-review distinction follows the decision-analysis framework in [{bda}], ch. 9.'),('A5.6',f'The logistic augmentation follows [3]; the auxiliary half-t representation follows [{wand}], Result 5.')]:appendix=support(appendix,sec,txt)
-        start=appendix.index('Pólya–Gamma inference follows N. G. Polson')
-        appendix=appendix[:start]+f'Pólya–Gamma inference follows [3], and the half-t auxiliary-variable representation follows [{wand}], Result 5. Numerical summaries are derived from the specified illustrative distributions using the inference and decision framework in [{bda}]. The workflow applies the bank-controlled architecture [1] and the legal sources [4], [5].\n'
+    doi='https://doi.org/10.5281/zenodo.23343888'
+    found=next((k for k,v in refs.items() if doi in v or ('Maloba' in v and 'Underwrite for Collection' in v)),None)
+    if found is None:
+        found=add_ref(refs,'N. Maloba, *Underwrite for Collection*, integrated research whitepaper, 2026. Zenodo. '+doi+'.')
+    elif doi not in refs[found]:
+        refs[found]=refs[found].rstrip().rstrip('.')+'. Zenodo: '+doi+'.'
+    if found not in ids(body):
+        body=body.rstrip()+f'\n\nThe foundational whitepaper, *Underwrite for Collection*, is available on Zenodo [{found}].\n\n'
     return body,refs,appendix
 
 def unique(seq):return list(dict.fromkeys(seq))
 
-report={'date':'2026-10-09','numbering':'Restart at [1] per article; appendices reuse that article bibliography.','articles':[],'source_corrections':['Lakkaraju initials and unrelated arXiv link corrected to original author-hosted paper and DOI.','Ehrhardt et al. title, journal, year, authors and DOI corrected.','Clayton initials corrected to D. G.','Jiang initials corrected to N.','Original Mwendo decision-limit reference: Gelman et al., Bayesian Data Analysis, 3rd ed., 2013, ch. 9.']}
+report={'date':'2026-10-16','numbering':'Restart at [1] per article; appendices reuse that article bibliography.','articles':[],'source_corrections':['Lakkaraju initials and unrelated arXiv link corrected to original author-hosted paper and DOI.','Ehrhardt et al. title, journal, year, authors and DOI corrected.','Clayton initials corrected to D. G.','Jiang initials corrected to N.','Original Mwendo decision-limit reference: Gelman et al., Bayesian Data Analysis, 3rd ed., 2013, ch. 9.']}
 apply='--check' not in sys.argv
 for n in range(1,6):
     path=next(p for p in ROOT.glob(f'ARTICLE_{n}_*.md') if 'LINKEDIN_POST' not in p.name)

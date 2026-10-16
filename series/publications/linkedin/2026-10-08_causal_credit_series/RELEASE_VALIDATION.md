@@ -1,3 +1,15 @@
+# Publication release verification - 16 October 2026
+
+The current combined PDF has 136 pages, 269 numbered display equations and 12 figures. The combined Word edition contains the same articles, mathematical appendices, numbered equations and figures, constructed from the same TeX mathematical source; its native Word pagination is 149 pages. The five individual Word articles retain Unicode mathematics for LinkedIn copying. DOI references and article-local citation sequences are updated.
+
+The appendix revision preserves the main article bodies apart from the declared DOI and citation additions. Complete derivations have canonical locations, later applications retain their distinct calculations, and the coefficient Student-t and positive group-scale half-t priors are separated. All 37 current mathematical checks passed. The final TeX log has no missing-glyph, unresolved-reference or overfull-box diagnostics.
+
+See [current checks](build/publication_release_checks_2026-10-16.json), [body-fidelity comparison](build/article_fidelity_checks_2026-10-16.json), [equation/link checks](build/pdf_numbering_validation.json) and [posting pack](00_POSTING_PACK.md). The Word contents page and equation-register pagination were finalized and visually verified. The PNG download contains all twelve figures.
+
+## Historical verification record
+
+The following 10 October record describes its earlier build. Current counts and formats are above.
+
 # Publication release verification — 10 October 2026
 
 The five individual Word files and combined Word edition were rendered through Microsoft Word and visually inspected. All six use ordinary Unicode mathematics, contain no Word equation objects, and embed the seven named diagrams across the series. The combined Word edition is 67 pages; the TeX PDF is 136 pages. The final TeX log contains no missing-character, overfull-box or undefined-command errors.

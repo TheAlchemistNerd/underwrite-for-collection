@@ -2,3 +2,7 @@
 \renewcommand{\@pnumwidth}{2.5em}
 \makeatother
 \setlength{\emergencystretch}{2em}
+
+\usepackage{float}
+\usepackage{caption}
+\newcommand{\Needspace}[1]{\par\begingroup\dimen0=#1\relax\ifdim\dimexpr\pagegoal-\pagetotal\relax<\dimen0\newpage\fi\endgroup}

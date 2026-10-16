@@ -6,13 +6,13 @@
   "sources": [
     {
       "path": "build\\appendices\\ARTICLE_2_MATHEMATICAL_APPENDIX.md",
-      "bytes": 28671,
-      "sha256": "32c5d9bdceb35569f56f37871a37654733de8d649eaf5950fb9b767dff36859f"
+      "bytes": 30890,
+      "sha256": "a00f4b2b093e2eb8c19baee99c0c80c498255fd8fa0c98233733d708fa4ca71e"
     },
     {
       "path": "build\\appendices\\ARTICLE_5_MATHEMATICAL_APPENDIX.md",
-      "bytes": 19437,
-      "sha256": "48c5f497bad71405e8f1aab6c5a4d7a1bbd303d6ad05cbe55036d0a3f20a7351"
+      "bytes": 17917,
+      "sha256": "723d272b7a6b60acca9bf88694e05c893259f21003c7f2a1c37e13e82878bdac"
     }
   ],
   "checks": [

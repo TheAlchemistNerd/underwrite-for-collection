@@ -307,7 +307,7 @@ Section 31 of the Act requires a data-protection impact assessment (DPIA) where 
 
 The other provisions matter across the data lifecycle. The Act’s principles, rights, lawful-basis rules, security duties, breach obligations, sensitive-data conditions and cross-border-transfer rules apply according to the actual processing rather than the model label [10]. Data minimization affects feature design; accuracy affects entity matching and correction; purpose limitation affects whether data gathered for one service can be repurposed for scoring; retention affects trajectory storage; and security affects account-level feeds and access. A model-development project should define a controlled research dataset, access roles, pseudonymization where appropriate, linkage approvals, retention periods and a process for correcting source records. Removing direct names does not automatically make detailed transaction histories anonymous, especially where rare patterns can identify a person.
 
-Credit-specific rules also require scope discipline. The Credit Reference Bureau Regulations address credit information and include safeguards relevant to automated scoring and adverse credit information, while the Digital Credit Providers Regulations, 2022 apply within their stated scope and exclude specified institution categories. The ODPC’s digital-credit guidance provides further operational context [18], [19]. Before relying on a particular rule, the institution must classify itself, the product, the decision and the data flow. A bank, a digital credit provider, an MFI and a SACCO do not necessarily sit under the same sector rulebook. The article therefore treats consumer protection, credit reporting, banking supervision and data protection as connected controls, while leaving institution-specific legal conclusions to a documented Kenyan-law review.
+Credit-specific rules require scope discipline. The Banking (Credit Reference Bureau) Regulations, 2020 govern defined credit-information processes [18]. The ODPC’s digital-credit guidance remains operational context where relevant [19]. For non-deposit-taking credit business not regulated under another written law, the CBK (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice No. 191) now set provider requirements; regulation 3 excludes banks, licensed microfinance institutions, SACCOs and other specified categories. Regulations 96 and 97 carry forward existing 2022 licensees and revoke the 2022 Digital Credit Providers Regulations, respectively. For providers within scope, regulation 30 governs credit collection, regulation 44 addresses debt collection, regulation 53 covers access to and collection of customer information, and regulation 60 sets safeguards for AI used in lending decisions [20]. Before relying on a particular rule, classify the institution, product, decision and data flow. Banks, NDTCPs, MFIs and SACCOs do not necessarily sit under the same sector rulebook. The study connects consumer protection, credit reporting, banking supervision and data protection while recording which law or institutional policy governs each action.
 
 ### Operational validation and model controls
 
@@ -315,7 +315,7 @@ Model validation should cover calibration and discrimination, but also stability
 
 ### A data-lineage lesson from mortgage performance files
 
-Article 1 discusses the GSE data architecture as a template for dated origination and performance records. For sequential collections, the specific lesson is to preserve the information set at each decision: what the servicer knew before contact, what action was sent, what response followed, and whether the later payment can be linked to that action. Monthly mortgage histories are not event logs for Kenyan MSME collections, but they show why release dates, loan identifiers, outcome windows and corrections must be versioned [20], [21]. They also illustrate the selection boundary: published acquired mortgages do not reveal outcomes for every denied applicant. Use these datasets to validate time alignment and data lineage; estimate local collection effects only from properly governed Kenyan records and designs.
+Article 1 discusses the GSE data architecture as a template for dated origination and performance records. For sequential collections, the specific lesson is to preserve the information set at each decision: what the servicer knew before contact, what action was sent, what response followed, and whether the later payment can be linked to that action. Monthly mortgage histories are not event logs for Kenyan MSME collections, but they show why release dates, loan identifiers, outcome windows and corrections must be versioned [21], [22]. They also illustrate the selection boundary: published acquired mortgages do not reveal outcomes for every denied applicant. Use these datasets to validate time alignment and data lineage; estimate local collection effects only from properly governed Kenyan records and designs.
 
 ### From borrower evidence to bank decisions
 
@@ -338,6 +338,8 @@ The fifth stage is governance and ongoing evaluation. Define who may approve a p
 The transition from a one-step bandit to sequential credit control is a progression of evidence, not a change of algorithm name. A randomized pilot can estimate whether an approved action improves a defined outcome for an eligible population. A contextual bandit can adapt among such actions when assignment probabilities and delayed outcomes are managed. A sequential model becomes relevant when decisions change future borrower states or information; a POMDP becomes relevant when material state is partly hidden and observations support a validated belief model. Reject inference remains a separate counterfactual-identification problem, and Bayesian modelling cannot substitute for missing experimental support. The practical foundation is a clean lifecycle record that distinguishes operating-business cash from ring-fenced receivables and connects every decision to its evidence, authority, action and outcome.
 
 For Kenyan application, privacy and data-protection duties shape the dataset, experiment and user journey from the beginning. The Data Protection Act, General Regulations and applicable credit rules must be mapped to the actual institution and processing. Hard eligibility gates protect rights and affordability; explainable records, meaningful human review, correction routes and independent validation support accountable decisions. The proposed research agenda is therefore concrete: define a local eligible population, preserve a standard-care benchmark, test support-oriented actions, measure durable repayment and borrower outcomes, and publish uncertainty. Only after that evidence exists should a team ask whether a more complex controller provides enough additional value to justify its cost, governance and operational risk.
+
+The foundational whitepaper, *Underwrite for Collection*, is available on Zenodo [23].
 
 ### References
 
@@ -379,17 +381,19 @@ For Kenyan application, privacy and data-protection duties shape the dataset, ex
 
 [19] Office of the Data Protection Commissioner, Kenya, *Guidance Note for Digital Credit Providers*, 2024. Available: https://www.odpc.go.ke/wp-content/uploads/2024/02/ODPC-Guidance-Note-for-Digital-Credit-Providers.pdf.
 
-[20] Freddie Mac, *Single-Family Loan-Level Dataset: User Guide*, current release. Available: https://www.freddiemac.com/research/pdf/user_guide.pdf.
+[20] Central Bank of Kenya, *The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026*, Legal Notice No. 191 of 2026, regs. 3, 30, 44, 53, 60, 96–97. Available: https://new.kenyalaw.org/akn/ke/act/ln/2026/191/eng@2026-09-29/source.pdf.
 
-[21] Fannie Mae, *Single-Family Loan Performance Data*, documentation and access portal. Available: https://capitalmarkets.fanniemae.com/credit-risk-transfer/single-family-credit-risk-transfer/loan-performance-data.
+[21] Freddie Mac, *Single-Family Loan-Level Dataset: User Guide*, current release. Available: https://www.freddiemac.com/research/pdf/user_guide.pdf.
 
-[22] L. P. Kaelbling, M. L. Littman, and A. R. Cassandra, “Planning and acting in partially observable stochastic domains,” *Artificial Intelligence*, vol. 101, nos. 1–2, pp. 99–134, 1998, doi: 10.1016/S0004-3702(98)00023-X. Author copy: https://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf.
+[22] Fannie Mae, *Single-Family Loan Performance Data*, documentation and access portal. Available: https://capitalmarkets.fanniemae.com/credit-risk-transfer/single-family-credit-risk-transfer/loan-performance-data.
 
-[23] D. R. Cox, “Regression models and life-tables,” *Journal of the Royal Statistical Society: Series B*, vol. 34, no. 2, pp. 187–220, 1972. Available: https://web.stanford.edu/~lutian/coursepdf/cox1972paper.pdf.
+[23] N. Maloba, *Underwrite for Collection*, integrated research whitepaper, 2026. Zenodo. https://doi.org/10.5281/zenodo.23343888.
 
-[24] M. Dudík, J. Langford, and L. Li, “Doubly robust policy evaluation and learning,” in *Proc. 28th Int. Conf. on Machine Learning*, 2011, pp. 1097–1104. Available: https://icml.cc/2011/papers/554_icmlpaper.pdf.
+[24] L. P. Kaelbling, M. L. Littman, and A. R. Cassandra, “Planning and acting in partially observable stochastic domains,” *Artificial Intelligence*, vol. 101, nos. 1–2, pp. 99–134, 1998, doi: 10.1016/S0004-3702(98)00023-X. Author copy: https://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf.
 
-[25] Central Bank of Kenya, *Central Bank of Kenya (Digital Credit Providers) Regulations*, 2022, L.N. 46, regs. 18 and 20–22. https://www.centralbank.go.ke/wp-content/uploads/2022/03/L-.N.-No.-46-Central-Bank-of-Kenya-Digital-Credit-Providers-Regulations-2022.pdf.
+[25] D. R. Cox, “Regression models and life-tables,” *Journal of the Royal Statistical Society: Series B*, vol. 34, no. 2, pp. 187–220, 1972. Available: https://web.stanford.edu/~lutian/coursepdf/cox1972paper.pdf.
+
+[26] M. Dudík, J. Langford, and L. Li, “Doubly robust policy evaluation and learning,” in *Proc. 28th Int. Conf. on Machine Learning*, 2011, pp. 1097–1104. Available: https://icml.cc/2011/papers/554_icmlpaper.pdf.
 
 ---
 

@@ -6,7 +6,7 @@ This appendix derives the mathematical specifications used in Article 2. Let $i$
 
 ## A2.2 Bellman recursion
 
-The finite-horizon value recursion is the fully observed special case of the control formulation in [22].
+The finite-horizon value recursion is the fully observed special case of the control formulation in [24].
 
 For terminal value $g_T$, stage reward $r_t$, horizon $T$ and per-step discount $\gamma$, policy value is:
 
@@ -37,7 +37,7 @@ The action set encodes eligibility and authority. The reward, transition and ter
 
 ## A2.3 POMDP prediction and observation update
 
-The belief-state construction and observation update follow [22].
+The belief-state construction and observation update follow [24].
 
 Let $Z_t$ be latent state, $O_t$ observation, $T_a(z'\mid z)$ the transition law, and $L_a(o\mid z')$ the observation likelihood. The belief conditions on observations and previous actions:
 
@@ -108,7 +108,7 @@ w_c^m&=\sigma_w^m z_{wc}^m,&z_{wc}^m&\sim N(0,1),\\
 \end{aligned}
 $$
 
-Raw effects are independent in this baseline specification. A dependence prior or identifying constraint is recorded when used. $B^m$ is positive definite. Hyperprior scales are calibrated on the link scale through prior-predictive simulation. Additional institution, product or calendar levels each require their own index and prior. An immature or selectively observed binary label requires a model for observation and selection.
+This baseline assigns Gaussian priors to the signed fixed-effect coefficients $\beta^m$ and half-Student-t priors only to the positive group standard deviations $\sigma_k^m$. A Student-t coefficient prior is a separately declared alternative, defined in A2.11; it is not implied by the half-t group-scale prior. Raw effects are independent in this baseline specification. A dependence prior or identifying constraint is recorded when used. $B^m$ is positive definite. Hyperprior scales are calibrated on the link scale through prior-predictive simulation. Additional institution, product or calendar levels each require their own index and prior. An immature or selectively observed binary label requires a model for observation and selection.
 
 Multiplying likelihood and priors gives the posterior. Sharing a scale distribution allows partial pooling. A Gaussian local approximation illustrates it: if a group estimate $\hat u_s$ has variance $v_s$ and prior $N(0,\sigma_u^2)$, completing the square yields:
 
@@ -123,7 +123,7 @@ Large sampling variance produces stronger pooling. The logistic posterior itself
 
 ## A2.6 Hierarchical hazards and their likelihood
 
-The proportional-hazards and partial-likelihood construction follows [23].
+The proportional-hazards and partial-likelihood construction follows [25].
 
 The hazard model uses separate coefficients and group effects:
 
@@ -135,12 +135,7 @@ $$
 
 Time-varying predictors use information available just before the relevant time. The baseline hazard supplies the intercept role. A Bayesian piecewise-constant baseline can use $\lambda_{0\ell}\sim\operatorname{Gamma}(a_\ell,b_\ell)$ in interval $\ell$. A Cox partial-likelihood fit instead estimates relative effects while leaving baseline estimation to a subsequent step.
 
-From the hazard definition, $S(t+dt)=S(t)\{1-\lambda(t)dt+o(dt)\}$. Rearranging gives $S'(t)/S(t)=-\lambda(t)$. Integration with $S(0)=1$ yields:
-
-$$
-S_i(t)=\exp\left[-\int_0^t\lambda_i(u)du\right],\qquad
-f_i(t)=\lambda_i(t)S_i(t).
-$$
+A1.8 derives the hazard-to-survival identity, and A1.7 gives the right-censored event contribution. Substituting the hierarchical hazard above gives the likelihood used here.
 
 For $y_i=\min(T_i,C_i)$ and event indicator $\delta_i=1\{T_i\le C_i\}$, conditionally independent censoring allows its likelihood factor to be separated:
 
@@ -175,17 +170,7 @@ $$
 
 In general this differs from $\exp\{-\mathbb E[\Lambda_i(t;\vartheta)\mid D]\}$. By convexity, the former is at least the latter. For a new group, draws also integrate its new group effect; for an observed group they use its conditional posterior. A logistic model fitted independently at several horizons needs a joint horizon specification or an explicitly checked monotonicity restriction to ensure that cumulative default probabilities increase with the horizon. Its group labels alone do not impose that restriction.
 
-For competing terminal causes, each hazard has its own baseline, coefficients and named hierarchy. Event-free survival and cumulative incidence are:
-
-$$
-\begin{aligned}
-S_i(t)&=\exp\left[-\int_0^t\sum_k\lambda_{ik}(u)du\right],\\
-F_{ik}(t)&=\int_0^t S_i(u-)\lambda_{ik}(u)du,\\
-S_i(t)+\sum_k F_{ik}(t)&=1.
-\end{aligned}
-$$
-
-The final identity follows by integrating $-S_i'(t)=S_i(t)\sum_k\lambda_{ik}(t)$. Default probability with competing exits is $F_{iD}(\tau)$; a single-event probability is $1-S_i(\tau)$. Cure followed by re-default needs intermediate states. For multi-state intensity matrix $Q(t)$, off-diagonal entries are transition rates and each diagonal is minus its row sum. The transition matrix satisfies $\partial P(s,t)/\partial t=P(s,t)Q(t)$ with $P(s,s)=I$, preserving total probability.
+For competing terminal causes, each cause retains its own baseline, coefficients and sector, region and vintage effects. A1.8 derives event-free survival, cumulative incidence and probability conservation. For every joint posterior draw, compute those quantities from the complete set of cause-specific hazards before averaging across draws. Default risk is the default cumulative incidence when other terminal exits compete; a single-event model uses one minus survival. Cure followed by re-default uses the intermediate-state transition construction in A1.8. These calculations retain the dependencies represented by the joint posterior.
 
 ## A2.7 Expected loss, cash shortfall and capital
 
@@ -229,17 +214,14 @@ $$
 
 This assists optimisation of expectation constraints; feasibility is checked against the original problem. Hard eligibility remains in the action set. Strong duality requires further conditions.
 
-For lawful evaluation group $g$, defined positive decision $\hat Y=1$ and outcome $Y$, use:
+A1.9 defines the group true-positive and false-positive rates and their outcome conventions. Those definitions apply here at the registered decision time, population and horizon. The policy may add a selection-rate ratio:
 
 $$
-\begin{aligned}
-\operatorname{TPR}_g&=\Pr(\hat Y=1\mid Y=1,G=g),\\
-\operatorname{FPR}_g&=\Pr(\hat Y=1\mid Y=0,G=g),\\
-s_g&=\Pr(\hat Y=1\mid G=g).
-\end{aligned}
+s_g=\Pr(\widehat Y=1\mid G=g),\qquad
+\operatorname{SelectionRatio}_{g,g_0}=s_g/s_{g_0},\quad s_{g_0}>0.
 $$
 
-Equal opportunity compares TPRs; equalised odds compares both conditional rates. A selection-rate ratio is $s_g/s_{g_0}$ when its denominator is positive. Empirical rates divide the relevant event count by its eligible denominator. Selective labels and small groups affect uncertainty and interpretation.
+The positive decision and comparison group are declared with the rule. A zero denominator requires a defined review route. Each fairness constraint states whether it applies to a single decision, a cohort or a trajectory; sequential action histories and selective observation determine its estimation and uncertainty. The legal and model-validation process approves the evaluation population, lawful data basis and thresholds.
 
 ## A2.9 Clayton copula
 
@@ -304,75 +286,112 @@ $$
 
 Scales, correlations, smoothing parameters and latent variables receive their own validated updates. Sharing the same named hierarchy does not change the hazard likelihood into this logistic likelihood.
 
-When updating one coefficient block, retain the other predictor components as an offset $c$: $\eta=Z\theta+c$. The Gaussian precision stays $Z^{\mathsf T}\Omega Z+V_0^{-1}$, while its information vector becomes $Z^{\mathsf T}(\kappa-\Omega c)+V_0^{-1}m_0$. A sum-to-zero constraint can be implemented through a full-column-rank basis for the constrained effects; the design and Gaussian covariance are then expressed in that basis. For computation, factor the precision and solve linear systems instead of explicitly calculating its inverse. This retains the same distribution while making the numerical operations and residual checks explicit.
+When updating one coefficient block, retain the other predictor components as an offset $c$: $\eta=Z\theta+c$. The Gaussian precision stays $Z^{\mathsf T}\Omega Z+V_0^{-1}$, while its information vector becomes $Z^{\mathsf T}(\kappa-\Omega c)+V_0^{-1}m_0$. A sum-to-zero constraint can be implemented through a full-column-rank basis for the constrained effects; the design and Gaussian covariance are then expressed in that basis. For computation, factor the precision and solve linear systems instead of explicitly calculating its inverse. This retains the same distribution while making the numerical operations and residual checks explicit. The prior block is Gaussian in the baseline hierarchy of A2.5. If independent Student-t coefficient priors are registered instead, condition on their coefficient-specific mixing precisions from A2.11 and replace only those coefficients' prior-precision entries; the half-t group-scale updates remain separate.
 
-## A2.11 Half-t mixture and scale updates
+## A2.11 Student-t coefficient priors and half-t group-scale updates
 
-The scale prior follows [6], the normal–Gamma representation [7], and the inverse-Gamma auxiliary representation [8] (Result 5).
+The half-t scale prior follows [6], its normal–Gamma representation follows [7], and the inverse-Gamma auxiliary representation follows [8] (Result 5). This subsection keeps two distinct prior roles explicit. The baseline in A2.5 uses Gaussian fixed-effect coefficients and half-Student-t priors on positive group standard deviations. A Student-t prior on a signed coefficient is an optional, separately registered sensitivity model.
 
-Let $\lambda\sim\operatorname{Gamma}(\nu/2,\nu/2)$ and $q\mid\lambda\sim N(0,s_0^2/\lambda)$. Multiply their densities and integrate using $\int_0^\infty x^{a-1}e^{-bx}dx=\Gamma(a)b^{-a}$:
-
-$$
-\begin{aligned}
-p(q)&=\frac{(\nu/2)^{\nu/2}}{\Gamma(\nu/2)\sqrt{2\pi}\,s_0}
-\int_0^\infty
-\lambda^{(\nu+1)/2-1}
-\exp[-(\nu+q^2/s_0^2)\lambda/2]\,d\lambda\\
-&=\frac{\Gamma((\nu+1)/2)}
-{\Gamma(\nu/2)\sqrt{\nu\pi}\,s_0}
-\left(1+\frac{q^2}{\nu s_0^2}\right)^{-(\nu+1)/2}.
-\end{aligned}
-$$
-
-Taking $\sigma=|q|$ doubles the symmetric density on the positive half-line. For $\nu=3$:
-
-$$
-p(\sigma)=\frac4{\pi\sqrt3\,s_0}
-\left(1+\frac{\sigma^2}{3s_0^2}\right)^{-2},\qquad\sigma>0.
-$$
-
-The mixing Gamma shape and rate are both $3/2$. The half-t here is assigned to a hierarchy SD. Gaussian effects conditional on that SD give the pooling model.
-
-In this normal–Gamma representation, conditioning on $q$ gives $\lambda\mid q\sim\operatorname{Gamma}((\nu+1)/2,(\nu+q^2/s_0^2)/2)$. When $|q|$ is used as the standard deviation of $J$ centred Gaussian effects, its own conditional distribution also includes those effects' likelihood. For $\sigma>0$, its log kernel given $\lambda$ is
-
-$$
-\log p(\sigma\mid u,\lambda)
-=-J\log\sigma-\frac{\sum_j u_j^2}{2\sigma^2}
--\frac{\lambda\sigma^2}{2s_0^2}+\text{constant}.
-$$
-
-This specifies why the normal–Gamma identity by itself gives no Gaussian full conditional for the hierarchy standard deviation. The inverse-Gamma auxiliary representation below supplies a different route with explicit centred scale conditionals.
-
-An auxiliary representation also permits scale updates. Define inverse-Gamma density $p(x\mid a,b)\propto x^{-a-1}e^{-b/x}$:
-
-$$
-\sigma^2\mid a\sim\operatorname{IG}(\nu/2,\nu/a),
-\qquad a\sim\operatorname{IG}(1/2,1/s_0^2).
-$$
-
-Integration over $a$ gives $p(\sigma^2)\propto(\sigma^2)^{-1/2}(\sigma^2+\nu s_0^2)^{-(\nu+1)/2}$. Applying the Jacobian $2\sigma$ recovers the half-t density. For $J$ independent effects $u_j\mid\sigma\sim N(0,\sigma^2)$:
+**Student-t prior for a signed regression coefficient.** For coefficient $\beta_j$ and scale $s_{\beta j}>0$:
 
 $$
 \begin{aligned}
-\sigma^2\mid a,u&\sim\operatorname{IG}
-\left(\frac{\nu+J}{2},\frac\nu a+\frac12\sum_j u_j^2\right),\\
-a\mid\sigma^2&\sim\operatorname{IG}
-\left(\frac{\nu+1}{2},\frac\nu{\sigma^2}+\frac1{s_0^2}\right).
+\lambda_{\beta j}&\sim\operatorname{Gamma}(\nu/2,\nu/2),\qquad
+\beta_j\mid\lambda_{\beta j}\sim N(0,s_{\beta j}^2/\lambda_{\beta j}),\\
+p(\beta_j)&=\frac{\Gamma((\nu+1)/2)}{\Gamma(\nu/2)\sqrt{\nu\pi}\,s_{\beta j}}
+\left(1+\frac{\beta_j^2}{\nu s_{\beta j}^2}\right)^{-(\nu+1)/2},\\
+\lambda_{\beta j}\mid\beta_j&\sim\operatorname{Gamma}\left(
+\frac{\nu+1}{2},\frac{\nu+\beta_j^2/s_{\beta j}^2}{2}\right).
 \end{aligned}
 $$
 
-These conditionals use centred effects. A non-centred sampler conditions on different variables and uses the corresponding updates. Conditional conjugacy applies to specified blocks; the marginal posterior remains a mixture. Calibration, convergence, effective sample size and reference-fit agreement assess computational adequacy.
+Here Gamma is parameterised by shape and rate. Each $\lambda_{\beta j}$ belongs to its own coefficient. Conditional on these latent precisions, the Pólya–Gamma coefficient block remains Gaussian: in A2.10, the corresponding coefficient-prior precision entries become $\lambda_{\beta j}/s_{\beta j}^2$. This alternative changes the fixed-effect prior and must be named and validated as such. It does not follow from assigning a half-t prior to $\sigma_k$.
 
-For example, hold non-centred raw effects $z$, the Pólya–Gamma variables and other parameters fixed. Write the current group's contribution as $\sigma v$, where $v=Z_gz$ and $\eta=c+\sigma v$. Collecting powers in the augmented logistic likelihood gives
+**Half-Student-t prior for a positive group standard deviation.** For one hierarchy level with standard deviation $\sigma_k>0$ and prior scale $s_{0,k}>0$, let a signed auxiliary variable have the normal–Gamma mixture and set its absolute value to the group scale:
 
 $$
-p(\sigma\mid z,\omega,\ldots)\propto
-\mathbf1\{\sigma>0\}
-\exp\left[-\frac{\sigma^2}{2}v^{\mathsf T}\Omega v
-+\sigma v^{\mathsf T}(\kappa-\Omega c)\right]p(\sigma).
+\lambda_{\sigma k}\sim\operatorname{Gamma}(\nu/2,\nu/2),\qquad
+\widetilde{\sigma}_k\mid\lambda_{\sigma k}\sim N(0,s_{0,k}^2/\lambda_{\sigma k}),\qquad
+\sigma_k=|\widetilde{\sigma}_k|.
 $$
 
-Here $p(\sigma)$ is the selected positive-scale prior or its conditional auxiliary form. The centred inverse-Gamma update cannot be reused while holding $z$ fixed. A sampler may use the correct centred Gibbs blocks, a validated non-centred method, or an explicitly derived interweaving scheme; effective sample size per elapsed second determines whether the extra representation helps the registered workload.
+Integrating out $\lambda_{\sigma k}$ gives the half-Student-t density
+
+$$
+p(\sigma_k)=\frac{2\Gamma((\nu+1)/2)}{\Gamma(\nu/2)\sqrt{\nu\pi}\,s_{0,k}}
+\left(1+\frac{\sigma_k^2}{\nu s_{0,k}^2}\right)^{-(\nu+1)/2},\qquad\sigma_k>0.
+$$
+
+For $\nu=3$, this reduces to
+
+$$
+p(\sigma_k)=\frac{4}{\pi\sqrt{3}\,s_{0,k}}
+\left(1+\frac{\sigma_k^2}{3s_{0,k}^2}\right)^{-2},\qquad\sigma_k>0.
+$$
+
+The Gamma shape and rate are both $3/2$ when $\nu=3$. The scale $\sigma_k$ controls pooling of the distinct, conditionally Gaussian group effects, for example $u_{ks}\mid\sigma_k\sim N(0,\sigma_k^2)$. It is positive and is not a signed regression coefficient. The mixing precision $\lambda_{\sigma k}$ is specific to this group-scale representation; it is not any of the coefficient-specific $\lambda_{\beta j}$ values.
+
+Conditioning on the positive scale gives the mixture update
+
+$$
+\lambda_{\sigma k}\mid\sigma_k\sim\operatorname{Gamma}\left(
+\frac{\nu+1}{2},\frac{\nu+\sigma_k^2/s_{0,k}^2}{2}\right).
+$$
+
+For a direct update of $\sigma_k$ given centred effects $u_{ks}$ and $\lambda_{\sigma k}$, the log kernel includes both the Gaussian effects' normalising factor and the scale mixture:
+
+$$
+\log p(\sigma_k\mid u,\lambda_{\sigma k})
+=-J_k\log\sigma_k-\frac{\sum_s u_{ks}^2}{2\sigma_k^2}
+-\frac{\lambda_{\sigma k}\sigma_k^2}{2s_{0,k}^2}+\text{constant},\qquad\sigma_k>0.
+$$
+
+This is not the same update as $\lambda_{\sigma k}\mid\sigma_k$, and the normal–Gamma representation alone does not give a Gaussian full conditional for the group standard deviation.
+
+**Centered inverse-Gamma auxiliary update for the half-t scale.** Define $\operatorname{IG}(a,b)$ by density proportional to $x^{-a-1}\exp(-b/x)$, with shape $a$ and scale parameter $b$. An alternative representation of the same half-Student-t prior is
+
+$$
+\sigma_k^2\mid a_k\sim\operatorname{IG}(\nu/2,\nu/a_k),\qquad
+a_k\sim\operatorname{IG}(1/2,1/s_{0,k}^2).
+$$
+
+Integrating over $a_k$ gives $p(\sigma_k^2)\propto(\sigma_k^2)^{-1/2}(\sigma_k^2+\nu s_{0,k}^2)^{-(\nu+1)/2}$. Applying the Jacobian $2\sigma_k$ recovers the half-t density above. For $J_k$ independent centred effects $u_{ks}\mid\sigma_k\sim N(0,\sigma_k^2)$, the Gibbs conditionals are
+
+$$
+\begin{aligned}
+\sigma_k^2\mid a_k,u&\sim\operatorname{IG}\left(
+\frac{\nu+J_k}{2},\frac{\nu}{a_k}+\frac12\sum_s u_{ks}^2\right),\\
+a_k\mid\sigma_k^2&\sim\operatorname{IG}\left(
+\frac{\nu+1}{2},\frac{\nu}{\sigma_k^2}+\frac1{s_{0,k}^2}\right).
+\end{aligned}
+$$
+
+These inverse-Gamma updates apply to centred effects. With non-centred effects $u=\sigma_k z$, holding $z$ fixed changes the conditional. For a group contribution $\sigma_k v$, where $v=Z_gz$ and $\eta=c+\sigma_kv$, the augmented logistic likelihood contributes
+
+$$
+p(\sigma_k\mid z,\omega,\ldots)\propto
+\mathbf1\{\sigma_k>0\}
+\exp\left[-\frac{\sigma_k^2}{2}v^{\mathsf T}\Omega v
++\sigma_kv^{\mathsf T}(\kappa-\Omega c)\right]p(\sigma_k).
+$$
+
+Conditioning on the normal–Gamma scale auxiliary variable gives an explicit non-centred block. Define
+
+$$
+q_{\sigma k}=v^{\mathsf T}\Omega v+\lambda_{\sigma k}/s_{0,k}^2,
+\qquad m_{\sigma k}=q_{\sigma k}^{-1}v^{\mathsf T}(\kappa-\Omega c).
+$$
+
+Completing the square yields
+
+$$
+\sigma_k\mid z,\omega,\lambda_{\sigma k},D
+\sim N(m_{\sigma k},q_{\sigma k}^{-1})\ \text{truncated to }(0,\infty).
+$$
+
+This block holds raw non-centred effects $z$ fixed. The centred inverse-Gamma block holds realised effects $u$ fixed. The two auxiliary constructions are alternative implementations of the declared prior; each sampler follows its own consistent conditioning scheme. Integrating Gaussian group effects over a shared half-t standard deviation gives a different mixture from independent Student-t priors on signed fixed coefficients.
+
+Here $p(\sigma_k)$ is the declared half-t scale prior (or its correctly conditioned auxiliary form). A centred inverse-Gamma update cannot be reused while holding $z$ fixed. Use validated centred Gibbs blocks, a correctly derived non-centred method, or an explicitly derived interweaving scheme. Compare convergence, effective sample size and effective sample size per elapsed second under the registered workload. Across all representations, coefficient-prior and group-scale-prior families, scales and parameterisations are recorded independently; conditional conjugacy applies to the stated blocks while the marginal posterior remains a mixture.
 
 ## A2.12 Limit boundary and human-review uncertainty
 
@@ -433,22 +452,7 @@ The law of total variance decomposes predictive variance into $\mathbb E[\operat
 
 ## A2.13 Linear UCB and logistic Thompson sampling
 
-For $r_j=x_j^\mathsf T\theta+\varepsilon_j$, minimise squared residuals plus $\lambda\|\theta\|^2$. Differentiation gives ridge normal equations:
-
-$$
-A_t=\lambda I+\sum_{j<t}x_jx_j^\mathsf T,\quad
-b_t=\sum_{j<t}x_jr_j,\quad
-\hat\theta_t=A_t^{-1}b_t.
-$$
-
-Suppose a validated confidence ellipsoid is $(\theta-\hat\theta_t)^\mathsf TA_t(\theta-\hat\theta_t)\le\alpha_t^2$. Cauchy–Schwarz after transformation by $A_t^{1/2}$ gives:
-
-$$
-\max_{\theta\text{ in ellipsoid}}x^\mathsf T\theta
-=x^\mathsf T\hat\theta_t+\alpha_t\sqrt{x^\mathsf TA_t^{-1}x}.
-$$
-
-The coefficient $\alpha_t$ depends on noise assumptions and coverage. For hierarchical logistic Thompson sampling, draw the full expanded coefficient vector:
+A1.4 derives the ridge estimate, confidence ellipsoid and Linear UCB action score. That construction supplies the linear benchmark here. For hierarchical logistic Thompson sampling, draw the full expanded coefficient vector:
 
 $$
 \tilde\theta_t\sim p(\theta\mid D_t),\qquad
@@ -491,21 +495,7 @@ For each ordering, the sum of players' successive contributions telescopes to $v
 
 ## A2.15 Off-policy evaluation and pilot arithmetic
 
-When behaviour propensity $e(a\mid x)>0$ wherever target $\pi(a\mid x)>0$, conditional expectation gives the importance-weight identity:
-
-$$
-\mathbb E\left[\frac{\pi(A\mid X)}{e(A\mid X)}R\mid X\right]
-=\sum_a\pi(a\mid X)\mathbb E[R\mid X,A=a].
-$$
-
-Adding an outcome model $m$ gives the doubly robust score:
-
-$$
-\psi=\sum_a\pi(a\mid X)m(X,a)
-+\frac{\pi(A\mid X)}{e(A\mid X)}[R-m(X,A)].
-$$
-
-Correct propensities cancel outcome-model error in conditional expectation. A correct outcome model makes the residual mean zero. Causal interpretation also requires consistency, exchangeability and support. Cross-fitting and design-appropriate uncertainty estimation address fitted nuisance models and adaptive data.
+A1.5–A1.6 derive the one-step importance-weight identity and doubly robust estimator. Their consistency, exchangeability and support conditions apply at each sequential decision. This subsection extends that evaluation to full action histories.
 
 For trajectories, define $\rho_t=\prod_{j=0}^t\pi(A_j\mid H_j)/e(A_j\mid H_j)$ and $\hat V_t(H_t)=\sum_a\pi(a\mid H_t)\hat Q_t(H_t,a)$. A sequential doubly robust score is:
 
@@ -521,8 +511,8 @@ In the illustrative 100-case pilot, each arm contains 50 cases. Day-60 rates are
 
 ## A2.16 Sources and implementation status
 
-Article 2 references [17], [24] support doubly robust evaluation; [2] fairness definitions; [1] ECL interpretation; [3], [4], [5] dependence, capital context and Pólya–Gamma inference; and [6], [7], [14], [15], [16] MCTS, graph attribution, Thompson sampling and scale priors. The auxiliary half-t representation above is checked by direct integration under the stated inverse-Gamma convention. The appendix expands the article's mathematical specification; fitted diagnostics, local treatment effects and deployed-system evidence are separate validation deliverables.
+Each subsection identifies its methodological sources in Article 2's reference list. The auxiliary half-t representation above is checked by direct integration under the stated inverse-Gamma convention. The appendix expands the article's mathematical specification; fitted diagnostics, local treatment effects and deployed-system evidence are separate validation deliverables.
 
 ### Further methodological reading
 
-Additional sources retained from the article bibliography: [25].
+Additional sources retained from the article bibliography: [26].
