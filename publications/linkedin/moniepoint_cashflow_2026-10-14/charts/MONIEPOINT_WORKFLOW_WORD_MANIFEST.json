@@ -1,0 +1,231 @@
+{
+  "overview": {
+    "image": "MONIEPOINT_GOVERNED_WORKFLOW_OVERVIEW.png",
+    "recommended_width_inches": 6.3,
+    "caption": "Governed cash-flow credit workflow. The overview connects the five articles; detailed panels distinguish current synthetic case components from research interfaces."
+  },
+  "segments": [
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_01_01.png",
+      "panel": 1,
+      "segment": 1,
+      "title": "Source permissions and the dated case record",
+      "caption": "Workflow 1, segment 1 of 4. Source permissions and the dated case record. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "portrait",
+      "recommended_width_inches": 4.72,
+      "pixel_width": 730,
+      "pixel_height": 1275,
+      "source": "MONIEPOINT_WORKFLOW_01_EVIDENCE_AND_CALCULATIONS.png",
+      "source_crop": [
+        24,
+        0,
+        746,
+        1150
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_01_02.png",
+      "panel": 1,
+      "segment": 2,
+      "title": "Usable evidence and transaction cash provenance",
+      "caption": "Workflow 1, segment 2 of 4. Usable evidence and transaction cash provenance. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "portrait",
+      "recommended_width_inches": 5.06,
+      "pixel_width": 730,
+      "pixel_height": 1190,
+      "source": "MONIEPOINT_WORKFLOW_01_EVIDENCE_AND_CALCULATIONS.png",
+      "source_crop": [
+        76,
+        1125,
+        746,
+        2190
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_01_03.png",
+      "panel": 1,
+      "segment": 3,
+      "title": "Cash calculations, uncertainty and challenge",
+      "caption": "Workflow 1, segment 3 of 4. Cash calculations, uncertainty and challenge. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "portrait",
+      "recommended_width_inches": 6.17,
+      "pixel_width": 741,
+      "pixel_height": 990,
+      "source": "MONIEPOINT_WORKFLOW_01_EVIDENCE_AND_CALCULATIONS.png",
+      "source_crop": [
+        5,
+        2165,
+        746,
+        3030
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_01_04.png",
+      "panel": 1,
+      "segment": 4,
+      "title": "Correction loop and selection-support assessment",
+      "caption": "Workflow 1, segment 4 of 4. Correction loop and selection-support assessment. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "portrait",
+      "recommended_width_inches": 6.3,
+      "pixel_width": 818,
+      "pixel_height": 723,
+      "source": "MONIEPOINT_WORKFLOW_01_EVIDENCE_AND_CALCULATIONS.png",
+      "source_crop": [
+        76,
+        3025,
+        894,
+        3623
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_02_01.png",
+      "panel": 2,
+      "segment": 1,
+      "title": "Versioned policy and registered risk extensions",
+      "caption": "Workflow 2, segment 1 of 5. Versioned policy and registered risk extensions. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "portrait",
+      "recommended_width_inches": 5.68,
+      "pixel_width": 730,
+      "pixel_height": 1060,
+      "source": "MONIEPOINT_WORKFLOW_02_APPROVAL_AND_EXECUTION.png",
+      "source_crop": [
+        281,
+        0,
+        987,
+        935
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_02_02.png",
+      "panel": 2,
+      "segment": 2,
+      "title": "Eligible experimental allocation and reviewer packet",
+      "caption": "Workflow 2, segment 2 of 5. Eligible experimental allocation and reviewer packet. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "portrait",
+      "recommended_width_inches": 6.3,
+      "pixel_width": 930,
+      "pixel_height": 1205,
+      "source": "MONIEPOINT_WORKFLOW_02_APPROVAL_AND_EXECUTION.png",
+      "source_crop": [
+        224,
+        915,
+        1154,
+        1995
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_02_03.png",
+      "panel": 2,
+      "segment": 3,
+      "title": "Human review and independent checker",
+      "caption": "Workflow 2, segment 3 of 5. Human review and independent checker. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "landscape",
+      "recommended_width_inches": 7.94,
+      "pixel_width": 1224,
+      "pixel_height": 1010,
+      "source": "MONIEPOINT_WORKFLOW_02_APPROVAL_AND_EXECUTION.png",
+      "source_crop": [
+        3,
+        1975,
+        1227,
+        2860
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_02_04.png",
+      "panel": 2,
+      "segment": 4,
+      "title": "Expiring instruction and current-conditions gate",
+      "caption": "Workflow 2, segment 4 of 5. Expiring instruction and current-conditions gate. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "portrait",
+      "recommended_width_inches": 6.3,
+      "pixel_width": 730,
+      "pixel_height": 895,
+      "source": "MONIEPOINT_WORKFLOW_02_APPROVAL_AND_EXECUTION.png",
+      "source_crop": [
+        752,
+        2840,
+        1160,
+        3610
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_02_05.png",
+      "panel": 2,
+      "segment": 5,
+      "title": "Execution receipt and reconciled loan ledger",
+      "caption": "Workflow 2, segment 5 of 5. Execution receipt and reconciled loan ledger. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "portrait",
+      "recommended_width_inches": 6.3,
+      "pixel_width": 730,
+      "pixel_height": 863,
+      "source": "MONIEPOINT_WORKFLOW_02_APPROVAL_AND_EXECUTION.png",
+      "source_crop": [
+        827,
+        3590,
+        1113,
+        4328
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_03_01.png",
+      "panel": 3,
+      "segment": 1,
+      "title": "Cash-calendar monitoring and signal classification",
+      "caption": "Workflow 3, segment 1 of 3. Cash-calendar monitoring and signal classification. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "landscape",
+      "recommended_width_inches": 6.51,
+      "pixel_width": 1138,
+      "pixel_height": 1145,
+      "source": "MONIEPOINT_WORKFLOW_03_MONITORING_AND_LEARNING.png",
+      "source_crop": [
+        64,
+        0,
+        1202,
+        1020
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_03_02.png",
+      "panel": 3,
+      "segment": 2,
+      "title": "Evidence correction, servicing and mature outcomes",
+      "caption": "Workflow 3, segment 2 of 3. Evidence correction, servicing and mature outcomes. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "landscape",
+      "recommended_width_inches": 9.45,
+      "pixel_width": 1414,
+      "pixel_height": 980,
+      "source": "MONIEPOINT_WORKFLOW_03_MONITORING_AND_LEARNING.png",
+      "source_crop": [
+        3,
+        935,
+        1417,
+        1790
+      ]
+    },
+    {
+      "image": "MONIEPOINT_WORD_WORKFLOW_03_03.png",
+      "panel": 3,
+      "segment": 3,
+      "title": "Portfolio authority and controlled model release",
+      "caption": "Workflow 3, segment 3 of 3. Portfolio authority and controlled model release. Adjoining connector bands overlap; complete nodes are retained.",
+      "orientation": "portrait",
+      "recommended_width_inches": 6.3,
+      "pixel_width": 850,
+      "pixel_height": 747,
+      "source": "MONIEPOINT_WORKFLOW_03_MONITORING_AND_LEARNING.png",
+      "source_crop": [
+        567,
+        1770,
+        1417,
+        2392
+      ]
+    }
+  ],
+  "notes": [
+    "All original full PNG/SVG/Mermaid files remain unchanged.",
+    "Segments use overlapping connector bands and retain complete nodes.",
+    "Use the supplied orientation and width to preserve readable text within the page.",
+    "The compact overview belongs in the article body; detailed segments form a workflow supplement."
+  ]
+}

@@ -1,0 +1,31 @@
+flowchart TB
+  TITLE["PANEL 2 — POLICY, HUMAN AUTHORITY AND EXECUTION"]
+  TITLE --> IN["FROM PANEL 1<br/>Versioned evidence, cash paths and support labels"]
+  IN --> POLICY["Versioned policy rules and review routes<br/>Hard eligibility and mandate controls<br/>Affordability thresholds and permitted exceptions<br/>Review indicators with uncertainty and alternatives"]
+  RISK["RESEARCH EXTENSION — ARTICLES 2 AND 5<br/>Risk credible interval and cap-exceedance probability<br/>Identified action-effect posterior comparison"] -. Registered output .-> POLICY
+  POLICY --> EXP{"Approved offer experiment<br/>applies to this case?"}
+  EXP -->|Yes| OFFER["RESEARCH INTERFACE — ARTICLE 1<br/>Fixed pilot or validated UCB, Thompson or softmax policy<br/>Record eligible set, allocation probability and assignment"]
+  EXP -->|Standard process| PACK["Reviewer packet<br/>Cash bridge, evidence cutoff and source links<br/>Uncertainty, alternatives, assumptions and versions"]
+  OFFER --> PACK
+  PACK --> HUMAN{"Credit officer review<br/>Inspect evidence and<br/>record rationale"}
+  HUMAN -->|Request records| RETURN["RETURN TO PANEL 1<br/>Customer clarification or evidence correction"]
+  HUMAN -->|Amend terms| POLICY
+  HUMAN -->|Decline or defer| REASON["Explain decision and next evidence needed<br/>Correction and reconsideration route"]
+  HUMAN -->|Approve within mandate| GATE{"Second approval<br/>required?"}
+  GATE -->|Yes| CHECK["Independent checker<br/>Mandate, conditions and proposal version"]
+  CHECK -->|Return for revision| HUMAN
+  CHECK -->|Approve| INSTR["Expiring approved instruction<br/>Action ID, amount, schedule, conditions and authority<br/>Customer acceptance where required"]
+  GATE -->|No| INSTR
+  INSTR --> VALID{"Current evidence,<br/>conditions and approval<br/>still valid?"}
+  VALID -->|Refresh required| PACK
+  VALID -->|Valid| EXEC["Separate execution service<br/>Unique action ID and duplicate-safe retry"]
+  EXEC --> RECEIPT["Execution receipt and core loan ledger<br/>Submission, delivery, settlement, due and paid amounts<br/>Reconcile failures, reversals and duplicates"]
+  RECEIPT --> NEXT["CONTINUE TO PANEL 3<br/>Monitor actual delivery and realised cash"]
+  classDef calc fill:#EAF2F8,stroke:#315D7C,color:#112638,stroke-width:1.5px;
+  classDef human fill:#FFF4D6,stroke:#8D6B17,color:#302812,stroke-width:1.5px;
+  classDef research fill:#F5F0FF,stroke:#6D5594,color:#302149,stroke-width:2px,stroke-dasharray:6 4;
+  classDef control fill:#F0F2F4,stroke:#5D6872,color:#1E2933;
+  class RISK,OFFER research;
+  class HUMAN,CHECK,REASON human;
+  class TITLE,INSTR,VALID,NEXT,RETURN control;
+  class RECEIPT,EXEC calc;

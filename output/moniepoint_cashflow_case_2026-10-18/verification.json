@@ -1,0 +1,63 @@
+{
+  "model": "Synthetic Moniepoint application of Underwrite for Collection",
+  "currency": "KES",
+  "checks": [
+    {
+      "scenario": "baseline",
+      "cash_error": 0.0,
+      "contribution_error": -2.3283064365386963e-10
+    },
+    {
+      "scenario": "duplicate_feed",
+      "cash_error": 0.0,
+      "contribution_error": -2.3283064365386963e-10
+    },
+    {
+      "scenario": "internal_transfers",
+      "cash_error": 0.0,
+      "contribution_error": -2.3283064365386963e-10
+    },
+    {
+      "scenario": "missing_channel",
+      "cash_error": 0.0,
+      "contribution_error": 0.0
+    },
+    {
+      "scenario": "late_classification",
+      "cash_error": 0.0,
+      "contribution_error": 0.0
+    },
+    {
+      "scenario": "delayed_settlement",
+      "cash_error": 0.0,
+      "contribution_error": -2.419255906715989e-10
+    },
+    {
+      "scenario": "margin_stress",
+      "cash_error": 0.0,
+      "contribution_error": -1.673470251262188e-10
+    },
+    {
+      "scenario": "sustained_stress",
+      "cash_error": 0.0,
+      "contribution_error": -3.5288394428789616e-10
+    },
+    {
+      "scenario": "reviewed_reschedule",
+      "cash_error": 0.0,
+      "contribution_error": -2.5011104298755527e-10
+    },
+    {
+      "scenario": "post_disbursement_feed_gap",
+      "cash_error": 0.0,
+      "contribution_error": -2.3283064365386963e-10
+    }
+  ],
+  "checks_pass": true,
+  "sha256": {
+    "research_lab/moniepoint_cashflow_case/model.py": "1d5f80303ac215459e1ed411b4552aa022d02dfb8eacb240685382982da2274b",
+    "research_lab/moniepoint_cashflow_case/run_case.py": "980310cdb734dc251e668a6e59992cb36d78756cd5b11cd7659259272a1b9ea1",
+    "research_lab/moniepoint_cashflow_case/test_model.py": "0ed7bad6a1a630467f2f3d0ab899a30a12203db31ad2edba7598a51b3f9488b2",
+    "output/moniepoint_cashflow_case_2026-10-18/inputs.json": "0901a528c3b27213e95d4b0971f01124485a514e6b25436db3acb1b896ed10d2"
+  }
+}

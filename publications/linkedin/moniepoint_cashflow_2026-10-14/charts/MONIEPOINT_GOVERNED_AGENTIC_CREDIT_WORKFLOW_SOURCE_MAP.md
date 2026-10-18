@@ -1,0 +1,22 @@
+# Moniepoint governed agentic credit workflow source map
+
+The figure applies the five-article causal credit series to the Moniepoint cash-flow article. It is a proposed architecture and maps conceptual services alongside the synthetic case implementation. Article numbers refer to the five-article series; they do not replace the Moniepoint article's numbered bibliography.
+
+| Source article and section | Contribution to the flowchart |
+|---|---|
+| Article 1 — Testing Credit Offers for Collectability: “Selection, take-up and reject inference”; “Off-policy evaluation and the limits of propensities”; “A practical implementation sequence” | Eligibility before allocation; an optional approved experiment branch; separate assignment, delivery, take-up and observed outcome; logged allocation probabilities and benchmark evaluation. |
+| Article 2 — From a One-Step Bandit to Sequential Credit Control: “Bayesian decision boundaries turn predictions into limit-review evidence”; “A sequence, a ledger and an evaluation plan”; “Boltzmann allocation among approved actions” | Evidence as known at the decision time; separate credible and predictive uncertainty; review of limits and payment timing; permitted sequential interventions and human review. |
+| Article 3 — Who Gets a Repayment Label?: “Model the selection process, then test its assumptions”; “Generate evidence through a guarded offer design”; “A staged evidence program” | Selection and missing-outcome diagnostics; overlap and support labels; sensitivity analysis; evaluation tied to observed assignments and outcomes. |
+| Article 4 — Can Reinforcement Learning Help Run a Bank’s Balance Sheet?: “A practical sequence for AI and Treasury research”; “Diagram 1: from market data to approved ALCO action” | Reconciled portfolio cash and drawings feed funding and liquidity scenarios; Treasury and ALCO retain a separate mandate from individual credit decisions. |
+| Article 5 — Bringing the Methods into the Bank: “Give each analytical tool a defined operating contract”; “Show the reviewer three kinds of uncertainty”; “Turn an analysis into a meaningful human decision”; “Follow one hypothetical case from evidence to settlement”; “Test the whole decision service before expanding use”; “Learn from outcomes, corrections and human decisions” | Scoped agents call registered calculations; reviewer packet and maker–checker gates; expiring instructions, separate execution receipts and reconciliation; customer correction, audit, validation, versioned release and rollback. |
+
+Source folder: [five-article causal credit series](https://github.com/TheAlchemistNerd/underwrite-for-collection/tree/main/series/publications/linkedin/2026-10-08_causal_credit_series).
+
+The cash-flow engine computes amounts and dates. Registered statistical services compute uncertainty. Language-model agents retrieve, classify provisionally, check and explain evidence. Policy services prepare eligible choices and review routes. Authorised people approve the resulting instruction. Source classification, assignment, approval, execution and outcome are retained as distinct events.
+
+Three uncertainty displays have distinct roles: posterior uncertainty about a risk or mean parameter; predictive uncertainty about future realised cash; and uncertainty about an action-effect contrast when supported by an identified comparison. Article 3 support checks accompany these outputs. In a deployed institution, model registrations and approved policy parameters determine which services and branches are active.
+
+
+## Deterministic checks within the governed workflow
+
+Reconciliation, dated obligations, source coverage and policy limits provide a reproducible baseline. Rolling averages update with arriving data while retaining an explicit formula, window and evidence cutoff. The current case implements a trailing 30-day residual-cash repeat-review gate and cash-floor checks; seven- or ninety-day measures and seasonal challengers are specified extensions. Descriptive indicators, hard eligibility rules, approved exception routes and statistical uncertainty have distinct roles. Agents can investigate the evidence behind an alert and assemble alternatives. A versioned policy service and authorised reviewer determine the resulting instruction and retain the reasons for any permitted exception. This is a design argument linking the numerical-service and review contracts in Article 5 to the evidence and decision methods in Articles 1–4.

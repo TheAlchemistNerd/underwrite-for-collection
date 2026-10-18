@@ -1,0 +1,77 @@
+%% Moniepoint application of the five-article causal credit series.
+flowchart TB
+  subgraph IN[1  Evidence intake and case identity]
+    SRC["Wallet, bank, POS, bureau and customer records"] --> CASE["Case and correlation ID<br/>Borrower, entity, facility and evidence cutoff"]
+    CASE --> INTAKE["Intake agent<br/>Purpose, source permission, consent where applicable<br/>Integrity, dates, account links and channel coverage"]
+    INTAKE --> COMPLETE{"Evidence usable<br/>for this purpose?"}
+    COMPLETE -->|Clarify or correct| FIX["Request records or customer correction<br/>Record owner, reason and unresolved facts"]
+    FIX --> INTAKE
+  end
+  subgraph EV[2  Governed evidence and numerical analysis]
+    PROV["Provenance agent proposes transaction labels<br/>Sales, transfers, borrowing, refunds and reversals<br/>Source event, confidence and known-at timestamp"] --> CASH["Versioned cash-flow engine<br/>Deduplicate and reconcile receipts, costs and obligations<br/>Forecast dated cash and proposed repayments"]
+    CASH --> UNC["Synthetic case statistical service<br/>Cash-mean credible and future-cash predictive intervals<br/>Shortfall probability and uncertainty review"]
+    CASH --> RULES["Deterministic checks and indicators<br/>Cash reconciliation, coverage and dated arrears<br/>Current case: trailing 30-day cash total and cash floor<br/>Versioned rolling-average indicators for extension"]
+    RULES --> CHAL
+    UNC --> CHAL["Challenger and numerical verifier<br/>Alternative labels, missing channels, stress and concentration<br/>Check values against source and calculation receipts"]
+    CHAL --> SUPPORT["RESEARCH INTERFACE — Article 3<br/>Evidence support and selection analysis<br/>Funded versus declined coverage, missing outcomes<br/>Overlap, prior sensitivity and extrapolation labels"]
+  end
+  COMPLETE -->|Usable snapshot| PROV
+  CHAL -. Material evidence gap .-> FIX
+  subgraph DEC[3  Eligible actions and meaningful human decision]
+    POLICY["Versioned policy rules and review routes<br/>Affordability, contract, hardship, exposure and mandate checks<br/>Feasible terms, alternatives, uncertainty and review route"] --> EXP{"Approved offer experiment<br/>applies to this case?"}
+    EXP -->|Yes| OFFER["RESEARCH INTERFACE — Article 1 offer service<br/>Fixed pilot or validated UCB, Thompson or softmax policy<br/>Log eligible set, assignment probability and proposal"]
+    EXP -->|Standard process| PACK["Review packet<br/>Cash bridge, source links, cutoff, assumptions and versions<br/>Risk, cash and identified action-effect uncertainty"]
+    OFFER --> PACK
+    PACK --> HUMAN{"Credit officer review<br/>Inspect evidence and<br/>record rationale"}
+    HUMAN -->|Request records| FIX
+    HUMAN -->|Amend terms| POLICY
+    HUMAN -->|Decline or defer| REASON["Explain decision and next evidence needed<br/>Customer correction and reconsideration route"]
+    HUMAN -->|Approve within mandate| CHECK{"Second approval<br/>required?"}
+    CHECK -->|Yes| CHECKER["Independent checker<br/>Validate mandate, conditions and proposal version"]
+    CHECKER -->|Return for revision| HUMAN
+  end
+  SUPPORT --> POLICY
+  RISK["RESEARCH EXTENSION — Articles 2 and 5<br/>Risk credible interval and cap-exceedance probability<br/>Identified action-effect posterior comparison"] -. Registered model outputs .-> POLICY
+  class RISK research;
+
+  subgraph EXEC[4  Authorised execution and reconciled loan record]
+    INSTR["Expiring approved instruction<br/>Case, action, amount, schedule, conditions and authority<br/>Customer acceptance where required"] --> EXECGATE{"Current evidence,<br/>conditions and approval<br/>still valid?"}
+    EXECGATE -->|Refresh required| PACK
+    EXECGATE -->|Valid| RUN["Separate execution service<br/>Unique action ID and duplicate-safe retry<br/>Disbursement or approved servicing action"]
+    RUN --> RECEIPT["Execution receipt and core loan ledger<br/>Submission, delivery, settlement, due and paid amounts<br/>Reconcile failed, reversed and duplicate transactions"]
+  end
+  CHECK -->|No| INSTR
+  CHECKER -->|Approve| INSTR
+  subgraph MON[5  Monitoring and sequential servicing]
+    MONITOR["Monitor cash, payments and customer circumstances<br/>Compare with approved cash calendar"] --> SIGNAL{"Changed inflows or<br/>missed payment?"}
+    SIGNAL -->|Coverage or allocation issue| REPAIR["Check missing channel, migration, delay or reversal<br/>Repair evidence and reconcile payment"]
+    REPAIR --> PROV
+    SIGNAL -->|Verified change| SERVICE["RESEARCH INTERFACE — Article 2 sequential service<br/>History or belief state, permitted actions and long-term value<br/>Support, payment-date review or restructuring referral"]
+    SERVICE --> REVIEW["Customer conversation and authorised servicing review<br/>Inspect uncertainty, alternatives and action comparison<br/>Approve action or request further evidence"]
+    REVIEW --> INSTR
+    SIGNAL -->|Routine observation| OUTCOME["Mature outcomes<br/>Cash retained, repayment, arrears, cure, recovery and costs<br/>Complaints, overrides and actual treatment delivery"]
+  end
+  RECEIPT --> MONITOR
+  RECEIPT --> OUTCOME
+  subgraph LEARN[6  Portfolio interface and controlled learning]
+    OUTCOME --> TREAS["RESEARCH INTERFACE — Article 4 portfolio cash interface<br/>Reconciled collections, expected drawings and timing<br/>Funding, liquidity and risk scenarios"]
+    TREAS --> ALCO["Treasury, Finance and ALCO review<br/>Aggregate funding and pricing decisions<br/>Separate mandate and execution authority"]
+    OUTCOME --> EVAL["Articles 1–3 evaluation<br/>Assignment, take-up, actual action and mature outcome<br/>Overlap, uncertainty, customer outcomes and benchmark"]
+    EVAL --> RELEASE["Article 5 release control<br/>Independent validation, replay, shadow and bounded pilot<br/>Approved version, expiry, fallback and rollback"]
+  end
+  RELEASE -. Approved model or policy release .-> POLICY
+  ALCO -. Approved portfolio constraints .-> POLICY
+  GOV["REFERENCE ARCHITECTURE — ARTICLE 5 CONTROLS<br/>Bank-controlled tools and access • purpose-bound minimum data • pseudonymous case IDs<br/>Role separation • source and model versions • event IDs, timestamps and tool receipts<br/>Approval and execution audit • retention rules • correction and complaint handling"]
+  GOV -. Applies throughout .-> CASE
+  classDef calc fill:#EAF2F8,stroke:#315D7C,color:#112638,stroke-width:1.5px;
+  classDef human fill:#FFF4D6,stroke:#8D6B17,color:#302812,stroke-width:1.5px;
+  classDef controls fill:#F0F2F4,stroke:#5D6872,color:#1E2933,stroke-width:1.5px;
+  classDef stage fill:#FFFFFF,stroke:#7C8B97,color:#132B3B;
+  class CASH,RULES,UNC,CHAL,SUPPORT,OFFER,SERVICE,TREAS,EVAL calc;
+  class HUMAN,CHECKER,REVIEW,ALCO,REASON human;
+  class GOV,RELEASE,INSTR,EXECGATE controls;
+
+  classDef research fill:#F5F0FF,stroke:#6D5594,color:#302149,stroke-width:2px,stroke-dasharray:6 4;
+  class SUPPORT,OFFER,SERVICE,TREAS,EVAL,RELEASE research;
+
+

@@ -1,0 +1,4 @@
+loan_id,number,original_due,approved_due,principal_due,fee_due,principal_paid,fee_paid
+L01,1,30,30,10000.0,1000.0,10000.0,1000.0
+L01,2,60,60,10000.0,1000.0,0.0,0.0
+L01,3,90,90,10000.0,1000.0,0.0,0.0

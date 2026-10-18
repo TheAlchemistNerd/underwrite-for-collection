@@ -1,0 +1,7 @@
+source,month,start_day,end_day,complete,known_day
+bank,0,1,30,True,90
+wallet,0,1,30,True,90
+bank,1,31,60,True,90
+wallet,1,31,60,True,90
+bank,2,61,90,True,90
+wallet,2,61,90,True,90

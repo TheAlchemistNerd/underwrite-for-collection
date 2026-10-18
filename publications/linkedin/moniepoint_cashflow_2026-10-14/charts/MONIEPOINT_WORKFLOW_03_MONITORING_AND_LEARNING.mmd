@@ -1,0 +1,28 @@
+flowchart TB
+  TITLE["PANEL 3 — MONITORING, SERVICING AND GOVERNED LEARNING"]
+  TITLE --> IN["FROM PANEL 2<br/>Approved terms, actual execution and reconciled ledger"]
+  IN --> MON["Monitor dated receipts, payments and circumstances<br/>Compare with the approved cash calendar"]
+  MON --> GATE{"Changed inflows or<br/>missed payment?"}
+  GATE -->|Coverage or allocation issue| FIX["Check missing channel, migration, ingestion delay or reversal<br/>Repair evidence and reconcile payment"]
+  FIX --> RETURN["RETURN TO PANEL 1<br/>New evidence snapshot and calculation"]
+  GATE -->|Verified business change| SERVICE["RESEARCH INTERFACE — ARTICLE 2<br/>State or belief, action history and long-term action value<br/>Compare permitted support and servicing alternatives"]
+  SERVICE --> REVIEW["Customer conversation and authorised servicing review<br/>Inspect uncertainty, alternatives and action comparison<br/>Select support, payment-date review or restructuring referral"]
+  REVIEW --> REAPPROVE["RETURN TO PANEL 2<br/>Approve the specific action and execution conditions"]
+  GATE -->|Routine observation| OUTCOME["Mature outcomes and customer experience<br/>Cash retained, repayment, arrears, cure, recovery and costs<br/>Complaints, overrides and actual delivery"]
+  IN --> OUTCOME
+  OUTCOME --> TREAS["RESEARCH INTERFACE — ARTICLE 4<br/>Governed portfolio export: collections, drawings and timing<br/>Funding, liquidity and risk scenarios"]
+  TREAS --> ALCO["Treasury, Finance and ALCO review<br/>Portfolio funding and pricing decisions<br/>Separate mandate and execution authority"]
+  OUTCOME --> EVAL["RESEARCH EVALUATION — ARTICLES 1–3<br/>Keep assignment, take-up and actual action distinct<br/>Check overlap, uncertainty and mature outcomes<br/>Compare with the approved benchmark"]
+  EVAL --> RELEASE["ARTICLE 5 CONTROLLED RELEASE<br/>Independent validation, replay, shadow and bounded pilot<br/>Approved version, expiry, fallback and rollback"]
+  RELEASE --> POLICY["RETURN TO PANEL 2<br/>Approved model or policy version"]
+  ALCO -. Approved portfolio constraints .-> POLICY
+  RIGHTS["CORRECTION AND REVIEW THROUGHOUT<br/>Customer explanation and disputed records<br/>Accountable owner, reconsideration and retained audit history"]
+  RIGHTS -. Correct evidence .-> RETURN
+  classDef calc fill:#EAF2F8,stroke:#315D7C,color:#112638,stroke-width:1.5px;
+  classDef human fill:#FFF4D6,stroke:#8D6B17,color:#302812,stroke-width:1.5px;
+  classDef research fill:#F5F0FF,stroke:#6D5594,color:#302149,stroke-width:2px,stroke-dasharray:6 4;
+  classDef control fill:#F0F2F4,stroke:#5D6872,color:#1E2933;
+  class SERVICE,TREAS,EVAL,RELEASE research;
+  class REVIEW,ALCO,RIGHTS human;
+  class TITLE,RETURN,REAPPROVE,POLICY control;
+  class MON,OUTCOME calc;

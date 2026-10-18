@@ -1,0 +1,4 @@
+account,entity,relation,known_day
+enterprise-bank,M001,verified_control,1
+enterprise-wallet,M001,verified_control,1
+owner-bank,OWNER,owner_capital_provider,1

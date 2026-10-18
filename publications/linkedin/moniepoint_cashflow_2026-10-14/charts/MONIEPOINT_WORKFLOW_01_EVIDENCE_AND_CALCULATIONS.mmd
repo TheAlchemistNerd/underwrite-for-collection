@@ -1,0 +1,27 @@
+flowchart TB
+  TITLE["PANEL 1 — EVIDENCE AND REPRODUCIBLE CALCULATIONS"]
+  TITLE --> SRC["Wallet, bank, POS, bureau and customer records"]
+  SRC --> CASE["Create case and correlation ID<br/>Link borrower, entity, facility and evidence cutoff"]
+  CASE --> INTAKE["Intake agent<br/>Purpose and source permissions; consent where applicable<br/>Integrity, coverage dates and linked accounts"]
+  INTAKE --> GATE{"Evidence usable<br/>for this purpose?"}
+  GATE -->|Clarify or correct| FIX["Request records or customer correction<br/>Log missing facts, owner and response"]
+  FIX --> INTAKE
+  GATE -->|Usable snapshot| PROV["Provenance agent proposes transaction labels<br/>Sales, transfers, loans, refunds and reversals<br/>Source event, confidence and known-at timestamp"]
+  PROV --> CASH["Versioned deterministic cash-flow engine<br/>Deduplicate economic events and reconcile accounts<br/>Calculate recurring receipts, costs and obligations<br/>Build dated cash and repayment paths"]
+  CASH --> UNC["Current synthetic-case statistical service<br/>Cash-mean credible interval<br/>Future-cash predictive interval and shortfall probability"]
+  CASH --> RULES["Deterministic baseline alongside statistical evidence<br/>Coverage, balance reconciliation and dated arrears<br/>Case: trailing 30-day residual cash and cash floor<br/>Extensions: approved rolling averages and seasonal checks<br/>Record formula, window, cutoff and rule version"]
+  RULES --> CHAL
+  UNC --> CHAL["Challenger and numerical verifier<br/>Alternative labels, missing channels and unusual inflows<br/>Concentration and stress; verify numerical receipts"]
+  CHAL -->|Resolve evidence gap| FIX
+  CHAL --> SUPPORT["RESEARCH INTERFACE — ARTICLE 3<br/>Financing selection and outcome availability<br/>Overlap, weak support and sensitivity labels"]
+  SUPPORT --> OUT["CONTINUE TO PANEL 2<br/>Versioned evidence packet and support assessment"]
+  CTRL["CONTROLS THROUGHOUT — ARTICLE 5<br/>Purpose-bound access and minimum data<br/>Pseudonymous case ID and protected identity map<br/>Event ID, source, timestamp, version and tool receipt"]
+  CTRL -. Applies to every stage .-> CASE
+  classDef calc fill:#EAF2F8,stroke:#315D7C,color:#112638,stroke-width:1.5px;
+  classDef human fill:#FFF4D6,stroke:#8D6B17,color:#302812,stroke-width:1.5px;
+  classDef research fill:#F5F0FF,stroke:#6D5594,color:#302149,stroke-width:2px,stroke-dasharray:6 4;
+  classDef control fill:#F0F2F4,stroke:#5D6872,color:#1E2933;
+  class CASH,RULES,UNC,CHAL calc;
+  class FIX human;
+  class SUPPORT research;
+  class CTRL,TITLE,OUT control;

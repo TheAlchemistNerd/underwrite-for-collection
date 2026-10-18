@@ -1,0 +1,73 @@
+record_id,economic_id,event_day,settlement_day,known_day,classification_known_day,amount,source,account,entity,cash_class,permitted_purpose,note,graph_version,classification_version
+R0015,E0015,1,1,1,1,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0012,E0012,5,5,5,5,30000.0,bank,enterprise-bank,M001,loan_drawdown,credit-assessment,Other lender financing; liability recorded in obligations evidence.,entity-graph-1,cash-taxonomy-1
+R0001,E0001,6,6,6,6,56700.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0002,E0002,6,6,6,6,24300.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0016,E0016,7,7,7,7,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0020,E0020,10,10,10,10,-25000.0,bank,enterprise-bank,M001,operating_cost,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0003,E0003,12,12,12,12,56700.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0004,E0004,12,12,12,12,24300.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0017,E0017,13,13,13,13,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0011,E0011,15,15,15,15,45000.0,bank,enterprise-bank,M001,owner_capital,credit-assessment,Owner is a separate economic entity; external support is separately visible.,entity-graph-1,cash-taxonomy-1
+R0005,E0005,18,18,18,18,56700.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0006,E0006,18,18,18,18,24300.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0013,E0013,18,18,18,18,15000.0,bank,enterprise-bank,M001,reversal,credit-assessment,Correction pair credits and debits net to zero.,entity-graph-1,cash-taxonomy-1
+R0014,E0014,18,18,18,18,-15000.0,bank,enterprise-bank,M001,reversal,credit-assessment,Correction pair debit.,entity-graph-1,cash-taxonomy-1
+R0018,E0018,19,19,19,19,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0021,E0021,20,20,20,20,-25000.0,bank,enterprise-bank,M001,operating_cost,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0007,E0007,24,24,24,24,56700.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0008,E0008,24,24,24,24,24300.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0019,E0019,25,25,25,25,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0023,E0023,28,28,28,28,-20000.0,bank,enterprise-bank,M001,household,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0009,E0009,30,30,30,30,56700.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0010,E0010,30,30,30,30,24300.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0022,E0022,30,30,30,30,-20000.0,bank,enterprise-bank,M001,operating_cost,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0024,E0024,30,30,30,30,-25000.0,bank,enterprise-bank,M001,existing_debt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0039,E0039,31,31,31,31,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0036,E0036,35,35,35,35,30000.0,bank,enterprise-bank,M001,loan_drawdown,credit-assessment,Other lender financing; liability recorded in obligations evidence.,entity-graph-1,cash-taxonomy-1
+R0025,E0025,36,36,36,36,58100.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0026,E0026,36,36,36,36,24900.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0040,E0040,37,37,37,37,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0044,E0044,40,40,40,40,-25000.0,bank,enterprise-bank,M001,operating_cost,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0027,E0027,42,42,42,42,58100.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0028,E0028,42,42,42,42,24900.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0041,E0041,43,43,43,43,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0035,E0035,45,45,45,45,45000.0,bank,enterprise-bank,M001,owner_capital,credit-assessment,Owner is a separate economic entity; external support is separately visible.,entity-graph-1,cash-taxonomy-1
+R0029,E0029,48,48,48,48,58100.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0030,E0030,48,48,48,48,24900.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0037,E0037,48,48,48,48,15000.0,bank,enterprise-bank,M001,reversal,credit-assessment,Correction pair credits and debits net to zero.,entity-graph-1,cash-taxonomy-1
+R0038,E0038,48,48,48,48,-15000.0,bank,enterprise-bank,M001,reversal,credit-assessment,Correction pair debit.,entity-graph-1,cash-taxonomy-1
+R0042,E0042,49,49,49,49,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0045,E0045,50,50,50,50,-25000.0,bank,enterprise-bank,M001,operating_cost,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0031,E0031,54,54,54,54,58100.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0032,E0032,54,54,54,54,24900.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0043,E0043,55,55,55,55,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0047,E0047,58,58,58,58,-20000.0,bank,enterprise-bank,M001,household,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0033,E0033,60,60,60,60,58100.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0034,E0034,60,60,60,60,24900.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0046,E0046,60,60,60,60,-20000.0,bank,enterprise-bank,M001,operating_cost,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0048,E0048,60,60,60,60,-25000.0,bank,enterprise-bank,M001,existing_debt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0063,E0063,61,61,61,61,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0060,E0060,65,65,65,65,30000.0,bank,enterprise-bank,M001,loan_drawdown,credit-assessment,Other lender financing; liability recorded in obligations evidence.,entity-graph-1,cash-taxonomy-1
+R0049,E0049,66,66,66,66,57400.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0050,E0050,66,66,66,66,24600.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0064,E0064,67,67,67,67,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0068,E0068,70,70,70,70,-25000.0,bank,enterprise-bank,M001,operating_cost,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0051,E0051,72,72,72,72,57400.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0052,E0052,72,72,72,72,24600.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0065,E0065,73,73,73,73,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0059,E0059,75,75,75,75,45000.0,bank,enterprise-bank,M001,owner_capital,credit-assessment,Owner is a separate economic entity; external support is separately visible.,entity-graph-1,cash-taxonomy-1
+R0053,E0053,78,78,78,78,57400.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0054,E0054,78,78,78,78,24600.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0061,E0061,78,78,78,78,15000.0,bank,enterprise-bank,M001,reversal,credit-assessment,Correction pair credits and debits net to zero.,entity-graph-1,cash-taxonomy-1
+R0062,E0062,78,78,78,78,-15000.0,bank,enterprise-bank,M001,reversal,credit-assessment,Correction pair debit.,entity-graph-1,cash-taxonomy-1
+R0066,E0066,79,79,79,79,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0069,E0069,80,80,80,80,-25000.0,bank,enterprise-bank,M001,operating_cost,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0055,E0055,84,84,84,84,57400.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0056,E0056,84,84,84,84,24600.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0067,E0067,85,85,85,85,-54000.0,bank,enterprise-bank,M001,supplier,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0071,E0071,88,88,88,88,-20000.0,bank,enterprise-bank,M001,household,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R-DUP,E0057,90,90,90,90,57400.0,bank,enterprise-bank,M001,operating_receipt,credit-assessment,Second feed copy of the same authoritative economic event.,entity-graph-1,cash-taxonomy-1
+R0058,E0058,90,90,90,90,24600.0,wallet,enterprise-wallet,M001,operating_receipt,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0070,E0070,90,90,90,90,-20000.0,bank,enterprise-bank,M001,operating_cost,credit-assessment,,entity-graph-1,cash-taxonomy-1
+R0072,E0072,90,90,90,90,-25000.0,bank,enterprise-bank,M001,existing_debt,credit-assessment,,entity-graph-1,cash-taxonomy-1

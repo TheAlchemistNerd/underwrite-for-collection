@@ -1,0 +1,11 @@
+day,window_receipts,coverage_complete,route,evidence_through
+30,410000.0,True,routine,30
+60,270000.0,True,customer_cash_review,60
+90,270000.0,True,customer_cash_review,90
+120,270000.0,True,customer_cash_review,120
+150,270000.0,True,customer_cash_review,150
+180,270000.0,True,customer_cash_review,180
+210,270000.0,True,customer_cash_review,210
+240,270000.0,True,customer_cash_review,240
+270,270000.0,True,customer_cash_review,270
+300,270000.0,True,customer_cash_review,300

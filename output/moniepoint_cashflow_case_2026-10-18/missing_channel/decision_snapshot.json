@@ -1,0 +1,59 @@
+{
+  "cutoff": 90,
+  "coverage": 0.8333333333333334,
+  "unresolved": 0,
+  "duplicate_records": [],
+  "monthly": [
+    {
+      "month": 1,
+      "gross_credits": 495000.0,
+      "operating_receipts": 405000.0,
+      "owner_capital": 45000.0,
+      "other_loan_drawdowns": 30000.0,
+      "reversal_credits": 15000.0,
+      "internal_net": 0.0,
+      "obligations": 385000.0,
+      "verified_residual": 20000.0,
+      "unresolved_credits": 0
+    },
+    {
+      "month": 2,
+      "gross_credits": 505000.0,
+      "operating_receipts": 415000.0,
+      "owner_capital": 45000.0,
+      "other_loan_drawdowns": 30000.0,
+      "reversal_credits": 15000.0,
+      "internal_net": 0.0,
+      "obligations": 385000.0,
+      "verified_residual": 30000.0,
+      "unresolved_credits": 0
+    },
+    {
+      "month": 3,
+      "gross_credits": 377000.0,
+      "operating_receipts": 287000.0,
+      "owner_capital": 45000.0,
+      "other_loan_drawdowns": 30000.0,
+      "reversal_credits": 15000.0,
+      "internal_net": 0.0,
+      "obligations": 385000.0,
+      "verified_residual": -98000.0,
+      "unresolved_credits": 0
+    }
+  ],
+  "expected_calendar_minimum_cash": 26000.0,
+  "posterior_mean": -12449.255751014885,
+  "posterior_sd": 4414.271356666258,
+  "mean_credible_low": -21101.22761008075,
+  "mean_credible_high": -3797.2838919490205,
+  "predictive_low": -30357.885431983435,
+  "predictive_high": 5459.373929953663,
+  "shortfall_probability": 0.9948618501943357,
+  "maximum_monthly_payment": -6224.627875507443,
+  "requested_instalment": 35000.0,
+  "requested_shortfall_probability": 0.9999998965657961,
+  "route": "request_evidence",
+  "model_version": "moniepoint-cashflow-1.0",
+  "policy_version": "cash-calendar-human-review-1.0",
+  "evidence_hash": "09d0713508531cf23ce5531e471f7b9a3f6a0ed9538e87f45c167b349390e6fa"
+}

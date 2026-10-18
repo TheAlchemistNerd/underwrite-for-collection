@@ -1,0 +1,4 @@
+loan_id,origination_day,principal,principal_paid,fee_paid,status,default_day,writeoff,recovery,close_day,decision_evidence_through,repeat_trailing_residual
+L01,1,30000.0,30000.0,3000.0,paid,,0.0,0.0,105,0,
+L02,112,30000.0,30000.0,3000.0,paid,,0.0,0.0,201,111,25000.0
+L03,208,30000.0,30000.0,3000.0,paid,,0.0,0.0,297,207,25000.0

@@ -1,0 +1,11 @@
+day,window_receipts,coverage_complete,route,evidence_through
+30,410000.0,True,routine,30
+60,287000.0,False,repair_source,60
+90,410000.0,True,routine,90
+120,410000.0,True,routine,120
+150,410000.0,True,routine,150
+180,410000.0,True,routine,180
+210,410000.0,True,routine,210
+240,410000.0,True,routine,240
+270,410000.0,True,routine,270
+300,410000.0,True,routine,300
