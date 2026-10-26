@@ -32,6 +32,8 @@ The minimum experimental record is more precise than a model score. It includes 
 
 The reward should reflect the research objective rather than a convenient system event. “Contact delivered” is not repayment; “promise to pay” is not cash collected; “account credited” may be a related-party transfer rather than trading income; and a short-term cure may reverse before the next billing cycle. A stronger primary outcome can combine verified net cash recovered by a specified date with repayment durability, while separately reporting the borrower’s cost, complaint, hardship, repeat-delinquency and escalation outcomes. One can predefine a vector of outcomes and a decision rule rather than immediately compress every consequence into one scalar. When an organization does use a scalar objective, it should publish how weights were chosen, preserve legally protected constraints outside the reward, and test whether an apparent gain comes from shifting cost or burden to the borrower.
 
+For a going concern, the outcome set can also track cash available at scheduled collection dates for stock replenishment and essential operating expenses, alongside receipts, obligations and the next trading cycle. This makes working capital an observable part of the repayment pathway: a collection can increase cash received today while changing the funds available to restock and generate later receipts. Report these borrower operating measures alongside net collections, repayment durability and servicing cost so reviewers can see how each action affects both sides of the relationship.
+
 A randomized pilot is the right benchmark before adaptive assignment. Within a narrow, approved eligibility region, a team can randomize among low-risk, support-oriented actions or compare an action with the current standard process. It should not randomize access to a legally required notice, a complaint route, a hardship safeguard, or a treatment that policy says must be provided. Nor should it offer unaffordable credit or withhold service merely to create labels. Random allocation can make groups comparable in expectation, but small samples, non-compliance, spillovers between staff, differential contact success and delayed outcomes still require careful analysis. A pilot should therefore state its estimand, unit of assignment, follow-up horizon, stopping rules and operational guardrails before the first case is enrolled.
 
 ### Sequential control changes the mathematical problem
@@ -55,6 +57,8 @@ Irregular payment and contact intervals can make a fixed daily or monthly grid m
 logit(pᵢ,τ)=αᴸ+xᵢᵀβᴸ+uᴸ_sector[i]+vᴸ_region[i]+wᴸ_vintage[i]
 
  predicts a defined binary outcome horizon. These models can inform a transition model, but repeated scoring alone does not constitute reinforcement learning.
+
+Transaction evidence can enter the state through an event layer that preserves occurrence time, event type, amount, reversal status and settlement time. A marked recurrent-event model can describe when events arrive and the distribution of their amounts; the settlement rules then translate recorded or forecast events into cash that is actually available to the business. A seasonal event model can serve as a baseline, with a self-exciting Hawkes process as a challenger where clustering improves held-out forecasts [29]. The estimated effect of a reminder or support action on payment timing remains a separate intervention quantity, learned from the experiment or identification design rather than inferred from event clustering alone.
 
 ### Put the risk models inside the decision problem
 
@@ -287,6 +291,28 @@ flowchart TD
     L --> M
 ```
 
+### Boltzmann allocation among approved actions
+
+Once the decision team has estimated comparable action values, Boltzmann or softmax allocation offers a simple way to turn their differences into probabilities [18]. Let Aₜ(s) be the finite, nonempty set of actions permitted in the current state. Qₜ(s,a) is the estimated value of taking action a, using the same outcome horizon, cash convention and subsequent policy for every comparison. In a sequential model it includes current expected reward and discounted continuation value. Under partial observation, replace s with the belief bₜ and average over the possible hidden states and future observations. A score for default probability alone is insufficient: the value must connect the action to the declared cash, cost and customer objective.
+
+Write τₜ > 0 for the policy temperature. It has the same units as Q: if value is measured in KES per eligible case, temperature is also in KES per eligible case. It is separate from posterior uncertainty, the outcome horizon τ and the hierarchical prior scales used earlier. For stable computation, first subtract the largest eligible action value:
+
+mₜ(s) = max{Qₜ(s,c): c ∈ Aₜ(s)}
+
+πₜ(a|s) = exp((Qₜ(s,a) − mₜ(s))/τₜ) / Σ_{c∈Aₜ(s)} exp((Qₜ(s,c) − mₜ(s))/τₜ),   a ∈ Aₜ(s)
+
+An excluded action receives zero probability; the denominator is recomputed over the remaining set. If no action passes the gates, the workflow follows its approved review or fallback route. A small temperature concentrates probability on the largest fixed value, sharing it equally among exact ties in the zero-temperature limit. A large temperature approaches uniform allocation over the eligible set. Adding a common constant to all values leaves probabilities unchanged; changing from KES to thousands of KES requires the same rescaling of temperature.
+
+For illustration, suppose three approved actions have estimated net cash values of KES 5,000, 4,000 and 2,000 per eligible case, with τₜ = KES 1,000. The shifted exponential weights are 1, exp(−1) and exp(−3), giving probabilities approximately 0.7054, 0.2595 and 0.0351. Expected cash under this allocation is KES 4,635.15; selecting the largest assumed value with certainty gives KES 5,000. Softmax therefore makes an explicit allocation trade-off. For these fixed values, it maximizes expected value plus temperature times allocation entropy. That criterion rewards dispersion among eligible actions. Full entropy-regularized reinforcement learning also includes future entropy in the value recursion; applying softmax once to ordinary value estimates does not perform that learning procedure [19]. Appendix A2.17 derives both constructions.
+
+A declared exploration floor can be retained through a normalized distribution qₜ supported on eligible actions:
+
+π̃ₜ(a|s) = (1 − εₜ)πₜ(a|s) + εₜqₜ(a|s),   0 ≤ εₜ ≤ 1
+
+With uniform qₜ, each of K eligible actions receives at least εₜ/K. This mixture changes the policy and generally no longer solves the unconstrained entropy objective above. Record the eligible set, values, units, temperature, epsilon, exploration distribution, policy version and actual conditional assignment probability after all gates. Subsequent human overrides or delivery failures remain separate recorded events; a pre-gate probability cannot describe an overridden decision. Positive probabilities support evaluation only where assignments, information timing, outcomes and the required identification assumptions are also credible.
+
+The review should compare posterior action-value differences, outcome maturity and operational capacity before setting allocation. Thompson sampling draws uncertain parameters and then chooses the best permitted action under that draw; point-estimate softmax randomizes according to estimated value gaps. Increasing temperature cannot repair a misspecified posterior or transition model. Use both as candidate policies, with fixed randomization, epsilon mixtures and UCB as benchmarks. The approved temperature schedule needs its own sensitivity checks: an attractive entropy calculation does not establish a regret guarantee, a causal action effect or a safe collection policy.
+
 ### A worked example with deliberately hypothetical numbers
 
 Consider a hypothetical Kenyan enterprise borrower with a KES 120,000 instalment due on day 30. The lender observes irregular customer receipts, a recent delayed payment and a high-confidence invoice accepted by one major buyer but payable on day 38. These are scenario assumptions, not empirical findings. Two policy-permitted actions are available: **A**, a neutral reminder and self-service payment link; and **B**, a respectful contact offering a trained review of payment timing and business cash evidence. The standard policy is reminder only. For a randomized pilot, eligible cases can be assigned 50:50 after hardship, complaint and active-dispute gates are applied. The question is whether the review offer increases durable repayment compared with the reminder, not whether the borrower’s profile “deserves” pressure.
@@ -307,7 +333,7 @@ Section 31 of the Act requires a data-protection impact assessment (DPIA) where 
 
 The other provisions matter across the data lifecycle. The Act’s principles, rights, lawful-basis rules, security duties, breach obligations, sensitive-data conditions and cross-border-transfer rules apply according to the actual processing rather than the model label [10]. Data minimization affects feature design; accuracy affects entity matching and correction; purpose limitation affects whether data gathered for one service can be repurposed for scoring; retention affects trajectory storage; and security affects account-level feeds and access. A model-development project should define a controlled research dataset, access roles, pseudonymization where appropriate, linkage approvals, retention periods and a process for correcting source records. Removing direct names does not automatically make detailed transaction histories anonymous, especially where rare patterns can identify a person.
 
-Credit-specific rules require scope discipline. The Banking (Credit Reference Bureau) Regulations, 2020 govern defined credit-information processes [18]. The ODPC’s digital-credit guidance remains operational context where relevant [19]. For non-deposit-taking credit business not regulated under another written law, the CBK (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice No. 191) now set provider requirements; regulation 3 excludes banks, licensed microfinance institutions, SACCOs and other specified categories. Regulations 96 and 97 carry forward existing 2022 licensees and revoke the 2022 Digital Credit Providers Regulations, respectively. For providers within scope, regulation 30 governs credit collection, regulation 44 addresses debt collection, regulation 53 covers access to and collection of customer information, and regulation 60 sets safeguards for AI used in lending decisions [20]. Before relying on a particular rule, classify the institution, product, decision and data flow. Banks, NDTCPs, MFIs and SACCOs do not necessarily sit under the same sector rulebook. The study connects consumer protection, credit reporting, banking supervision and data protection while recording which law or institutional policy governs each action.
+Credit-specific rules require scope discipline. The Banking (Credit Reference Bureau) Regulations, 2020 govern defined credit-information processes [20]. The ODPC’s digital-credit guidance remains operational context where relevant [21]. For non-deposit-taking credit business not regulated under another written law, the CBK (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice No. 191) now set provider requirements; regulation 3 excludes banks, licensed microfinance institutions, SACCOs and other specified categories. Regulations 96 and 97 carry forward existing 2022 licensees and revoke the 2022 Digital Credit Providers Regulations, respectively. For providers within scope, regulation 30 governs credit collection, regulation 44 addresses debt collection, regulation 53 covers access to and collection of customer information, and regulation 60 sets safeguards for AI used in lending decisions [22]. Before relying on a particular rule, classify the institution, product, decision and data flow. Banks, NDTCPs, MFIs and SACCOs do not necessarily sit under the same sector rulebook. The study connects consumer protection, credit reporting, banking supervision and data protection while recording which law or institutional policy governs each action.
 
 ### Operational validation and model controls
 
@@ -315,7 +341,7 @@ Model validation should cover calibration and discrimination, but also stability
 
 ### A data-lineage lesson from mortgage performance files
 
-Article 1 discusses the GSE data architecture as a template for dated origination and performance records. For sequential collections, the specific lesson is to preserve the information set at each decision: what the servicer knew before contact, what action was sent, what response followed, and whether the later payment can be linked to that action. Monthly mortgage histories are not event logs for Kenyan MSME collections, but they show why release dates, loan identifiers, outcome windows and corrections must be versioned [21], [22]. They also illustrate the selection boundary: published acquired mortgages do not reveal outcomes for every denied applicant. Use these datasets to validate time alignment and data lineage; estimate local collection effects only from properly governed Kenyan records and designs.
+Article 1 discusses the GSE data architecture as a template for dated origination and performance records. For sequential collections, the specific lesson is to preserve the information set at each decision: what the servicer knew before contact, what action was sent, what response followed, and whether the later payment can be linked to that action. Monthly mortgage histories are not event logs for Kenyan MSME collections, but they show why release dates, loan identifiers, outcome windows and corrections must be versioned [23], [24]. They also illustrate the selection boundary: published acquired mortgages do not reveal outcomes for every denied applicant. Use these datasets to validate time alignment and data lineage; estimate local collection effects only from properly governed Kenyan records and designs.
 
 ### From borrower evidence to bank decisions
 
@@ -339,7 +365,7 @@ The transition from a one-step bandit to sequential credit control is a progress
 
 For Kenyan application, privacy and data-protection duties shape the dataset, experiment and user journey from the beginning. The Data Protection Act, General Regulations and applicable credit rules must be mapped to the actual institution and processing. Hard eligibility gates protect rights and affordability; explainable records, meaningful human review, correction routes and independent validation support accountable decisions. The proposed research agenda is therefore concrete: define a local eligible population, preserve a standard-care benchmark, test support-oriented actions, measure durable repayment and borrower outcomes, and publish uncertainty. Only after that evidence exists should a team ask whether a more complex controller provides enough additional value to justify its cost, governance and operational risk.
 
-The foundational whitepaper, *Underwrite for Collection*, is available on Zenodo [23].
+The foundational whitepaper, *Underwrite for Collection*, is available on Zenodo [25].
 
 ### References
 
@@ -377,23 +403,28 @@ The foundational whitepaper, *Underwrite for Collection*, is available on Zenodo
 
 [17] N. Jiang and L. Li, “Doubly robust off-policy value evaluation for reinforcement learning,” in *Proc. 33rd Int. Conf. on Machine Learning*, PMLR 48, 2016, pp. 652–661. Available: https://proceedings.mlr.press/v48/jiang16.html.
 
-[18] Republic of Kenya, *Credit Reference Bureau Regulations*, 2020, as amended, relevant provisions on credit information and scoring. Kenya Law, https://new.kenyalaw.org/.
+[18] N. Cesa-Bianchi, C. Gentile, G. Lugosi, and G. Neu, “Boltzmann exploration done right,” in *Advances in Neural Information Processing Systems 30*, 2017. Available: https://proceedings.neurips.cc/paper/2017/hash/b299ad862b6f12cb57679f0538eca514-Abstract.html.
 
-[19] Office of the Data Protection Commissioner, Kenya, *Guidance Note for Digital Credit Providers*, 2024. Available: https://www.odpc.go.ke/wp-content/uploads/2024/02/ODPC-Guidance-Note-for-Digital-Credit-Providers.pdf.
+[19] T. Haarnoja, A. Zhou, P. Abbeel, and S. Levine, “Soft actor-critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor,” in *Proc. 35th Int. Conf. on Machine Learning*, PMLR 80, 2018, pp. 1861–1870. Available: https://proceedings.mlr.press/v80/haarnoja18b.html.
 
-[20] Central Bank of Kenya, *The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026*, Legal Notice No. 191 of 2026, regs. 3, 30, 44, 53, 60, 96–97. Available: https://new.kenyalaw.org/akn/ke/act/ln/2026/191/eng@2026-09-29/source.pdf.
+[20] Republic of Kenya, *Credit Reference Bureau Regulations*, 2020, as amended, relevant provisions on credit information and scoring. Kenya Law, https://new.kenyalaw.org/.
 
-[21] Freddie Mac, *Single-Family Loan-Level Dataset: User Guide*, current release. Available: https://www.freddiemac.com/research/pdf/user_guide.pdf.
+[21] Office of the Data Protection Commissioner, Kenya, *Guidance Note for Digital Credit Providers*, 2024. Available: https://www.odpc.go.ke/wp-content/uploads/2024/02/ODPC-Guidance-Note-for-Digital-Credit-Providers.pdf.
 
-[22] Fannie Mae, *Single-Family Loan Performance Data*, documentation and access portal. Available: https://capitalmarkets.fanniemae.com/credit-risk-transfer/single-family-credit-risk-transfer/loan-performance-data.
+[22] Central Bank of Kenya, *The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026*, Legal Notice No. 191 of 2026, regs. 3, 30, 44, 53, 60, 96–97. Available: https://new.kenyalaw.org/akn/ke/act/ln/2026/191/eng@2026-09-29/source.pdf.
 
-[23] N. Maloba, *Underwrite for Collection*, integrated research whitepaper, 2026. Zenodo. https://doi.org/10.5281/zenodo.23343888.
+[23] Freddie Mac, *Single-Family Loan-Level Dataset: User Guide*, current release. Available: https://www.freddiemac.com/research/pdf/user_guide.pdf.
 
-[24] L. P. Kaelbling, M. L. Littman, and A. R. Cassandra, “Planning and acting in partially observable stochastic domains,” *Artificial Intelligence*, vol. 101, nos. 1–2, pp. 99–134, 1998, doi: 10.1016/S0004-3702(98)00023-X. Author copy: https://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf.
+[24] Fannie Mae, *Single-Family Loan Performance Data*, documentation and access portal. Available: https://capitalmarkets.fanniemae.com/credit-risk-transfer/single-family-credit-risk-transfer/loan-performance-data.
 
-[25] D. R. Cox, “Regression models and life-tables,” *Journal of the Royal Statistical Society: Series B*, vol. 34, no. 2, pp. 187–220, 1972. Available: https://web.stanford.edu/~lutian/coursepdf/cox1972paper.pdf.
+[25] N. Maloba, *Underwrite for Collection*, integrated research whitepaper, 2026. Zenodo. https://doi.org/10.5281/zenodo.23343888.
 
-[26] M. Dudík, J. Langford, and L. Li, “Doubly robust policy evaluation and learning,” in *Proc. 28th Int. Conf. on Machine Learning*, 2011, pp. 1097–1104. Available: https://icml.cc/2011/papers/554_icmlpaper.pdf.
+[26] L. P. Kaelbling, M. L. Littman, and A. R. Cassandra, “Planning and acting in partially observable stochastic domains,” *Artificial Intelligence*, vol. 101, nos. 1–2, pp. 99–134, 1998, doi: 10.1016/S0004-3702(98)00023-X. Author copy: https://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf.
+
+[27] D. R. Cox, “Regression models and life-tables,” *Journal of the Royal Statistical Society: Series B*, vol. 34, no. 2, pp. 187–220, 1972. Available: https://web.stanford.edu/~lutian/coursepdf/cox1972paper.pdf.
+
+[28] M. Dudík, J. Langford, and L. Li, “Doubly robust policy evaluation and learning,” in *Proc. 28th Int. Conf. on Machine Learning*, 2011, pp. 1097–1104. Available: https://icml.cc/2011/papers/554_icmlpaper.pdf.
+[29] H. Mei and J. Eisner, “The neural Hawkes process: A neurally self-modulating multivariate point process,” in *Advances in Neural Information Processing Systems 30*, 2017. Available: https://proceedings.neurips.cc/paper_files/paper/2017/file/6463c88460bd63bbe256e495c63aa40b-Paper.pdf.
 
 ---
 
