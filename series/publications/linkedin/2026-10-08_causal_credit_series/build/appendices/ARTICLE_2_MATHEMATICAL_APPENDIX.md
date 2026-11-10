@@ -6,7 +6,7 @@ This appendix derives the mathematical specifications used in Article 2. Let $i$
 
 ## A2.2 Bellman recursion
 
-The finite-horizon value recursion is the fully observed special case of the control formulation in [24].
+The finite-horizon value recursion is the fully observed special case of the control formulation in [26].
 
 For terminal value $g_T$, stage reward $r_t$, horizon $T$ and per-step discount $\gamma$, policy value is:
 
@@ -37,7 +37,7 @@ The action set encodes eligibility and authority. The reward, transition and ter
 
 ## A2.3 POMDP prediction and observation update
 
-The belief-state construction and observation update follow [24].
+The belief-state construction and observation update follow [26].
 
 Let $Z_t$ be latent state, $O_t$ observation, $T_a(z'\mid z)$ the transition law, and $L_a(o\mid z')$ the observation likelihood. The belief conditions on observations and previous actions:
 
@@ -123,7 +123,7 @@ Large sampling variance produces stronger pooling. The logistic posterior itself
 
 ## A2.6 Hierarchical hazards and their likelihood
 
-The proportional-hazards and partial-likelihood construction follows [25].
+The proportional-hazards and partial-likelihood construction follows [27].
 
 The hazard model uses separate coefficients and group effects:
 
@@ -515,4 +515,197 @@ Each subsection identifies its methodological sources in Article 2's reference l
 
 ### Further methodological reading
 
-Additional sources retained from the article bibliography: [26].
+Additional sources retained from the article bibliography: [28].
+
+## A2.17 Boltzmann allocation and entropy-regularized control
+
+This subsection gives the canonical softmax construction for the series. The empirical-mean exploration issue is studied in [18]; [19] develops maximum-entropy reinforcement learning. The finite-action derivations and cash arithmetic below distinguish allocation at fixed values from a dynamic entropy objective. They specify a candidate policy and do not report a fitted collection system.
+
+### Values, eligible actions and units
+
+Fix decision time $t$ and information state $s$. Let $\mathcal A_t(s)$ be a finite, nonempty eligible set of size $K$, determined before allocation, and let every $Q_t(s,a)$ be finite. In a one-step experiment $Q$ is the declared expected outcome. In a sequential model, an ordinary action value under a specified continuation policy $\rho$ is
+
+$$
+Q_t^\rho(s,a)=\mathbb E\!\left[
+r_t(s,a,S_{t+1})+\gamma V_{t+1}^\rho(S_{t+1})
+\mid S_t=s,A_t=a\right].
+$$
+
+Use one common horizon, discount convention, terminal value and outcome definition across actions. Estimated or posterior-mean values may supply the fixed $Q$ used below, with their uncertainty reported separately. The policy temperature $\tau_t>0$ has the same units as $Q$; it is distinct from the outcome horizon $\tau$ in A2.1 and from the model-specific prior scales. Cash values in KES per eligible case require temperature in KES per eligible case. A transformed utility requires temperature on that utility scale.
+
+The complete policy is
+
+$$
+\pi_{\tau,t}(a\mid s)=
+\begin{cases}
+\dfrac{\exp\{Q_t(s,a)/\tau_t\}}
+{\sum_{c\in\mathcal A_t(s)}\exp\{Q_t(s,c)/\tau_t\}},
+& a\in\mathcal A_t(s),\\
+0,&a\notin\mathcal A_t(s).
+\end{cases}
+$$
+
+The denominator is positive and finite mathematically, so eligible probabilities are positive and sum to one. With no eligible action, this expression is undefined and the approved review or fallback process applies. Temperature controls value-gap sensitivity:
+
+$$
+\frac{\pi_{\tau,t}(a\mid s)}{\pi_{\tau,t}(c\mid s)}
+=\exp\!\left\{\frac{Q_t(s,a)-Q_t(s,c)}{\tau_t}\right\},
+\qquad a,c\in\mathcal A_t(s).
+$$
+
+This ratio depends on fixed value differences, not the posterior probability that one action is better.
+
+### Entropy objective and derivation
+
+Suppress $t,s$ and write $Q_a=Q_t(s,a)$ and $\tau=\tau_t$ within this proof. On the simplex $\Delta_K$, with $0\log0=0$ and natural logarithms, define
+
+$$
+F_\tau(p)=\sum_{a=1}^{K}p_aQ_a+\tau H(p),
+\qquad
+H(p)=-\sum_{a=1}^{K}p_a\log p_a,
+\qquad
+\Delta_K=\{p:p_a\ge0,\ \sum_a p_a=1\}.
+$$
+
+Entropy is measured in nats. Its coefficient converts it to the value units. For $\tau>0$ and finite $Q$, moving a sufficiently small mass into a zero-probability action increases entropy faster than its bounded linear-value cost. The optimum is therefore interior when $K>1$. Introduce a multiplier $\lambda$ for normalization:
+
+$$
+\begin{aligned}
+\mathcal L(p,\lambda)
+&=\sum_a p_aQ_a-\tau\sum_a p_a\log p_a
++\lambda\left(\sum_a p_a-1\right),\\
+\frac{\partial\mathcal L}{\partial p_a}
+&=Q_a-\tau(\log p_a+1)+\lambda=0,\\
+p_a&=\exp\{Q_a/\tau\}\exp\{\lambda/\tau-1\}.
+\end{aligned}
+$$
+
+Summing the last line gives $\exp\{\lambda/\tau-1\}=1/Z$, where $Z=\sum_a\exp(Q_a/\tau)$, yielding the normalized softmax policy. The Hessian on the interior is diagonal with entries $-\tau/p_a<0$, so the objective is strictly concave. The following identity also proves global optimality, including boundary distributions:
+
+$$
+F_\tau(p)=\tau\log Z-\tau D_{\rm KL}(p\Vert\pi_\tau),
+\qquad
+D_{\rm KL}(p\Vert\pi_\tau)
+=\sum_{a:p_a>0}p_a\log\frac{p_a}{\pi_{\tau,a}}\ge0.
+$$
+
+Equality holds only at $p=\pi_\tau$; for $K=1$ the sole feasible allocation is one. This is optimality for the stated fixed-value entropy objective over the eligible simplex. Coupled capacity, fairness or additional probability constraints define a different feasible optimization problem. The entropy term is an allocation preference, not realised cash.
+
+### Limits and invariances
+
+Let $M=\max_aQ_a$ and $\mathcal M=\{a:Q_a=M\}$. Divide numerator and denominator by $\exp(M/\tau)$. Each maximizer then has weight one; a strictly smaller value has weight tending to zero as $\tau$ decreases. For fixed finite values,
+
+$$
+\lim_{\tau\downarrow0}\pi_{\tau,a}
+=\frac{\mathbf1\{a\in\mathcal M\}}{|\mathcal M|},
+\qquad
+\lim_{\tau\to\infty}\pi_{\tau,a}=\frac1K.
+$$
+
+These are limits; computation requires a positive temperature. For any common shift $d$ and positive scaling $c$,
+
+$$
+\pi_\tau(a;Q+d\mathbf1)=\pi_\tau(a;Q),
+\qquad
+\pi_{c\tau}(a;cQ)=\pi_\tau(a;Q).
+$$
+
+A common exponential factor cancels in the first identity; numerator and denominator exponents are identical in the second. Rescaling $Q$ alone changes the allocation. These fixed-state identities do not justify altering a dynamic reward or terminal convention without recomputing its values.
+
+### Stable evaluation, support and logging
+
+At the current state compute only eligible values:
+
+$$
+\begin{aligned}
+m&=\max_{a\in\mathcal A_t(s)}Q_t(s,a),&
+w_a&=\exp\{(Q_t(s,a)-m)/\tau_t\},\\
+\pi_{\tau,t}(a\mid s)&=\frac{w_a}{\sum_cw_c},&
+\log\pi_{\tau,t}(a\mid s)
+&=\frac{Q_t(s,a)-m}{\tau_t}-\log\sum_cw_c.
+\end{aligned}
+$$
+
+Here all sums are over $\mathcal A_t(s)$. Every shifted exponent is nonpositive and at least one weight is one, avoiding exponential overflow. Very negative exponents can still underflow numerically. Validate finite inputs and normalization, retain log probabilities where needed, and evaluate the actual sampling implementation. Changing the eligible set requires a new normalization.
+
+For a registered $\varepsilon_t\in[0,1]$ and a normalized exploration distribution $q_t$ supported on the same eligible set, define
+
+$$
+\widetilde\pi_t(a\mid s)
+=(1-\varepsilon_t)\pi_{\tau,t}(a\mid s)
++\varepsilon_tq_t(a\mid s).
+$$
+
+Then $\sum_a\widetilde\pi_t(a\mid s)=1$ and $\widetilde\pi_t(a\mid s)\ge\varepsilon_tq_t(a\mid s)$. Uniform $q_t$ gives the floor $\varepsilon_t/K$. A positive common floor requires both positive $\varepsilon_t$ and full eligible support in $q_t$. Excluded actions retain probability zero. The mixture generally changes the entropy optimum; it is an explicit experimental-design choice.
+
+Log the state or belief snapshot, eligible set, model and policy versions, all values and units, $\tau_t$, $\varepsilon_t$, $q_t$, sampled action and its final conditional probability. Gate changes require recalculation before sampling. Log overrides and delivery separately; the algorithm's probability does not automatically become the probability of a later human action. Sequential evaluation in A2.15 still requires its identification and support assumptions.
+
+### Cash example and a changed eligible set
+
+For $Q=(5000,4000,2000)$ KES per case and $\tau=1000$ KES per case,
+
+$$
+w=(1,e^{-1},e^{-3}),\qquad
+\pi=\frac{(1,e^{-1},e^{-3})}{1+e^{-1}+e^{-3}}
+\approx(0.7053845,\ 0.2594965,\ 0.0351190).
+$$
+
+The corresponding numerical bridge is
+
+$$
+\begin{aligned}
+\sum_a\pi_aQ_a&=4635.1465\ {\rm KES},\\
+H(\pi)&=0.7138658\ {\rm nats},\\
+F_{1000}(\pi)&=4635.1465+1000(0.7138658)\\
+&=5349.0122\ {\rm KES}
+=5000+1000\log(1+e^{-1}+e^{-3}).
+\end{aligned}
+$$
+
+Values are rounded for display. Greedy selection gives expected cash of KES 5,000 and zero allocation entropy. The larger regularized value of KES 5,349.01 includes the entropy preference; it is not additional cash generated. These figures illustrate a policy calculation with assumed values.
+
+If the first action becomes ineligible, the remaining actions with values KES 4,000 and 2,000 receive probabilities $(0.8807971,0.1192029)$ after normalization. With $\varepsilon=0.1$ and uniform exploration over these two actions, the final probabilities become $(0.8427174,0.1572826)$. The original three-action probabilities no longer describe assignment.
+
+### Dynamic entropy control and partial observation
+
+A full finite-horizon entropy objective places entropy at every decision:
+
+$$
+J_t^{\pi,\tau}(s)=\mathbb E^\pi\!\left[
+\sum_{j=t}^{T-1}\gamma^{j-t}
+\left\{r_j+\tau_jH(\pi_j(\cdot\mid S_j))\right\}
++\gamma^{T-t}g_T(S_T)\mid S_t=s\right].
+$$
+
+Assume a specified Markov model, finite nonempty eligible sets, finite rewards and terminal values, and positive temperatures. Define $V_T^\tau=g_T$. The statewise derivation gives the backward recursion
+
+$$
+\begin{aligned}
+Q_t^\tau(s,a)
+&=\mathbb E[r_t(s,a,S_{t+1})+\gamma V_{t+1}^\tau(S_{t+1})
+\mid s,a],\\
+V_t^\tau(s)
+&=\tau_t\log\sum_{a\in\mathcal A_t(s)}
+\exp\{Q_t^\tau(s,a)/\tau_t\},\\
+\pi_t^\tau(a\mid s)
+&=\exp\{[Q_t^\tau(s,a)-V_t^\tau(s)]/\tau_t\},
+\quad a\in\mathcal A_t(s).
+\end{aligned}
+$$
+
+Each $Q_t^\tau$ excludes the current entropy bonus and includes future entropy through $V_{t+1}^\tau$. Backward induction optimizes the specified model objective over these eligible policy simplexes. Applying softmax to ordinary $Q_t^\rho$ values once is a different operation. Model estimation, policy learning and validation remain separate tasks; an exact recursion does not establish an empirical treatment effect.
+
+For the POMDP in A2.3, let $\bar r_t(b,a)$ be expected stage reward, $p_t(o\mid b,a)$ the predictive observation probability and $\mathcal B_t(b,a,o)$ the Bayesian belief update. With $\bar g_T(b)=\mathbb E[g_T(Z_T)\mid b]$,
+
+$$
+\begin{aligned}
+V_T^\tau(b)&=\bar g_T(b),\\
+Q_t^\tau(b,a)&=\bar r_t(b,a)
++\gamma\sum_o p_t(o\mid b,a)
+V_{t+1}^\tau(\mathcal B_t(b,a,o)),\\
+V_t^\tau(b)&=\tau_t\log\sum_{a\in\mathcal A_t(b)}
+\exp\{Q_t^\tau(b,a)/\tau_t\}.
+\end{aligned}
+$$
+
+Use the same normalized softmax policy on $\mathcal A_t(b)$, and integrals for continuous observations. This formulation values permitted information gathering through future beliefs as well as cash outcomes. Compare posterior distributions of action-value differences using joint parameter draws, preserving common uncertainty across actions. Policy temperature, belief uncertainty and parameter uncertainty have distinct roles. The operational comparison remains against fixed randomization, epsilon mixtures, UCB, Thompson sampling and suitable sequential baselines, with common outcomes and approved feasibility rules.

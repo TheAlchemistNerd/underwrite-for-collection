@@ -1,0 +1,2745 @@
+
+--- PDF page 1 ---
+LAWS OF KENYA
+THE CENTRAL BANK OF KENYA (NON-DEPOSIT
+TAKING CREDIT PROVIDERS) REGULATIONS, 2026
+NO. 191 OF 2026
+Revised and published by the National Council for Law Reporting
+with the authority of the Attorney-General as gazetted by the Government Printer
+www.kenyalaw.org
+
+--- PDF page 2 ---
+Kenya
+Central Bank of Kenya Act
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers)
+Regulations, 2026
+Legal Notice 191 of 2026
+Legislation as at 29 September 2026
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+By Kenya Law and Laws.Africa. Share widely and freely.
+www.kenyalaw.org | info@kenyalaw.org
+FRBR URI: /akn/ke/act/ln/2026/191/eng@2026-09-29
+There is no copyright on the legislative content of this document.
+This PDF copy is licensed under a Creative Commons Attribution NonCommercial ShareAlike 4.0 License (CC BY-NC-
+SA 4.0). This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format
+for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build
+upon the material, you must license the modiﬁed material under identical terms. CC BY-NC-SA includes the following
+elements:
+• BY: credit must be given to the creator.
+• NC: Only noncommercial uses of the work are permitted.
+• SA: Adaptations must be shared under the same terms.
+Share widely and freely.
+
+--- PDF page 3 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191
+of 2026)
+Contents
+Part I – PRELIMINARY .......................................................................................................................................................................................  1
+1. Citation. ........................................................................................................................................................................................................ 1
+2. Interpretation ............................................................................................................................................................................................. 1
+3. Application. ................................................................................................................................................................................................. 3
+4. Name approval. ......................................................................................................................................................................................... 3
+Part II – LICENSING OF NON-DEPOSIT TAKING CREDIT PROVIDERS .............................................................................................. 5
+5. Prohibition from carrying on business without a licence or registration ............................................................................ 5
+6. Application for licence. .......................................................................................................................................................................... 5
+7. Issuance of a licence. .............................................................................................................................................................................. 6
+8. Discontinuation of licence application. ...........................................................................................................................................  7
+Part III – REGISTRATION OF NON-DEPOSIT TAKING CREDIT PROVIDERS ..................................................................................... 7
+9. Application for registration. ................................................................................................................................................................. 7
+10. Issuance of a certiﬁcate of registration. .......................................................................................................................................  9
+11. Conversion of registration into licence. ........................................................................................................................................  9
+Part IV – OPERATION OF NON-DEPOSIT TAKING CREDIT BUSINESS ...........................................................................................  10
+12. Publication of licensed and registered non-deposit taking credit providers ................................................................. 10
+13. Licence or certiﬁcate of registration not transferable ..........................................................................................................  10
+14. Fit and proper obligations. .............................................................................................................................................................. 10
+15. Corporate governance. ....................................................................................................................................................................... 11
+16. Place of business. ...............................................................................................................................................................................  12
+17. Permissible activities. ......................................................................................................................................................................... 12
+18. Prohibited activities. ..........................................................................................................................................................................  12
+19. Restrictions on ownership by deposit taking institutions. ................................................................................................... 13
+20. Restrictions on shareholding by director. ..................................................................................................................................  13
+21. Suspension or revocation of licence or registration. .............................................................................................................  14
+22. Amalgamations and transfer of assets, liabilities, and shares. ..........................................................................................  15
+23. Risk management. ..............................................................................................................................................................................  16
+24. Provision of credit. .............................................................................................................................................................................  16
+25. Credit policy. .........................................................................................................................................................................................  17
+26. Products. .................................................................................................................................................................................................  18
+27. Channel delivery. .................................................................................................................................................................................  18
+28. Credit appraisal. ................................................................................................................................................................................... 18
+29. Limit on interest recoverable from non-performing loans. ................................................................................................. 19
+
+--- PDF page 4 ---
+30. Credit collection. .................................................................................................................................................................................  19
+31. Outsourcing. ..........................................................................................................................................................................................  20
+32. Conﬁdentiality. ...................................................................................................................................................................................... 21
+33. Exchange of credit information. .................................................................................................................................................... 21
+34. Restrictions on use of credit information. ................................................................................................................................. 22
+35. Business continuity. ............................................................................................................................................................................ 22
+36. Information and technology systems. .........................................................................................................................................  23
+37. Accessibility for persons with disabilities. .................................................................................................................................  23
+Part V – CONSUMER PROTECTION ............................................................................................................................................................. 24
+38. Suitability of product or service. ................................................................................................................................................... 24
+39. Access to transaction and credit information. .......................................................................................................................... 24
+40. Customer complaints resolution. ................................................................................................................................................... 24
+41. Fairness. .................................................................................................................................................................................................. 25
+42. Guarantor’s liability. ............................................................................................................................................................................ 25
+43. Expenses for loan recovery. ............................................................................................................................................................  26
+44. Debt collection. .................................................................................................................................................................................... 26
+45. Reliability ...............................................................................................................................................................................................  26
+46. Staff oversight ...................................................................................................................................................................................... 26
+47. Transparency .......................................................................................................................................................................................... 26
+48. Key information document .............................................................................................................................................................. 27
+49. Use of different business name or tradename ........................................................................................................................  27
+50. Customer obligations. ........................................................................................................................................................................ 27
+51. Advertising, marketing and promotions. .................................................................................................................................... 28
+52. False advertisements. ........................................................................................................................................................................ 28
+53. Access and collection of customer information ....................................................................................................................... 29
+54. Loan agreement. .................................................................................................................................................................................. 29
+55. Variation of pricing parameters and credit terms. .................................................................................................................. 30
+56. Loan repayment. .................................................................................................................................................................................. 30
+57. Non-performing loans. ....................................................................................................................................................................... 30
+58. Consent to process data. .................................................................................................................................................................. 31
+59. Pricing parameters. ............................................................................................................................................................................. 31
+60. Use of artiﬁcial intelligence. ..........................................................................................................................................................  32
+61. Compliance with cyber security standards. ............................................................................................................................... 32
+Part VI – ANTI-MONEY LAUNDERING AND COMBATING THE FINANCING OF TERRORISM ..................................................  32
+62. Sources of funds. ................................................................................................................................................................................. 32
+
+--- PDF page 5 ---
+63. Customer identity. ............................................................................................................................................................................... 33
+64. Compliance with anti-money laundering, ﬁnancing of terrorism laws. ..........................................................................  33
+Part VII – REPORTING REQUIREMENTS AND OVERSIGHT BY THE CENTRAL BANK ................................................................  33
+65. Annual publication of licensed and registered non-deposit taking credit providers. ................................................. 33
+66. Reporting requirements, onsite inspection and off-site monitoring. ............................................................................... 33
+67. Preparation and submission of ﬁnancial statements .............................................................................................................  34
+68. Disclosure of information by Bank ............................................................................................................................................... 34
+69. Power of Bank to advise and direct. ............................................................................................................................................ 34
+Part VIII – CODE OF CONDUCT ...................................................................................................................................................................  35
+70. Objectives of the code of conduct. ..............................................................................................................................................  35
+71. Guiding principles. .............................................................................................................................................................................. 35
+72. Application of the code of conduct .............................................................................................................................................  36
+73. Establishment of industry body. .................................................................................................................................................... 36
+74. Skill, care and diligence ................................................................................................................................................................... 36
+75. Business integrity ................................................................................................................................................................................ 36
+76. Conﬂict of interests. ........................................................................................................................................................................... 36
+77. Communicating with customers ..................................................................................................................................................... 36
+78. Protection of collateral. ....................................................................................................................................................................  37
+79. Market conduct compliance ............................................................................................................................................................  37
+80. Financial resources. ............................................................................................................................................................................ 37
+81. Internal affairs ...................................................................................................................................................................................... 37
+82. Market conduct obligations. ............................................................................................................................................................ 37
+83. Compliance with the code of conduct. ....................................................................................................................................... 38
+Part IX – ENFORCEMENT ............................................................................................................................................................................... 38
+84. Non-compliance ................................................................................................................................................................................... 38
+85. Duty to comply ....................................................................................................................................................................................  39
+86. Enforcement and administrative sanctions. ..............................................................................................................................  39
+87. Application of monetary penalty to each violation. ............................................................................................................... 39
+88. Rectiﬁcation of violation. ................................................................................................................................................................. 40
+89. Period within which rectiﬁcation is to be made. .................................................................................................................... 40
+Part X – REVIEW ...............................................................................................................................................................................................  40
+90. Review. ..................................................................................................................................................................................................... 40
+91. Grounds for review. ............................................................................................................................................................................  40
+92. Request for additional information .............................................................................................................................................. 40
+93. Determination of the request for review. ..................................................................................................................................  41
+
+--- PDF page 6 ---
+94. Communication of decision. ............................................................................................................................................................ 41
+Part XI – MISCELLANEOUS PROVISIONS ................................................................................................................................................. 41
+95. Voluntary liquidation of business. ................................................................................................................................................  41
+96. Transition. ............................................................................................................................................................................................... 41
+97. Revocation. ............................................................................................................................................................................................. 42
+FIRST SCHEDULE ...............................................................................................................................................................................................  42
+SECOND SCHEDULE [r. 14(1), 22(8), 74(d)] .............................................................................................................................................. 57
+THIRD SCHEDULE [r. 5(2)(z), 7(4), 9(3)(p), 11(3)] ................................................................................................................................... 58
+
+--- PDF page 7 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+CENTRAL BANK OF KENYA ACT
+THE CENTRAL BANK OF KENYA (NON-DEPOSIT
+TAKING CREDIT PROVIDERS) REGULATIONS, 2026
+LEGAL NOTICE 191 OF 2026
+Published in Kenya Gazette on 29 September 2026
+Commenced on 29 September 2026
+Part I – PRELIMINARY
+1. Citation.
+These Regulations may be cited as the Central Bank of Kenya (Non-Deposit Taking Credit Providers)
+Regulations, 2026.
+2. Interpretation
+In these Regulations, unless the context otherwise requires—
+“Act” means the Central Bank of Kenya Act (Cap. 491);
+“associate” means—
+(a) in relation to a non-deposit taking credit provider or other body corporate means—
+(i) its holding company or its subsidiary;
+(ii) a holding company of its subsidiary;
+(iii) its non-operating holding company as its subsidiary;
+(iv) a subsidiary of a non-operating holding company;
+(v) any person who controls the company or body corporate whether alone or with his associates
+or with its associates; or
+(b) in relation to an individual, means any—
+(i) member of his family; and
+(ii) company or other body corporate controlled directly or indirectly, by him whether alone or
+with his associates;
+“Bank” means the Central Bank of Kenya;
+“beneﬁcial owner” has the meaning assigned to it under the Companies Act (Cap. 486);
+“borrower” means a customer or a consumer;
+“certiﬁcate of registration” means a document issued by the Bank to a person who has applied for and
+fulﬁls the requirements for registration under the Act and these Regulations;
+“charges” includes all the payments that a customer makes, is required to make, or agrees to make to a
+non-deposit taking credit provider in consideration of the loan by the non-deposit taking credit provider
+to the customer, and all interest, fees, expenses and costs associated with the provision of the loan;
+1
+
+--- PDF page 8 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+“credit information” means any positive or negative information relating to a person’s credit worthiness,
+credit standing, credit capacity, or history or proﬁle relating to credit, assets, and any ﬁnancial
+obligations;
+“consumer” means a person who seeks to obtain a loan, a loan product or to purchase goods or assets from
+a non-deposit taking credit provider;
+“delivery channel” means the mode or platform through which services are rendered and includes but
+is not limited to physical premises, mobile devices including mobile phones, credit cards, internet,
+telephones, automated teller machines, application-based platforms, unstructured supplementary service
+data, marketing units, mobile units, third-party premises and such other channels as the Bank may
+approve;
+“deposit” means an amount received or paid on terms under which it shall be repaid, with or without
+interest or a premium, and either on demand, or at a time or in circumstances agreed by or on behalf of
+the person making the payment and the person receiving it;
+“family member” means a parent, spouse, brother, sister, child, uncle, aunt, nephew, niece, stepfather,
+stepmother, stepchild and adopted child of the person concerned, and in case of an adopted child, his
+adopter or adopters;
+“licence” means a document issued by the Bank to a person who has applied for and fulﬁls the
+requirements for licensing;
+“loan” means any credit facilities, advances, or loan products including buy now pay later, stock now pay
+later, and peer to peer lending offered by the lender;
+“non-deposit taking credit provider” means a person licensed or registered by the Bank to carry on
+non-deposit taking credit business using their own funds and assets but does not include the national
+government or county government:
+Provided that where any reference is made to a non-deposit taking credit provider without specifying
+whether it is a licensed non-deposit taking credit provider or registered non-deposit taking credit
+provider, the term shall be construed to mean both licensed and registered non-deposit taking credit
+providers;
+“non-performing loan” has the meaning assigned to it in regulation 57 of these Regulations;
+“pay as you go” means a credit arrangement where a consumer acquires access to the use of an asset by
+making partial or periodic payments with the ultimate intention to own the asset, and the provider retains
+the right to restrict, deactivate, or repossess the asset in the event of non-payment by the consumer;
+“place of business” means any premise including the head ofﬁce, branch, or any such premises as may be
+approved by the Bank where the non-deposit taking credit provider carries on business;
+“reckless” includes—
+(a) offering a loan or loan product contrary to the Act, these Regulations, the code of conduct or any
+directives issued by the Bank; or
+(b) failing to observe the non-deposit taking credit provider’s own policies as approved by the board of
+directors;
+“senior ofﬁcer” means a person who has ultimate responsibility for managing a speciﬁc function or
+business area of a non-deposit taking credit provider including ﬁnance, compliance, risk, information
+technology, credit, debt recovery, marketing, or any other similar function as may be speciﬁed by the
+Bank;
+“signiﬁcant shareholder” means a person other than the Government or a public entity, who holds directly
+or indirectly or otherwise has a beneﬁcial interest in ten percent or more of the share capital of a non-
+deposit taking credit provider; and
+2
+
+--- PDF page 9 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+“third-party service provider” means a person who is undertaking a material outsourced service on behalf
+of a non-deposit taking credit provider and includes a member of the group to which the non-deposit
+taking credit provider belongs, or an unrelated company whether located in Kenya or outside.
+3. Application.
+(1) These Regulations shall apply to non-deposit taking credit business not regulated under any other
+written law.
+(2) These Regulations shall apply to any person seeking to conduct non-deposit taking credit business
+unless that person has been licensed or registered by the Bank under this Act or is permitted to do
+so under any other written law.
+(3) These Regulations shall not apply to—
+(a) an institution licensed under the Banking Act (Cap. 488);
+(b) a credit guarantee company or credit guarantee provider regulated under the Central Bank of
+Kenya Act (Cap. 491);
+(c) an institution licensed under the Microﬁnance Act (Cap. 493C);
+(d) a co-operative society registered under the Co-operative Societies Act (Cap. 490);
+(e) a Sacco society licensed under the Sacco Societies Act (Cap. 490B);
+(f) credit arrangements involving the provision of credit by a person that is merely incidental
+to the sale of goods or provision of services by the person whose primary business is the
+provision of the goods or services;
+(g) lease ﬁnance transactions in Kenya regulated under any written law;
+(h) hire-purchase arrangements involving the bailment of goods under the Hire Purchase Act
+(Cap. 507);
+(i) a person whose non-deposit taking credit business is regulated under any other written law;
+or
+(j) any other person approved by the Bank and whose business does not fall under the deﬁnition
+of “ﬁnancial institution” under the Proceeds of Crime and Anti-Money Laundering Act (Cap.
+59A).
+4. Name approval.
+(1) Promoters of a proposed non-deposit taking credit provider shall propose at least three company
+names with the Business Registration Service.
+(2) The promoters shall submit the proposed three company names to the Bank for approval, in order
+of preference, together with the following supporting information—
+(a) name search and reservation document obtained from Business Registration Service;
+(b) names and addresses of the proposed shareholders, including certiﬁed copies of requisite
+identiﬁcation documents or certiﬁcates of incorporation or registration in case of corporate
+entities; and
+(c) a high-level brief providing information on the proposed business including—
+(i) company proﬁle;
+(ii) nature of proposed business indicating the proposed business activities;
+(iii) evidence of availability and amount of capital;
+3
+
+--- PDF page 10 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(iv) shareholding structure including details of shareholders, respective shareholding
+percentages and ultimate beneﬁcial owners;
+(v) organizational structure describing proposed functional units through which the
+business will be managed;
+(vi) governance structure describing proposed board composition, its functions and senior
+management responsibilities;
+(vii) business model including the delivery channels and platforms to be used;
+(viii) target market, identifying the gap that the proposed business intends to ﬁll in the
+market; and
+(ix) a statement indicating whether the company intends to apply for a license or
+registration to conduct non-deposit taking credit business.
+(3) The promoters shall obtain and submit to the Bank a letter of no objection from Kenya Industrial
+Property Institute on the use of the reserved company name upon the Bank’s approval.
+(4) The Bank shall consider the information and the names submitted and may take into account the
+suitability of the proposed names and any other relevant matter including any representations
+made during any meeting between the Bank and the promoters which may have a bearing on the
+proposed names or proposed non-deposit taking credit business.
+(5) In determining the suitability of the proposed company name, the Bank shall have regard to
+whether the proposed name—
+(a) is not identical or similar to the name of a licensed or registered non deposit taking credit
+provider;
+(b) is not misleading or deceptive as to the nature of the applicant's business, or the ownership
+and control of the applicant;
+(c) does not infringe, or appear likely to infringe, on the business name, registered trademark,
+or other intellectual property right of a licensed or registered non deposit taking credit
+provider;
+(d) is not offensive, undesirable, or contrary to public policy or public interest;
+(e) does not create the impression that applicant has been endorsed, guaranteed, or is otherwise
+afﬁliated with the Bank; or
+(f) is not consistent with the applicant's proposed business activities.
+(6) Where the names are not suitable, the Bank may direct the promoters to submit three alternative
+company names which shall be considered in accordance with subregulation (4).
+(7) Without prejudice to subregulation (3), and (5) a proposed name shall not include names with
+words which are restricted under the Banking Act (Cap. 488), the Microﬁnance Act (Cap. 493C), or
+any other written law.
+(8) The Bank may grant approval of a name on such conditions as it may impose.
+(9) Upon approval of the proposed name by the Bank, the promoters shall incorporate the company
+within three months and shall apply to the Bank for a licence or registration within six months from
+the date of incorporation.
+(10) Where the promoters fail to comply with paragraph (8), the approval of the proposed name shall
+lapse and the promoters shall be required to cease using the proposed name.
+(11) Without prejudice to paragraph (9), a promoter issued with approval to use any name by the Bank
+shall not transact a non-deposit taking credit business or misrepresent themselves as having
+authority to carry on non-deposit taking credit business.
+4
+
+--- PDF page 11 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(12) Where an existing business intends to carry on a non-deposit taking credit business, the existing
+business shall furnish the Bank with—
+(a) a letter of no objection from Kenya Industrial Property Institute on the use of the reserved
+company name; and
+(b) a high-level brief of its business strategy and any other documents that the Bank may deem
+necessary for purposes of name approval.
+Part II – LICENSING OF NON-DEPOSIT TAKING CREDIT PROVIDERS
+5. Prohibition from carrying on business without a licence or registration
+A person shall not establish a non-deposit taking credit business in Kenya or otherwise hold themself out
+as carrying on non-deposit taking credit business unless that person is licensed or registered by the Bank
+in accordance with the Act and these Regulations or is a person whose non-deposit taking credit business
+is regulated under any other written law.
+6. Application for licence.
+(1) A person who seeks to establish a non-deposit taking credit business in Kenya and whose initial
+capital is not less than twenty million shillings shall apply to the Bank for a licence using Form 1 set
+out in the First Schedule.
+(2) An application under paragraph (1) shall be accompanied by—
+(a) a certiﬁed copy of the certiﬁcate of incorporation of the applicant issued under the
+Companies Act (Cap. 486);
+(b) a certiﬁed copy of the Memorandum and Articles of Association of the applicant;
+(c) a certiﬁed copy of the certiﬁcate of registration of a Business Name issued by the Business
+Registration Service where the applicant intends to carry on business under a business name
+which is not on the certiﬁed copy of the certiﬁcate of incorporation;
+(d) notiﬁcation of the applicant’s registered address;
+(e) a certiﬁcate issued pursuant to section 19 of the Data Protection Act (Cap. 411C);
+(f) a statement on how the applicant shall comply with the provisions of Part VII of the
+Consumer Protection Act (Cap. 501);
+(g) a statement on how the applicant shall comply with the provisions of Part VI of the
+Competition Act (Cap. 504);
+(h) evidence of availability and amount of capital to be invested in the proposed business;
+(i) information on the source of capital;
+(j) a certiﬁed copy of a certiﬁcate of incorporation, Memorandum and Articles of Association of
+any corporate body that has a signiﬁcant shareholding in the applicant;
+(k) a description of any information and communication technology system to be used;
+(l) a description of delivery channels or platforms to be used in conducting the business or
+delivering services;
+(m) a description of, and terms and conditions of, credit products and services which the
+applicant intends to provide;
+(n) draft agreement with a service provider in relation to provision of delivery channel, where
+applicable;
+5
+
+--- PDF page 12 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(o) a description of consumer protection measures to be put in place including complaints
+redress mechanism;
+(p) a description of the operations of the non-deposit taking credit business highlighting
+proposed range of loan sizes, range of interest rates, loan classiﬁcation criteria and period
+within which a loan will be deemed non-performing subject to paragraph 57;
+(q) a brief statement on whether the business will be funded wholly out of capital or from other
+sources, including the proposed debt to equity ratio;
+(r) a copy of the applicant’s credit policy and procedures;
+(s) a copy of the applicant’s code of conduct;
+(t) a copy of the applicant’s consumer protection policies and procedures;
+(u) a copy of the applicant’s anti-money laundering and combating the ﬁnancing of terrorism
+policies and procedures;
+(v) a copy of the applicant’s data protection policies and procedures;
+(w) a copy of the applicant's information and communications technology security management
+system policies and procedures;
+(x) a copy of the applicant’s corporate governance policies and procedures;
+(y) a sworn declaration by the shareholders on the sources of funds and that the funds are not
+from proceeds of crime;
+(z) non-refundable application fees set out in the Third Schedule;
+(aa) the names and addresses of the shareholders in Form 3 set out in First Schedule;
+(bb) duly ﬁlled ﬁt and proper forms for the directors, chief executive ofﬁcer and senior ofﬁcers in
+Form 3, and signiﬁcant shareholders in Form 4, set out in the First Schedule accompanied
+by certiﬁcate of good conduct, tax compliance certiﬁcate and credit reference bureau report
+for each of the non-deposit taking credit provider’s individual signiﬁcant shareholders,
+directors, chief executive ofﬁcer and senior ofﬁcers;
+(cc) the applicant’s pricing parameters, including criteria for determining non-performing loans;
+(dd) certiﬁcate of good conduct, tax compliance certiﬁcate and credit reference bureau report
+for each of the non-deposit taking credit provider’s individual signiﬁcant shareholders,
+directors, chief executive ofﬁcer and senior ofﬁcers;
+(ee) the applicant’s proposed channel deliveries including application programs for the lending
+business;
+(ff) the applicant’s business continuity plans;
+(gg) sworn declaration that none of the proposed directors or signiﬁcant shareholders holds or
+owns a similar position in any other non-deposit taking credit provider in Kenya;
+(hh) copies of the last three years’ annual audited ﬁnancial statements, where applicable; and
+(ii) any other information as may be required by the Bank.
+(3) Despite paragraph (2) the policies and procedures, manuals or codes under this Regulation shall be
+approved by the Board.
+7. Issuance of a licence.
+(1) In assessing the application, the Bank shall consider the following—
+(a) adequacy of the information and documents furnished in support of the application;
+6
+
+--- PDF page 13 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(b) the professional and moral suitability of the persons proposed to manage or control the non-
+deposit taking credit provider;
+(c) the sources and evidence of funds to be invested by or in the non-deposit taking credit
+provider; and
+(d) the public interest to be served by issuing the licence.
+(2) The Bank may, if satisﬁed that the applicant meets the requirements, grant with or without
+conditions, a licence to the applicant, within sixty days of submission of an application.
+(3) A licence issued under these Regulations shall remain valid unless suspended or revoked by the
+Bank.
+(4) A non-deposit taking credit provider shall, on or before the 31st day of December every year, pay
+the annual fees set out in the Third Schedule as a lumpsum or in such manner as the Bank may
+specify.
+(5) If a non-deposit taking credit provider fails to pay the annual fees speciﬁed in paragraph (4), it shall
+pay double the annual fees if it is paid within three months from 31st day of December of the year
+when the fees fall due.
+(6) If the annual fees are not paid in accordance with the requirements of paragraph (5), the Bank may
+revoke the licence.
+8. Discontinuation of licence application.
+(1) Where an applicant has not responded to a request by the Bank for additional information for a
+period of three months, the Bank may discontinue the processing of the licence application.
+(2) After the expiry of the three months referred to in paragraph (1), the Bank may issue a fourteen
+days’ notice to show cause to the applicant why the licence application processing should not be
+discontinued and the Bank may consider any representations made pursuant to the notice to show
+cause.
+(3) The Bank shall notify the applicant of the decision on discontinuation of processing of the licence
+application within seven days of receipt of the representations, or such longer time as may be
+necessary.
+(4) Where an application has been discontinued under paragraph (1), the applicant may make a fresh
+application for a licence on such terms as the Bank may impose.
+Part III – REGISTRATION OF NON-DEPOSIT TAKING CREDIT PROVIDERS
+9. Application for registration.
+(1) A person who wishes to carry on non-deposit taking credit business and who fails to meet the
+conditions set out in regulation 7(1) shall apply to the Bank for registration as a non-deposit taking
+credit provider.
+(2) An application for registration shall be made in Form 2 set out in the First Schedule.
+(3) An application under paragraph (2) shall be accompanied by—
+(a) a certiﬁed copy of the certiﬁcate of incorporation of the applicant issued under the
+Companies Act (Cap. 486);
+(b) a certiﬁed copy of the Memorandum and Articles of Association of the applicant;
+7
+
+--- PDF page 14 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(c) a certiﬁed copy of the certiﬁcate of registration of a Business Name issued by the Business
+Registration Service where the applicant intends to carry on business under a business name
+which is not on the certiﬁed copy of the certiﬁcate of incorporation;
+(d) notiﬁcation of the applicant’s physical address;
+(e) a valid certiﬁcate issued pursuant to section 19 of the Data Protection Act (Cap. 411C);
+(f) a statement as to compliance with the provisions of Part VII of the Consumer Protection Act
+(Cap. 501);
+(g) a statement as to compliance with the provisions of Part VI of the Competition Act (Cap.
+504) and the Rules thereunder;
+(h) evidence of availability and amount of capital to be invested in the proposed business;
+(i) information on source of capital;
+(j) a description of, and terms and conditions of credit products and services which the
+applicant intends to provide;
+(k) a brief on the applicant’s anti-money laundering and combating the ﬁnancing of terrorism
+policies and procedures;
+(l) a description of any information and communication technology system to be used;
+(m) a brief on the applicant’s data protection policies and procedures outlining, among other
+things, the complaint redress mechanisms;
+(n) a brief on the applicant’s corporate governance policies and procedures;
+(o) a brief on the applicant’s consumer protection policies and procedures covering among other
+things complaint redress mechanisms;
+(p) non-refundable application fees set out in the Third Schedule;
+(q) a description of delivery channels or platforms to be used in conducting the business or
+delivering services;
+(r) duly ﬁlled ﬁt and proper forms for the directors, chief executive ofﬁcer and senior ofﬁcers
+in Form 3 set out in the First Schedule and signiﬁcant shareholders in Form 4 of the First
+Schedule.
+(s) a copy of the applicant’s credit policy and procedures;
+(t) a copy of the applicant’s code of conduct;
+(u) a copy of the applicant’s pricing parameters;
+(v) a copy of the applicant’s business continuity plans;
+(w) certiﬁcate of good conduct, tax compliance certiﬁcate and credit reference bureau report
+for each of the non-deposit taking credit provider’s individual signiﬁcant shareholders,
+directors, chief executive ofﬁcer and senior ofﬁcers;
+(x) copies of the last three years’ annual audited ﬁnancial statements, where applicable;
+(y) sworn declaration that none of the proposed directors or signiﬁcant shareholders holds or
+owns a similar position in any other non-deposit taking credit provider in Kenya;
+(z) the applicant’s proposed channel deliveries including application programs for the lending
+business; and
+(aa) any other information as may be required by the Bank.
+8
+
+--- PDF page 15 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(4) A person who understates his initial capital to meet registration requirements under this part
+shall be liable to the penalty prescribed in section 33S (10) of the Act and where a certiﬁcate of
+registration has been issued, the Bank may revoke the registration.
+10. Issuance of a certiﬁcate of registration.
+(1) Upon being satisﬁed that an applicant has submitted complete documentation required, the Bank
+may grant a certiﬁcate of registration with or without conditions.
+(2) A certiﬁcate of registration issued under this Part shall permit a non-deposit taking credit provider
+to conduct business in accordance with the requirements of these Regulations, save as otherwise
+expressly excepted.
+(3) A certiﬁcate issued under this Part shall remain valid unless suspended or revoked.
+(4) A registered non-deposit taking credit provider shall, on or before the 31st day of December every
+year, pay the annual fees set out in the Third Schedule in a lumpsum or in such manner as the Bank
+may specify.
+(5) A registered non-deposit taking credit provider which fails to pay the annual fees speciﬁed in
+paragraph (4), shall pay double the annual fee if it is paid within three months from 31st day of
+December of the year when the fee is due.
+(6) Where the annual fees are not paid in accordance with the requirements of paragraph (5), the Bank
+may revoke the registration of the non-deposit taking credit provider.
+11. Conversion of registration into licence.
+(1) A registered non-deposit taking credit business shall apply to the Bank for a licence where the
+registered non-deposit taking credit business—
+(a) capital exceeds twenty million shillings;
+(b) borrowings exceed twenty million shillings; or
+(c) loan book exceeds twenty million shillings.
+(2) The application for a licence in paragraph (1) shall be in Form 1 set out in the First Schedule.
+(3) The application in paragraph (2) shall be accompanied with the fee payable as set out in the Third
+Schedule.
+(4) Notwithstanding the provisions of paragraph (1), the Bank may direct a registered non-deposit
+taking credit provider to apply for a licence where the non-deposit taking credit provider has—
+(a) failed to disclose the correct amounts under paragraph (1); or
+(b) undergone a rapid expansion of business following registration.
+(5) An application under this Regulation shall be accompanied by—
+(a) evidence of availability and amount of capital;
+(b) total borrowings indicating lenders, date of borrowings, principal amounts, interest rates
+applicable, total amount owing;
+(c) total loan book indicating details of the loans as may be speciﬁed by the Bank;
+(d) a copy of the credit policies and procedures;
+(e) pricing parameters;
+(f) a copy of the code of conduct;
+9
+
+--- PDF page 16 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(g) a copy of the consumer protection policy and procedures;
+(h) a copy of the Anti-Money Laundering and Combating the Financing of Terrorism policies and
+procedures;
+(i) a copy of the data protection policies and procedures;
+(j) a copy of the corporate governance policies and procedures;
+(k) information on pricing parameters;
+(l) a report on complaints received, nature of complaints, number of complaints resolved, not
+resolved, nature of corrective actions taken; and
+(m) any other information as the Bank may require.
+(6) The Bank shall process the application based on the information submitted and may issue a licence
+with or without conditions.
+(7) The Bank shall, within thirty days after issuing a licence, publish in the Gazette, notice of
+conversion of a registered non-deposit taking credit provider to a licensed non-deposit taking credit
+provider.
+(8) Save as provided under this Part, upon issuance of a licence, all other requirements in these
+Regulations relating to a licensed non-deposit taking credit provider shall apply to a non-deposit
+taking credit provider licensed under this Part.
+(9) A registered non-deposit taking credit provider which has applied for, or has been directed by the
+Bank to apply for a licence under this Part, shall continue conducting credit business, pending
+processing of the licence application by the Bank.
+Part IV – OPERATION OF NON-DEPOSIT TAKING CREDIT BUSINESS
+12. Publication of licensed and registered non-deposit taking credit providers
+The Bank shall publish the name of every licensed or registered non-deposit taking credit provider in the
+Gazette and in the Bank’s website within thirty days of grant of licence or certiﬁcate of registration.
+13. Licence or certiﬁcate of registration not transferable
+A licence or certiﬁcate of registration issued under these Regulations shall not be transferred, assigned or
+encumbered in any way.
+14. Fit and proper obligations.
+(1) No person shall be a signiﬁcant shareholder, director, chief executive ofﬁcer or a senior ofﬁcer of
+a non-deposit taking credit provider unless the Bank has certiﬁed the person as ﬁt and proper in
+accordance with the criteria set out in the Second Schedule.
+(2) Notwithstanding paragraph (1), a non-deposit taking credit provider may make a conditional
+appointment of a chief executive ofﬁcer or a senior ofﬁcer pending the Bank’s certiﬁcation.
+(3) The Bank may, where necessary, carry out an assessment of the professional and moral suitability of
+a signiﬁcant shareholder, director, chief executive ofﬁcer, or a senior ofﬁcer of a non-deposit taking
+credit provider, notwithstanding that the person had previously been certiﬁed by the Bank as ﬁt and
+proper.
+(4) The Bank may direct a signiﬁcant shareholder who is considered by the Bank as not fulﬁlling the ﬁt
+and proper criteria to dispose of all or part of their shares in a non-deposit taking credit provider
+within such period as the Bank may specify.
+10
+
+--- PDF page 17 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(5) Where a person does not comply with the ﬁt and proper criteria prescribed, the Bank may disqualify
+any person from holding the position of director, chief executive ofﬁcer or senior ofﬁcer or holding
+any other ofﬁce in a non-deposit taking credit provider.
+(6) A disqualiﬁcation under paragraph (5) may not extend for a period exceeding three years.
+(7) A non-deposit taking credit provider shall promptly notify the Bank when the non-deposit taking
+credit provider becomes aware of any information that may impact on the professional and moral
+suitability of a signiﬁcant shareholder, director, chief executive ofﬁcer or a senior ofﬁcer of a non-
+deposit taking credit provider.
+(8) Where the Bank has reason to believe that a shareholder has reduced its direct or indirect
+shareholding in a non-deposit taking credit provider to below ten percent in order to avoid vetting,
+vet such a shareholder.
+(9) Paragraph (1) and (2) shall not apply to a registered non-deposit taking credit provider except as the
+Bank may specify on a case-by-case basis.
+15. Corporate governance.
+(1) A non-deposit taking credit provider shall practice sound corporate governance principles based on
+ethics and integrity, good reputation and legitimacy, sound risk management and compliance with
+the law.
+(2) Without prejudice to paragraph (1), a non-deposit taking credit provider shall—
+(a) have a board of directors which is commensurate to its size, complexity and risk proﬁle
+which shall exercise effective oversight over the management of the non-deposit taking
+credit provider;
+(b) have an organizational structure which ensures the conduct of a sound and viable credit
+business;
+(c) establish risk management and compliance frameworks that ensure proper business
+management, and compliance with the Act, other relevant written law, guidelines, policies,
+procedures and directives of the Bank;
+(d) ensure that functions of the board and senior management are clearly separated; and
+(e) ensure the board is constantly apprised of business activities and the performance of the
+non-deposit taking credit provider.
+(f) ensure that the board members are constantly apprised of new technology adopted by the
+non-deposit taking credit provider.
+(3) Where a non-deposit taking credit provider is a subsidiary of a group of companies or non-
+operating holding company, the board of the non-deposit taking credit provider shall remain
+responsible for the corporate governance in the non-deposit taking credit provider.
+(4) The board of the non-deposit taking credit provider shall evaluate any group-level practices to
+ensure that they do not put the regulated subsidiary in breach of applicable laws and prudential
+rules.
+(5) A non-deposit taking credit provider shall not beneﬁt from a favorable or concessional facility from
+the group except in the normal course of business and at arm's length.
+(6) A non-deposit taking credit provider shall notify the Bank of any intended changes in its signiﬁcant
+shareholding, board or management structure, or the appointment of a new director, chief
+executive ofﬁcer or a senior ofﬁcer at least thirty days before the effective date of such changes or
+appointments.
+11
+
+--- PDF page 18 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(7) A non-deposit taking credit provider shall notify the Bank whenever a director, chief executive
+ofﬁce, or a senior ofﬁcer resigns or is otherwise removed within seven days of the date of
+resignation or such removal.
+(8) Notwithstanding paragraph (7), a non-deposit taking provider shall disclose the reasons for the
+removal, resignation or retirement of directors.
+16. Place of business.
+(1) A non-deposit taking credit provider shall have at least one registered physical ofﬁce in Kenya, in
+accordance with the requirements of the Companies Act (Cap. 486).
+(2) A non-deposit taking credit provider shall display a copy of its licence or certiﬁcate of registration
+in all its places of business.
+(3) A non-deposit taking credit provider shall give at least thirty days written notice to the Bank before
+the opening, relocation or closure of its business.
+17. Permissible activities.
+(1) A non-deposit taking credit provider may engage in—
+(a) granting of loans or credit facilities, whether or not digitally, to members of the public or a
+section of it, with or without interest, and either secured or unsecured on the goods or assets
+purchased;
+(b) asset ﬁnancing whether directly or through a third-party ﬁnancier;
+(c) buy now pay later arrangements as determined by the Bank but does not include hire
+purchase agreements under the Hire-Purchase Act (Cap. 507);
+(d) stock now pay later arrangements as determined by the Bank but does not include hire
+purchase agreements under the Hire-Purchase Act (Cap. 507);
+(e) providing credit guarantees, except as prohibited by any other written law;
+(f) pay as you go arrangements as maybe determined by the Bank;
+(g) peer to peer lending under collective investment schemes regulated under the Capital
+Markets Act (Cap. 485A) and other forms of peer-to-peer lending as approved by the Bank;
+(h) any other activity as the Bank may determine to be a non-deposit taking credit business for
+purposes of the Act; and
+(i) any other activity incidental to non-deposit taking credit business as may be approved by the
+Bank.
+(2) Subject to paragraph (1)(g), a letter of no objection shall be required to be obtained from the Capital
+Markets Authority before the Bank’s approval.
+18. Prohibited activities.
+(1) A non-deposit taking credit provider shall not engage in—
+(a) deposit taking business;
+(b) taking of cash as security for loans;
+(c) savings including lock savings, investment or goal accounts;
+(d) collection of registration fees, membership fees, and any other fees as may be determined by
+the Bank from time to time, from loan applicants or borrowers;
+12
+
+--- PDF page 19 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(e) money pools for fundraising and related activities;
+(f) credit reference bureau business;
+(g) dealing in foreign exchange business;
+(h) disbursing loans in foreign denominated currencies;
+(i) payment services and transfer of funds;
+(j) trust operations; and
+(k) any other activity as the Bank may determine.
+(2) A non-deposit taking credit provider shall not enter into a credit arrangement that is merely
+incidental to the sale of goods and provision of services.
+(3) Subject to paragraph (2) “merely incidental” means a credit arrangement which does not form the
+core business of an entity, but is offered from time to time to customers to enable them to access
+goods and services offered by a seller but does not include hire purchase or leasing business.
+(4) Without prejudice to subregulation (1), a non-deposit taking credit provider shall not, as a
+prerequisite to offer a loan or loan product, require a potential customer to undertake the activities
+more particularly described in paragraph (1)(a), (b), (c) and (d) from its associates before obtaining
+the loan or loan product from the non-deposit taking credit provider.
+(5) A non-deposit taking credit provider who contravenes the provisions of paragraph (1) and (2) shall
+be liable to assessment of penalties or other administrative sanctions as provided for in these
+Regulations.
+19. Restrictions on ownership by deposit taking institutions.
+(1) A person licensed under any other written law to conduct deposit taking business shall not, directly
+or indirectly, whether alone or with his associates, seek for a licence or registration as a non-deposit
+taking credit provider under these Regulations.
+(2) The Bank may exempt a non-deposit taking credit provider from the provisions of this regulation on
+such conditions as the Bank may consider necessary.
+20. Restrictions on shareholding by director.
+Where a director in a non-deposit taking credit provider intends to become a shareholder in another non-
+deposit taking credit provider, such director shall be required to demonstrate to the Bank that—
+(a) the director does not have direct or indirect interest in the other non-deposit taking credit provider
+which exceeds its share capital;
+(b) the director does not consult for the other non-deposit taking credit provider;
+(c) the director shall be able to effectively discharge their role in the non-deposit taking credit
+provider;
+(d) the resources for investment shall not be from the business activities of non-deposit taking credit
+provider where they are directors; or
+(e) any other related matter.
+13
+
+--- PDF page 20 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+21. Suspension or revocation of licence or registration.
+(1) The Bank may suspend or revoke a licence or registration if a non-deposit taking credit provider—
+(a) fails to comply with any administrative action imposed under the Data Protection Act (Cap.
+411C), including any enforcement notice or order for compensation issued by the Ofﬁce of
+Data Protection Commissioner;
+(b) fails to comply with the provisions of Part VII of the Consumer Protection Act (Cap. 501);
+(c) fails to comply with any administrative action imposed under the Competition Act (Cap.
+504) for acts relating to unconscionable behaviour, and false and misleading information,
+amongst others;
+(d) fails to comply with the Proceeds of Crimes and Anti-Money Laundering Act (Cap. 59A), the
+Prevention of Terrorism Act (Cap. 59B);
+(e) fails to comply with the Land Act (Cap. 280) with respect to recovery of securities relating to
+land;
+(f) fails to comply with the Movable Properties Securities Rights Act (Cap. 499A) with respect to
+secure storage and recovery of securities relating to movable securities;
+(g) contravenes any of its licensing or registration conditions;
+(h) fails to pay the annual fees within the prescribed period or a monetary penalty that is
+imposed by the Bank;
+(i) fails to comply with a guideline, circular or directive issued by the Bank;
+(j) fails to comply with any administrative sanction the Bank may impose;
+(k) fails to take timely corrective measures as the Bank may direct;
+(l) is found to have given false information during the licence or registration application
+process;
+(m) has contravened any of the provisions of the Act, any other relevant written law relating to
+non-deposit taking business;
+(n) fails to comply with the Code of Conduct submitted to the Bank;
+(o) fails to conclusively address a customer’s complaint in the manner and within the time
+prescribed by the Bank under these Regulations or as the Bank may direct;
+(p) imposes unreasonable or unjustiﬁable charges on a loan;
+(q) fails to comply with any directive by the bank to refund any money in form of charges to a
+customer which were not disclosed in the loan agreement;
+(r) fails to commence business within twelve months from date of licensing or registration;
+(s) fails, or is unable, to conduct a viable non-deposit taking business for such period as the
+Bank may determine;
+(t) fails to ﬁle prescribed returns within the appropriate period;
+(u) conducts its business in a manner detrimental to the interests of its customers or members
+of the public;
+(v) carries on a prohibited activity;
+(w) engages in an illegal activity;
+(x) applies to the Bank for revocation of its licence or certiﬁcate of registration;
+14
+
+--- PDF page 21 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(y) ceases to carry on the business of a non-deposit taking credit provider; or
+(z) goes into liquidation, or an order is issued for its winding up.
+(2) The Bank shall—
+(a) inform the non-deposit taking credit provider, in writing, of the reasons for the intended
+suspension or revocation prior to suspending or revoking a licence or registration; and
+(b) give the non-deposit taking credit provider an opportunity to be heard prior to suspending or
+revoking a licence or registration.
+(3) The Bank shall specify the period of suspension for a non-deposit taking credit provider’s licence or
+registration, and shall at the expiry of that period, and fulﬁlment of any condition imposed, lift the
+suspension as the Bank considers appropriate.
+(4) A non-deposit taking credit provider whose licence or registration has been suspended shall
+not grant new loans or carry on other permissible activities but may continue receiving loan
+repayments and settle its liabilities.
+(5) The Bank shall, within thirty days of the suspension or revocation, publish in the Gazette, the
+names of non-deposit taking credit providers whose licences or registration have been suspended or
+revoked.
+(6) A non-deposit taking credit provider whose licence or registration has been revoked shall cease to
+conduct business.
+(7) Where a licence or registration has been revoked, the Bank may, by notice in writing—
+(a) require the non-deposit taking credit provider to transfer to each customer the records
+relating to the ﬁnancial affairs of the customer held at any time, in such manner, as the Bank
+may specify in the notice;
+(b) require the non-deposit taking credit provider to update the credit reference bureau records
+of its customers;
+(c) permit the non-deposit taking credit provider, subject to such conditions as the Bank may
+specify in the notice, to carry on business operations for the purpose of closing down the
+business connected with the revocation; or
+(d) permit the non-deposit taking credit provider to collect or recover loan repayments and
+settle its liabilities to third parties for such period and on such conditions as the Bank may
+specify.
+22. Amalgamations and transfer of assets, liabilities, and shares.
+(1) A non-deposit taking credit provider shall not, except with the prior written approval of the Bank—
+(a) sell or transfer whole or part of its non-deposit taking credit business to another person
+except to another non-deposit taking credit provider; or
+(b) enter into an amalgamation with another non-deposit taking credit provider.
+(2) For purposes of considering an application for approval under paragraph (1), the Bank may request
+for such information from the non-deposit taking credit provider as it may require.
+(3) Notwithstanding subregulation (1), a non-deposit taking credit provider shall not require the prior
+approval of the Bank for the sale or disposal of property, whether movable or immovable in the
+ordinary course of business.
+(4) A non-deposit taking credit provider shall notify the Bank at least thirty days before entering into
+any agreement or arrangement with a third party for purposes of investing in the non-deposit
+taking credit provider or ﬁnancing the activities of the non-deposit taking credit provider.
+15
+
+--- PDF page 22 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(5) A non-deposit taking credit provider shall not transfer ten percent or more of its shareholding or
+beneﬁcial interest to another person without prior approval of the Bank.
+(6) A non-deposit taking credit provider shall not transfer ﬁfty percent or more of its shares to another
+person, whether at once or over a period, before the lapse of twelve months from the date of
+commencement of the business.
+(7) Any transfer of shares by a non-deposit taking credit provider to another person below the
+threshold under paragraph (5) shall be notiﬁed to the Bank within such period as the Bank may
+specify.
+(8) A person shall not, in relation to a non-deposit taking credit provider, acquire ten percent or more
+of the shareholding, unless the person has been certiﬁed by the Bank as ﬁt and proper in accordance
+with the criteria set out in the Second Schedule.
+(9) The Bank may direct a non-deposit taking credit provider to submit such additional information
+and documents as it may consider necessary for purposes of considering any transaction,
+agreement, arrangement or transfer under this Regulation.
+(10) The Bank may by a notice in the Gazette, exempt a registered non-deposit taking credit provider
+from any of the provisions of this Regulation for such period as may speciﬁed in such notice.
+(11) A non-deposit taking credit provider intending to acquire another non-deposit taking credit
+provider or to merge with a non-deposit taking credit provider shall furnish the Bank with a letter
+of no objection or authorization from the Competition Authority of Kenya.
+23. Risk management.
+(1) A non-deposit taking credit provider shall put in place a risk management framework consistent
+with its business model that ensures that all relevant risks it faces are identiﬁed, assessed and
+mitigated.
+(2) Without prejudice to paragraph (1), the risk management framework shall cover all relevant risks
+including—
+(a) strategic risk;
+(b) credit risk;
+(c) operational risk;
+(d) compliance risk;
+(e) reputation risk;
+(f) information and technology risk;
+(g) cybersecurity risk;
+(h) model risk;
+(i) data privacy risk;
+(j) liquidity risk;
+(k) money laundering and terrorism ﬁnancing risks; and
+(l) any other risk relevant to the non-deposit taking credit provider.
+24. Provision of credit.
+(1) A non-deposit taking credit provider may extend loans or offer loan products to its customers
+subject to these Regulations, other relevant written laws, its credit policy and any other
+16
+
+--- PDF page 23 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+requirements issued by the Bank, and shall clearly state the terms and conditions of the loans,
+digitally or in a written agreement.
+(2) A non-deposit taking credit provider may, in its credit policy, set parameters for determining
+borrower credit limits.
+(3) A non-deposit taking credit provider shall provide a copy of the loan agreement to the borrower at
+the time of signing the contract whether physically or electronically.
+(4) A non-deposit taking credit provider shall at any time after disbursement of the loan furnish the
+borrower with a copy of the loan agreement upon request.
+25. Credit policy.
+(1) A non-deposit taking credit provider shall formulate a credit policy consistent with the Act, other
+relevant written laws and Part III, V and VII of the Consumer Protection Act (Cap. 501).
+(2) The credit policy referred to under paragraph (1) shall at a minimum include—
+(a) the target customer segments;
+(b) the lending procedures and documentation;
+(c) the eligibility requirements for a loan;
+(d) the loan processing time upon submission of a complete loan application;
+(e) the channel for loan disbursement;
+(f) the cooling off period;
+(g) the types of loans, tenure and frequency of payments;
+(h) the number of loans allowed for each borrower;
+(i) the loan tenures;
+(j) the repayment period, where different from the loan tenure;
+(k) the types of acceptable collateral, if applicable;
+(l) the role of guarantors;
+(m) the minimum and maximum loan limits per product, if applicable;
+(n) the loan limits per borrower, if applicable;
+(o) the credit assessment method including any models to determine borrower’s loan limit;
+(p) the loan limit review cycle;
+(q) the loan pricing which includes interest rates, fees, and charges;
+(r) the loan approval process;
+(s) the determination of the borrower’s ability to repay the loan;
+(t) the loan guarantee requirements;
+(u) the monitoring and evaluation of credit quality;
+(v) the grace period after due date, if applicable;
+(w) the loan recovery and follow-up procedures;
+(x) the criteria and procedure for restructuring of loans;
+(y) the criteria and procedure for approval and authorization for writing off bad loans;
+17
+
+--- PDF page 24 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(z) the provision of notice before and after listing with a credit reference bureau;
+(aa) the management of non-performing loans including loan portfolio management;
+(bb) the measures in place to ensure that the accrued interest does not exceed the outstanding
+principal; and
+(cc) the justiﬁcation for the use of either reducing balance or otherwise.
+(3) The credit policy shall be aligned to the size of the non-deposit taking credit provider, and the
+nature and complexity of the products offered by the non-deposit taking credit provider.
+26. Products.
+(1) A non-deposit taking credit provider shall not introduce a new non-deposit taking credit product
+to the market or vary the features of an existing product, including the interest rates, without the
+prior written approval of the Bank.
+(2) Without prejudice to paragraph (1) a non-deposit taking credit provider proposing to change the
+features of a product or interest rates shall provide justiﬁcation for the intended variation.
+(3) A non-deposit taking credit provider shall notify its customers of any variations in product features
+or interest rates at least thirty days before the variations take effect.
+27. Channel delivery.
+(1) A non-deposit taking credit provider shall notify the Bank of its intention to introduce a new
+delivery channel, thirty days before roll out.
+(2) Without prejudice to paragraph (1), a non-deposit taking credit provider shall notify the Bank of the
+—
+(a) unique identifying account number issued by a mobile money operator to be used for
+disbursements and repayments of loans;
+(b) app-based platforms to be launched; and
+(c) name of bank and number of accounts to be operated.
+(3) With respect to app-based and other digital platforms, a non-deposit taking credit provider shall
+make provision for unsubscribing or opting out from the service including from receiving marketing
+messages upon full repayment of the loan and from receiving marketing and promotional
+communications.
+(4) A non-deposit taking credit provider shall ensure that the delivery channels used to provide
+services are—
+(a) available at all times;
+(b) safe;
+(c) protected against fraud or misuse by third parties;
+(d) easy to access and use; and
+(e) affordable.
+28. Credit appraisal.
+(1) A non-deposit taking credit provider shall—
+(a) consider a loan application in accordance with its credit policy;
+(b) take reasonable steps to assess the customer’s ability to repay the credit facility;
+18
+
+--- PDF page 25 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(c) ensure it does not enter into a reckless credit agreement with a customer;
+(d) consider the outcome of the credit risk assessment of a borrower in determining the interest
+rate or other charges for that borrower; and
+(e) assess any relevant risk before granting a loan to an applicant.
+(2) Where a loan application is denied, a non-deposit taking credit provider shall immediately
+communicate the decision to the applicant and shall state the reasons for the decision.
+(3) Subject to its credit policy, a non-deposit taking credit provider may restructure a loan in terms of
+instalment amount, payment period or other terms upon receipt of a request from a borrower or on
+prior notiﬁcation to the customer.
+29. Limit on interest recoverable from non-performing loans.
+(1) A non-deposit taking credit provider shall be limited in what it may recover from a customer with
+respect to a non-performing loan to the maximum amount under paragraph (2).
+(2) The maximum amount referred to in paragraph (1) is the sum of the—
+(a) the principal owing when the loan becomes non-performing;
+(b) interest in accordance with the contract between the customer and the non-deposit taking
+credit provider, not exceeding the principal owing when the loan becomes non-performing;
+and
+(c) reasonable expenses incurred in the recovery of any amounts due and payable.
+(3) Where a loan becomes non-performing and the customer resumes payments on the loan and the
+loan subsequently becomes non-performing once more, the limitation under paragraph (2)(a) and
+(b) shall be determined with respect to the time the loan last became non-performing.
+(4) This Regulation shall not apply to limit any interest under a court order accruing after the order is
+made.
+(5) Except as provided for under paragraph (4), a person shall not recover any interest, in excess of
+outstanding principal amount.
+(6) No interest which is otherwise not directly recoverable from a borrower under paragraph (2)(b),
+shall be recovered through a judicial process.
+30. Credit collection.
+(1) A non-deposit taking credit provider, its senior ofﬁcers, employees, or outsourced service providers
+shall not, in the course of debt collection, engage in any of the following conduct against a
+customer or any other person—
+(a) use of threat, violence or other means to harm a person, or his reputation or property if he
+does not settle his loan;
+(b) use of obscene or profane language sent to a customer or the customer’s references or
+contacts for purposes of shaming him;
+(c) access a customer’s phone book or contacts list and other phone records for purposes of
+sending them messages in the event of untimely payment or non-payment of a loan;
+(d) post a customer’s personal or sensitive information online or on any other forum or medium
+for purposes of shaming him;
+(e) making unauthorized or unsolicited calls or messages to a customer’s phone contacts and
+other contacts;
+19
+
+--- PDF page 26 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(f) employ any improper or unconscionable debt collection tactic, method or conduct;
+(g) any other conduct whose consequence is to harass or oppress a customer;
+(h) abuse any person in connection with the collection of a debt;
+(i) make calls to a borrower or any other person outside of working hours;
+(j) collect or repossess physical security using violence and other forms of harassment or
+intimidation;
+(k) take away essential personal effects of a borrower in the course of collecting, repossessing or
+realizing security; or
+(l) any other conduct which goes against the laid out procedures in Auctioneers Act (Cap. 526)
+and the relevant rules thereunder.
+(2) A non-deposit taking credit provider shall not recover any charges which were not disclosed in the
+contract signed and given to the customer at the point of contracting.
+(3) A non-deposit taking credit provider shall comply with the Part IX of the Land Act (Cap. 280) with
+respect to recovery of securities relating to land.
+(4) A non-deposit taking credit provider shall comply with the Movable Properties Securities Rights Act
+(Cap. 499A) with respect to recovery of securities relating to movable securities, except that a notice
+of thirty days shall be given before the sale of a borrower’s property.
+(5) The Bank may direct a non-deposit taking credit provider to refund to a customer—
+(a) any money recovered in excess of the amount due and owing or in breach of contract; or
+(b) any money recovered in the form of charges which were not disclosed in the loan agreement.
+31. Outsourcing.
+(1) A non-deposit taking credit provider may outsource some of its material services to a third-party
+service provider but such services shall not include—
+(a) the ﬁnal decision to grant loans;
+(b) management and control of the non-deposit taking credit provider;
+(c) decision-making by the board;
+(d) determination of compliance with applicable laws and Regulations; and
+(e) management of the loan portfolio.
+(2) Where an outsourcing arrangement has been entered into, the non-deposit taking credit provider
+shall remain liable for all acts and omissions of the third-party service provider.
+(3) A non-deposit taking credit provider shall notify the Bank at least thirty days prior to entering into
+an outsourcing arrangement with a third-party service provider and shall submit—
+(a) details of the proposed outsourced third-party service provider;
+(b) a brief background information on the shareholders, directors, senior ofﬁcers, nature of
+business and business record of the proposed third-party service provider and in the case of a
+natural person, the nature of business and business record of the person; and
+(c) description of the services to be outsourced.
+(4) An outsourced third-party service provider shall ensure—
+(a) the safety, security and conﬁdentiality of customer information and that of the non-deposit
+taking credit provider;
+20
+
+--- PDF page 27 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(b) ethical means in rendering services including dealing with customers, where applicable; and
+(c) compliance with relevant provisions of the Act, any other relevant written laws and any
+directive or guideline which may be issued by the Bank.
+(5) The contract signed between a non-deposit taking credit provider and a third-party service provider
+shall expressly provide for the Bank’s—
+(a) right of oversight and access to the service provider’s premises, books, records, systems,
+employees; and
+(b) any other information that the Bank may require for the proper discharge of its functions
+under the Act.
+(6) For purposes of this Regulation, material outsourcing arrangements includes services offered
+by a Critical Third-Party Technology Service Provider the failure or disruption of which could
+signiﬁcantly impair a non-deposit taking provider’s viability, critical operations, or ability to meet
+key legal and regulatory compliance obligations.
+(7) In considering the materiality of outsourcing, a non-deposit taking credit provider shall consider—
+(a) the level of importance of the activity being outsourced;
+(b) the potential impact of the outsourcing on the non-deposit taking credit provider on various
+parameters such as earnings, solvency, liquidity, funding and capital and risk proﬁle;
+(c) the likely impact on the non-deposit taking credit provider’s reputation and brand value, and
+ability to achieve its business objectives, strategy and plans, should the third-party service
+provider fail to perform the service;
+(d) the cost of the outsourcing as a proportion of total operating costs of the non-deposit taking
+credit provider;
+(e) the aggregate exposure to that particular third-party service provider, in cases where the
+non-deposit taking credit provider outsources various activities to the same service provider;
+and
+(f) if the activity accounts for at least ﬁve percent of the non-deposit taking credit provider’s
+revenues or costs.
+32. Conﬁdentiality.
+(1) A non-deposit taking credit provider shall put in place appropriate policies, procedures and systems
+to ensure the conﬁdentiality of customer information and transactions.
+(2) A non-deposit taking credit provider shall not share customer information with any other person
+except with the customer’s express consent, or as may be required or permitted under any written
+law.
+(3) The directors, senior ofﬁcers, employees, and third-party service providers of a non-deposit taking
+credit provider shall protect the conﬁdentiality of customer information and transactions.
+(4) A director, senior ofﬁcer or employee of a non-deposit taking credit provider shall not during, or
+upon and after termination of engagement or employment with the non-deposit taking credit
+provider, except in the proper course of his duty and with the non-deposit taking credit provider’s
+written consent, divulge or make use of any conﬁdential information, secrets, copyright material, or
+any correspondence, accounts of the non-deposit taking credit provider or its customers.
+33. Exchange of credit information.
+(1) Notwithstanding any other provision in these Regulations, a non-deposit taking credit provider
+shall disclose credit information of its customers to licensed credit reference bureaus, for the
+21
+
+--- PDF page 28 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+discharge of the functions of the non-deposit taking credit provider or the licensed credit reference
+bureaus.
+(2) A non-deposit taking credit provider may obtain credit information of its customers from a licensed
+credit reference bureau, where such information is required for the discharge of the functions of the
+non-deposit taking credit provider.
+(3) A non-deposit taking credit provider shall not submit negative credit information of a customer to
+a credit reference bureau where the outstanding amount relating to the credit information does not
+exceed one thousand shillings.
+(4) A non-deposit taking credit provider submitting credit information to a bureau shall ensure that
+such information is timely, complete and accurate.
+(5) A non-deposit taking credit provider shall promptly rectify its record upon being notiﬁed by a
+person or a customer of false or inaccurate credit information submitted to a bureau.
+(6) A non-deposit taking credit provider who intends to furnish negative information to a bureau with
+respect to a customer shall, in writing or through a recorded electronic means, notify the customer
+of the intention to submit the negative information at least thirty days before submitting the
+negative information to the bureau or within such shorter period as the contract between the non-
+deposit taking credit provider and the customer may provide:
+Provided that a shorter pre-listing notice shall not be less than seven days for loans whose
+repayment interval is less than thirty days.
+(7) A non-deposit taking credit provider who has furnished credit information to a bureau shall, within
+thirty days from the date the information was furnished to a bureau, notify the customer that the
+customer's credit information has been forwarded to the bureau.
+(8) No suit, prosecution or other legal proceedings shall lie against the Bank, director, member, auditor,
+adviser, senior ofﬁcer or other employee or agent of the Bank, credit reference bureau, a non-
+deposit taking credit provider for any loss or damage caused or is likely to be caused by anything
+which is done or intended to be done in good faith in pursuance of these Regulations or under the
+Banking (Credit Reference Bureau) Regulations (L.N. 55/2020).
+(9) A non-deposit taking credit provider shall ensure compliance with Data Protection Act (Cap. 411C)
+when disclosing or sharing credit information.
+34. Restrictions on use of credit information.
+(1) A non-deposit taking credit provider shall not use credit information obtained from a bureau for
+any purpose other than for reaching decisions on transactions concerning a customer, and on
+matters concerning an employee or a potential employee of the non-deposit taking credit provider
+or for any other purpose as may be authorized under these Regulations or any other written law.
+(2) A non-deposit taking credit provider shall not release information obtained from a credit reference
+bureau to any third party except as may be required under these Regulations or any other relevant
+written law, or to a non-deposit taking credit provider's appointed agent for the purpose of assisting
+the non-deposit taking credit provider in the recovery of any of the non-deposit taking credit
+provider’s debts.
+(3) A non-deposit taking credit provider shall take measures to safeguard the security of information
+provided to it by a credit reference bureau, or by it to a credit reference bureau.
+35. Business continuity.
+(1) A non-deposit taking credit provider shall put in place systems and processes for purposes of
+minimizing disruptions and ensuring business continuity.
+22
+
+--- PDF page 29 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(2) Without prejudice to the generality of paragraph (1), a non-deposit taking credit provider shall—
+(a) back up its business information, particularly its ﬁnancial records, customer records
+including transaction records, reports to the Bank and other information;
+(b) ensure that a framework is put in place to ensure business continuity even in cases of major
+business disruptions; and
+(c) ensure that the business is protected from risks including cyber security attacks and fraud.
+36. Information and technology systems.
+(1) A non-deposit taking credit provider shall use information and technology systems that are secure
+and reliable and which ensure information conﬁdentiality, integrity and availability.
+(2) A non-deposit taking provider shall notify the Bank of a change of its information and technology
+system.
+(3) A non-deposit taking provider shall, where applicable, develop an information and technology
+policy which shall at a minimum cover—
+(a) data encryption standards and guidelines;
+(b) information security guidelines;
+(c) application security;
+(d) network access and requirements;
+(e) password security for mobile applications and web platforms;
+(f) audit log management;
+(g) application auditing and monitoring;
+(h) software change control procedures;
+(i) backup policy;
+(j) disaster recovery plan; and
+(k) interoperability capability.
+37. Accessibility for persons with disabilities.
+A non-deposit taking credit provider shall ensure that—
+(a) branches or other places of business are equipped with accessible ramps, counters and adequate
+signage to accommodate persons with physical and mobility impairments;
+(b) websites, mobile applications and other digital platforms are accessible to persons with visual,
+auditory and cognitive impairments;
+(c) staff are regularly trained to ensure that product and services offered by the non-deposit taking
+credit product remain accessible to persons with disability; and
+(d) the non-deposit taking credit provider develops policies which address accessibility requirements
+for persons with disabilities.
+23
+
+--- PDF page 30 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+Part V – CONSUMER PROTECTION
+38. Suitability of product or service.
+A non-deposit taking credit provider shall, prior to entering into a contract with a customer, inform the
+customer—
+(a) of the freedom not to enter into the contract if the customer is not sure of the suitability of the
+product or service where the terms and conditions of the contract appear onerous; or
+(b) of the difﬁculty of the contract performance owing to the ﬁnancial position of the customer; or
+(c) of any other condition making the product or service unsuitable for the customer.
+39. Access to transaction and credit information.
+(1) A non-deposit taking credit provider shall—
+(a) generate and issue a receipt or any other acknowledgement of transactions carried out by or
+with a customer, through electronic means or any other medium;
+(b) upon request by a customer, the non-deposit taking credit provider shall issue a customer
+with a free loan statement—
+(i) detailing the principal amount advanced and owing;
+(ii) total amount of interest charged, paid and owing;
+(iii) interest rate applied from date of loan agreement; and
+(iv) nature and amount of charges imposed;
+(c) provide a mechanism through which a customer may from time to time access his loan
+statement using any convenient and easy-to-access communication channel including
+through digital or electronic means;
+(d) upon request by the customer generate and issue the customer with a comprehensive
+statement of transactions carried out by or with the customer through a speciﬁed period of
+time; and
+(e) maintain an updated customer’s ﬁnancial records.
+(2) A non-deposit taking credit provider shall, on its own motion or upon notiﬁcation, promptly rectify
+any error in a loan statement or ﬁnancial record of a customer.
+(3) A non-deposit taking credit provider shall keep a guarantor constantly informed of the loan
+performance status through periodic loan statements sent to the guarantor through any convenient
+and veriﬁable means.
+40. Customer complaints resolution.
+(1) A non-deposit taking credit provider shall establish a complaints redress mechanism and ensure
+proper communication of this mechanism to its customers.
+(2) A non-deposit taking credit provider shall deal with complaints from a customer promptly.
+(3) Where it is not practicable to deal with the complaint promptly, the non-deposit taking
+credit provider shall, within seven days of receipt provide the complainant with a prompt
+acknowledgement that it has received the complaint and that the complaint is being dealt with.
+(4) Where a complaint submitted orally is not resolved within forty-eight hours, a non-deposit taking
+credit provider shall conﬁrm to the complainant in writing, through electronic means or through
+24
+
+--- PDF page 31 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+other means agreeable to the complainant of the existence of the complaint and that the complaint
+is still pending resolution by the non-deposit taking credit provider.
+(5) A customer complaint shall be resolved immediately, and where immediate resolution is not
+possible, the complaint shall be resolved within thirty days of a customer reporting a complaint to a
+non-deposit taking credit provider.
+(6) A non-deposit taking credit provider shall maintain a record of all complaints received, which
+record shall include—
+(a) date of which the complaint was received;
+(b) nature of complaints;
+(c) number of complaints resolved;
+(d) reasons for the pending complaints;
+(e) time taken to resolve the complaints; and
+(f) the outcome of the resolution.
+(7) A non-deposit taking credit provider shall provide the Bank with a report, in such form as the Bank
+may specify concerning its receipt and handling of customer complaints.
+41. Fairness.
+(1) A non-deposit taking credit provider shall not—
+(a) engage in unfair, deceptive, oppressive or aggressive practices such as threatening,
+intimidating, being violent towards, abusing, being non-responsive or humiliating a
+customer;
+(b) offer, accept or ask for bribes or other gifts as an incentive to serve a customer;
+(c) require a borrower to recruit other potential borrowers to earn points to qualify for any
+beneﬁt;
+(d) discriminate against any customer on the grounds of sex, race, colour, ethnic or social origin,
+tribe, birth, creed or religion, political opinion, disability, pregnancy, marital status, health
+status, conscience, belief, culture, dress or language;
+(e) mislead or misadvise a customer; or
+(f) lend recklessly or negligently to customers.
+(2) A non-deposit taking credit provider shall not require a customer to purchase another product as a
+pre-condition to access the preferred product.
+42. Guarantor’s liability.
+(1) A non-deposit taking credit provider shall conﬁrm that the consent of a person has been sought and
+obtained before the person is appointed as a guarantor by a borrower.
+(2) A person shall not be held liable as a guarantor unless his consent had been sought and obtained to
+guarantee a loan.
+(3) A non-deposit taking credit provider shall only seek recourse to a guarantor after all non-judicial
+means of recovery against the borrower have been exhausted.
+(4) A non-deposit taking credit provider shall not make a repayment demand to a guarantor or any
+other person unless the customer is in default and guarantor or other person has been given
+fourteen days’ notice of the borrower’s default.
+25
+
+--- PDF page 32 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(5) This regulation does not prevent a non-deposit taking credit provider from updating a guarantor on
+the borrower’s loan performance status.
+43. Expenses for loan recovery.
+Where a customer is unable to repay a loan as per agreed terms and conditions of the loan contract and
+the non-deposit taking credit provider has to incur expenses to recover the outstanding amount, the non-
+deposit taking credit provider shall—
+(a) incur expenses that are absolutely necessary for the recovery of the amount;
+(b) provide the consumer with a detailed breakdown of the costs and expenses incurred and the
+justiﬁcation for such costs or expenses; and
+(c) in the case of the sale of the property of a customer or a guarantor, ensure that the sale is
+transparent.
+44. Debt collection.
+Where a non-deposit taking credit provider plans to outsource collection of a debt, the person who can
+collect the debt and the manner in which the debt may be collected shall be brought to the customer’s
+knowledge before commencement of the debt collection by the outsourced debt collector.
+45. Reliability
+A non-deposit taking credit provider shall—
+(a) update customer personal and contact records from time to time and in any case not later than two
+years;
+(b) provide services in a reliable manner;
+(c) use delivery and communication channels which are reliable; and
+(d) ensure that customer-facing staff are persons who are reliable and of high integrity.
+46. Staff oversight
+A non-deposit taking credit provider shall—
+(a) screen staff prior to appointment;
+(b) periodically screen staff to assure itself of integrity of the staff and that they carry out their
+responsibilities ethically and in compliance with all applicable laws and guidelines of the Bank;
+(c) exercise oversight over its staff and shall continuously monitor activities of staff who are in direct
+contact with customers or customers’ information; and
+(d) take appropriate action against any senior ofﬁcer, employee, or outsourced third party service
+provider who, in the discharge of his responsibilities to the non-deposit taking credit provider or a
+customer, does not comply with applicable laws and guidelines of the Bank.
+47. Transparency
+A non-deposit taking credit provider shall at a minimum—
+(a) ensure that any information given to a consumer on the product or services, whether in
+writing, electronically or orally, is fair, clear and transparent to enable a customer make an
+informed choice on a product or service;
+26
+
+--- PDF page 33 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(b) where a consumer is unable to understand written information, explain orally to the
+consumer the written information;
+(c) ensure that where an oral explanation has been provided to the consumer, the consumer
+shall sign as evidence that an oral explanation has been given, where the nature of the
+transaction would necessitate such conﬁrmation by the consumer;
+(d) ensure that information on its products and services is updated and current and easily
+available at its branches, websites and any other communication channels which it uses;
+(e) ensure that it discloses at its branches, websites, advertisements, promotional materials and
+any other communication channels which it uses that it is regulated by the Bank;
+(f) disclose its true identity including its company name in the correspondence, documents
+and other written instruments which it issues in the course of its business generally or while
+dealing or contracting with a customer; and
+(g) educate its customers on its services and products including raising awareness on data
+protection.
+(2) A non-deposit credit provider shall notify a borrower and his guarantor by means that are
+convenient and cost effective of the loan statement showing all balance changes, payments,
+withdrawals, disbursements, costs and any other ﬁnancial liability that has accrued to that account.
+48. Key information document
+A non-deposit taking credit provider shall prepare and maintain key information documents which inform
+the customer of the fundamental beneﬁts, risks and terms and conditions of the product or service, in a
+summarized form.
+49. Use of different business name or tradename
+Where a non-deposit taking credit provider uses a business name or trade name different from its
+company name, it shall conspicuously disclose the company name in all documents, communications and
+publications where the business name or trade name is used.
+50. Customer obligations.
+(1) A customer shall—
+(a) seek and obtain the consent of a person before appointing them as loan guarantor;
+(b) keep the guarantor informed of status of the outstanding loan;
+(c) keep information received conﬁdential and not to share his password with anybody;
+(d) ensure frequent establishment from the non-deposit taking credit provider on the loan
+repayment status and notify the non-deposit credit provider in case of any discrepancy on
+the repayment records;
+(e) act promptly on communications received from a non-deposit taking credit provider;
+(f) not provide misleading information to a non-deposit taking credit provider;
+(g) not establish a relationship with a non-deposit taking credit provider or transact under a
+false name or using falsiﬁed documents;
+(h) inform a non-deposit taking credit provider of the level of indebtedness;
+(i) provide an alternative contact through which communication may be made, if unreachable;
+27
+
+--- PDF page 34 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(j) inform the contact person that—
+(i) the person has been listed as a contact person; and
+(ii) that his or her contact details have been shared with a non-deposit taking credit
+provider; and
+(k) notify a non-deposit taking credit provider of any change in their ﬁnancial status and contact
+details or contact details of a listed contact person.
+(2) A customer shall, in the ﬁrst instance, lodge any complaint with the non-deposit taking credit
+provider.
+(3) Where the complaint is not resolved or resolved to the satisfaction of the customer, the customer
+may lodge a complaint with the Bank.
+51. Advertising, marketing and promotions.
+A non-deposit taking credit provider shall ensure that—
+(a) advertising, marketing and promotional materials are fair, clear and not misleading;
+(b) advertising, marketing and promotional materials, whether in printed or digital form for ﬁnancial
+products or services, shall include the annual percentage rate and components of total cost of
+credit;
+(c) the annual percentage rate shall be expressed in easily understandable manner and prominently
+displayed in its business premises, website and other relevant publications;
+(d) the total cost of credit shall be prominently displayed in its business premises, website and other
+relevant publications; and
+(e) the information is written in simple language and legible format.
+52. False advertisements.
+(1) A non-deposit taking credit provider shall ensure that any advertisement or promotional materials
+that it published is fair, clear and does not include any false, misleading representation.
+(2) Without prejudice to the generality of paragraph (1), a false, misleading representation includes—
+(a) a representation that the credit facility has beneﬁts or qualities that it does not in fact have;
+(b) a representation that the non-deposit taking credit provider has an approval, status,
+afﬁliation or connection that it does not in fact have;
+(c) an inaccurate or incomplete representation as to the interest rate, costs or charges payable
+under a credit facility; and
+(d) use of a trade or business name which confuses or misleads members of the public as to the
+true identity of the non-deposit taking credit provider or the credit provider.
+(3) A non-deposit taking credit provider shall ensure that—
+(a) printed advertising for ﬁnancial products that refer to an interest rate shall—
+(i) state the total cost of credit;
+(ii) specify whether the rate is monthly or annually; and
+(iii) indicate if the rate is ﬁxed or variable;
+(b) the total cost of credit shall be prominently displayed in its business premises, website and
+other relevant publications.
+28
+
+--- PDF page 35 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+53. Access and collection of customer information
+A non-deposit taking credit provider shall only access and collect such customer information as is required
+for a customer’s credit appraisal, approval, disbursement and collection.
+54. Loan agreement.
+(1) A non-deposit taking credit provider shall, physically or digitally, provide to a customer at the point
+of signing a loan agreement—
+(a) a copy of executed physical or electronic loan agreement;
+(b) repayment schedule;
+(c) total cost of credit; and
+(d) the terms and conditions applicable for the loan.
+(2) After disbursement of a loan, a non-deposit taking credit provider shall furnish the borrower with a
+copy of the loan agreement upon request by the borrower.
+(3) Where a loan is executed digitally, a non-deposit taking credit provider shall furnish the borrower
+with the copy of the electronic loan agreement through such means as may be acceptable and
+convenient to the borrower.
+(4) The loan agreement referred to in paragraph (1) shall provide for—
+(a) the loan amount;
+(b) the loan charges and the circumstances under which they may be imposed;
+(c) interest rate to be charged and whether on a reducing balance or otherwise;
+(d) all other charges applicable to the loan;
+(e) the date on which the amount of loan and all interest, charges, fees or any other liabilities
+are due and payable, and how they may be calculated;
+(f) total cost of credit which shall include the principal amount, interest, fees, charges and any
+other liabilities;
+(g) the agreed periodic interest rate and the annual percentage rate of interest;
+(h) provisions allowing for early partial or full repayment of the loan without charge;
+(i) the period within which credit information on non-performing may be submitted to a credit
+reference bureau;
+(j) a statement on ability of a customer to access credit on being listed by a credit reference
+bureau;
+(k) customer complaint handling channels and procedures; and
+(l) such other information as is necessary for purposes of the loan agreement.
+(5) The loan agreement shall be clear, simple and easily accessible format and in a language that a
+borrower understands.
+(6) Except as is expressly provided for in a loan agreement, any variation to the terms or conditions of
+a loan agreement shall be agreed between a non-deposit taking credit provider and the borrower in
+the same manner as the original loan agreement.
+29
+
+--- PDF page 36 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(7) A non-deposit taking credit provider shall not vary the terms and conditions of the loan agreement
+without at least thirty days prior notiﬁcation to the borrower and the borrower accepts such
+variation.
+(8) The notiﬁcation under paragraph (7) shall clearly disclose to the customer the changes in the credit
+terms.
+(9) Despite paragraph (4)(1)(c), where a loan agreement includes a balloon payment, the agreement
+shall clearly indicate—
+(a) the amount of the balloon payment;
+(b) the date on which the balloon payment becomes payable;
+(c) the consequences of failing to make the balloon payment; and
+(d) any other relevant matter.
+(10) For the purposes of this Regulation, a "balloon payment" means a ﬁnal or deferred payment that
+is substantially larger than the preceding periodic instalments payable in advance under a loan
+agreement whose tenure typically exceeds twelve months.
+55. Variation of pricing parameters and credit terms.
+(1) A non-deposit taking credit provider shall not change its pricing parameters and credit terms
+without the prior written approval of the Bank.
+(2) Subject to paragraph (1) a non-deposit taking credit provider shall give at least thirty-days’ notice
+to the customer of the intended changes to pricing parameters and credit terms and the customer
+has accepted the changes.
+56. Loan repayment.
+(1) A non-deposit taking credit provider shall credit a borrower’s account with the amount received
+from the borrower as loan repayment on the date payment is made.
+(2) The repayment amount referred to in paragraph (1) shall be allocated in the following manner—
+(a) settle any due principal payment;
+(b) any outstanding fees and charges on the loan; and
+(c) interest due on the loan.
+(3) A borrower has the right, to repay a loan prior to its maturity either in whole or in part to reduce
+outstanding principal amount owed, interest charges or fees owed without advance notice and
+without being penalized by a non-deposit taking credit provider.
+(4) Subject to paragraph (3), where the loan is repaid in full prior to its maturity, the borrower shall not
+be required to pay interest for the remaining period to maturity.
+57. Non-performing loans.
+(1) A loan with a speciﬁc repayment date shall be considered non-performing where—
+(a) the principal or interest remains outstanding after thirty days where the loan contracted is
+for thirty days or less;
+(b) the principal or interest remains outstanding after ninety days where the loan contracted is
+for more than thirty days; or
+(c) any of its contractual obligations for payment has become due and unpaid for such period as
+is speciﬁed in the loan agreement.
+30
+
+--- PDF page 37 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(2) A non-deposit taking credit provider shall specify in its credit policy the default period within
+which a loan may become non-performing.
+(3) A loan agreement between a non-deposit taking credit provider and borrower shall specify the
+default period within which the loan may become non-performing.
+58. Consent to process data.
+(1) A non-deposit taking credit provider shall process the personal data of customers lawfully, fairly
+and transparently.
+(2) Where a non-deposit taking credit provider processes the personal data of a customer, the non-
+deposit taking credit provider shall ensure that the consent from a customer is—
+(a) express, freely given, speciﬁc and unambiguous;
+(b) separately obtained through a consent form developed by the non-deposit taking credit
+provider which should not form part of or be incorporated in the letter or offer executed or
+terms and conditions accepted by the customer;
+(c) capable of being withdrawn by the customer; and
+(d) veriﬁable and forms part of the record of the customer’s information; and
+(3) A non-deposit taking credit provider shall inform the customer—
+(a) of the types of personal data which will be processed;
+(b) who may have access to the personal data; and
+(c) of the duration of retention of the customer’s personal data.
+(4) Subject to paragraph (3)—
+(a) a privacy notice, or general notice of a similar nature shall not satisfy the obligation by
+a non-deposit taking credit provider to give their express consent as required under this
+Regulation; and
+(b) the information in paragraph (3), shall form the minimum information contained in the
+consent form to be signed or accepted by the customer.
+(5) A non-deposit taking credit provider that fails to comply with paragraph (1) shall be subject to any
+administrative action imposed under the Data Protection Act (Cap. 411C).
+59. Pricing parameters.
+(1) A non-deposit taking credit provider shall develop and implement a pricing model which outlines
+clear pricing parameters.
+(2) The pricing model shall comply with credit pricing principles and shall contain the—
+(a) components of pricing clearly identiﬁed and outline each element incorporated including
+cost of funds, cost of capital, cost of operations, return to shareholders, risk premium, and
+other fees and charges;
+(b) costs clearly identiﬁed and justiﬁed and which costs shall be directly related to lending and
+any other costs which shall be supported and justiﬁed;
+(c) risk proﬁle of customer which shall be taken into account through evaluation of each
+individual customer’s credit behavior enabling a non-deposit taking credit provider to apply
+differential interest rates based on a customer’s credit-worthiness;
+(d) criteria for determining non-performance;
+31
+
+--- PDF page 38 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(e) credit reference bureau information through incorporation of credit reference bureau scores;
+(f) all-inclusive pricing which shall include all other charges except third party costs; and
+(g) full disclosure of the annual percentage rate to be charged to a borrower as applied on a loan.
+60. Use of artiﬁcial intelligence.
+A non-deposit taking credit shall, when using artiﬁcial intelligence for making lending decisions, ensure
+that—
+(a) automated decisions are explained to customers where they affect a loan application;
+(b) customers are informed when they are interacting with an artiﬁcial intelligence system and not a
+human agent;
+(c) human oversight and review of artiﬁcial intelligence decisions and automated credit decisions is
+retained;
+(d) risk assessments are undertaken to identify and mitigate discriminatory bias and unfair outcomes
+from data collected on the customers;
+(e) artiﬁcial models deployed are technically robust, accurate, and capable of making correct
+judgments;
+(f) artiﬁcial intelligence algorithms, logic, data and design processes are transparent, accountable and
+explainable; and
+(g) data privacy and security concerns are adequately managed.
+61. Compliance with cyber security standards.
+(1) A non-deposit taking credit provider shall comply with appropriate technical and operational
+cybersecurity standards.
+(2) Without prejudice to paragraph (1), non-deposit taking credit provider shall—
+(a) adopt the necessary infrastructure to monitor, detect, prevent, and respond to cyber threats
+to the integrity of a customer’s data;
+(b) ensure staff have the requisite skills and continually build capacity to identify sources of
+cybercrime and respond effectively to any cyber threats; and
+(c) develop authentication controls to protect customer data, transactions and systems.
+Part VI – ANTI-MONEY LAUNDERING AND
+COMBATING THE FINANCING OF TERRORISM
+62. Sources of funds.
+(1) A non-deposit taking credit provider shall provide to the Bank evidence and sources of funds
+invested or proposed to be invested in the non-deposit taking credit business.
+(2) A non-deposit taking credit provider shall demonstrate that the funds are its own funds and are not
+proceeds of crime.
+(3) A non-deposit taking credit provider shall be required to notify the Bank prior to investing capital
+into the business.
+(4) The notice referred to in paragraph (2) shall contain the—
+(a) name of shareholder or proposed share investment;
+32
+
+--- PDF page 39 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(b) amount of capital to be invested;
+(c) proposed shareholding structure after investment;
+(d) beneﬁcial owner; and
+(e) source of the funds.
+63. Customer identity.
+(1) A non-deposit taking credit provider shall conduct customer due diligence and shall verify their
+identities using independent source documents.
+(2) In case of non-face-face transactions, a non-deposit taking credit provider shall ensure that the
+identity document is that of the person actually transacting.
+(3) A non-deposit taking credit provider shall guard against impersonation.
+64. Compliance with anti-money laundering, ﬁnancing of terrorism laws.
+(1) A non-deposit taking credit provider shall comply with the Proceeds of Crime and Anti-Money
+Laundering Act (Cap. 59A) and the Prevention of Terrorism Act (Cap. 59B).
+(2) A non-deposit taking credit provider who fails to comply with the Proceeds of Crime and Anti-
+Money Laundering Act (Cap. 59A), and the Prevention of Terrorism Act (Cap. 59B), shall be liable to
+assessment of penalties and other sanctions as set out in section 51B of the Act.
+Part VII – REPORTING REQUIREMENTS AND OVERSIGHT BY THE CENTRAL BANK
+65. Annual publication of licensed and registered non-deposit taking credit providers.
+The Bank shall, before the 31st day of March in each year, publish the names and addresses of all licensed
+and registered non-deposit taking credit providers in the Gazette and the Bank’s website.
+66. Reporting requirements, onsite inspection and off-site monitoring.
+(1) A non-deposit taking credit provider shall be subject to the Bank’s onsite and off-site inspection,
+audit and monitoring and shall make such periodic reports and returns as may be speciﬁed by the
+Bank.
+(2) The Bank may either directly or through a duly appointed person conduct inspection of a non-
+deposit taking credit provider, its agent or an outsourced third-party service provider.
+(3) A non-deposit taking credit provider shall make its premises, systems, books and records readily
+available to the Bank, or its senior ofﬁcers or any person appointed by the Bank for inspection,
+audit and other supervisory purposes.
+(4) An outsourced third-party service provider shall grant the Bank, or its senior ofﬁcers or any person
+appointed by the Bank full access to its premises, systems, books and records as it relates to the
+affairs of the non-deposit taking credit provider.
+(5) The Bank may require a non-deposit taking credit provider to furnish it, at such time and in such
+manner as it may direct, with such information as the Bank may reasonably require for the proper
+discharge of its functions.
+(6) Without prejudice to paragraph (1) and (2), a non-deposit taking credit provider shall, within ten
+days after the end of every reporting period, submit to the Bank reports and returns on the—
+(a) monthly customer complaints;
+33
+
+--- PDF page 40 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(b) monthly customer data;
+(c) monthly loan repayments;
+(d) monthly number of loan accounts;
+(e) list of shareholders, directors and senior ofﬁcers on an annual basis;
+(f) certiﬁed copy of certiﬁcate of registration issued pursuant to section 19 of the Data
+Protection Act (Cap. 411C), on an annual basis.
+(g) name of bank of the non-deposit taking credit provider, number of accounts on an annual
+basis;
+(h) borrowings by the non-deposit taking credit provider, highlighting date of loan, name of
+lender, amount borrowed, interest rate charged and outstanding amounts on a quarterly
+basis;
+(i) quarterly unique account numbers issued by a mobile money operator;
+(j) quarterly details on outsourced services;
+(k) quarterly non-performing loans;
+(l) quarterly current capital; and
+(m) any other information as the Bank may require from time to time as may be speciﬁed by the
+bank.
+(7) A non-deposit taking credit provider shall on or before the 31st day of December every year submit
+a return to the Bank certifying its compliance with these Regulations in such manner as the Bank
+may specify.
+(8) A non-deposit taking credit provider shall notify the Bank within twenty-four hours of any fraud or
+cybersecurity incident, including the amounts involved, which may have a signiﬁcant impact on the
+ability of the non-deposit taking credit provider to provide adequate services to its customers, its
+reputation or affect its status.
+(9) The notiﬁcation in paragraph (8) shall be in form 5 set out in the First Schedule.
+67. Preparation and submission of ﬁnancial statements
+A non-deposit taking credit provider shall prepare and submit to the Central Bank audited ﬁnancial
+statements and other disclosures within three months after the end of each ﬁnancial year.
+68. Disclosure of information by Bank
+The Bank may disclose information obtained in performing its duties to a ﬁnancial regulatory authority,
+ﬁnancial intelligence unit, deposit insurance institution, ﬁscal or tax agency, or fraud investigations
+agency in or outside Kenya, if the disclosure is necessary for the proper discharge of the functions of the
+Bank or the requesting entity.
+69. Power of Bank to advise and direct.
+(1) If, at any time, the Bank has reason to believe that the business of a non-deposit taking credit
+provider is being conducted in a manner contrary to the Act these Regulations, other relevant
+written laws, guidelines or directives issued by the Bank, the Bank may—
+(a) give advice and recommend to the non-deposit taking credit provider with regard to the
+conduct of non-deposit taking credit provider’s business generally;
+34
+
+--- PDF page 41 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(b) issue directions regarding measures to be taken to improve the management or business
+methods of the non-deposit taking credit provider or to secure or improve compliance with
+the requirements of the Act and any other relevant law; or
+(c) issue directions to the non-deposit taking credit provider, senior ofﬁcer or other person to
+cease and desist from such practice.
+(2) Before issuing any directions under paragraph (1), the Bank shall serve upon the non-deposit taking
+credit provider, senior ofﬁcer, employee, or other person, a notice of issuing direction.
+(3) The notice in paragraph (2) shall specify the reasons for issuing the direction.
+(4) The person to whom the notice has been issued shall, within such period as may be speciﬁed in the
+notice, show cause why such direction should not be issued.
+(5) A non-deposit taking credit provider, senior ofﬁcer, employee, or other person who receives any
+directions under this regulation shall comply with the directions within such period as may be
+speciﬁed in the direction and, if so required, produce evidence of compliance.
+(6) The Bank may issue directions to non-deposit taking credit providers generally for the better
+carrying out of its functions and in particular, with respect to—
+(a) the standards to be adhered to by a non-deposit taking credit provider in the conduct of its
+business; and
+(b) guidelines to be adhered to by non-deposit taking credit providers in order to maintain a
+stable and efﬁcient ﬁnancial system.
+Part VIII – CODE OF CONDUCT
+70. Objectives of the code of conduct.
+(1) The objective of the code of conduct is to—
+(a) ensure sound conduct of non-deposit taking credit business;
+(b) establish standards to be adhered to by non-deposit taking credit providers; and
+(c) ensure fair treatment of consumers of non-deposit taking credit business services and the
+public.
+(2) A non-deposit taking credit provider shall have the responsibility to adopt appropriate processes
+and procedures to meet the objectives of this Code.
+(3) Without prejudice to paragraph (2), the Bank shall be notiﬁed of any change in the code of conduct,
+at least thirty days, before being varied.
+71. Guiding principles.
+The relationship between a non-deposit taking provider and its customers shall be guided by the
+principles of—
+(a) fairness;
+(b) transparency;
+(c) accountability; and
+(d) reliability.
+35
+
+--- PDF page 42 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+72. Application of the code of conduct
+The code shall apply to a non-deposit taking credit provider senior ofﬁcers, employees and any other
+persons acting on its behalf.
+73. Establishment of industry body.
+A non-deposit taking credit provider may for the purposes of enhancing the market conduct practice,
+pursuit of common interest and associated matters, participate in an industry association for non-deposit
+taking credit provider management body.
+74. Skill, care and diligence
+A non-deposit taking credit provider shall—
+(a) act with due skill, care and diligence towards its customers and other stakeholders;
+(b) have in place appropriate safeguards against occurrences of behaviour that constitute a lack of due
+skill, care and diligence amounting to culpable negligence or recklessness;
+(c) train its staff; and
+(d) apply the ﬁt and proper test set out in the Second Schedule for its senior ofﬁcers, employees and
+persons acting on its behalf.
+75. Business integrity
+A non-deposit taking credit providers shall—
+(a) observe high standards of honesty, integrity and fairness;
+(b) ensure that all business transactions are carried out and recorded accurately;
+(c) not alter any ﬁnancial records or information of a customer; and
+(d) avoid misleading and deceptive acts or representations.
+76. Conﬂict of interests.
+(1) A non-deposit taking credit providers shall avoid situations of conﬂict of interests.
+(2) Where a conﬂict arises, the non-deposit taking credit provider shall ensure the fair treatment of all
+its customers.
+(3) In managing the conﬂict, the non-deposit taking credit providers may require disclosure, internal
+rules of conﬁdentiality, or other appropriate methods or combinations of methods to be used.
+77. Communicating with customers
+A non-deposit taking credit providers shall—
+(a) seek the necessary information about its customers’ individual circumstances and ﬁnancial
+objectives;
+(b) ensure that customers are provided with accurate, timely and comprehensible information that
+would enable them to make informed decisions;
+(c) provide information, including information about risks, required by the customer to make informed
+decisions; and
+(d) provide timely and accurate reports to the customer about business undertaken with the customer.
+36
+
+--- PDF page 43 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+78. Protection of collateral.
+(1) A non-deposit taking credit provider shall protect any collateral of its customers over which it has
+control and custody.
+(2) Collateral shall be properly marked with identiﬁable marks and shall be stored and well segregated
+from a non-deposit taking credit provider’s own ﬁxed assets.
+(3) In case of insolvency, collateral shall be protected from loss.
+79. Market conduct compliance
+A non-deposit taking credit providers shall—
+(a) observe high standards of market conduct; and
+(b) in the conduct of its business activities comply with this regulations and applicable laws so as to
+promote the best interests of customers and the integrity of the non-deposit taking.
+80. Financial resources.
+(1) A non-deposit taking credit providers shall—
+(a) maintain ﬁnancial resources to meet its ﬁnancial obligations;
+(b) implement appropriate risk management policies in its business; and
+(c) implement an effective control function to safeguard its ﬁnancial resources.
+(2) A non-deposit taking credit provider shall not engage in lending which may compromise its ability
+to fulﬁl its ﬁnancial obligations using debt.
+81. Internal affairs
+A non-deposit taking credit provider shall responsibly and sustainably manage its business, maintain
+adequate controls and have proper systems and procedures for operations, record keeping, human
+resources, training, compliance, and other matters the Bank may require.
+82. Market conduct obligations.
+(1) To promote good market conduct practices, a non-deposit taking credit provider directly or through
+its senior ofﬁcers, employees or outsourced third party service providers shall—
+(a) act fairly, reasonably and ethically towards a customer;
+(b) provide effective and adequate disclosure of information;
+(c) provide terms and conditions of products and services;
+(d) provide information in a clear, plain and understandable language format;
+(e) ensure that its staff members attend to customer transactions and enquiries promptly;
+(f) provide to a customer, the requisite notice before implementing changes in the terms and
+conditions, interest rates, fees and charges, the discontinuation of products and services and
+the relocation of premises;
+(g) acknowledge a complaint received within the requisite period and address the complaint
+within the prescribed period;
+(h) take reasonable measures to attend to the physical needs of persons with disabilities;
+37
+
+--- PDF page 44 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(i) treat customer information as private and conﬁdential and may only disclose the
+information as prescribed;
+(j) not discriminate against a customer;
+(k) ensure that marketing and promotional material sent to a customer for advertising purposes
+are clear, fair, reasonable and not misleading;
+(l) not to use customer information for marketing and promotional purposes when the customer
+has opted out of receiving marketing communication;
+(m) provide a customer with information on total cost of credit including interest to be charged,
+relevant fees and charges for the services and products that customer has chosen or is
+enquiring about;
+(n) inform a customer, at the time of establishing a business relationship, of his rights and
+obligations;
+(o) provide to a customer or make available on request, regular statements of account to enable
+a customer to manage his loan account and verify entries on such account;
+(p) take immediate steps to prevent access or misuse of a customer’s account once notiﬁed by a
+customer of any fraud, attempted fraud, loss of a card or breach of password conﬁdentiality;
+(q) ensure that all products and services comply with relevant laws and Regulations and the
+standards set out in this Code;
+(r) train its ofﬁcers, employees and other persons on how to comply with these obligations;
+(s) ensure that information on products and services is updated; and
+(t) provide affordable credit services, taking into account the prevailing market conditions in
+the banking sector and the domestic economic situation of the country; and
+(2) A non-deposit taking credit provider may, where it is registered or licensed or registered by the
+Bank, disclose in its advertisements, marketing and promotional material that it is regulated by the
+Bank.
+(3) Subject to paragraph (2) the Bank’s brand and identity including logos shall not be included in
+communication to customers.
+83. Compliance with the code of conduct.
+(1) A non-deposit taking credit provider shall comply with the code of conduct.
+(2) The board and other senior ofﬁcers of a non-deposit taking credit provider shall—
+(a) be responsible for guiding business practices of the non-deposit taking credit provider for
+proper business conduct; and
+(b) keep records of any arrangements made to comply with the code of conduct.
+Part IX – ENFORCEMENT
+84. Non-compliance
+Non-compliance with the code of conduct shall be enforceable in accordance with these Regulations.
+38
+
+--- PDF page 45 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+85. Duty to comply
+A non-deposit taking credit provider shall comply with the provisions of the Act, these Regulations, other
+relevant written laws, guidelines, code of conduct, directive, order or condition conditions imposed by the
+Bank.
+86. Enforcement and administrative sanctions.
+The administrative sanctions against a non-deposit taking credit provider or any other relevant person
+who violates, fails or refuses to comply with the provisions of the Act, other relevant written laws, these
+Regulations, guidelines, code of conduct, directive, order or condition imposed by the Bank that maybe
+imposed by the Bank include—
+(a) monetary penalty which shall not exceed two million shillings, or three times the gross amount of
+the monetary gain made or loss avoided by the failure or refusal to comply, whichever is higher;
+(b) monetary penalty against a senior ofﬁcer responsible for the violations that give rise to a which
+shall not exceed two hundred and ﬁfty thousand shillings, payable from the resources of the senior
+ofﬁcer;
+(c) additional penalties not exceeding ten thousand shillings in each case for each day or part thereof
+during which such failure or refusal continues;
+(d) direct a non-deposit taking credit provider to take administrative or disciplinary action, suspend
+or dismiss from ofﬁce of the non-compliant non-deposit taking credit provider’s director, ofﬁcer,
+employee;
+(e) direct a non-deposit taking credit provider to take action against an outsourced service provider
+including termination of the relationship;
+(f) disqualify a signiﬁcant shareholder, director or senior ofﬁcer from holding any position or ofﬁce
+in any non-deposit taking credit provider and any entity licensed by the Bank for a period of three
+years;
+(g) undertake more frequent inspections of that non-deposit taking credit provider;
+(h) order the non-deposit taking credit provider to submit to the Bank, within forty-ﬁve days, a plan to
+resolve all deﬁciencies to the satisfaction of the Bank;
+(i) prohibit a non-deposit taking credit provider from granting new loans;
+(j) prohibit a non-deposit taking credit provider from using a speciﬁed delivery channel;
+(k) prohibit a non-deposit taking credit provider from using a speciﬁed person in the delivery of its
+services;
+(l) prohibit a non-deposit taking credit provider from carrying on certain permissible activities;
+(m) prohibit a non-deposit taking credit provider from borrowing new loans;
+(n) direct a non-deposit taking credit provider to terminate its contract with an outsourced third-party
+service provider;
+(o) suspend or revoke a license or registration; or
+(p) any other action as the Bank may consider appropriate.
+87. Application of monetary penalty to each violation.
+(1) Where the Bank assesses monetary penalties for violation or non-compliance, the monetary
+penalties prescribed in these Regulations shall apply to each violation and assessment of the
+penalty may be carried out for each violation.
+39
+
+--- PDF page 46 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(2) Any unpaid monetary penalty shall constitute a civil debt and may be recovered by the Bank
+through any lawful process.
+88. Rectiﬁcation of violation.
+The Bank may, in a notice to show cause or in any other communication require a non-deposit taking
+credit provider or any other relevant person—
+(a) to desist from any act or omission constituting a violation of the Act, or condition imposed by the
+Bank; or
+(b) to take any action to rectify any violation which has occurred.
+89. Period within which rectiﬁcation is to be made.
+(1) Where the Bank requires a non-deposit taking credit provider or any other relevant person to take
+a speciﬁc action to rectify or remedy a violation, the Bank shall specify the period within which the
+remedial action should be taken.
+(2) Despite paragraph (1), a non-deposit taking credit provider or any other relevant person may on
+their own motion, rectify or remedy any violation.
+Part X – REVIEW
+90. Review.
+(1) A non-deposit taking credit provider or any other relevant person aggrieved by the decision of the
+Bank under these Regulations, may within fourteen days from the date of notiﬁcation of the Bank’s
+decision request the Bank to review its decision.
+(2) The request for review under this paragraph (1) shall not suspend the effective date of the Bank’s
+decision, including the commencement of an administrative sanction or requirement for a non-
+deposit taking credit provider or any other relevant person to pay a monetary penalty.
+(3) The non-deposit taking credit provider or any other relevant person may request the Bank for such
+suspension pending the determination of the request, for review and the Bank may suspend the
+commencement of its decision.
+(4) A request for the suspension of the commencement of an administrative sanction shall be made
+before the commencement date of the administrative sanction.
+91. Grounds for review.
+A review of a decision of the Bank shall be requested by a non-deposit taking credit provider or any other
+relevant person on grounds that—
+(a) the violation did not take place;
+(b) new facts have emerged and have direct bearing on the ﬁndings on the violation; or
+(c) the aggrieved party was not given an opportunity to show cause why the administrative sanction
+should not be imposed.
+92. Request for additional information
+The Bank may request the aggrieved party to submit such additional information as the Bank may require
+to determine the request for review.
+40
+
+--- PDF page 47 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+93. Determination of the request for review.
+(1) The Bank may consider and determine the request for review, within thirty days from the date of
+receipt of the request for review or request for additional information, whichever is later.
+(2) A non-deposit taking credit provider or any other relevant person may request the Bank to
+invite the non-deposit taking credit provider or any other relevant person for a meeting to hear
+representations on the request for review.
+94. Communication of decision.
+The Bank shall, in writing and within seven days from the date of the decision, inform the non-deposit
+taking credit provider or any other relevant person of its decision on the review and grounds for the
+decision.
+Part XI – MISCELLANEOUS PROVISIONS
+95. Voluntary liquidation of business.
+(1) A non-deposit taking credit provider may, with the approval of the Bank, voluntarily liquidate or
+close its business if it is unable to meet all its liabilities.
+(2) An application for the Bank’s approval for the purposes of paragraph (1) shall be in such form as
+may be speciﬁed by the Bank.
+(3) The Bank may, upon receipt of an application under paragraph (2), approve the application if
+satisﬁed as to the solvency of the non-deposit taking credit provider.
+(4) Where the Bank approves an application by a non-deposit taking credit provider in paragraph (3)
+the non-deposit taking credit provider shall cease its operations.
+(5) Without prejudice to paragraph (4), where activities are incidental to the realization, conservation
+and preservation of its assets and settlement of its obligations, a non-deposit taking credit provider
+shall continue with its operations subject to such directions as the Bank may issue.
+(6) The Bank shall, upon approval of a voluntary liquidation or closure, ensure the smooth execution of
+the liquidation process including recovery of any outstanding loans and discharge of liabilities.
+(7) The Bank shall upon granting an approval for voluntary liquidation or closure, publish in the
+Gazette a notice to the effect that the non-deposit taking credit provider is in the process of closing
+its business and shall not engage in any new business activities other than recovery of its loans and
+discharge of its liabilities.
+(8) The Bank shall publish in the Gazette a notice to the effect that voluntary liquidation or closure, has
+been completed and the licence or registration of the non-deposit taking credit provider has been
+revoked.
+96. Transition.
+(1) A person who, at the commencement of these Regulations, was conducting non-deposit taking
+credit business which is not regulated under any other written law shall apply to the Bank for a
+licence or registration within six months of publication of these Regulations.
+(2) An applicant under paragraph (1) may continue to conduct non-deposit taking credit business
+pending determination of the application subject to the Act, these Regulations and any conditions
+issued by the Bank.
+41
+
+--- PDF page 48 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(3) A non-deposit taking credit provider licensed under the Central Bank of Kenya (Digital Credit
+Providers) Regulations, 2022 (LN 46/2022), shall not be affected by registration requirements in
+these Regulations and shall continue to operate as if licensed under these Regulations.
+(4) A non-deposit taking credit provider licensed under the Central Bank of Kenya (Digital Credit
+Providers) Regulations, 2022 (LN 46/2022), shall continue to carry on business and shall be deemed
+to have been licensed under these Regulations.
+(5) Any right that accrued or liability that was incurred under the Central Bank of Kenya (Digital Credit
+Providers) Regulations, 2022 (LN 46/2022), shall continue to exist as if the right accrued or the
+liability was incurred under these Regulations.
+(6) Any licence applications pending before the Bank at the commencement of these Regulations shall
+be processed in accordance with Part II or Part III of these Regulations, as the case may be.
+97. Revocation.
+The Central Bank of Kenya (Digital Credit Providers) Regulations, 2022 (LN 46/2022), are revoked.
+FIRST SCHEDULE
+FORMS
+FORM 1
+(r. 6(1)), 11(2))
+APPLICATION FOR A LICENCE TO CONDUCT NON-DEPOSIT TAKING CREDIT BUSINESS
+NB: This form should be submitted, duly completed, accompanied by the complete set of documents required
+under Part II of these Regulations
+1. Name of Applicant ...................................................................................
+*Trading name ......................................................................................
+2. Physical Address of Head Ofﬁce: L.R. No. ...................................................
+Street ................................. Building .....................................................
+Floor....................................... Room Number ........................................
+Town/City ............................................................................................
+3. Postal Address and Postal Code …......................…………....………………………
+Telephone No: .............................. KRA P.I.N.: ...........................................
+4. E-mail address .......................................................................................
+Date of Incorporation ........................ Certiﬁcate Reg. No. ......................
+5. Former name(s) (if any) by which the non-deposit taking credit provider has been known
+*(Indicate if Business or Trading Name is different from the incorporated name).
+6. Particulars of shareholding:
+42
+
+--- PDF page 49 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+Name of
+shareholder
+(s)
+Postal
+Address
+PIN No. and
+Identiﬁcation No.
+Incorporation
+or Registration
+Details
+No. of
+shares
+held/
+allocated
+Name and address
+of Beneﬁcial
+Owner of Shares
+7. Particulars of Senior Ofﬁcers:
+A. Directors
+Name of
+Proposed
+Director
+Age
+and
+Nationality
+Proposed
+Capacity
+(Executive /
+Non-
+Executive)
+ID No. /
+Passport
+No.
+Qualiﬁcation
+(academic
+and
+professional)
+Postal
+and
+Email
+address
+Telephone
+contacts
+Experience/
+previous
+employment
+Other
+Current
+Director
+ship (s)
+1.
+2.
+3.
+4.
+(Attach all necessary supportive documentation; please indicate N/A where requested details are not applicable)
+B. Senior Ofﬁcers
+Name of
+Proposed
+Senior
+Ofﬁcer
+Age
+and
+Nationality
+Proposed
+Designation
+ID No./
+Passport
+No.
+Qualiﬁcation
+(academic
+and
+professional)
+Postal
+and Email
+address
+Telephone
+contacts
+Experience/
+previous
+employment
+Current
+Position
+1.
+2.
+(Attach all necessary supportive documentation; please indicate N/A where requested details are not applicable)
+8. Names of the proposed non-deposit taking credit provider’s:
+(a) Bankers, branch and their address .......................................................
+(b) Name of law ﬁrm and their address ......................................................
+43
+
+--- PDF page 50 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(c) Name of audit ﬁrm and their address ...................................................
+(d) Name of Corporation Secretary and their address ..................................
+9. Sources of funds for the proposed business ................................................
+10. Does the non-deposit taking credit provider or its associates hold, or has it ever held
+any authority from a supervisory body to carry on any business activity in Kenya or
+elsewhere? ............................................................................................
+If any such authority has been revoked, give particulars
+........................................................................................................
+11. Has the non-deposit taking credit provider or its associates been put under receivership in the past or
+made any compromise or arrangement with its creditors in the past or otherwise failed to satisfy creditors
+in full?
+.........................................................................................................
+If so, give particulars ..........................................................................
+12. Has the non-deposit taking credit provider or its associates been the subject of investigation by a
+government agency during the last three years?
+..........................................................................................................
+If YES, give particulars ........................................................................
+13. Does the non-deposit taking credit provider have operational and ﬁnancial independence from its
+associates including funding arrangements?
+...........................................................................................................
+If YES, give particulars ......................................................................
+DECLARATION
+We, the undersigned, being directors of the non-deposit taking credit provider, declare that to the best of our
+knowledge and belief, the information contained herein is complete and accurate.
+We also certify that the capital to be invested in the non-deposit taking credit provider is not from proceeds of
+crime.
+Certiﬁcation and signature of at least two directors:
+DIRECTOR:
+.............................................................................................................................
+(Name and signature)
+44
+
+--- PDF page 51 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+DIRECTOR:
+.............................................................................................................................
+(Name and signature)
+WITNESSED BEFORE ME:
+COMMISSIONER FOR OATHS/MAGISTRATE
+Name: ...............................................................................................................
+Signature: ..........................................................................................................
+Address: ............................................................................................................
+Date and Stamp: ...............................................................................................
+___________________________________________
+FORM 2 (r. 9(2))
+APPLICATION FOR REGISTRATION TO CONDUCT THE
+BUSINESS OF A NON-DEPOSIT TAKING CREDIT PROVIDER
+NB: This form should be submitted, duly completed, accompanied by the complete set of documents required
+under Part III of these Regulations.
+1. Name of Applicant ..................................................................................
+*Trading name ........................................................................................
+45
+
+--- PDF page 52 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+2. Physical Address of Head Ofﬁce: L.R. No. .....................................................
+Street: .................................. Building .....................................................
+Floor…………………..……………… Room Number ……………..……………………
+Town/City ………………..………………………………………………………………...
+3. Postal Address and Postal Code …......................…………....……………………
+Telephone No: .......................... KRA P.I.N.: …………........……….................
+E-mail address ..………………….....…………………………..….……………………....
+4. Date of Incorporation ...……..… Certiﬁcate Reg. No. ………..…......................
+5. Former name(s) (if any) by which the non-deposit taking credit provider has been
+known ...................................................................................................
+6. Particulars of shareholding:
+Name of
+shareholder
+(s)
+Postal
+Address
+PIN No. and
+Identiﬁcation No.
+Incorporation
+or Registration
+Details
+No. of
+shares
+held/
+allocated
+Name and address
+of Beneﬁcial
+Owner of Shares
+7. Particulars of Senior Ofﬁcers:
+A. Directors:
+Name
+of
+Proposed
+Director
+Age
+and
+Nationality
+Proposed
+Capacity
+(Executive /
+Non-
+Executive)
+ID No. /
+Pass-
+port
+No.
+Qualiﬁcation
+(academic
+and
+professional)
+Postal
+and Email
+address
+Tele-
+phone
+contacts
+Experience/
+previous
+employment
+Other
+Current
+Director
+ship (s)
+1.
+2.
+3.
+4.
+B. Seniors
+46
+
+--- PDF page 53 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+Name of
+Proposed
+Senior
+Ofﬁcer
+Age
+and
+Nationality
+Proposed
+Designation
+ID No./
+Passport
+No.
+Qualiﬁcation
+(academic
+and
+professional)
+Postal
+and Email
+address
+Telephone
+contacts
+Experience/
+previous
+employment
+Current
+Position
+1.
+2.
+3.
+(Attach all necessary supportive documentation; please indicate N/A where requested details are not
+applicable).
+8. Names of the proposed non-deposit taking credit provider’s:
+(a) Bankers, branch and their address ..........................................................
+(b) Name of law ﬁrm and their address .........................................................
+(c) Name of Corporation Secretary and their address .....................................
+9. Sources of funds for the proposed business ..................................................
+10. Does the non-deposit taking credit provider hold or its associates, or has it ever held any authority from a
+supervisory body to carry on any business activity in Kenya or elsewhere?
+...............................................................................................................
+If any such authority has been revoked, give particulars
+...............................................................................................................
+11. Has the non-deposit-taking credit provider or its associates been put under receivership in the past or
+made any compromise or arrangement with its creditors in the past or otherwise failed to satisfy creditors
+in full?
+..............................................................................................................
+If so, give particulars ............................................................................
+12. Has the non-deposit taking credit provider or its associates been the subject of investigation by a
+government agency during the last three years?
+.................................................................................................................
+If YES, give particulars .................................................................................
+DECLARATION
+47
+
+--- PDF page 54 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+We, the undersigned, being directors of the non-deposit taking credit provider, declare that to the best of
+our knowledge and belief, the information contained herein is complete and accurate.
+We also certify that the capital to be invested in the non-deposit taking credit provider is not from
+proceeds of crime
+Certiﬁcation and signature of at least two directors:
+DIRECTOR:
+...........................................................................................................................
+(Name and signature)
+DIRECTOR:
+...........................................................................................................................
+(Name and signature)
+Date: ....................................................................................................................
+WITNESSED BEFORE ME:
+COMMISSIONER FOR OATHS/MAGISTRATE
+Name: ...............................................................................................................
+Signature: ..........................................................................................................
+Address: ............................................................................................................
+Date and Stamp: ...............................................................................................
+N.B. The information given in response to this questionnaire shall be kept conﬁdential by the supervisory
+authorities, except in cases provided for by law.
+___________________________________________
+48
+
+--- PDF page 55 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+FORM 3 (r. 6(2)(aa), (bb), r. 9(3)(r))
+FIT AND PROPER FORM FOR DIRECTORS, CHIEF EXECUTIVE OFFICER AND SENIOR OFFICERS
+NB: This form should be duly completed, accompanied by the complete set of documents required under Part
+II and submitted to the Bank.
+1. NON-DEPOSIT TAKING CREDIT PROVIDER
+Name ............................................................................................................
+Type .............................................................................................................
+Proposed position ........................................................................................
+2. PERSONAL INFORMATION
+(a) Surname ............................... Other Names ..........................................
+(b) Previous Names (if any) by which you have been known:
+..............................................................................................................
+...............................................................................................................
+Reasons for change of names ..................................................................
+(c) Year and Place of birth: …………………………………………………...…….........
+(d) Nationality and how acquired …….….………………….......................................
+(e) Personal Identiﬁcation Number (PIN) ......................................................
+(f) (i) Identiﬁcation Card number and date of issue …....................................
+(ii) Passport number, place and date of issue …...……………………….............
+(g) Postal Address: ….............………………………………………………………………
+Previous Postal Address, if, any……………………………………………………….
+(h) Physical Address: ……….........................................................................
+(i) Telephone numbers: ………......………………………………………………………
+Previous Telephone number, if, any ….……………………..…………………………
+(i) Name(s) of your bankers during the last 5 years:
+...............................................................................................................
+(j) Responsibilities of Proposed position
+................................................................................................................
+Educational Qualiﬁcations:
+49
+
+--- PDF page 56 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+Qualiﬁcations Year Obtained Examining Body Grade Obtained
+1.
+2.
+3.
+Professional Qualiﬁcations and years obtained:
+Qualiﬁcations Year Obtained Examining Body Grade Obtained
+1.
+2.
+3.
+3. EMPLOYMENT/ BUSINESS RECORD
+Period Name of
+Employer
+/ Business and
+Position Held &
+Dates
+Responsibilities Reasons for
+Leaving (where
+applicable)
+4. DESCRIPTION OF PAST AND PRESENT ACTIVITIES IN KENYA AND ABROAD
+4.1 Shareholding (directly owned or through nominees):
+Company’s
+Name
+Certiﬁcate
+of
+registration
+No.
+Number of
+Shares held
+Percentage
+of
+Shareholding
+Name and
+address of
+Beneﬁcial
+Owner of
+shares
+Past Share-
+holding*
+Reasons
+for sale/
+divestiture*
+50
+
+--- PDF page 57 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+*If none, indicate “not applicable”.
+4.2 Directorships
+Company’s
+Name
+Certiﬁcate
+of
+registration
+No.
+Executive
+or Non-
+executive
+Position
+held in
+case of
+Executive
+Date of
+appointment
+Past
+Directorships*
+Reasons for
+leaving*
+*If none, indicate “not applicable”.
+4.3 Membership to professional bodies:
+Name of the
+institution
+Membership No. Position held Current status of
+membership
+Reasons for leaving
+5. BORROWINGS
+5.1 Have you ever defaulted in your ﬁnancial obligations in the last ﬁve years?
+...............................................................................................................
+If yes, give details ....................................................................................
+5.2 Have you at any time been convicted of any criminal offence in any jurisdiction?
+.....................................................................................................
+If so, give particulars of the court in which you were convicted, the offence, the penalty imposed
+and the date of conviction
+.......................................................................................................
+5.3 Have you ever been disqualiﬁed, under any legislation from acting as a director or serving in a
+managerial capacity?
+.......................................................................................................
+5.4 Have you, in any country, ever been dismissed from any ofﬁce or employment, or been asked to
+resign or resigned from employment or position of trust or ﬁduciary appointment?
+If so, give particulars ........................................................................
+5.5 Have you ever been diagnosed as being mentally unﬁt or of unsound mind?
+..............................................................................................................
+5.6 Have you ever been adjudged bankrupt? .....................................................
+51
+
+--- PDF page 58 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+If so, give particulars ...............................................................................
+5.7 Have you ever been convicted of fraud or theft by a court of law in any country?
+If so, give particulars ..............................................................................
+5.8 Has any entity with which you were associated as a director, shareholder or manager in any country
+been in ﬁnancial distress, made any compromise or arrangement with its creditors, been wound up
+or otherwise ceased business either while you were associated with it or within three years after you
+ceased to be associated with it?
+If so, give particulars ..............................................................................
+5.9 Indicate the names, postal and e-mail addresses, telephone numbers and positions of at least
+three individuals of good standing who would be able to provide a reference on your personal and
+professional integrity. The referees must not be related to you and should have known you for at
+least ﬁve years:
+Name of
+Referee
+Name of
+Referee
+E-mail
+address
+Tel No. (s) Position (where
+applicable)
+Relationship
+with applicant
+1
+2
+3
+5.10 Is there any additional information which you consider relevant for the consideration of your
+suitability or otherwise for the position(s) held/to be held?
+The omission of material facts may represent the provision of misleading
+information .....................................................................................
+6. DECLARATION
+I am aware that it is an offence to knowingly provide any information, which is false or misleading. I
+am also aware that omitting material information intentionally shall be construed to be an offence.
+I certify that the information given above is complete and accurate to the best of my knowledge,
+and that there are no other facts relevant to this application of which the Bank should be aware.
+I undertake to inform the Bank of any material changes to the information provided herein:
+NAME .................................. POSITION HELD .......................................
+DATED ................. AT .................. THIS DAY OF ................................
+SIGNED .......................................................................................
+(Applicant)
+(This declaration must be signed in the presence of the witness named below)
+WITNESSED BEFORE ME:
+COMMISSIONER FOR OATHS/MAGISTRATE
+Name: .................................................................................................
+52
+
+--- PDF page 59 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+Signature: ........................................................................................
+Address: ..........................................................................................
+Date and Stamp: ...............................................................................
+N.B. The information given in response to this questionnaire shall be kept conﬁdential by the supervisory
+authorities, except in cases provided for by law.
+___________________________________________
+FORM 4 (r. 6(bb), 9(3)(r)
+FIT AND PROPER FORM FOR SIGNIFICANT SHAREHOLDERS
+NB: This form should be duly completed, accompanied by the complete set of documents provided under
+Part III.
+1. NON-DEPOSIT TAKING CREDIT PROVIDER
+Name .......................................................................................................
+Registration No. ........................................................................................
+2. INFORMATION
+(a) Name of the corporate body/individual ..................................................
+(b) Previous names (if any) by which you have been known ..........................
+(c) Date of incorporation/birth ..............................................................
+(d) Country of incorporation/birth ........................................................
+(e) Registration No./Identiﬁcation No./Passport No. ................................
+(f) Personal Identiﬁcation No./Tax Registration No. ...................................
+(g) Contacts details ...............................................................................
+(h) Name(s) of your bankers over the last 5 years ....................................
+3. DESCRIPTION OF PAST AND PRESENT ACTIVITIES IN KENYA AND ABROAD
+3.1 Sources of funds
+1. Please provide details of the actual source(s) of funds that you, as a shareholder, would like
+to invest or use in the acquisition of shares in the non-deposit taking credit provider.
+(a) ............................................................................
+(b) ............................................................................
+(c) ............................................................................
+2. Declaration on the sources of funds
+53
+
+--- PDF page 60 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+Please provide a sworn statement that the funds that you, as a shareholder, would like to
+invest or use in the acquisition of shares in the non-deposit taking credit provider are not
+from proceeds of crime.
+4. BORROWINGS
+4.1 Have you ever defaulted in your ﬁnancial obligations in the last ﬁve years?
+...........................................................................................................
+If yes, give details ..........................................................................
+Name
+of
+Borrower
+Name of
+Lending
+Institution
+Type of
+Facility
+Amount
+Borrowed
+Date of
+Drawdown
+Terms
+of
+Facility
+Security
+Offered
+Value
+of
+security
+Current
+Outstanding
+Balance
+4.2 Have you at any time been convicted of any criminal offence in any jurisdiction? If so, give
+particulars of the court in which you were convicted, the offence, the penalty imposed and the date
+of conviction ......................................................................................
+4.3 Have you ever been disqualiﬁed, under any legislation from acting as a director or serving in a
+managerial capacity?
+..............................................................................................................
+4.4 Have you, in any country, ever been dismissed from any ofﬁce or employment, or been asked
+to resign or resigned from employment or position of trust or ﬁduciary appointment? If so give
+particulars
+..............................................................................................................
+4.5 Have you ever been diagnosed as being mentally unﬁt or of unsound mind?
+...............................................................................................................
+4.6 Have you ever been adjudged bankrupt?
+...............................................................................................................
+If so, give particulars
+.................................................................................................................
+4.7 Have you ever been convicted of fraud or theft by a court of law in any country?
+If so, give particulars
+................................................................................................................
+4.8 Has any entity with which you were associated as a director, shareholder or manager in any country
+been in ﬁnancial distress, made any compromise or arrangement with its creditors, been wound up
+or otherwise ceased business either while you were associated with it or within three years after you
+ceased to be associated with it?
+.................................................................................................................
+54
+
+--- PDF page 61 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+If so, give particulars
+...............................................................................................................
+4.9 Indicate the names, postal and e-mail addresses, telephone numbers and positions of at least
+three individuals of good standing who would be able to provide a reference on your personal and
+professional integrity. The referees must not be related to you and should have known you for at
+least ﬁve years.
+Name of Referee Postal
+Address
+E-mail
+address
+Tel
+no. (s)
+Position (where
+applicable)
+Relationship
+with applicant
+1
+2
+3
+4.10 Is there any additional information which you consider relevant for the consideration of your
+suitability or otherwise for the position(s) held/to be held? The omission of material facts may
+represent the provision of misleading information.
+material facts may represent the provision of misleading information
+......................................................................................................
+5. DECLARATION
+I am aware that it is an offence to knowingly provide any information, which is false or misleading. I am
+also aware that omitting material information intentionally shall be construed to be an offence.
+I certify that the information given above is complete and accurate to the best of my knowledge, and that
+there are no other facts relevant to this application of which the Bank should be aware.
+I undertake to inform the Bank of any material changes to the information provided herein
+NAME: .........................................................................................................
+DATED AT: ..................... THIS ............. DAY OF ................... 20 .....................
+WITNESSED BEFORE ME:
+SIGNED .......................................................... (Applicant)
+COMMISSIONER FOR OATHS/MAGISTRATE
+Name: ...........................................................................................................
+Signature: ................................................................................................
+Address: ....................................................................................................
+___________________________________________
+FORM 5 (r. 66(9))
+55
+
+--- PDF page 62 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+CYBERSECURITY INCIDENT REPORT
+NB: This form should be submitted within 24 hours of any fraud or cybersecurity incident(s) to the Bank
+Supervision Department at ﬁn@centralbank.go.ke
+[Insert Name of reporting non-deposit taking credit provider]
+.............................................................................................
+[Insert Date and Time of reporting]: Date .................. Time .............
+Final Incident Report
+Date and time incident occurred:
+Date and time of resolution:
+Amount of fraud involved:
+Date and time of closure:
+Incident discovery method (how or via which channel was the incident
+discovered):
+Changes since the previous report (detailed chronological event,
+stakeholders notiﬁed):
+Impact assessment (ﬁnancial loss amount, ability to provide adequate
+services to its customers, assessment on reputational or status, impact
+based on customer complaints, description of systems affected as well
+as associated services):
+Incident description(Location, purpose of the system, name of service
+provider affected where applicable, affected applications /databases/
+networks / storage / servers, etc.
+Incident closure (Indicate the root cause of the incident):
+56
+
+--- PDF page 63 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+Lessons and remediation:
+Authorized Signatories
+Signed for and behalf of ..................................................................................
+By the duly authorized Signatories
+Name ...................................................................................................................
+Designation ..........................................................................................................
+Contact email ......................................................................................................
+Contact phone number ..........................................................................................
+Signature
+Name ...................................................................................................................
+Designation ..........................................................................................................
+Contact email .....................................................................................................
+Contact phone number ............................................................................................
+Signature
+SECOND SCHEDULE [r. 14(1), 22(8), 74(d)]
+CRITERIA
+Part A – CRITERIA FOR DETERMINING PROFESSIONAL AND MORAL SUITABILITY
+(1) For the purposes of determining the professional and moral suitability of persons, proposed to be directors
+and senior ofﬁcers of a non-deposit taking credit provider, the Bank shall have regard to the following
+qualities, in so far as they are reasonably determinable—
+(a) possession of relevant qualiﬁcation, knowledge, skills and experience;
+(b) ability to recommend and implement sound practices based on previous business experience;
+57
+
+--- PDF page 64 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+(c) ability to provide objective advice;
+(d) ability to avoid conﬂicts of interest in activities and commitments with other organizations.
+(2) Without prejudice to the generality of the provisions of paragraph (1), the Bank, may have regard to the
+present and previous conduct and activities of the person concerned in business or ﬁnancial matters and,
+in particular, to any evidence that such person—
+(a) has been convicted of an offence of fraud or any other offence of which dishonesty is an element;
+(b) has contravened the provisions of any law designed for the protection of members of the public
+against ﬁnancial loss due to the dishonesty or incompetence of or malpractices;
+(c) was a director or a senior ofﬁcer of an institution that has been liquidated or is under liquidation or
+statutory management;
+(d) has taken part in any business practices that, in the opinion of the Bank, were fraudulent,
+prejudicial or otherwise improper (whether unlawful or not);
+(e) has taken part in or been associated with any other business practices as would, or has otherwise
+conducted himself in such manner as to cast doubt on his competence and soundness of judgment;
+(f) has defaulted in the repayment of a loan for three consecutive months advanced by a licensed
+ﬁnancial institution; and
+(g) has been adjudged bankrupt.
+Part B – CRITERIA FOR DETERMINING MORAL
+SUITABILITY OF SIGNIFICANT SHAREHOLDERS
+(1) For the purposes of determining the moral suitability of signiﬁcant shareholders of a non-deposit taking
+credit provider, the Bank shall have regard to the previous conduct and activities of the signiﬁcant
+shareholder concerned in business or ﬁnancial matters and, in particular, to any evidence that such person
+—
+(a) has been convicted of the offence of fraud or any other offence of which dishonesty is an element;
+and
+(b) has contravened the provisions of any law designed for the protection of members of the public
+against ﬁnancial loss due to the dishonesty or malpractices by persons engaged in the provision of
+banking, insurance, investment or other ﬁnancial services.
+(2) Where the signiﬁcant shareholder is a corporate entity, its directors and senior ofﬁcers shall satisfy the
+criterion speciﬁed in paragraph (a) above.
+(3) The Bank may request any person or corporate entity to furnish such information as may be necessary in
+determining the moral suitability of signiﬁcant shareholders.
+THIRD SCHEDULE [r. 5(2)(z), 7(4), 9(3)(p), 11(3)]
+FEES
+Fees Amount
+(Ksh.)
+On application for a licence or registration. 100,000
+58
+
+--- PDF page 65 ---
+The Central Bank of Kenya (Non-Deposit Taking Credit Providers) Regulations, 2026 (Legal Notice 191 of
+2026)  Kenya
+On the granting of a licence and annually. 500,000
+On the granting of a certiﬁcate of registration and annually. 250,000
+On payment of annual fee after 31st day of December (Late Penalty
+Fees).
+1,000,000
+59

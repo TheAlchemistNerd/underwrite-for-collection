@@ -1,0 +1,34 @@
+{
+  "source_sha256": "e6c2dd7bf786eae8a5493ac7d5d542e38f42d201e5eb65a11e06977de517e3cb",
+  "markdown_sha256": "9cd7bad289f9cc774b8551abf4e2d2696fd9ad4e8b6e5fae66923dcbbaff8f72",
+  "word_sha256": "953fba8f4797a4e5f46fba40df9babddf7aa0e7b8c87976023f915f5398245a0",
+  "source_lines": 245,
+  "source_characters": 68231,
+  "diagram_count": 4,
+  "diagrams": [
+    {
+      "stem": "01_EXPERIMENTAL_ALLOCATION",
+      "png_bytes": 98002,
+      "mmd_bytes": 1341
+    },
+    {
+      "stem": "02_LOSS_BUDGET_AND_SAMPLE_SIZE",
+      "png_bytes": 48872,
+      "mmd_bytes": 1043
+    },
+    {
+      "stem": "03_RCT_DATA_AND_ALLOCATION",
+      "png_bytes": 42965,
+      "mmd_bytes": 972
+    },
+    {
+      "stem": "04_EVALUATION_AND_GOVERNED_LEARNING",
+      "png_bytes": 35651,
+      "mmd_bytes": 749
+    }
+  ],
+  "word_font": "Arial",
+  "word_render_pages": 21,
+  "word_visual_review": "Complete; Microsoft Word PDF export and Poppler PNG review",
+  "source_text_verification": "Markdown begins with byte-for-byte supplied source; all 245 source lines verified in Word in original order"
+}

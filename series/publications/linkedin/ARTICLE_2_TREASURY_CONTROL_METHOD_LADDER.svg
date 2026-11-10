@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">A governed path from ALM scenarios to adaptive control</title>
+  <desc id="desc">A Treasury method ladder from scenarios and optimization through model predictive control and POMDPs, with independent validation and a distinct cash-flow to FTP to ALCO flow.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f7fb}.navy{fill:#12304a}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2}.blue{fill:#dcecf7;stroke:#2b6b91;stroke-width:2}.teal{fill:#dff3eb;stroke:#278269;stroke-width:2}.amber{fill:#fff1cc;stroke:#c48913;stroke-width:2}.purple{fill:#eee9fb;stroke:#7965b3;stroke-width:2}.line{fill:none;stroke:#61758a;stroke-width:4;marker-end:url(#arr)}.text{font-family:Arial,Helvetica,sans-serif;fill:#17324b}.title{font-size:31px;font-weight:700;fill:#fff}.sub{font-size:17px;fill:#d9e5ef}.head{font-size:19px;font-weight:700}.body{font-size:15px}.small{font-size:14px}.white{fill:#fff}
+    </style>
+    <marker id="arr" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#61758a"/></marker>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <rect class="navy" width="1400" height="112"/>
+  <text class="title" x="48" y="53">A governed path from ALM scenarios to adaptive control</text>
+  <text class="sub" x="50" y="83">Use the method that fits the decision, available evidence and approved authority.</text>
+
+  <rect class="blue" x="48" y="151" width="216" height="148" rx="16"/>
+  <text class="head" x="72" y="190">Scenarios</text>
+  <text class="body" x="72" y="221">Curves • runoff</text>
+  <text class="body" x="72" y="245">deposit pass-through</text>
+  <text class="body" x="72" y="269">NII / EVE / liquidity</text>
+
+  <rect class="blue" x="304" y="151" width="216" height="148" rx="16"/>
+  <text class="head" x="328" y="190">Optimization</text>
+  <text class="body" x="328" y="221">Compare funding and</text>
+  <text class="body" x="328" y="245">hedge plans under</text>
+  <text class="body" x="328" y="269">explicit limits</text>
+  <path class="line" d="M264 225 H294"/>
+
+  <rect class="teal" x="560" y="151" width="216" height="148" rx="16"/>
+  <text class="head" x="584" y="190">Rolling MPC</text>
+  <text class="body" x="584" y="221">Optimize horizon</text>
+  <text class="body" x="584" y="245">Take approved action</text>
+  <text class="body" x="584" y="269">Replan on new data</text>
+  <path class="line" d="M520 225 H550"/>
+
+  <rect class="purple" x="816" y="151" width="216" height="148" rx="16"/>
+  <text class="head" x="840" y="190">POMDP / DP</text>
+  <text class="body" x="840" y="221">Only if state</text>
+  <text class="body" x="840" y="245">transitions or latent</text>
+  <text class="body" x="840" y="269">state are specified</text>
+  <path class="line" d="M776 225 H806"/>
+
+  <rect class="amber" x="1072" y="151" width="278" height="148" rx="16"/>
+  <text class="head" x="1096" y="190">RL policy test</text>
+  <text class="body" x="1096" y="221">Shadow • stress • validate</text>
+  <text class="body" x="1096" y="245">Compare with baselines</text>
+  <text class="body" x="1096" y="269">ALCO retains authority</text>
+  <path class="line" d="M1032 225 H1062"/>
+
+  <rect class="card" x="48" y="351" width="1302" height="114" rx="16"/>
+  <text class="head" x="76" y="389">Question to answer at every step</text>
+  <text class="body" x="76" y="420">Does the next method improve a defined decision after costs, collateral, action support, model uncertainty and hard limits are included?</text>
+  <text class="small" x="76" y="446">If the answer is uncertain, keep the output in scenario analysis or shadow mode while evidence is built.</text>
+
+  <text class="head" x="52" y="520">Evidence flows across projects; decision rights stay explicit</text>
+  <rect class="blue" x="52" y="552" width="255" height="116" rx="14"/>
+  <text class="head" x="74" y="589">Underwrite + Mwendo</text>
+  <text class="body" x="74" y="618">Dated borrower / receivable</text>
+  <text class="body" x="74" y="642">cash, cure, cost, recovery</text>
+  <rect class="teal" x="388" y="552" width="255" height="116" rx="14"/>
+  <text class="head" x="410" y="589">Treasury forecast</text>
+  <text class="body" x="410" y="618">Inflow timing and uncertainty</text>
+  <text class="body" x="410" y="642">by horizon and scenario</text>
+  <rect class="purple" x="724" y="552" width="255" height="116" rx="14"/>
+  <text class="head" x="746" y="589">FTP attribution</text>
+  <text class="body" x="746" y="618">Internal funding / liquidity</text>
+  <text class="body" x="746" y="642">value under approved method</text>
+  <rect class="amber" x="1060" y="552" width="290" height="116" rx="14"/>
+  <text class="head" x="1082" y="589">ALCO decision</text>
+  <text class="body" x="1082" y="618">NII • EVE • liquidity • limits</text>
+  <text class="body" x="1082" y="642">owner, action and review</text>
+  <path class="line" d="M307 610 H378"/>
+  <path class="line" d="M643 610 H714"/>
+  <path class="line" d="M979 610 H1050"/>
+
+  <rect class="navy" x="52" y="710" width="1298" height="72" rx="14"/>
+  <text class="head white" x="76" y="753">Hard governance constraints</text>
+  <text class="sub" x="365" y="753">Legal duties • prudential limits • collateral capacity • model validation • human authorization • auditability</text>
+</svg>

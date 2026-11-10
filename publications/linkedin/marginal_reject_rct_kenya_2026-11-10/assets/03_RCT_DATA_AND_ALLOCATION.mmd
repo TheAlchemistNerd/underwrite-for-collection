@@ -1,0 +1,12 @@
+%%{init: {"theme":"base","themeVariables":{"primaryColor":"#EAF2F8","primaryTextColor":"#172B4D","primaryBorderColor":"#2F6690","lineColor":"#527A9A","secondaryColor":"#F4F7FA","tertiaryColor":"#FFF4D6","fontFamily":"Arial"}}}%%
+flowchart TB
+    A[Approved research question<br/>and protocol] --> B[Document purpose, data permissions,<br/>customer information and governance]
+    B --> C[Application, M-Pesa, CRB<br/>and affordability evidence]
+    C --> D[Data quality, coverage<br/>and feature construction]
+    D --> E[Mandatory eligibility and fraud filters<br/>define marginal pool and strata]
+    E --> F[Reproducible 80:20 allocation<br/>assignment ID and immutable log]
+    F --> G[Control group<br/>existing decision]
+    F --> H[Treatment group<br/>controlled credit offer]
+    G --> I[Capture permitted<br/>common outcomes]
+    H --> J[Acceptance, disbursement<br/>and servicing]
+    J --> K[Track repayment, arrears, default,<br/>fraud and customer outcomes]

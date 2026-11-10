@@ -1,0 +1,11 @@
+%%{init: {"theme":"base","themeVariables":{"primaryColor":"#EAF2F8","primaryTextColor":"#172B4D","primaryBorderColor":"#2F6690","lineColor":"#527A9A","secondaryColor":"#F4F7FA","tertiaryColor":"#FFF4D6","fontFamily":"Arial"}}}%%
+flowchart TB
+    A[Pre-specified analysis] --> B[Offer effect for outcomes<br/>observed in both arms]
+    A --> C[Repayment performance<br/>among financed applicants]
+    B --> D[Risk, compliance<br/>and management review]
+    C --> E[Model development<br/>and independent validation]
+    E --> D
+    D --> F[Maintain, refine or stage<br/>policy changes under governance]
+    F --> G[Versioned underwriting<br/>policy and monitoring]
+    G --> H[Monitor next eligible cohort<br/>and record mature outcomes]
+    H --> A

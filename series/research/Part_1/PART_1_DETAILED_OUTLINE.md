@@ -24,6 +24,7 @@ State the problem, Kenyan setting, lifecycle proposition, ecosystem scope and co
 
 - Present CBK December 2024 MSME account and value results.
 - Show how micro accounts and medium-enterprise balances create different count and value pictures.
+- Compare the CBK full-sector December 2024 and December 2025 loan, NPL-stock and ratio measures, stating that the denominator grew.
 - Present KBA June 2026 selected dashboard view separately.
 - Present June 2026 full banking-sector NPL movement separately.
 - Explain vintage, stock, flow, account and value denominators.
@@ -66,5 +67,4 @@ Return to the opening MSME and restate collection as a design property measured 
 
 ### References
 
-Eight IEEE entries in first-appearance order. References begin after the body and are excluded from the word count.
-
+Nine IEEE entries in first-appearance order. References begin after the body and are excluded from the word count.

@@ -1,14 +1,14 @@
 {
   "date": "2026-10-16",
   "file": "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\publications\\UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.pdf",
-  "pages": 136,
-  "sha256": "fe0e9e3c6a46e3863d996173b7dd917afb73827ffb97281d83a44a6af4fcc450",
-  "display_equations": 269,
+  "pages": 144,
+  "sha256": "a795ac9be2dd6259b9fb59ae5cb53c9f335ad1e5674fde6b202b6d6ee49de68a",
+  "display_equations": 287,
   "counts_by_scope": {
     "1": 13,
     "A1": 43,
-    "2": 45,
-    "A2": 48,
+    "2": 48,
+    "A2": 63,
     "3": 25,
     "A3": 34,
     "4": 7,
@@ -21,12 +21,12 @@
   "all_equation_tex_preserved_verbatim": true,
   "number_text_check": "Poppler; font-mapped ornate parentheses normalised for comparison",
   "contextual_link_paragraphs": 5,
-  "cross_reference_occurrences": 559,
-  "internal_pdf_links": 767,
+  "cross_reference_occurrences": 597,
+  "internal_pdf_links": 825,
   "invalid_links": [],
   "final_tex_diagnostics": [],
   "draft_for_review_removed": true,
-  "rendered_pages": 136,
+  "rendered_pages": 144,
   "visual_review_complete": false,
   "contacts": [
     "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\numbered_pdf_qa_2026-10-16\\contact_001_004.png",
@@ -62,6 +62,8 @@
     "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\numbered_pdf_qa_2026-10-16\\contact_121_124.png",
     "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\numbered_pdf_qa_2026-10-16\\contact_125_128.png",
     "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\numbered_pdf_qa_2026-10-16\\contact_129_132.png",
-    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\numbered_pdf_qa_2026-10-16\\contact_133_136.png"
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\numbered_pdf_qa_2026-10-16\\contact_133_136.png",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\numbered_pdf_qa_2026-10-16\\contact_137_140.png",
+    "C:\\Users\\Nevo\\Downloads\\behavioural credit scoring - underwrite to collect rct\\series\\publications\\linkedin\\2026-10-08_causal_credit_series\\build\\numbered_pdf_qa_2026-10-16\\contact_141_144.png"
   ]
 }

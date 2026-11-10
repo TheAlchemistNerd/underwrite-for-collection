@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">From selective credit labels to sequential collection control</title>
+  <desc id="desc">A flow diagram showing the credit application selection problem, evidence paths for originated and rejected applicants, and a governed progression from a fixed pilot to contextual bandits and sequential control.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f7fb}.card{fill:#fff;stroke:#cbd5e1;stroke-width:2}.navy{fill:#12304a}.blue{fill:#dcecf7;stroke:#2b6b91}.amber{fill:#fff1cc;stroke:#c48913}.mint{fill:#dff3eb;stroke:#278269}.red{fill:#fde7e5;stroke:#bd5b50}.purple{fill:#eee9fb;stroke:#7965b3}.stroke{fill:none;stroke:#61758a;stroke-width:4;marker-end:url(#arrow)}.dash{fill:none;stroke:#bd5b50;stroke-width:4;stroke-dasharray:10 8;marker-end:url(#arrowRed)}
+      text{font-family:Arial,Helvetica,sans-serif;fill:#17324b}.title{font-size:32px;font-weight:700;fill:#fff}.sub{font-size:17px;fill:#d9e5ef}.head{font-size:20px;font-weight:700}.body{font-size:16px}.small{font-size:14px}.white{fill:#fff}.pill{font-size:15px;font-weight:700}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#61758a"/></marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#bd5b50"/></marker>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <rect class="navy" x="0" y="0" width="1400" height="116"/>
+  <text class="title" x="48" y="54">From selective credit labels to sequential collection control</text>
+  <text class="sub" x="50" y="84">Reject inference defines the missing counterfactual; experiments create evidence only inside an approved action set.</text>
+
+  <rect class="card" x="48" y="151" width="240" height="114" rx="16"/>
+  <text class="head" x="74" y="188">Applicant pool</text>
+  <text class="body" x="74" y="219">Decision-time context X</text>
+  <text class="body" x="74" y="243">Offer a and horizon τ</text>
+
+  <rect class="card" x="356" y="151" width="260" height="114" rx="16"/>
+  <text class="head" x="382" y="188">Decision / selection</text>
+  <text class="body" x="382" y="219">Eligibility • affordability</text>
+  <text class="body" x="382" y="243">Policy • accept / decline</text>
+  <path class="stroke" d="M288 208 H346"/>
+
+  <rect class="mint" x="704" y="137" width="284" height="138" rx="16"/>
+  <text class="head" x="730" y="176">Originated offer</text>
+  <text class="body" x="730" y="207">Observed payments, arrears,</text>
+  <text class="body" x="730" y="231">cure, default and recovery</text>
+  <text class="pill" x="730" y="257">Observed under contract a</text>
+  <path class="stroke" d="M616 194 C650 194 660 194 694 194"/>
+
+  <rect class="red" x="704" y="309" width="284" height="138" rx="16"/>
+  <text class="head" x="730" y="348">No issued contract</text>
+  <text class="body" x="730" y="379">No repayment label for a</text>
+  <text class="body" x="730" y="403">Decline ≠ default or cure</text>
+  <text class="pill" x="730" y="429">Counterfactual unobserved</text>
+  <path class="dash" d="M616 222 C663 250 656 344 694 365"/>
+
+  <rect class="blue" x="1068" y="151" width="282" height="114" rx="16"/>
+  <text class="head" x="1094" y="188">Outcome model</text>
+  <text class="body" x="1094" y="219">Contract-specific risk</text>
+  <text class="body" x="1094" y="243">+ maturity / censoring</text>
+  <path class="stroke" d="M988 206 H1058"/>
+
+  <rect class="amber" x="1068" y="322" width="282" height="114" rx="16"/>
+  <text class="head" x="1094" y="359">Selection analysis</text>
+  <text class="body" x="1094" y="390">Overlap • assumptions</text>
+  <text class="body" x="1094" y="414">Sensitivity • uncertainty</text>
+  <path class="stroke" d="M988 378 H1058"/>
+
+  <rect class="purple" x="54" y="501" width="278" height="130" rx="16"/>
+  <text class="head" x="80" y="541">1 · Define the estimand</text>
+  <text class="body" x="80" y="574">Dᵢᵃ(τ), take-up, cash</text>
+  <text class="body" x="80" y="599">and offer terms</text>
+  <rect class="purple" x="382" y="501" width="278" height="130" rx="16"/>
+  <text class="head" x="408" y="541">2 · Fixed safe pilot</text>
+  <text class="body" x="408" y="574">Randomize eligible cases</text>
+  <text class="body" x="408" y="599">Log propensity + execution</text>
+  <rect class="purple" x="710" y="501" width="278" height="130" rx="16"/>
+  <text class="head" x="736" y="541">3 · Contextual bandit</text>
+  <text class="body" x="736" y="574">Compare one-step actions</text>
+  <text class="body" x="736" y="599">Evaluate support and reward</text>
+  <rect class="purple" x="1038" y="501" width="312" height="130" rx="16"/>
+  <text class="head" x="1064" y="541">4 · Sequential control</text>
+  <text class="body" x="1064" y="574">Model state transitions and</text>
+  <text class="body" x="1064" y="599">delayed borrower outcomes</text>
+  <path class="stroke" d="M332 566 H372"/>
+  <path class="stroke" d="M660 566 H700"/>
+  <path class="stroke" d="M988 566 H1028"/>
+
+  <rect class="navy" x="54" y="679" width="1296" height="92" rx="16"/>
+  <text class="head white" x="80" y="716">Governance envelope</text>
+  <text class="sub" x="80" y="746">Lawful purpose • affordability • customer rights • valid action authority • human review • uncertainty • complaints • audit trail</text>
+</svg>

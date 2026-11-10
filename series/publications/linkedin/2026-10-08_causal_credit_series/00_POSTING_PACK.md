@@ -18,7 +18,9 @@ Every article has its own source, short LinkedIn post and Word document. Word eq
 | 4. [Can Reinforcement Learning Help Run a Bank’s Balance Sheet?](ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.md) | [Post](ARTICLE_4_LINKEDIN_POST.md) | [Word](publications/word/ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.docx) |
 | 5. [Bringing the Methods into the Bank](ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.md) | [Post](ARTICLE_5_LINKEDIN_POST.md) | [Word](publications/word/ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.docx) |
 
-## Combined edition
+## Combined edition: Causal Credit and Treasury Decision-Making
+
+*Credit-Offer Experiments, Sequential Collections, Reject Inference and Bank-Controlled AI*
 
 [Combined Word edition with native mathematical equations](publications/UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION_2026-10-08.docx)
 

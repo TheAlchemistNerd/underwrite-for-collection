@@ -116,7 +116,10 @@ Generated from the shared numbered source for the combined PDF and Word editions
 | (2.42) | Relationship graphs, contextual bandits and sequential search: step 4 | `eq:2-relationship-graphs-contextual-bandits-and-sequential-search-9c28d74000` |
 | (2.43) | Relationship graphs, contextual bandits and sequential search: step 5 | `eq:2-relationship-graphs-contextual-bandits-and-sequential-search-6c35624831` |
 | (2.44) | Relationship graphs, contextual bandits and sequential search: step 6 | `eq:2-relationship-graphs-contextual-bandits-and-sequential-search-4facccc02f` |
-| (2.45) | A worked example with deliberately hypothetical numbers: step 1 | `eq:2-a-worked-example-with-deliberately-hypothetical-numbers-40d46ac7d5` |
+| (2.45) | Boltzmann allocation among approved actions: step 1 | `eq:2-boltzmann-allocation-among-approved-actions-170bd3423e` |
+| (2.46) | Boltzmann allocation among approved actions: step 2 | `eq:2-boltzmann-allocation-among-approved-actions-aded7747eb` |
+| (2.47) | Boltzmann allocation among approved actions: step 3 | `eq:2-boltzmann-allocation-among-approved-actions-c32ff27f22` |
+| (2.48) | A worked example with deliberately hypothetical numbers: step 1 | `eq:2-a-worked-example-with-deliberately-hypothetical-numbers-40d46ac7d5` |
 
 ## Appendix A2
 
@@ -170,6 +173,21 @@ Generated from the shared numbered source for the combined PDF and Word editions
 | (A2.46) | A2.14 MCTS and graph explanations: step 2 | `eq:a2-mcts-and-graph-explanations-b727eb09a5` |
 | (A2.47) | A2.14 MCTS and graph explanations: step 3 | `eq:a2-mcts-and-graph-explanations-3c967071e7` |
 | (A2.48) | A2.15 Off-policy evaluation and pilot arithmetic: step 1 | `eq:a2-off-policy-evaluation-and-pilot-arithmetic-0914b29a59` |
+| (A2.49) | Values, eligible actions and units: step 1 | `eq:a2-values-eligible-actions-and-units-c7738459ba` |
+| (A2.50) | Values, eligible actions and units: step 2 | `eq:a2-values-eligible-actions-and-units-bebeae1a56` |
+| (A2.51) | Values, eligible actions and units: step 3 | `eq:a2-values-eligible-actions-and-units-150a6dacd2` |
+| (A2.52) | Entropy objective and derivation: step 1 | `eq:a2-entropy-objective-and-derivation-92d0972a5e` |
+| (A2.53) | Entropy objective and derivation: step 2 | `eq:a2-entropy-objective-and-derivation-fa4b0904b4` |
+| (A2.54) | Entropy objective and derivation: step 3 | `eq:a2-entropy-objective-and-derivation-92fbdd40f9` |
+| (A2.55) | Limits and invariances: step 1 | `eq:a2-limits-and-invariances-57c3a3dba1` |
+| (A2.56) | Limits and invariances: step 2 | `eq:a2-limits-and-invariances-7bc5d6e05b` |
+| (A2.57) | Stable evaluation, support and logging: step 1 | `eq:a2-stable-evaluation-support-and-logging-21d048acc9` |
+| (A2.58) | Stable evaluation, support and logging: step 2 | `eq:a2-stable-evaluation-support-and-logging-cc10682ee5` |
+| (A2.59) | Cash example and a changed eligible set: step 1 | `eq:a2-cash-example-and-a-changed-eligible-set-9a3f928617` |
+| (A2.60) | Cash example and a changed eligible set: step 2 | `eq:a2-cash-example-and-a-changed-eligible-set-e435937e7b` |
+| (A2.61) | Dynamic entropy control and partial observation: step 1 | `eq:a2-dynamic-entropy-control-and-partial-observation-7bbef6fd1d` |
+| (A2.62) | Dynamic entropy control and partial observation: step 2 | `eq:a2-dynamic-entropy-control-and-partial-observation-460840505d` |
+| (A2.63) | Dynamic entropy control and partial observation: step 3 | `eq:a2-dynamic-entropy-control-and-partial-observation-a1d8f3dada` |
 
 ## Article 3
 

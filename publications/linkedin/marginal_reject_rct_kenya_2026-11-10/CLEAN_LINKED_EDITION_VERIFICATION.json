@@ -1,0 +1,21 @@
+{
+  "source_file": "Pasted text.txt",
+  "clean_markdown_sha256": "a6bc747aaa47d88b1444250782a6f1abd4afb352767fdd49144dbc31cffb9f5c",
+  "clean_word_sha256": "d72f3e4b5766862501cc6b2cbce88bd5545357d0edcea0a9a75d864e5c9e5479",
+  "word_unicode_equations": true,
+  "equation_examples": [
+    "N\u2098\u2090\u2093 = B \u00f7 (PD \u00d7 LGD \u00d7 EAD)",
+    "N\u2098\u2090\u2093 = 2,500,000 \u00f7 (0.40 \u00d7 1.00 \u00d7 500)",
+    "N\u2098\u2090\u2093 = 12,500 experimental loans"
+  ],
+  "figure_1_rendered_in_article_body": true,
+  "table_1_formatted_as_three_column_word_and_markdown_table": true,
+  "appendix_supporting_diagrams": [
+    "02_LOSS_BUDGET_AND_SAMPLE_SIZE",
+    "03_RCT_DATA_AND_ALLOCATION",
+    "04_EVALUATION_AND_GOVERNED_LEARNING",
+    "05_IMPLEMENTATION_GOVERNANCE_ROADMAP"
+  ],
+  "citation_links_preserved": 11,
+  "rendered_word_pages": 19
+}

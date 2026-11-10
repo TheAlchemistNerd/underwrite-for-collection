@@ -1,0 +1,61 @@
+Yes. For 4G Capital, I would lead with Underwrite for Collection and use Mwendo Pamoja’s continuous underwriting, intervention and financing methods to support it. The strongest application is helping small businesses turn working-capital loans into sustainable operating cash and repeat repayment.
+1. Its products fit the research closely
+4G Capital’s published offerings include:
+- UPIA: unsecured, 30-day working-capital loans, business training, in-person support and loyalty-based pricing.
+- KUZA: 21-day stock financing through distributor networks, with disbursement directly to the distributor and pricing described as linked to business margins.
+  Sources: UPIA, KUZA.
+Its “touch-tech” model combines digital lending with personal support and customised training. That creates a direct connection to our work on evidence, human judgement, intervention timing and realised cash outcomes. 4G Capital
+The applications below are my assessment of where our research could contribute.
+2. What transfers from Mwendo Pamoja?
+The operating mechanism changes from a vehicle generating fares to a business converting inventory into cash:
+Loan → stock purchase → sales → settled customer receipts → operating needs → repayment → next stock cycle.
+Our existing work	Application to 4G Capital
+Mwendo’s explicit liquidity features	Measure whether cash available over the repayment horizon covers loan dues, supplier payments and essential business and household needs.
+Hierarchical Bayesian underwriting	Estimate risk across business types, locations, branches, products and lending cycles, with partial pooling for groups containing limited observations.
+Bayesian limit decisions	Present the expected outcome, credible interval and probability of exceeding an approved risk threshold when considering a repeat-loan increase.
+Temporal and survival models	Follow when repayment, arrears, cure and recovery occur; distinguish a short delay from persistent deterioration.
+Intervention framework	Evaluate the timing and effectiveness of business support, reminders, field visits and authorised repayment adjustments.
+Enterprise evidence and governance	Connect field observations, mobile-money settlements, model versions, officer approvals and subsequent outcomes.
+Pricing and funding analysis	Reconcile customer charges with funding, servicing, expected losses, recovery costs and the return required on capital.
+
+
+For example, a trader’s timely repayment provides useful evidence for the next lending decision. Our framework adds the underlying business story: how the stock sold, what margin it generated, which receipts funded repayment and how much working capital remained afterwards.
+That connection is developed particularly clearly in [Underwrite for Collection’s first chapter](C:/Users/Nevo/Downloads/behavioural credit scoring - underwrite to collect rct/series/parts/Part_1_MSME_Credit_Lifecycle_and_Collection_Cascades.md).
+3. KUZA is a particularly useful practical case
+Direct payment to a distributor provides a starting record for the financed purchase. The research could connect that payment to:
+1. The order and confirmed delivery.
+2. Inventory quantities, margins and expected selling time.
+3. Actual sales and cash receipts.
+4. Repayment and remaining business liquidity.
+5. The next lending decision.
+This would make a strong entity-and-transaction-level credit case: the distributor, merchant, stock order, financing facility and payment events become linked evidence.
+For underwriting, it is financing the merchant’s operating business. A subsequent financing structure could separately identify eligible lender receivables and dedicate their collections to funders. Those are two connected levels of analysis.
+4. Its training model is a natural application for causal research
+Because business training is part of 4G Capital’s offering, our experimental-design work has an immediate research question:
+Which support, delivered to which business and at what point in its borrowing cycle, improves both business cash generation and sustainable repayment?
+
+A practical study could compare approved forms or timings of additional support while maintaining the standard service for every participating customer.
+Measure:
+- Stock turnover and gross margin.
+- Cash available after business and household needs.
+- On-time repayment and durable cure.
+- Customer experience and complaints.
+- Incremental servicing cost and net collections.
+A contextual bandit could later help allocate approved support as evidence accumulates. Sequential models become relevant when today’s intervention affects later business performance and lending decisions.
+5. There is also a concrete guarantee connection
+On 4 August 2026, IFC announced a partnership with 4G Capital under its Catalytic First Loss Guarantee programme. This makes our work on credit protection and funding particularly relevant. IFC announcement
+Our worked examples could support analysis of:
+- Eligible exposures and covered losses.
+- Guarantee caps and retained lender risk.
+- Claim submission, acceptance and cash-payment dates.
+- Recoveries and contractual recovery sharing.
+- Liquidity needed while claims are being settled.
+- Portfolio economics before and after protection.
+The actual agreement would supply the terms for that application.
+How I would position the work
+For Moove: preserve vehicle uptime and driver earning capacity.
+For 4G Capital: strengthen the connection between inventory finance, business support, borrower cash generation and repeat lending.
+A focused proposition would be:
+A reproducible framework for assessing whether each lending cycle leaves the business better able to operate and repay—and identifying which support makes that outcome more likely.
+
+That gives 4G Capital a clear application for Underwrite for Collection, supported by Mwendo Pamoja’s Bayesian decision framework and operating-to-financing cash analysis.

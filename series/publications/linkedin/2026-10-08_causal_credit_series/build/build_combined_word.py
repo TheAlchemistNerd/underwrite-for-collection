@@ -50,7 +50,7 @@ md=work/'COMBINED_NUMBERED_TEX_MATH.md';md.write_text(text,encoding='utf-8')
 output=root/'publications'/(stem+'_2026-10-08.docx')
 reference=work/'article_reference.docx'
 pandoc=Path(r'C:\Users\Nevo\AppData\Local\Pandoc\pandoc.exe')
-proc=subprocess.run([str(pandoc),str(md),'--from=markdown+autolink_bare_uris+tex_math_dollars-implicit_figures','--to=docx','--standalone','--toc','--toc-depth=2',f'--reference-doc={reference}','--output',str(output)],cwd=root,capture_output=True,text=True,encoding='utf-8')
+proc=subprocess.run([str(pandoc),str(md),'--from=markdown+autolink_bare_uris+tex_math_dollars-implicit_figures','--to=docx','--standalone','--metadata=subtitle:Credit-Offer Experiments, Sequential Collections, Reject Inference and Bank-Controlled AI','--toc','--toc-depth=2',f'--reference-doc={reference}','--output',str(output)],cwd=root,capture_output=True,text=True,encoding='utf-8')
 (work/'combined_word_pandoc.log').write_text(proc.stderr,encoding='utf-8')
 assert proc.returncode==0,proc.stderr
 assert not re.search(r'Could not convert|Could not fetch',proc.stderr),proc.stderr

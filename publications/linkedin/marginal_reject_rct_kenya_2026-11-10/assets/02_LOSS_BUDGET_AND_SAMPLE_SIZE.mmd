@@ -1,0 +1,14 @@
+%%{init: {"theme":"base","themeVariables":{"primaryColor":"#EAF2F8","primaryTextColor":"#172B4D","primaryBorderColor":"#2F6690","lineColor":"#527A9A","secondaryColor":"#F4F7FA","tertiaryColor":"#FFF4D6","fontFamily":"Arial"}}}%%
+flowchart TD
+    A[Illustrative expected-loss budget<br/>KES 2,500,000] --> B[Expected loss per experimental loan]
+    B --> C[KES 500 limit<br/>× 40% assumed default rate<br/>× 100% assumed LGD]
+    C --> D[KES 200 expected loss per loan]
+    A --> E[Budget capacity<br/>KES 2,500,000 ÷ KES 200]
+    D --> E
+    E --> F[12,500 treatment loans<br/>budget-based capacity]
+    F --> G[At 20% treatment allocation]
+    G --> H[62,500 eligible marginal applicants<br/>illustrative recruitment pool]
+    H --> I[Separate formal power calculation]
+    I --> J[Baseline event rate, minimum detectable effect,<br/>significance, power, allocation and attrition]
+    J --> K[Final sample size and recruitment plan]
+    F -. This calculation sets a loss-budget capacity;<br/>it does not establish statistical power .-> I

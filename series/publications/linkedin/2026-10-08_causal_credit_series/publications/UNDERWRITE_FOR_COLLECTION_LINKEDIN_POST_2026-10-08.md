@@ -1,4 +1,4 @@
-Underwrite for Collection: five articles on learning, decisions and bank-controlled AI
+Causal Credit and Treasury Decision-Making
 
 How can lenders learn which actions support sustainable repayment and use the evidence responsibly?
 
@@ -6,7 +6,7 @@ Building on the whitepaper, this series follows five questions.
 
 1. Credit offers and experiments: how can randomized trials and contextual bandits connect offer design to acceptance, repayment, affordability and customer outcomes?
 
-2. Sequential collection: when do repeated decisions justify reinforcement learning, competing-risk models and partially observed states? Bayesian priors and boundaries connect uncertainty to limit review. Graphs, LinUCB, logistic Thompson sampling and MCTS each have a defined role.
+2. Sequential collection: when do repeated decisions justify reinforcement learning, competing-risk models and partially observed states? Bayesian priors and boundaries connect uncertainty to limit review. Graphs, LinUCB, logistic Thompson sampling, Boltzmann allocation and MCTS each have a defined role.
 
 3. Reject inference: what can a lender learn when repayment labels depend on earlier approval and take-up decisions? The article connects selective labels, assumptions and experimental evidence.
 
@@ -20,7 +20,7 @@ Kenya’s Data Protection Act (2019) and General Regulations (2021) inform data 
 
 Articles include worked examples, equations, named diagrams, research questions and numbered references. The sequence connects research design to an operating process with traceable decisions, evidence and outcomes.
 
-Full edition attached.
+Full edition and equation register attached.
 Licence: CC BY-NC-SA 4.0
 
 #CreditRisk #MSMEFinance #ReinforcementLearning #ResponsibleAI

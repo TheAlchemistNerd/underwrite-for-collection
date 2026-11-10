@@ -269,6 +269,8 @@ A repeated identifier with the same payload returns the existing result; a confl
 
 These are design specifications tested through replay, access-control and reconciliation fixtures. They are not statistical theorems about actual bank permissions, source authenticity or external settlement. Deployment evidence must show that the running services enforce them, that reviewers can exercise their authority, and that operational owners resolve exceptions. The resulting audit record connects the mathematical summary to the approved action and realised outcome.
 
+For the Boltzmann service derived in A2.17, the replay contract also preserves the eligible action set, action-value units and version, policy temperature, mixture settings, normalized assignment probabilities and randomization provenance. Link the sampled proposal to approval, override and execution records. These fields support reconstruction of the policy draw and its governed disposition; Article 3 specifies the additional assignment assumptions required for actual-action evaluation. Generative-text temperature remains a separately versioned configuration.
+
 ### Sources supporting this appendix
 
 The Pólya–Gamma and auxiliary half-t derivations are maintained at A2.10 and A2.11, respectively, with supporting sources [3] and [10], Result 5. Numerical summaries are derived from the specified illustrative distributions using the inference and decision framework in [7]. The workflow applies the bank-controlled architecture [1] and the legal sources [4], [5].

@@ -13,7 +13,7 @@ $files = @(
 )
 $combined = Join-Path $PSScriptRoot 'UNDERWRITE_FOR_COLLECTION_FIVE_ARTICLE_RESEARCH_EDITION.md'
 $parts = [System.Collections.Generic.List[string]]::new()
-$parts.Add("% Underwrite for Collection: Five Connected Research Articles`n% Nevil Maloba`n% 8 October 2026`n`nThis research edition connects randomized credit-offer experiments, sequential collection decisions, reject inference, Treasury/ALM control and bank-controlled agentic deployment. The five articles retain their separate decision units and carry a common evidence and governance discipline.`n`nCopyright 2026 Nevil Maloba. CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/`n")
+$parts.Add("% Causal Credit and Treasury Decision-Making`n% Nevil Maloba`n% 8 October 2026`n`nThis research edition connects randomized credit-offer experiments, sequential collection decisions, reject inference, Treasury/ALM control and bank-controlled agentic deployment. The five articles retain their separate decision units and carry a common evidence and governance discipline.`n`nCopyright 2026 Nevil Maloba. CC BY-NC-SA 4.0. https://creativecommons.org/licenses/by-nc-sa/4.0/`n")
 $articleNumber = 0
 foreach ($name in $files) {
     $articleNumber++
@@ -52,7 +52,7 @@ $pandocArgs = @(
     "--lua-filter=$filter", "--resource-path=$resourcePath", '--toc', '--toc-depth=2',
     "--include-in-header=$(Join-Path $PSScriptRoot 'publication-header.tex')",
     '--variable=geometry:margin=0.7in', '--variable=mainfont:Segoe UI', '--variable=fontsize:11pt',
-    '--metadata=lang:en', '--variable=graphics:true', '--output', $tex
+    '--metadata=lang:en', '--metadata=subtitle:Credit-Offer Experiments, Sequential Collections, Reject Inference and Bank-Controlled AI', '--variable=graphics:true', '--output', $tex
 )
 & pandoc @pandocArgs
 if ($LASTEXITCODE -ne 0) { throw "Pandoc/XeLaTeX failed with exit code $LASTEXITCODE" }

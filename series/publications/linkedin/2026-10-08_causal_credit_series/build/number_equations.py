@@ -69,7 +69,7 @@ def main():
     anchor=lambda sec:'appendix-'+sec.lower().replace('.','-')
     notes={
       '1': 'Full derivations for offer experiments, policy evaluation and competing risks are collected in A1.3–A1.9; the hierarchical hazard likelihood is in A2.6.',
-      '2': 'The complete hierarchy is specified in A2.5–A2.6. A2.10 derives the Pólya–Gamma update; A2.11 distinguishes Student-t coefficient priors from half-t group-scale priors. A2.12 derives the economic decision boundary.',
+      '2': 'The complete hierarchy is specified in A2.5–A2.6. A2.10 derives the Pólya–Gamma update; A2.11 distinguishes Student-t coefficient priors from half-t group-scale priors. A2.12 derives the economic decision boundary; A2.17 derives Boltzmann allocation and entropy-regularized control.',
       '3': 'A3.6–A3.9 apply the hierarchy and inference derivations from A2.5, A2.6, A2.10 and A2.11 to selective labels. Their local calculations and target-alignment conditions remain alongside the application.',
       '4': 'A4.9–A4.10 apply the Bellman and belief-state derivations in A2.2–A2.3 to Treasury constraints, cash flows and policy comparisons. A4.1–A4.8 derive the financial quantities used by those controls.',
       '5': 'A5.1–A5.5 derive the reviewer quantities and worked decision gates. A5.6 connects their approved model artifacts to A2.5, A2.6, A2.10 and A2.11; A5.7–A5.8 specify numerical and workflow checks.'}
@@ -90,7 +90,7 @@ def main():
     for i in range(0,len(chunks),2):
         chunks[i]=pattern.sub(lambda m:'['+m[1]+'](#'+anchor(m[1])+')' if m[1] in sections else m[0],chunks[i])
     text=''.join(chunks)
-    topics=[('Survival and competing risks',['A1.8','A2.6','A3.9']),('Hierarchies',['A2.5','A3.6']),('Pólya–Gamma computation',['A2.10','A3.8']),('Coefficient and group-scale priors',['A2.11']),('Credit-limit decisions',['A2.12','A5.5']),('Policy evaluation',['A1.5','A1.6','A2.15']),('Selection and sensitivity',['A3.3','A3.5']),('Bellman and POMDP control',['A2.2','A2.3','A4.10']),('Reviewer uncertainty',['A3.13','A5.1','A5.7'])]
+    topics=[('Boltzmann allocation and entropy control',['A2.17','A3.11','A4.9','A5.8']),('Survival and competing risks',['A1.8','A2.6','A3.9']),('Hierarchies',['A2.5','A3.6']),('Pólya–Gamma computation',['A2.10','A3.8']),('Coefficient and group-scale priors',['A2.11']),('Credit-limit decisions',['A2.12','A5.5']),('Policy evaluation',['A1.5','A1.6','A2.15']),('Selection and sensitivity',['A3.3','A3.5']),('Bellman and POMDP control',['A2.2','A2.3','A4.10']),('Reviewer uncertainty',['A3.13','A5.1','A5.7'])]
     guide=['\\clearpage','# Navigating the equations','','Equations are numbered by article, such as (2.1), and by appendix, such as (A2.1). Each aligned displayed block has one number. Inline mathematical expressions remain unnumbered. Appendix subsection labels, such as A2.5, identify the complete derivation; the equation register identifies each displayed step.','','| Topic | Complete derivation and applications | Selected equations |','| --- | --- | --- |']
     for title,secs in topics:
         chosen=[]

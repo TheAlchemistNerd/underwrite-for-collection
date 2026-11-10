@@ -24,3 +24,8 @@ Thumbs.db
 series/dist/*.pdf
 !series/dist/Underwrite_for_Collection_MSME_Lifecycle_Draft_Parts_1_to_5_Notation_Corrected_2026-09-06.pdf
 !series/dist/Underwrite_for_Collection_MSME_Lifecycle_Parts_1_to_5_CC_BY_NC_SA_4_0_2026-09-08.pdf
+
+# Rebuild reading exports and local case sensitivities from source
+series/dist/*.html
+research_lab/results/scenario_results.json
+output/governed_evidence_case_2026-10-01/

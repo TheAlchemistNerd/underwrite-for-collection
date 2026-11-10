@@ -164,7 +164,7 @@ To see why, partition applicants into never-takers, always-takers and compliers.
 
 ## A1.4 Adaptive probabilities and the linear-UCB calculation
 
-The linear confidence-bound construction follows [5]; inference under adaptive assignment follows [6].
+The linear confidence-bound construction follows [5]; inference under adaptive assignment follows [7].
 
 Let $\widehat\pi_i$ and $q_i$ each be probability distributions on the approved set $\mathcal A(X_i)$. For a registered exploration weight $0\le\epsilon_i\le1$,
 
@@ -216,7 +216,7 @@ Here $\widetilde Q_i$ combines the sampled event probability with the documented
 
 ## A1.5 Derive inverse-propensity policy evaluation
 
-The evaluation setting and overlap requirements follow [1], [12].
+The evaluation setting and overlap requirements follow [1], [13].
 
 For a fixed target policy $\pi$ evaluated on the study's context distribution, define
 
@@ -335,7 +335,7 @@ An observed event contributes its density $\lambda_iS_i$; a censored record cont
 
 ## A1.8 Hazard, survival and competing-risk incidence
 
-The hazard specification follows [7], with competing-risk and transition distinctions supported by [8], [9].
+The hazard specification follows [8], with competing-risk and transition distinctions supported by [9], [10].
 
 The event hazard satisfies $\lambda(t)=f(t)/S(t)$, where $S(t)=\Pr(T>t)$ and $f(t)=-S'(t)$. Rearranging gives
 
@@ -413,7 +413,7 @@ Its denominator differs from all-cause event-free survival. Cause-specific Cox a
 
 ## A1.9 Fairness measures and uncertainty shown to reviewers
 
-The conditional fairness rates follow [13].
+The conditional fairness rates follow [14].
 
 Let $G$ denote an evaluation group, $Y=1$ the declared positive outcome and $\widehat Y=1$ the declared positive decision. Then
 
@@ -446,4 +446,4 @@ The first term is future outcome variability conditional on the model; the secon
 
 ### Further methodological reading
 
-Additional sources retained from the article bibliography: [20].
+Additional sources retained from the article bibliography: [21].

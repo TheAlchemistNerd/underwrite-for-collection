@@ -1,18 +1,23 @@
 {
   "status": "passed",
-  "check_count": 37,
-  "passed_count": 37,
-  "scope": "Deterministic mathematical identities and synthetic numerical examples in appendices 2 and 5; not empirical fitting, causal identification, legal approval or a production model audit.",
+  "check_count": 109,
+  "passed_count": 109,
+  "scope": "Deterministic mathematical identities and synthetic numerical examples in Article 2 and appendices 2 and 5, including finite-action Boltzmann policy arithmetic. Empirical fitting, causal identification and production validation require their respective evidence.",
   "sources": [
     {
+      "path": "ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.md",
+      "bytes": 78292,
+      "sha256": "1a125b5520d28a8187edf9f3aed09ed15ffccc57373bc0c1dddeb429111b37f5"
+    },
+    {
       "path": "build\\appendices\\ARTICLE_2_MATHEMATICAL_APPENDIX.md",
-      "bytes": 30890,
-      "sha256": "a00f4b2b093e2eb8c19baee99c0c80c498255fd8fa0c98233733d708fa4ca71e"
+      "bytes": 41168,
+      "sha256": "ef81c7624446354688393f8f7a931f794c38904fea381e1e803bc3b456fcd6e2"
     },
     {
       "path": "build\\appendices\\ARTICLE_5_MATHEMATICAL_APPENDIX.md",
-      "bytes": 17917,
-      "sha256": "723d272b7a6b60acca9bf88694e05c893259f21003c7f2a1c37e13e82878bdac"
+      "bytes": 18487,
+      "sha256": "d8c75a6167e1f436bb1802a5cca587dd0829523296f4fbe990498a309f8f68a3"
     }
   ],
   "checks": [
@@ -345,9 +350,636 @@
       "absolute_tolerance": 1e-09,
       "relative_tolerance": 1e-08,
       "passed": true
+    },
+    {
+      "name": "Boltzmann_known_probabilities_0",
+      "actual": 0.7053845126982412,
+      "expected": 0.7053845126982412,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_known_probabilities_1",
+      "actual": 0.25949646034241913,
+      "expected": 0.25949646034241913,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_known_probabilities_2",
+      "actual": 0.03511902695933973,
+      "expected": 0.03511902695933973,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_probability_mass",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_large_translation_0",
+      "actual": 0.7053845126982412,
+      "expected": 0.7053845126982412,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_large_translation_1",
+      "actual": 0.25949646034241913,
+      "expected": 0.25949646034241913,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_large_translation_2",
+      "actual": 0.03511902695933973,
+      "expected": 0.03511902695933973,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_joint_positive_scaling_0",
+      "actual": 0.7053845126982412,
+      "expected": 0.7053845126982412,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_joint_positive_scaling_1",
+      "actual": 0.25949646034241913,
+      "expected": 0.25949646034241913,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_joint_positive_scaling_2",
+      "actual": 0.03511902695933973,
+      "expected": 0.03511902695933973,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_low_temperature_0",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_low_temperature_1",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_low_temperature_2",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_high_temperature_0",
+      "actual": 0.33333333377777774,
+      "expected": 0.3333333333333333,
+      "absolute_error": 4.4444442570679144e-10,
+      "absolute_tolerance": 6e-10,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_high_temperature_1",
+      "actual": 0.33333333344444444,
+      "expected": 0.3333333333333333,
+      "absolute_error": 1.1111112030448567e-10,
+      "absolute_tolerance": 6e-10,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_high_temperature_2",
+      "actual": 0.33333333277777777,
+      "expected": 0.3333333333333333,
+      "absolute_error": 5.555555460112771e-10,
+      "absolute_tolerance": 6e-10,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_tied_max_low_temperature_0",
+      "actual": 0.5,
+      "expected": 0.5,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_tied_max_low_temperature_1",
+      "actual": 0.5,
+      "expected": 0.5,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_tied_max_low_temperature_2",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_masked_probabilities_0",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_masked_probabilities_1",
+      "actual": 0.8807970779778823,
+      "expected": 0.8807970779778823,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_masked_probabilities_2",
+      "actual": 0.11920292202211755,
+      "expected": 0.11920292202211755,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_masked_probability_mass",
+      "actual": 0.9999999999999999,
+      "expected": 1.0,
+      "absolute_error": 1.1102230246251565e-16,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_mask_then_renormalize_0",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_mask_then_renormalize_1",
+      "actual": 0.8807970779778823,
+      "expected": 0.8807970779778824,
+      "absolute_error": 1.1102230246251565e-16,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_mask_then_renormalize_2",
+      "actual": 0.11920292202211755,
+      "expected": 0.11920292202211757,
+      "absolute_error": 2.7755575615628914e-17,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_epsilon_mixture_0",
+      "actual": 0.6681793947617505,
+      "expected": 0.6681793947617505,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_epsilon_mixture_1",
+      "actual": 0.2668801476415106,
+      "expected": 0.2668801476415106,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_epsilon_mixture_2",
+      "actual": 0.06494045759673908,
+      "expected": 0.06494045759673908,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_epsilon_mass",
+      "actual": 1.0000000000000002,
+      "expected": 1.0,
+      "absolute_error": 2.220446049250313e-16,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_epsilon_floor",
+      "actual": 0.06494045759673908,
+      "floor": 0.03333333333333333,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_masked_epsilon_mixture_0",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_masked_epsilon_mixture_1",
+      "actual": 0.8427173701800942,
+      "expected": 0.8427173701800942,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_masked_epsilon_mixture_2",
+      "actual": 0.15728262981990582,
+      "expected": 0.15728262981990582,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_masked_epsilon_mass",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_masked_floor",
+      "actual": 0.15728262981990582,
+      "floor": 0.05,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_expected_reward",
+      "actual": 4635.146458779562,
+      "expected": 4635.146458779562,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_entropy_nats",
+      "actual": 0.7138657579886247,
+      "expected": 0.7138657579886247,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-14,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_entropy_optimum_known",
+      "actual": 5349.012216768187,
+      "expected": 5349.012216768187,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_log_partition_identity",
+      "actual": 5349.012216768187,
+      "expected": 5349.012216768187,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_fixed_Q_KL_gap_greedy",
+      "actual": 349.0122167681866,
+      "expected": 349.0122167681863,
+      "absolute_error": 2.8421709430404007e-13,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_nonnegative_gap_greedy",
+      "actual": 349.0122167681866,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_fixed_Q_KL_gap_uniform",
+      "actual": 583.7332614334109,
+      "expected": 583.73326143341,
+      "absolute_error": 9.094947017729282e-13,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_nonnegative_gap_uniform",
+      "actual": 583.7332614334109,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_fixed_Q_KL_gap_nonuniform",
+      "actual": 219.35920270361294,
+      "expected": 219.35920270361282,
+      "absolute_error": 1.1368683772161603e-13,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_nonnegative_gap_nonuniform",
+      "actual": 219.35920270361294,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_fixed_Q_KL_gap_epsilon_mixture",
+      "actual": 11.202237994601091,
+      "expected": 11.202237994601825,
+      "absolute_error": 7.336353746723034e-13,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_nonnegative_gap_epsilon_mixture",
+      "actual": 11.202237994601091,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_greedy_raw_reward_advantage",
+      "actual": 364.8535412204383,
+      "expected": 364.853541220438,
+      "absolute_error": 2.8421709430404007e-13,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_epsilon_objective_gap",
+      "actual": 11.202237994601091,
+      "expected": 11.202237994601091,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_empty",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_zero_temperature",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_negative_temperature",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_nan_temperature",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_infinite_temperature",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_nan_value",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_infinite_value",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_empty_admissible_set",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_mask_length",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_epsilon_below_zero",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_epsilon_above_one",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_epsilon_nan",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_unmasked_mixture_input",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_empty_probability_vector",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_negative_probability",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_probability_above_one",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_probability_sum",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_probability_nan",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_probability_infinite",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_nonboolean_mask",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_objective_dimension",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "Boltzmann_invalid_entropy_invalid_probability",
+      "actual": 1.0,
+      "expected": 1.0,
+      "absolute_error": 0.0,
+      "absolute_tolerance": 1e-09,
+      "relative_tolerance": 1e-08,
+      "passed": true
     }
   ],
   "manual_review": {
+    "boltzmann": "Fixed-Q softmax, admissible-action masking, uniform exploration floor and entropy-regularized objective are checked separately from raw expected reward and sequential policy performance.",
     "hierarchy": "Logistic and hazard models use distinct coefficient sets, shared sector/region/vintage hierarchy pattern, half-t SD priors and a declared hazard baseline.",
     "scale_updates": "Centred inverse-Gamma and non-centred scale kernels are separately stated; no Gaussian full conditional is claimed for the half-t SD from the normal-Gamma identity alone.",
     "causal_uncertainty": "Average-effect and policy-value posterior contrasts are distinguished from unidentifiable individual cross-potential-outcome covariance.",

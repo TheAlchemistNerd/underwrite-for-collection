@@ -129,6 +129,14 @@ FORMULAS.update({
 })
 SYMBOLS.update({'P₀':r'P_0','Qₜ':r'Q_t','αᴸ':r'\alpha^L','βᴸ':r'\beta^L','βᴴ':r'\beta^H','βᵐ':r'\beta^m','σᵐ_k':r'\sigma_k^m','s₀,kᵐ':r's_{0,k}^m'})
 
+# Boltzmann allocation: exact transcriptions of the Unicode reading edition.
+FORMULAS.update({
+    'mₜ(s) = max{Qₜ(s,c): c ∈ Aₜ(s)}': r'm_t(s)=\max_{c\in A_t(s)}Q_t(s,c)',
+    'πₜ(a|s) = exp((Qₜ(s,a) − mₜ(s))/τₜ) / Σ_{c∈Aₜ(s)} exp((Qₜ(s,c) − mₜ(s))/τₜ),   a ∈ Aₜ(s)': r'\begin{gathered}\pi_t(a\mid s)=\frac{\exp\{[Q_t(s,a)-m_t(s)]/\tau_t\}}{\sum_{c\in A_t(s)}\exp\{[Q_t(s,c)-m_t(s)]/\tau_t\}},\\ a\in A_t(s)\end{gathered}',
+    'π̃ₜ(a|s) = (1 − εₜ)πₜ(a|s) + εₜqₜ(a|s),   0 ≤ εₜ ≤ 1': r'\begin{gathered}\widetilde\pi_t(a\mid s)=(1-\varepsilon_t)\pi_t(a\mid s)+\varepsilon_tq_t(a\mid s),\\0\le\varepsilon_t\le1\end{gathered}',
+})
+SYMBOLS.update({'τₜ':r'\tau_t','mₜ(s)':r'm_t(s)','Qₜ(s,a)':r'Q_t(s,a)','Aₜ(s)':r'A_t(s)','qₜ':r'q_t','π̃ₜ':r'\widetilde\pi_t'})
+
 def main():
     source=Path(sys.argv[1]).resolve()
     destination=source.with_name(source.stem+'_TYPESET.md')

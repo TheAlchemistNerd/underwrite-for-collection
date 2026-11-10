@@ -1,0 +1,94 @@
+{
+  "baseline_commit": "180f6cc",
+  "normalization": "Citation labels and whitespace normalized; bibliography omitted from body comparison. Every original paragraph retained in original order.",
+  "checks": [
+    {
+      "file": "ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.md",
+      "original_content_retained_in_order": true,
+      "sha256": "6f03404dff4952fdad1f8420f24e7ae63373a67b22cf5996ab74ffafaa627760"
+    },
+    {
+      "file": "ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.md",
+      "original_content_retained_in_order": true,
+      "sha256": "1a125b5520d28a8187edf9f3aed09ed15ffccc57373bc0c1dddeb429111b37f5"
+    },
+    {
+      "file": "ARTICLE_3_REJECT_INFERENCE_AND_SELECTIVE_LABELS.md",
+      "original_content_retained_in_order": true,
+      "sha256": "3c511ddc7316b68199e046e974370956c64cd2b8e624063d3322eaff933ed06f"
+    },
+    {
+      "file": "ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.md",
+      "original_content_retained_in_order": true,
+      "sha256": "48981504518560cd5d23b81443ede222a0d18dcd90068bb0532305c11b25001f"
+    },
+    {
+      "file": "ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.md",
+      "original_content_retained_in_order": true,
+      "sha256": "63b3b79f89b8f93dfb384e3f773ef0ed1a0eafd20b28d469a6f08f5ef3c4710a"
+    },
+    {
+      "file": "build/appendices/ARTICLE_1_MATHEMATICAL_APPENDIX.md",
+      "original_content_retained_in_order": true,
+      "sha256": "81f117451dc920cd0709823783aa73946997b100858840cb9d7dd1d8050b3be5"
+    },
+    {
+      "file": "build/appendices/ARTICLE_2_MATHEMATICAL_APPENDIX.md",
+      "original_content_retained_in_order": true,
+      "sha256": "ef81c7624446354688393f8f7a931f794c38904fea381e1e803bc3b456fcd6e2"
+    },
+    {
+      "file": "build/appendices/ARTICLE_3_MATHEMATICAL_APPENDIX.md",
+      "original_content_retained_in_order": true,
+      "sha256": "4d0fda47b812dc187d61d4e9a65ff0b907d2d94f0b5aa84b4196ba3a5baf7d40"
+    },
+    {
+      "file": "build/appendices/ARTICLE_4_MATHEMATICAL_APPENDIX.md",
+      "original_content_retained_in_order": true,
+      "sha256": "11cdb4c0c3449557e6a5510d8e06f3b906566b2811cb91ff317aab620d54c75a"
+    },
+    {
+      "file": "build/appendices/ARTICLE_5_MATHEMATICAL_APPENDIX.md",
+      "original_content_retained_in_order": true,
+      "sha256": "d8c75a6167e1f436bb1802a5cca587dd0829523296f4fbe990498a309f8f68a3"
+    }
+  ],
+  "individual_word": [
+    {
+      "file": "ARTICLE_1_RCTS_CONTEXTUAL_BANDITS_CREDIT_OFFERS.docx",
+      "unicode": true,
+      "figures": 1,
+      "sha256": "1166006273d5fdf9dbc0cd2aea9f2441221d9d901451fa0e6ecc891c4c459c73"
+    },
+    {
+      "file": "ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.docx",
+      "unicode": true,
+      "figures": 2,
+      "sha256": "15da4ff66525d794152aa2c22db0cb9e213e99392ac1d844a3bf24b24dc771a3"
+    },
+    {
+      "file": "ARTICLE_3_REJECT_INFERENCE_AND_SELECTIVE_LABELS.docx",
+      "unicode": true,
+      "figures": 1,
+      "sha256": "db5b933b257af515ae0b977f08285d56d01461d22168881eea60fdf750d8b46c"
+    },
+    {
+      "file": "ARTICLE_4_TREASURY_ALM_STOCHASTIC_CONTROL.docx",
+      "unicode": true,
+      "figures": 4,
+      "sha256": "7246208fab0158a547e329e453e17982a5463b95a5e26c7f610384e78221cc0e"
+    },
+    {
+      "file": "ARTICLE_5_BANK_CONTROLLED_AGENTIC_AI_CREDIT_AND_TREASURY.docx",
+      "unicode": true,
+      "figures": 4,
+      "sha256": "3807195d46cf4d587b95058f96bf8b9ad3a9b4b120f1ff94d107e380db8fa813"
+    }
+  ],
+  "combined_word": {
+    "all_287_numbered_equations_present": true,
+    "figures": 12,
+    "native_math_objects": 1039,
+    "sha256": "fa148afda7844fd1b369cea5ecc85f3884346b09cf6bc254cba940951150db94"
+  }
+}

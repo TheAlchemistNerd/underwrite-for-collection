@@ -1,0 +1,20 @@
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"Arial, sans-serif","fontSize":"22px","primaryColor":"#eef4fb","primaryTextColor":"#14243a","primaryBorderColor":"#476b91","lineColor":"#476b91","secondaryColor":"#edf7f3","tertiaryColor":"#fff4e5"}}}%%
+flowchart TD
+    A["All eligible loan applicants"] --> B["Identity, affordability and initial application assessment"]
+    B --> C{"Credit score"}
+    C -->|"Score ≥600"| D["Approved<br/>Standard underwriting"]
+    C -->|"500–599"| E["Experimental<br/>Marginal applicant pool"]
+    C -->|"Score below 500"| F["Excluded<br/>Standard rejection"]
+    E --> G["80:20 random allocation"]
+    G --> H["Control: 80%<br/>Existing underwriting decision"]
+    G --> I["Treatment: 20%<br/>Experimental KES 500 credit offer"]
+    H --> J["Outcome measurement and model evaluation"]
+    I --> J
+    J --> K["Repayment, default, profitability,<br/>consumer outcomes and recalibration"]
+
+    classDef gate fill:#eef4fb,stroke:#476b91,color:#14243a,stroke-width:2px;
+    classDef treatment fill:#e7f5ef,stroke:#2f8061,color:#12382a,stroke-width:2px;
+    classDef control fill:#fff4e5,stroke:#bd7b26,color:#4b3210,stroke-width:2px;
+    class A,B,C,D,E,F,G,J,K gate;
+    class I treatment;
+    class H control;

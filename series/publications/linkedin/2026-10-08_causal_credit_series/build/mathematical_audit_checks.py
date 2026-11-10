@@ -159,9 +159,169 @@ for name,actual,expected in [('pilot_day60_difference',46/50-38/50,.16),
                               ('illustrative_RAROC',850/5000,.17)]:
     check(name,actual,expected)
 
+# Finite-action Boltzmann checks with fixed illustrative action values.
+def probability_vector(p):
+    p = tuple(p)
+    if (not p or any(not math.isfinite(x) or not 0 <= x <= 1 for x in p)
+            or not math.isclose(math.fsum(p), 1., rel_tol=0., abs_tol=1e-12)):
+        raise ValueError('A finite nonnegative probability vector summing to one is required')
+    return p
+
+
+def admissible_mask(mask, size):
+    mask = tuple(True for _ in range(size)) if mask is None else tuple(mask)
+    if len(mask) != size or any(not isinstance(ok, bool) for ok in mask) or not any(mask):
+        raise ValueError('At least one admissible action and a matching boolean mask are required')
+    return mask
+
+
+def stable_boltzmann(q, temperature, mask=None):
+    q = tuple(q)
+    if not q or any(not math.isfinite(x) for x in q):
+        raise ValueError('Action values must be a nonempty finite sequence')
+    if not math.isfinite(temperature) or temperature <= 0:
+        raise ValueError('Temperature must be finite and positive')
+    mask = admissible_mask(mask, len(q))
+    peak = max(x for x, ok in zip(q, mask) if ok)
+    weights = tuple(math.exp((x - peak) / temperature) if ok else 0.
+                    for x, ok in zip(q, mask))
+    total = math.fsum(weights)
+    return tuple(w / total for w in weights)
+
+
+def masked_uniform_mix(p, epsilon, mask=None):
+    p = probability_vector(p)
+    mask = admissible_mask(mask, len(p))
+    if not math.isfinite(epsilon) or not 0 <= epsilon <= 1:
+        raise ValueError('Epsilon must be finite and lie between zero and one')
+    if any(x != 0 for x, ok in zip(p, mask) if not ok):
+        raise ValueError('Input policy must already respect the mask')
+    k = sum(mask)
+    return tuple((1 - epsilon) * x + epsilon / k if ok else 0.
+                 for x, ok in zip(p, mask))
+
+
+def entropy_nats(p):
+    p = probability_vector(p)
+    return -math.fsum(x * math.log(x) for x in p if x > 0)
+
+
+def entropy_objective(p, q, temperature):
+    p, q = probability_vector(p), tuple(q)
+    if (len(p) != len(q) or any(not math.isfinite(x) for x in q)
+            or not math.isfinite(temperature) or temperature <= 0):
+        raise ValueError('Matching finite action values and positive finite temperature are required')
+    return (math.fsum(x * y for x, y in zip(p, q))
+            + temperature * entropy_nats(p))
+
+
+def vector_check(name, actual, expected, atol=1e-14):
+    actual, expected = tuple(actual), tuple(expected)
+    if len(actual) != len(expected):
+        check(name + '_length', len(actual), len(expected), atol=0., rtol=0.)
+        return
+    for i, (a, e) in enumerate(zip(actual, expected)):
+        check(name + '_' + str(i), a, e, atol=atol, rtol=1e-12)
+
+
+def expect_value_error(name, fn):
+    try:
+        fn()
+    except ValueError:
+        check(name, 1., 1.)
+    else:
+        check(name, 0., 1.)
+
+
+BQ = (5000., 4000., 2000.)
+BT = 1000.
+BP = stable_boltzmann(BQ, BT)
+vector_check('Boltzmann_known_probabilities', BP,
+             (.7053845126982412, .25949646034241913, .03511902695933973))
+check('Boltzmann_probability_mass', math.fsum(BP), 1., atol=1e-14, rtol=0.)
+vector_check('Boltzmann_large_translation',
+             stable_boltzmann(tuple(x + 1e6 for x in BQ), BT), BP)
+vector_check('Boltzmann_joint_positive_scaling',
+             stable_boltzmann(tuple(7 * x for x in BQ), 7 * BT), BP)
+vector_check('Boltzmann_low_temperature', stable_boltzmann(BQ, 1.), (1., 0., 0.))
+vector_check('Boltzmann_high_temperature',
+             stable_boltzmann(BQ, 1e12), (1 / 3,) * 3, atol=6e-10)
+vector_check('Boltzmann_tied_max_low_temperature',
+             stable_boltzmann((5000., 5000., 2000.), 1.), (.5, .5, 0.))
+
+BM = (False, True, True)
+BMP = stable_boltzmann(BQ, BT, BM)
+vector_check('Boltzmann_masked_probabilities', BMP,
+             (0., .8807970779778823, .11920292202211755))
+check('Boltzmann_masked_probability_mass', math.fsum(BMP), 1., atol=1e-14, rtol=0.)
+retained = math.fsum(x for x, ok in zip(BP, BM) if ok)
+vector_check('Boltzmann_mask_then_renormalize', BMP,
+             tuple(x / retained if ok else 0. for x, ok in zip(BP, BM)))
+
+BEP = masked_uniform_mix(BP, .1)
+vector_check('Boltzmann_epsilon_mixture', BEP,
+             (.6681793947617505, .2668801476415106, .06494045759673908))
+check('Boltzmann_epsilon_mass', math.fsum(BEP), 1., atol=1e-14, rtol=0.)
+checks.append(dict(name='Boltzmann_epsilon_floor', actual=min(BEP),
+                   floor=.1 / 3, passed=min(BEP) >= .1 / 3))
+BMEP = masked_uniform_mix(BMP, .1, BM)
+vector_check('Boltzmann_masked_epsilon_mixture', BMEP,
+             (0., .8427173701800942, .15728262981990582))
+check('Boltzmann_masked_epsilon_mass', math.fsum(BMEP), 1., atol=1e-14, rtol=0.)
+checks.append(dict(name='Boltzmann_masked_floor',
+                   actual=min(x for x, ok in zip(BMEP, BM) if ok), floor=.05,
+                   passed=all(x >= .05 if ok else x == 0 for x, ok in zip(BMEP, BM))))
+check('Boltzmann_expected_reward',
+      math.fsum(x * y for x, y in zip(BP, BQ)), 4635.146458779562)
+check('Boltzmann_entropy_nats', entropy_nats(BP), .7138657579886247,
+      atol=1e-14, rtol=1e-12)
+BF = entropy_objective(BP, BQ, BT)
+logz = max(BQ) / BT + math.log(math.fsum(math.exp((x - max(BQ)) / BT) for x in BQ))
+check('Boltzmann_entropy_optimum_known', BF, 5349.012216768187)
+check('Boltzmann_log_partition_identity', BF, BT * logz)
+for label, r in (('greedy', (1., 0., 0.)), ('uniform', (1 / 3,) * 3),
+                 ('nonuniform', (.5, .3, .2)), ('epsilon_mixture', BEP)):
+    kl = math.fsum(x * math.log(x / y) for x, y in zip(r, BP) if x > 0)
+    gap = BF - entropy_objective(r, BQ, BT)
+    check('Boltzmann_fixed_Q_KL_gap_' + label, gap, BT * kl, atol=1e-9, rtol=1e-12)
+    checks.append(dict(name='Boltzmann_nonnegative_gap_' + label,
+                       actual=gap, passed=gap >= -1e-9))
+check('Boltzmann_greedy_raw_reward_advantage',
+      max(BQ) - math.fsum(x * y for x, y in zip(BP, BQ)), 364.853541220438)
+check('Boltzmann_epsilon_objective_gap',
+      BF - entropy_objective(BEP, BQ, BT), 11.202237994601091)
+
+for label, fn in (
+    ('empty', lambda: stable_boltzmann((), BT)),
+    ('zero_temperature', lambda: stable_boltzmann(BQ, 0.)),
+    ('negative_temperature', lambda: stable_boltzmann(BQ, -1.)),
+    ('nan_temperature', lambda: stable_boltzmann(BQ, float('nan'))),
+    ('infinite_temperature', lambda: stable_boltzmann(BQ, float('inf'))),
+    ('nan_value', lambda: stable_boltzmann((0., float('nan')), BT)),
+    ('infinite_value', lambda: stable_boltzmann((0., float('inf')), BT)),
+    ('empty_admissible_set', lambda: stable_boltzmann(BQ, BT, (False,) * 3)),
+    ('mask_length', lambda: stable_boltzmann(BQ, BT, (True,))),
+    ('epsilon_below_zero', lambda: masked_uniform_mix(BP, -.1)),
+    ('epsilon_above_one', lambda: masked_uniform_mix(BP, 1.1)),
+    ('epsilon_nan', lambda: masked_uniform_mix(BP, float('nan'))),
+    ('unmasked_mixture_input', lambda: masked_uniform_mix(BP, .1, BM)),
+    ('empty_probability_vector', lambda: masked_uniform_mix((), .1)),
+    ('negative_probability', lambda: masked_uniform_mix((-.1, .5, .6), .1)),
+    ('probability_above_one', lambda: masked_uniform_mix((1.1, 0., 0.), .1)),
+    ('probability_sum', lambda: masked_uniform_mix((.2, .2, .2), .1)),
+    ('probability_nan', lambda: masked_uniform_mix((float('nan'), 1.), .1)),
+    ('probability_infinite', lambda: masked_uniform_mix((float('inf'), 0.), .1)),
+    ('nonboolean_mask', lambda: stable_boltzmann(BQ, BT, (1, 1, 0))),
+    ('objective_dimension', lambda: entropy_objective(BP, (1., 2.), BT)),
+    ('entropy_invalid_probability', lambda: entropy_nats((-.5, 1.5))),
+):
+    expect_value_error('Boltzmann_invalid_' + label, fn)
+
 sources=[]
-for num in (2,5):
-    path=ROOT/'build'/'appendices'/f'ARTICLE_{num}_MATHEMATICAL_APPENDIX.md'
+source_paths = [ROOT/'ARTICLE_2_CONTEXTUAL_BANDITS_AND_SEQUENTIAL_COLLECTION.md']
+source_paths.extend(ROOT/'build'/'appendices'/f'ARTICLE_{num}_MATHEMATICAL_APPENDIX.md'
+                    for num in (2,5))
+for path in source_paths:
     data=path.read_bytes()
     if b'\0' in data:
         raise ValueError('NUL byte in source '+str(path))
@@ -169,9 +329,10 @@ for num in (2,5):
 
 report=dict(status='passed' if all(c['passed'] for c in checks) else 'failed',
             check_count=len(checks),passed_count=sum(c['passed'] for c in checks),
-            scope='Deterministic mathematical identities and synthetic numerical examples in appendices 2 and 5; not empirical fitting, causal identification, legal approval or a production model audit.',
+            scope='Deterministic mathematical identities and synthetic numerical examples in Article 2 and appendices 2 and 5, including finite-action Boltzmann policy arithmetic. Empirical fitting, causal identification and production validation require their respective evidence.',
             sources=sources,checks=checks,
-            manual_review=dict(hierarchy='Logistic and hazard models use distinct coefficient sets, shared sector/region/vintage hierarchy pattern, half-t SD priors and a declared hazard baseline.',
+            manual_review=dict(boltzmann='Fixed-Q softmax, admissible-action masking, uniform exploration floor and entropy-regularized objective are checked separately from raw expected reward and sequential policy performance.',
+                               hierarchy='Logistic and hazard models use distinct coefficient sets, shared sector/region/vintage hierarchy pattern, half-t SD priors and a declared hazard baseline.',
                                scale_updates='Centred inverse-Gamma and non-centred scale kernels are separately stated; no Gaussian full conditional is claimed for the half-t SD from the normal-Gamma identity alone.',
                                causal_uncertainty='Average-effect and policy-value posterior contrasts are distinguished from unidentifiable individual cross-potential-outcome covariance.',
                                limits='Fixed payoff threshold and posterior exceedance gate are separated; actual limit changes use incremental action values with joint uncertainty.'))

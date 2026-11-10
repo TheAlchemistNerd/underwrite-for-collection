@@ -1,0 +1,12 @@
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"Arial","fontSize":"27px","primaryColor":"#eef4fb","primaryTextColor":"#14243a","primaryBorderColor":"#476b91","lineColor":"#476b91"}}}%%
+flowchart LR
+    S1["1 Preparation<br/>Regulatory assessment<br/>Baseline analysis<br/>Eligibility definition<br/><b>Deliverable:</b> Approved RCT protocol"] -->
+    S2["2 Design<br/>Power calculations<br/>Loss modelling<br/>Randomisation<br/><b>Deliverable:</b> Statistical and technical specifications"] -->
+    S3["3 Deployment<br/>Fraud screening<br/>Allocation<br/>Micro-limit disbursement<br/><b>Deliverable:</b> Experimental loan portfolio"] -->
+    S4["4 Monitoring<br/>FPD and delinquency<br/>Write-offs and exposure<br/><b>Deliverable:</b> Risk monitoring dashboard"] -->
+    S5["5 Evaluation<br/>Statistical and financial<br/>performance assessment<br/><b>Deliverable:</b> Evaluation report"] -->
+    S6["6 Recalibration<br/>Feature analysis<br/>Model training and validation<br/><b>Deliverable:</b> Validated underwriting model"] -->
+    S7["7 Expansion<br/>Controlled rollout<br/>Ongoing monitoring<br/><b>Deliverable:</b> Updated credit policy"]
+    classDef stage fill:#eef4fb,stroke:#476b91,color:#14243a,stroke-width:2px,font-family:Arial,font-size:27px;
+    class S1,S2,S3,S4,S5,S6,S7 stage;
+
